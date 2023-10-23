@@ -4,13 +4,15 @@ pub struct InputHandler;
 
 impl InputHandler {
   fn get_user_name() -> String {
-    let mut name = String::new();
+    let mut userinput = String::new();
 
     print!("Enter your name: ");
     io::stdout().flush().unwrap();
-    io::stdin().read_line(&mut name).unwrap();
+    io::stdin().read_line(&mut userinput).unwrap();
 
-    name.trim().to_string()
+    let name = userinput.trim().to_string();
+
+    return name;
   }
 }
 

@@ -5,11 +5,12 @@ using namespace std;
 class InputHandler {
 public:
   static string getUserName() {
-    string user;
+    string username;
 
     cout << "Enter your name: ";
-    getline(cin, name);
+    getline(cin, namename);
 
+    string name = username;
     name.erase(0, name.find_first_not_of(" \t\n\r"));
     name.erase(name.find_last_not_of(" \t\n\r") + 1);
 

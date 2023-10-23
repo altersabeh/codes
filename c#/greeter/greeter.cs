@@ -2,10 +2,12 @@ using System;
 
 class InputHandler {
   public static string? GetUserName() {
+    string? userinput;
+    
     Console.Write("Enter your name: ");
-    string? name = Console.ReadLine();
+    userinput = Console.ReadLine();
 
-    name = name?.Trim();
+    string? name = userinput?.Trim();
 
     return name;
   }
@@ -25,7 +27,7 @@ class Greeter {
 }
 
 class Program {
-  static void Main() {
+  static void Main(string[] args) {
     string? name = InputHandler.GetUserName();
     Greeter greeter = new Greeter(name);
 
