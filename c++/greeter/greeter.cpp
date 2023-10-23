@@ -25,7 +25,7 @@ private:
 public:
   Greeter(const string &name) : username(name) {}
 
-  void greet() const {
+  void greet() {
     cout << "Hello, " << username << "!" << endl;
     cout << "Greetings from C++!" << endl;
   }
