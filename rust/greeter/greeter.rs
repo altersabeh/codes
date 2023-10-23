@@ -1,30 +1,35 @@
 use std::io::{self, Write};
 
-pub struct Greeter {
-  name: String,
-}
+pub struct InputHandler;
 
-impl Greeter {
-  pub fn new() -> Greeter {
-    let name = Greeter::prompt_name();
-    Greeter { name }
-  }
-
-  fn prompt_name() -> String {
+impl InputHandler {
+  fn get_user_name() -> String {
     let mut name = String::new();
     print!("Enter your name: ");
     io::stdout().flush().unwrap();
     io::stdin().read_line(&mut name).unwrap();
     name.trim().to_string()
   }
+}
+
+pub struct Greeter {
+  username: String,
+}
+
+impl Greeter {
+  pub fn new(name: String) -> Greeter {
+    Greeter { username: name }
+  }
 
   pub fn greet(&self) {
-    println!("Hello, {}!", self.name);
+    println!("Hello, {}!", self.username);
     println!("Greetings from Rust!");
   }
 }
 
 fn main() {
-  let greeter = Greeter::new();
+  let name = InputHandler::get_user_name();
+  let greeter = Greeter::new(name);
+
   greeter.greet();
 }
