@@ -5,9 +5,11 @@ pub struct InputHandler;
 impl InputHandler {
   fn get_user_name() -> String {
     let mut name = String::new();
+
     print!("Enter your name: ");
     io::stdout().flush().unwrap();
     io::stdin().read_line(&mut name).unwrap();
+
     name.trim().to_string()
   }
 }

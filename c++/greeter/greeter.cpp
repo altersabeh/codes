@@ -8,7 +8,6 @@ public:
     string name;
 
     cout << "Enter your name: ";
-    cout.flush();
     getline(cin, name);
 
     name.erase(0, name.find_first_not_of(" \t\n\r"));
