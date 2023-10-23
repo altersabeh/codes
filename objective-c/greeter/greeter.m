@@ -21,7 +21,7 @@
 @interface Greeter : NSObject {
   NSString *username;
 }
-@property(nonatomic, strong) NSString *username;
+@property(strong) NSString *username;
 - (instancetype)init:(NSString *)name;
 - (void)greet;
 @end
