@@ -1,0 +1,12 @@
+[package]
+name = "codes"
+version = "1.0.0"
+edition = "2021"
+
+[[bin]]
+name = "rust-hello"
+path = "rust/hello/hello.rs"
+
+[[bin]]
+name = "rust-greeter"
+path = "rust/greeter/greeter.rs"
