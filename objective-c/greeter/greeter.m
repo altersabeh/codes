@@ -6,12 +6,12 @@
 
 @implementation InputHandler
 + (NSString *)getUserName {
-  char input[256];
+  char userinput[256];
 
   printf("Enter your name: ");
-  fgets(input, sizeof(input), stdin);
+  fgets(userinput, sizeof(userinput), stdin);
 
-  NSString *name = [NSString stringWithUTF8String:input];
+  NSString *name = [NSString stringWithUTF8String:userinput];
   name = [name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 
   return name;
