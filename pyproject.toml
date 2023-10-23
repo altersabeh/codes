@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "codes"
+version = "1.0.0"
+description = "Repository for my Projects"
+authors = ["altersabeh <betamaximum22@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.scripts]
+python-hello = "python.hello.hello:main"
+python-greeter = "python.greeter.greeter:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
