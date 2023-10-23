@@ -5,7 +5,7 @@ using namespace std;
 class InputHandler {
 public:
   static string getUserName() {
-    string name;
+    string user;
 
     cout << "Enter your name: ";
     getline(cin, name);
