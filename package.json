@@ -1,0 +1,35 @@
+{
+    "name": "codes",
+    "version": "1.0.0",
+    "description": "A Fibonacci Program Written in Different Languages",
+    "main": "index.js",
+    "scripts": {
+        "js-hello": "node javascript/hello/hello.js",
+        "js-fibo": "node javascript/fibonacci/fibonacci.js",
+        "js-greeter": "node javascript/greeter/greeter.js",
+        "ts-hello": "ts-node typescript/hello/hello.ts",
+        "ts-greeter": "ts-node typescript/greeter/greeter.ts",
+        "ts-fibo": "ts-node typescript/fibonacci/fibonacci.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/altersabeh/codes"
+    },
+    "keywords": [
+        "math"
+    ],
+    "author": "altersabeh",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/altersabeh/codes/issues"
+    },
+    "homepage": "https://github.com/altersabeh/codes#README.md",
+    "devDependencies": {
+        "@types/node": "^20.8.7",
+        "@types/prompt-sync": "^4.2.2"
+    },
+    "dependencies": {
+        "moment": "^2.29.4",
+        "prompt-sync": "^4.2.0"
+    }
+}
