@@ -4,9 +4,20 @@ version = "1.0.0"
 edition = "2021"
 
 [[bin]]
+name = "rust-fibo"
+path = "rust/fibonacci/fibonacci.rs"
+
+[[bin]]
 name = "rust-hello"
 path = "rust/hello/hello.rs"
 
 [[bin]]
 name = "rust-greeter"
 path = "rust/greeter/greeter.rs"
+
+[dependencies]
+num-bigint = "0.4"
+num-traits = "0.2"
+ctrlc = "3.2"
+chrono = "0.4"
+lazy_static = "1.4.0"
