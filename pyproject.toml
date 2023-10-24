@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "codes"
 version = "1.0.0"
-description = "Repository for my Projects"
+description = "Repository for My Codes"
 authors = ["altersabeh <betamaximum22@gmail.com>"]
 readme = "README.md"
 

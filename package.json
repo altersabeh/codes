@@ -1,7 +1,7 @@
 {
     "name": "codes",
     "version": "1.0.0",
-    "description": "A Fibonacci Program Written in Different Languages",
+    "description": "Repository for My Codes",
     "main": "index.js",
     "scripts": {
         "js-hello": "node javascript/hello/hello.js",

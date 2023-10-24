@@ -1,0 +1,12 @@
+{
+    "authors": [
+        "altersabeh"
+    ],
+    "copyright": "Copyright © 2023, altersabeh",
+    "description": "Repository for My Codes",
+    "license": "MIT",
+    "name": "codes",
+    "subPackages": [
+        "d"
+    ]
+}
