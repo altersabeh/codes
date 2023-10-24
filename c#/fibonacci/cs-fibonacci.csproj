@@ -5,7 +5,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyName>c#-fibo</AssemblyName>
+    <AssemblyName>c#-fibonacci</AssemblyName>
     <BaseOutputPath>..\..\bin\c#</BaseOutputPath>
   </PropertyGroup>
 

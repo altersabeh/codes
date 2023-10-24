@@ -4,7 +4,7 @@ version = "1.0.0"
 edition = "2021"
 
 [[bin]]
-name = "rust-fibo"
+name = "rust-fibonacci"
 path = "rust/fibonacci/fibonacci.rs"
 
 [[bin]]

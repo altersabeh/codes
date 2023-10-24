@@ -5,11 +5,11 @@
     "main": "index.js",
     "scripts": {
         "js-hello": "node javascript/hello/hello.js",
-        "js-fibo": "node javascript/fibonacci/fibonacci.js",
+        "js-fibonacci": "node javascript/fibonacci/fibonacci.js",
         "js-greeter": "node javascript/greeter/greeter.js",
         "ts-hello": "ts-node typescript/hello/hello.ts",
         "ts-greeter": "ts-node typescript/greeter/greeter.ts",
-        "ts-fibo": "ts-node typescript/fibonacci/fibonacci.ts"
+        "ts-fibonacci": "ts-node typescript/fibonacci/fibonacci.ts"
     },
     "repository": {
         "type": "git",

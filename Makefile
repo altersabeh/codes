@@ -12,12 +12,14 @@ c++-hello:
 	cd c++/hello && $(MAKE) run
 c++-greeter:
 	cd c++/greeter && $(MAKE) run
-c++-fibo:
+c++-fibonacci:
 	cd c++/fibonacci && $(MAKE) run
 
 objc-hello:
 	cd objective-c/hello && $(MAKE) run
 objc-greeter:
 	cd objective-c/greeter && $(MAKE) run
+objc-fibonacci:
+	cd objective-c/fibonacci && $(MAKE) run
 
 .PHONY: $(MAKECMDGOALS)

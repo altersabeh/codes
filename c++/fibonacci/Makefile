@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -Wall -Werror -g -O2 -fno-strict-aliasing -fexceptions
 LDFLAGS = -lntl -lgmp -lm
-EXECUTABLE = c++-fibo
+EXECUTABLE = c++-fibonacci
 CPP_BINDIR = ../../bin/c++
 
 run : $(EXECUTABLE)

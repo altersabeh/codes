@@ -11,7 +11,7 @@ python = "^3.11"
 [tool.poetry.scripts]
 python-hello = "python.hello.hello:main"
 python-greeter = "python.greeter.greeter:main"
-python-fibo = "python.fibonacci.fibonacci:main"
+python-fibonacci = "python.fibonacci.fibonacci:main"
 
 [build-system]
 requires = ["poetry-core"]
