@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cs-greeter", "c#\greeter\cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cs-hello", "c#\hello\cs-hello.csproj", "{04C98F79-49FF-4362-89E9-5D2B1123DBAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cs-fibonacci", "c#\fibonacci\cs-fibonacci.csproj", "{7699D6CB-56B4-4F7C-A4B7-8F0775E9CEDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,9 +28,14 @@ Global
 		{04C98F79-49FF-4362-89E9-5D2B1123DBAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04C98F79-49FF-4362-89E9-5D2B1123DBAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04C98F79-49FF-4362-89E9-5D2B1123DBAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7699D6CB-56B4-4F7C-A4B7-8F0775E9CEDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7699D6CB-56B4-4F7C-A4B7-8F0775E9CEDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7699D6CB-56B4-4F7C-A4B7-8F0775E9CEDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7699D6CB-56B4-4F7C-A4B7-8F0775E9CEDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{971E28ED-6BD3-4390-AEAC-464E80B00814} = {11CCAD93-6C15-44B5-972B-D147B71588B9}
 		{04C98F79-49FF-4362-89E9-5D2B1123DBAF} = {11CCAD93-6C15-44B5-972B-D147B71588B9}
+		{7699D6CB-56B4-4F7C-A4B7-8F0775E9CEDD} = {11CCAD93-6C15-44B5-972B-D147B71588B9}
 	EndGlobalSection
 EndGlobal
