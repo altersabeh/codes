@@ -1,9 +1,9 @@
-using System;
+namespace Greeter;
 
 class InputHandler {
   public static string? GetUserName() {
     string? userinput;
-    
+
     Console.Write("Enter your name: ");
     userinput = Console.ReadLine();
 
