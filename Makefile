@@ -7,6 +7,8 @@ c-hello:
 	cd c/hello && $(MAKE) run
 c-greeter:
 	cd c/greeter && $(MAKE) run
+c-fibonacci:
+	cd c/fibonacci && $(MAKE) run
 
 c++-hello:
 	cd c++/hello && $(MAKE) run
