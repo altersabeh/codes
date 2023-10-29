@@ -4,16 +4,16 @@ version = "1.0.0"
 edition = "2021"
 
 [[bin]]
-name = "rust-fibonacci"
-path = "rust/fibonacci/main.rs"
-
-[[bin]]
 name = "rust-hello"
-path = "rust/hello/main.rs"
+path = "rust/hello/hello.rs"
 
 [[bin]]
 name = "rust-greeter"
-path = "rust/greeter/main.rs"
+path = "rust/greeter/greeter.rs"
+
+[[bin]]
+name = "rust-fibonacci"
+path = "rust/fibonacci/fibonacci.rs"
 
 [dependencies]
 num-bigint = "0.4"
