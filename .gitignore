@@ -26,3 +26,8 @@ __pycache__/
 # npm
 package-lock.json
 node_modules
+
+# stack cabal
+**/dist-newstyle
+**/.stack-work
+stack.yaml.lock

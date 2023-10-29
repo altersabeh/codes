@@ -25,6 +25,19 @@ source-repository head
   type: git
   location: https://github.com/altersabeh/codes
 
+executable haskell-fibonacci
+  main-is: main.hs
+  other-modules:
+      Paths_codes
+  hs-source-dirs:
+      haskell/fibonacci
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.18 && <5
+    , time >=1.12 && <2
+    , unix >=2.8 && <3
+  default-language: GHC2021
+
 executable haskell-hello
   main-is: main.hs
   other-modules:
@@ -34,4 +47,6 @@ executable haskell-hello
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.18 && <5
+    , time >=1.12 && <2
+    , unix >=2.8 && <3
   default-language: GHC2021
