@@ -1,4 +1,4 @@
-﻿/// <summary>
+/// <summary>
 /// Fibonacci Series Calculator
 ///
 /// The Fibonacci Series Calculator is a C# program that calculates
