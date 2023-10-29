@@ -2,13 +2,13 @@
 
 version     = "1.0.0"
 author      = "altersabeh"
-description = "A Fibonacci Program Written in Different Languages"
+description = "Repository for My Codes"
 license     = "MIT"
 
 binDir = "bin/nim"
 srcDir = "nim"
 
-namedBin["hello/hello"]
+namedBin["hello/main"]
   = "nim-hello"
 
 # Dependencies
