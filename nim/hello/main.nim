@@ -1,3 +1,3 @@
 # Hello World in Nim !
 
-echo "Hello World from Nim!"
+echo "Hello World from Nim !"
