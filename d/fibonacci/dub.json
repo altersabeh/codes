@@ -1,7 +1,7 @@
 {
     "name": "d-fibonacci",
     "targetType": "executable",
-    "mainSourceFile": "main.d",
-    "targetPath": "../../bin/dlang",
+    "mainSourceFile": "fibonacci.d",
+    "targetPath": "../../bin/d",
     "targetName": "d-fibonacci"
 }

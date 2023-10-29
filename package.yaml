@@ -38,9 +38,9 @@ ghc-options:
 
 executables:
   haskell-hello:
-    main:                main.hs
+    main:                hello.hs
     source-dirs:         haskell/hello
 
   haskell-fibonacci:
-    main:                main.hs
+    main:                fibonacci.hs
     source-dirs:         haskell/fibonacci

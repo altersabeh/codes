@@ -8,7 +8,7 @@ license     = "MIT"
 binDir = "bin/nim"
 srcDir = "nim"
 
-namedBin["hello/main"]
+namedBin["hello/hello"]
   = "nim-hello"
 
 # Dependencies

@@ -1,7 +1,7 @@
 {
     "name": "d-hello",
     "targetType": "executable",
-    "mainSourceFile": "main.d",
-    "targetPath": "../../bin/dlang",
+    "mainSourceFile": "hello.d",
+    "targetPath": "../../bin/d",
     "targetName": "d-hello"
 }

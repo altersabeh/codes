@@ -1,7 +1,7 @@
 {
     "name": "d-greeter",
     "targetType": "executable",
-    "mainSourceFile": "main.d",
-    "targetPath": "../../bin/dlang",
+    "mainSourceFile": "greeter.d",
+    "targetPath": "../../bin/d",
     "targetName": "d-greeter"
 }

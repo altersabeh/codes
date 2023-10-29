@@ -9,9 +9,9 @@ readme = "README.md"
 python = "^3.11"
 
 [tool.poetry.scripts]
-python-hello = "python.hello.main:main"
-python-greeter = "python.greeter.main:main"
-python-fibonacci = "python.fibonacci.main:main"
+python-hello = "python.hello.hello:main"
+python-greeter = "python.greeter.greeter:main"
+python-fibonacci = "python.fibonacci.fibonacci:main"
 
 [build-system]
 requires = ["poetry-core"]
