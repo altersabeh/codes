@@ -1,0 +1,19 @@
+abstract project Config is
+   Crate_Version := "1.0.0";
+   Crate_Name := "codes";
+   Alire_Host_OS := "linux";
+   Alire_Host_Arch := "x86_64";
+   Alire_Host_Distro := "ubuntu";
+   Ada_Compiler_Switches := External_As_List ("ADAFLAGS", " ");
+   Ada_Compiler_Switches := Ada_Compiler_Switches & (
+            "-Og" ,"-ffunction-sections" ,"-fdata-sections",
+            "-g", "-gnatwa", "-gnatw.X", "-gnatVa", "-gnaty2",
+            "-gnatya", "-gnatyA", "-gnatyB", "-gnatyb", "-gnatyc",
+            "-gnaty-d", "-gnatye", "-gnatyf", "-gnatyh", "-gnatyi",
+            "-gnatyI", "-gnatyk", "-gnatyl", "-gnatym", "-gnatyn",
+            "-gnatyO", "-gnatyp", "-gnatyr", "-gnatyS", "-gnatyt",
+            "-gnatyu", "-gnatyx", "-gnat2022"
+   );
+   type Build_Profile_Kind is ("release", "validation", "development");
+   Build_Profile : Build_Profile_Kind := "development";
+end Config;

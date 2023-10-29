@@ -1,0 +1,10 @@
+name = "codes"
+description = "Repository for My Codes"
+version = "1.0.0"
+
+authors = ["altersabeh"]
+maintainers = ["altersabeh <betamaximum22@gmail.com>"]
+maintainers-logins = ["altersabeh"]
+
+executables = ["ada-hello",
+               "ada-fibonacci"]

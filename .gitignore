@@ -3,6 +3,10 @@
 !*/
 !LICENSE
 
+# alire
+**/alire
+**/config
+
 # makefiles
 !Makefile
 
