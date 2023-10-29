@@ -20,6 +20,10 @@ Cargo.lock
 # dotnet
 **/obj
 
+# dune
+!dune
+!dune-project
+
 # gradle
 **/.gradle
 
