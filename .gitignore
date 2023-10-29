@@ -16,7 +16,10 @@ Cargo.lock
 # dotnet
 **/obj
 
-#
+# gradle
+**/.gradle
+
+# python
 poetry.lock
 __pycache__/
 
