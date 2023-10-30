@@ -1,50 +1,30 @@
 MAKE = make --no-print-directory
 
-LANGUAGES = c c++ objective-c
+LANGUAGES = c c++ objc
 PROJECTS = hello greeter fibonacci
+OPERATIONS = build run clean
 
-define BUILD_TARGET
-build-$1-$2:
-	cd $1/$2 && $(MAKE)
+define OPERATION_TARGET
+$1-$2-$3:
+	cd $2/$3 && $(MAKE) $1
 endef
 
 $(foreach lang,$(LANGUAGES),\
   $(foreach proj,$(PROJECTS),\
-    $(eval $(call BUILD_TARGET,$(lang),$(proj)))))
+    $(foreach op,$(OPERATIONS),\
+      $(eval $(call OPERATION_TARGET,$(op),$(lang),$(proj))))))
 
-define RUN_TARGET
-$1-$2:
-	cd $1/$2 && $(MAKE) run
+define PROJECT_TARGET
+$1-$2: $(addprefix $1-$2-, $(PROJECTS))
 endef
 
 $(foreach lang,$(LANGUAGES),\
-  $(foreach proj,$(PROJECTS),\
-    $(eval $(call RUN_TARGET,$(lang),$(proj)))))
-
-define CLEAN_TARGET
-$1-$2:
-	cd $1/$2 && $(MAKE) clean
-endef
-
-$(foreach lang,$(LANGUAGES),\
-  $(foreach proj,$(PROJECTS),\
-    $(eval $(call CLEAN_TARGET,$(lang),$(proj)))))
-
-define BUILD_PROJECT
-build-$1: $(addprefix build-$1-, $(PROJECTS))
-endef
-
-$(foreach lang,$(LANGUAGES),$(eval $(call BUILD_PROJECT,$(lang))))
-
-define CLEAN_PROJECT
-clean-$1: $(addprefix clean-$1-, $(PROJECTS))
-endef
-
-$(foreach lang,$(LANGUAGES),$(eval $(call CLEAN_PROJECT,$(lang))))
+	$(foreach op,$(OPERATIONS),\
+    $(eval $(call PROJECT_TARGET,$(op),$(lang)))))
 
 message:
 	@echo Specify the name of file to build !
 
 .DEFAULT_GOAL := message
 
-.PHONY: $(MAKECMDGOALS)
+.PHONY: $(MAKECMDGOALS) $(PROJECTS)
