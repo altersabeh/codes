@@ -4,12 +4,12 @@ LDFLAGS = -lgnustep-base -lobjc
 EXECUTABLE = objc-hello
 OBJC_BINDIR = ../../bin/objective-c
 
-run : $(EXECUTABLE)
-	$(OBJC_BINDIR)/$(EXECUTABLE)
-
 $(EXECUTABLE):
 	mkdir -p $(OBJC_BINDIR)
 	$(OBJC) *.m $(MXFLAGS) $(LDFLAGS) -o $(OBJC_BINDIR)/$(EXECUTABLE)
+
+run : $(EXECUTABLE)
+	$(OBJC_BINDIR)/$(EXECUTABLE)
 
 clean:
 	rm -rf $(OBJC_BINDIR)
