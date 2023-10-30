@@ -1,5 +1,5 @@
 <Project>
   <PropertyGroup>
-    <BaseIntermediateOutputPath>..\..\bin\c#\obj</BaseIntermediateOutputPath>
+    <BaseIntermediateOutputPath>..\..\bin\c#\ob\greeter</BaseIntermediateOutputPath>
   </PropertyGroup>
 </Project>
