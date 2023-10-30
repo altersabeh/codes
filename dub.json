@@ -6,9 +6,15 @@
     "description": "Repository for My Codes",
     "license": "MIT",
     "name": "codes",
+    "dependencies": {
+        "codes:d-hello": "*",
+        "codes:d-greeter": "*",
+        "codes:d-fibonacci": "*"
+    },
     "subPackages": [
         "d/hello",
         "d/greeter",
         "d/fibonacci"
-    ]
+    ],
+    "targetType": "none"
 }
