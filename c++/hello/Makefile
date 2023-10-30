@@ -4,12 +4,14 @@ LDFLAGS =
 EXECUTABLE = c++-hello
 CPP_BINDIR = ../../bin/c++
 
-run : $(EXECUTABLE)
-	$(CPP_BINDIR)/$(EXECUTABLE)
-
 $(EXECUTABLE):
 	mkdir -p $(CPP_BINDIR)
 	$(CXX) *.cpp $(CXXFLAGS) $(LDFLAGS) -o $(CPP_BINDIR)/$(EXECUTABLE)
+
+build: $(EXECUTABLE)
+
+run : $(EXECUTABLE)
+	$(CPP_BINDIR)/$(EXECUTABLE)
 
 clean:
 	rm -rf $(CPP_BINDIR)/$(EXECUTABLE)*

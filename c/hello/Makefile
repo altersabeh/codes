@@ -8,7 +8,9 @@ $(EXECUTABLE):
 	mkdir -p $(C_BINDIR)
 	$(CC) *.c $(CFLAGS) $(LDFLAGS) -o $(C_BINDIR)/$(EXECUTABLE)
 
-run : $(EXECUTABLE)
+build: $(EXECUTABLE)
+
+run: $(EXECUTABLE)
 	$(C_BINDIR)/$(EXECUTABLE)
 
 clean:

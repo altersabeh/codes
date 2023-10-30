@@ -8,6 +8,8 @@ $(EXECUTABLE):
 	mkdir -p $(C_BINDIR)
 	$(CC) *.c $(CFLAGS) $(LDFLAGS) -o $(C_BINDIR)/$(EXECUTABLE)
 
+build: $(EXECUTABLE)
+
 run: $(EXECUTABLE)
 	$(C_BINDIR)/$(EXECUTABLE)
 
