@@ -1,6 +1,5 @@
 plugins {
     id 'java'
-    // id 'application'
 }
 
 repositories {
@@ -26,8 +25,6 @@ sourceSets {
 }
 
 dependencies {
-    // testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.3'
-    // testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     implementation 'com.google.guava:guava:32.1.1-jre'
 }
 
@@ -41,14 +38,6 @@ jar {
         configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
     }
 }
-
-// application {
-//     mainClass = 'Main'
-// }
-
-// run {
-//     standardInput = System.in
-// }
 
 task ("java-${projectDir.name}", type: JavaExec) {
     description = "Run ${projectDir.name} program in Java"
