@@ -10,7 +10,7 @@ $(EXECUTABLE):
 
 build: $(EXECUTABLE)
 
-run : $(EXECUTABLE)
+run: $(EXECUTABLE)
 	$(CPP_BINDIR)/$(EXECUTABLE)
 
 clean:
