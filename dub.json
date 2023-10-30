@@ -6,6 +6,7 @@
     "description": "Repository for My Codes",
     "license": "MIT",
     "name": "codes",
+    "version": "1.0.0",
     "dependencies": {
         "codes:d-hello": "*",
         "codes:d-greeter": "*",
