@@ -41,7 +41,7 @@ jar {
 
 task ("java-${projectDir.name}", type: JavaExec) {
     description = "Run ${projectDir.name} program in Java"
-    group = "Application"
+    group = "Application (Java)"
     classpath = sourceSets.main.runtimeClasspath
     mainClass = 'Greeter'
     standardInput = System.in
