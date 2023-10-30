@@ -14,6 +14,6 @@ abstract project Config is
             "-gnatyO", "-gnatyp", "-gnatyr", "-gnatyS", "-gnatyt",
             "-gnatyu", "-gnatyx", "-gnat2022"
    );
-   type Build_Profile_Kind is ("release", "validation", "development");
-   Build_Profile : Build_Profile_Kind := "development";
+   --  type Build_Profile_Kind is ("release", "validation", "development");
+   --  Build_Profile : Build_Profile_Kind := "release";
 end Config;
