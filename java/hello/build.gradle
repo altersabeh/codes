@@ -9,7 +9,7 @@ repositories {
 
 defaultTasks "java-${projectDir.name}"
 
-buildDir = "../../bin/java/${projectDir.name}"
+buildDir = "../../bin/java"
 
 java {
     toolchain {
