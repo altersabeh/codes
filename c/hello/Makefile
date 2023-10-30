@@ -4,12 +4,12 @@ LDFLAGS =
 EXECUTABLE = c-hello
 C_BINDIR = ../../bin/c
 
-run : $(EXECUTABLE)
-	$(C_BINDIR)/$(EXECUTABLE)
-
 $(EXECUTABLE):
 	mkdir -p $(C_BINDIR)
 	$(CC) *.c $(CFLAGS) $(LDFLAGS) -o $(C_BINDIR)/$(EXECUTABLE)
+
+run : $(EXECUTABLE)
+	$(C_BINDIR)/$(EXECUTABLE)
 
 clean:
 	rm -rf $(C_BINDIR)
