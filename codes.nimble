@@ -8,8 +8,9 @@ license     = "MIT"
 binDir = "bin/nim"
 srcDir = "nim"
 
-namedBin["hello/hello"]
-  = "nim-hello"
+namedBin = {"hello/hello" : "nim-hello",
+            "greeter/greeter" : "nim-greeter",
+}.toTable()
 
 # Dependencies
 
