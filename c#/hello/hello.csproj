@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AssemblyName>c#-hello</AssemblyName>
-    <BaseOutputPath>..\..\bin\c#</BaseOutputPath>
+    <BaseOutputPath>..\..\bin\c#\hello</BaseOutputPath>
   </PropertyGroup>
 
 </Project>

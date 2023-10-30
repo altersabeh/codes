@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AssemblyName>c#-greeter</AssemblyName>
-    <BaseOutputPath>..\..\bin\c#</BaseOutputPath>
+    <BaseOutputPath>..\..\bin\c#\greeter</BaseOutputPath>
   </PropertyGroup>
 
 </Project>

@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AssemblyName>c#-fibonacci</AssemblyName>
-    <BaseOutputPath>..\..\bin\c#</BaseOutputPath>
+    <BaseOutputPath>..\..\bin\c#\fibonacci</BaseOutputPath>
   </PropertyGroup>
 
 </Project>
