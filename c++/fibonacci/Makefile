@@ -12,4 +12,4 @@ $(EXECUTABLE):
 	$(CXX) *.cpp $(CXXFLAGS) $(LDFLAGS) -o $(CPP_BINDIR)/$(EXECUTABLE)
 
 clean:
-	rm -rf $(CPP_BINDIR)
+	rm -rf $(CPP_BINDIR)/$(EXECUTABLE)*

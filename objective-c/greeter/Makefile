@@ -12,4 +12,4 @@ run : $(EXECUTABLE)
 	$(OBJC_BINDIR)/$(EXECUTABLE)
 
 clean:
-	rm -rf $(OBJC_BINDIR)
+	rm -rf $(OBJC_BINDIR)/$(EXECUTABLE)*

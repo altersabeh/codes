@@ -12,4 +12,4 @@ run: $(EXECUTABLE)
 	$(C_BINDIR)/$(EXECUTABLE)
 
 clean:
-	rm -rf $(C_BINDIR)
+	rm -rf $(C_BINDIR)/$(EXECUTABLE)*
