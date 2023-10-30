@@ -13,6 +13,6 @@ let package = Package(
         .executableTarget(
             name: "hello",
             path: "swift/hello",
-            exclude: ["README.md"]
+            exclude: ["README.md"])
     ]
 )
