@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>..\..\bin\f#\obj\fibonacci</BaseIntermediateOutputPath>
+  </PropertyGroup>
+</Project>
