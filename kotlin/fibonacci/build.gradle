@@ -1,0 +1,46 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.9.10'
+}
+
+repositories {
+    mavenCentral()
+}
+
+defaultTasks "kotlin-${projectDir.name}"
+
+buildDir = "../../bin/kotlin/${projectDir.name}"
+
+kotlin {
+    jvmToolchain(20)
+}
+
+sourceSets {
+    main {
+        kotlin {
+            srcDirs = ['.']
+        }
+    }
+}
+
+dependencies {
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.9.10'
+}
+
+jar {
+    manifest {
+        archiveFileName = "kotlin-${projectDir.name}"
+        attributes('Main-Class': 'FibonacciKt')
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from {
+        configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+task ("kotlin-${projectDir.name}", type: JavaExec) {
+    description = "Run ${projectDir.name} program in Kotlin"
+    group = "Application (Kotlin)"
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'FibonacciKt'
+    standardInput = System.in
+}

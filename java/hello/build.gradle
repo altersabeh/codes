@@ -31,7 +31,7 @@ dependencies {
 jar {
     manifest {
         archiveFileName = "java-${projectDir.name}"
-        attributes('Main-Class': 'Main')
+        attributes('Main-Class': 'Hello')
     }
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     from {
@@ -43,6 +43,6 @@ task ("java-${projectDir.name}", type: JavaExec) {
     description = "Run ${projectDir.name} program in Java"
     group = "Application"
     classpath = sourceSets.main.runtimeClasspath
-    mainClass = 'Main'
+    mainClass = 'Hello'
     standardInput = System.in
 }
