@@ -39,3 +39,6 @@ node_modules
 **/dist-newstyle
 **/.stack-work
 stack.yaml.lock
+
+# swift
+Package.resolved
