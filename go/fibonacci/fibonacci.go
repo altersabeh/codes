@@ -88,6 +88,8 @@ func fibonacciSeries(n int) {
       fmt.Print(a.String())
       if i < n {
         fmt.Print(", ")
+      } else {
+        fmt.Println("")
       }
     }
 
@@ -97,10 +99,10 @@ func fibonacciSeries(n int) {
 		sum.Add(sum, temp) // Calculate the sum
 	}
   if n <= 5000 {
-	  fmt.Print(strings.Join(series, ", "))
+	  fmt.Println(strings.Join(series, ", "))
   }
 
-  fmt.Println("\n")
+  fmt.Println("")
 	fmt.Println("Sum of the Fibonacci series:", sum.String())
 }
 
