@@ -1,0 +1,17 @@
+{
+    "name": "altersabeh/codes",
+    "description": "Repository for My Codes",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "altersabeh",
+            "email": "betamaximum@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "scripts": {
+        "php-hello": "php php/hello/hello.php"
+    }
+}
