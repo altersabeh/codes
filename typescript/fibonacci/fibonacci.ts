@@ -12,7 +12,7 @@
  */
 
 import * as readline from "readline";
-import moment from "moment";
+import * as moment from "moment";
 
 function main() {
   console.log("============Fibonacci Series Calculator============");

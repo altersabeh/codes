@@ -1,4 +1,4 @@
-import prompt from "prompt-sync";
+import * as prompt from "prompt-sync";
 
 class InputHandler {
   static getUserName(): string {
