@@ -12,6 +12,7 @@
     "minimum-stability": "dev",
     "require": {},
     "scripts": {
-        "php-hello": "php php/hello/hello.php"
+        "php-hello": "php php/hello/hello.php",
+        "php-fibonacci": "php php/fibonacci/fibonacci.php"
     }
 }
