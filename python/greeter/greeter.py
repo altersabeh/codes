@@ -2,7 +2,9 @@ class InputHandler:
   @staticmethod
   def get_user_name():
     username = input("Enter your name: ")
+
     name = username.strip()
+    
     return name
 
 class Greeter:

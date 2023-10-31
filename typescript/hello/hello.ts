@@ -1,9 +1,3 @@
-// Hello World in JavaScript !
+// Hello World in TypeScript !
 
-function main(): void {
-  console.log("Hello World from JavaScript !");
-}
-
-if (require.main === module) {
-  main();
-}
+console.log("Hello World from TypeScript !");
