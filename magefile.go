@@ -12,9 +12,9 @@ import (
 var Default = Message
 
 var Aliases = map[string]interface{}{
- "go-hello": BuildHello,
- "go-greeter": BuildGreeter,
- "go-fibonacci": BuildFibonacci,
+  "go-hello": BuildHello,
+  "go-greeter": BuildGreeter,
+  "go-fibonacci": BuildFibonacci,
 }
 
 // Build hello program in Go
