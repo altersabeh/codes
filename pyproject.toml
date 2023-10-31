@@ -8,10 +8,10 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 
-[tool.poetry.scripts]
-python-hello = "python.hello.hello:main"
-python-greeter = "python.greeter.greeter:main"
-python-fibonacci = "python.fibonacci.fibonacci:main"
+[tool.poe.tasks]
+python-hello = "python python/hello/hello.py"
+python-greeter = "python python/greeter/greeter.py"
+python-fibonacci = "python python/fibonacci/fibonacci.py"
 
 [build-system]
 requires = ["poetry-core"]
