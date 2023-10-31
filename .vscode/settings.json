@@ -22,6 +22,7 @@
         "**/.gradle": true,
         "**/.stack-work": true,
         "**/alire": true,
+        "**/bin": true,
         "**/config": true,
         "**/dist-newstyle": true,
         "**/node_modules": true,
