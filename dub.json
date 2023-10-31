@@ -1,21 +1,21 @@
 {
-    "authors": [
-        "altersabeh"
-    ],
-    "copyright": "Copyright © 2023, altersabeh",
-    "description": "Repository for My Codes",
-    "license": "MIT",
-    "name": "codes",
-    "version": "1.0.0",
-    "dependencies": {
-        "codes:d-hello": "*",
-        "codes:d-greeter": "*",
-        "codes:d-fibonacci": "*"
-    },
-    "subPackages": [
-        "d/hello",
-        "d/greeter",
-        "d/fibonacci"
-    ],
-    "targetType": "none"
+  "authors": [
+    "altersabeh"
+  ],
+  "copyright": "Copyright © 2023, altersabeh",
+  "description": "Repository for My Codes",
+  "license": "MIT",
+  "name": "codes",
+  "version": "1.0.0",
+  "dependencies": {
+    "codes:d-hello": "*",
+    "codes:d-greeter": "*",
+    "codes:d-fibonacci": "*"
+  },
+  "subPackages": [
+    "d/hello",
+    "d/greeter",
+    "d/fibonacci"
+  ],
+  "targetType": "none"
 }
