@@ -1,7 +1,3 @@
 # Hello World in Python !
 
-def main():
-  print("Hello World from Python !")
-
-if __name__ == '__main__':
-  main()
+print("Hello World from Python !")
