@@ -1,23 +1,23 @@
 package main
 
 import (
-  "bufio"
-  "fmt"
-  "os"
-  "strings"
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
 )
 
 type InputHandler struct{}
 
 func (inputHandler InputHandler) getUserName() string {
   fmt.Print("Enter your name: ")
+
   reader := bufio.NewReader(os.Stdin)
   userInput, _ := reader.ReadString('\n')
 
-  // Remove leading and trailing whitespace
-  userInput = strings.TrimSpace(userInput)
+  name := strings.TrimSpace(userInput)
 
-  return userInput
+  return name
 }
 
 type Greeter struct {
@@ -36,5 +36,6 @@ func (greeter *Greeter) Greet() {
 func main() {
   name := InputHandler{}.getUserName()
   greeter := NewGreeter(name)
+
   greeter.Greet()
 }
