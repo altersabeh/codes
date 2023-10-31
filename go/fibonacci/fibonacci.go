@@ -40,17 +40,14 @@ func getUserInput() {
 	for {
 		fmt.Print("Enter the value of n (an integer): ")
 		input, err := reader.ReadString('\n')
-    
+
 		if err == io.EOF {
 			eofHandler()
 		}
 
     trimmedInput := strings.TrimSpace(input)
 
-		if strings.Contains(trimmedInput, " ") {
-			fmt.Println("Please enter a valid positive integer.")
-			continue
-		} else if trimmedInput == "" {
+    if trimmedInput == "" {
 			fmt.Println("Please enter something...")
 			continue
 		} else if trimmedInput == "exit" {
