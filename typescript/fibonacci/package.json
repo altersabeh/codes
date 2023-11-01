@@ -9,5 +9,4 @@
   "scripts": {
     "ts-fibonacci": "ts-node fibonacci.ts"
   }
-
 }
