@@ -1,7 +1,6 @@
 plugins {
-    id 'java'
-    id 'org.jetbrains.kotlin.jvm' version '1.9.10'
-    id 'groovy'
+    id 'java' apply false
+    id 'org.jetbrains.kotlin.jvm' version '1.9.10' apply false
 }
 
 subprojects {
@@ -9,10 +8,6 @@ subprojects {
         mavenCentral()
     }
 }
-
-kotlin {
-    jvmToolchain(20)
-} 
 
 project(':java') {
     subprojects {
@@ -43,7 +38,7 @@ project(':java') {
         tasks.named("build").configure {
             dependsOn "${subproject.name}:build"
         }
-    } 
+    }
 }
 
 project(':kotlin') {
@@ -62,7 +57,7 @@ project(':kotlin') {
         buildDir = "../../bin/kotlin/${projectDir.name}"
         kotlin {
             jvmToolchain(20)
-        }     
+        }
         defaultTasks "kotlin-${projectDir.name}"
     }
     tasks.register('build') {
@@ -73,5 +68,5 @@ project(':kotlin') {
         tasks.named("build").configure {
             dependsOn "${subproject.name}:build"
         }
-    } 
+    }
 }
