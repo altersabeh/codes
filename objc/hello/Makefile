@@ -6,7 +6,7 @@ OBJC_BINDIR = ../../bin/objc
 OBJECTS = $(patsubst %.m,%.o,$(wildcard *.m))
 DEPS = $(patsubst %.m,%.d,$(wildcard *.m))
 
-.PHONY: $(EXECUTABLE) build run clean
+.PHONY: $(EXECUTABLE) build run clean help
 
 build: $(OBJC_BINDIR)/$(EXECUTABLE)
 
@@ -28,3 +28,9 @@ run: $(OBJC_BINDIR)/$(EXECUTABLE)
 clean:
 	cd $(OBJC_BINDIR) && \
 	rm -rf $(EXECUTABLE) $(OBJECTS) $(DEPS)
+
+TITLE = Hello World
+LANGUAGE = Objective-C
+
+help:
+	@echo $(EXECUTABLE) - $(TITLE) written in $(LANGUAGE)

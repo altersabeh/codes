@@ -5,7 +5,7 @@ EXECUTABLE = c++-greeter
 CPP_BINDIR = ../../bin/c++
 OBJECTS = $(patsubst %.cpp,%.o,$(wildcard *.cpp))
 
-.PHONY: $(EXECUTABLE) build run clean
+.PHONY: $(EXECUTABLE) build run clean help
 
 $(EXECUTABLE): build
 
@@ -28,3 +28,8 @@ clean:
 	cd $(CPP_BINDIR) && \
 	rm -rf $(EXECUTABLE) $(OBJECTS)
 
+TITLE = Greeter
+LANGUAGE = C++
+
+help:
+	@echo $(EXECUTABLE) - $(TITLE) written in $(LANGUAGE)

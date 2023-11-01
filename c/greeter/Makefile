@@ -5,7 +5,7 @@ EXECUTABLE = c-greeter
 C_BINDIR = ../../bin/c
 OBJECTS = $(patsubst %.c,%.o,$(wildcard *.c))
 
-.PHONY: $(EXECUTABLE) build run clean
+.PHONY: $(EXECUTABLE) build run clean help
 
 $(EXECUTABLE): build
 
@@ -27,3 +27,9 @@ run: $(C_BINDIR)/$(EXECUTABLE)
 clean:
 	cd $(C_BINDIR) && \
 	rm -rf $(EXECUTABLE) $(OBJECTS)
+
+TITLE = Greeter
+LANGUAGE = C
+
+help:
+	@echo $(EXECUTABLE) - $(TITLE) written in $(LANGUAGE)
