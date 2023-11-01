@@ -156,5 +156,5 @@ function signalHandler() {
 if (require.main === module) {
   main();
 } else {
-  module.exports.main = main;
+  module.exports = { main };
 }
