@@ -3,15 +3,28 @@ MXFLAGS = -Wall -Werror -MMD -MP -DGNUSTEP -DGNUSTEP_BASE_LIBRARY=1 -DGNU_GUI_LI
 LDFLAGS = -lgnustep-base -lobjc
 EXECUTABLE = objc-greeter
 OBJC_BINDIR = ../../bin/objc
+OBJECTS = $(patsubst %.m,%.o,$(wildcard *.m))
+DEPS = $(patsubst %.m,%.d,$(wildcard *.m))
 
-$(EXECUTABLE):
-	mkdir -p $(OBJC_BINDIR)
-	$(OBJC) *.m $(MXFLAGS) $(LDFLAGS) -o $(OBJC_BINDIR)/$(EXECUTABLE)
+.PHONY: $(EXECUTABLE) build run clean
 
-build: $(EXECUTABLE)
+build: $(OBJC_BINDIR)/$(EXECUTABLE)
 
-run: $(EXECUTABLE)
-	$(OBJC_BINDIR)/$(EXECUTABLE)
+$(EXECUTABLE): build
+
+$(OBJC_BINDIR)/$(EXECUTABLE): $(OBJC_BINDIR)/$(OBJECTS)
+	mkdir $(OBJC_BINDIR) -p
+	$(OBJC) $^ $(MXFLAGS) $(LDFLAGS) -o $@
+
+$(OBJC_BINDIR)/%.o: %.m
+	mkdir $(OBJC_BINDIR) -p
+	$(OBJC) -c $(MXFLAGS) $< -o $@
+
+run: $(OBJC_BINDIR)/$(EXECUTABLE)
+	@echo Running $(EXECUTABLE) program:
+	cd $(CURDIR)/$(OBJC_BINDIR) && \
+	./$(EXECUTABLE)
 
 clean:
-	rm -rf $(OBJC_BINDIR)/$(EXECUTABLE)*
+	cd $(OBJC_BINDIR) && \
+	rm -rf $(EXECUTABLE) $(OBJECTS) $(DEPS)

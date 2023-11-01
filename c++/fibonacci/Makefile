@@ -3,15 +3,28 @@ CXXFLAGS = -Wall -Werror -g -O2 -fno-strict-aliasing -fexceptions
 LDFLAGS = -lntl -lgmp -lm
 EXECUTABLE = c++-fibonacci
 CPP_BINDIR = ../../bin/c++
+OBJECTS = $(patsubst %.cpp,%.o,$(wildcard *.cpp))
 
-$(EXECUTABLE):
-	mkdir -p $(CPP_BINDIR)
-	$(CXX) *.cpp $(CXXFLAGS) $(LDFLAGS) -o $(CPP_BINDIR)/$(EXECUTABLE)
+.PHONY: $(EXECUTABLE) build run clean
 
-build: $(EXECUTABLE)
+$(EXECUTABLE): build
 
-run: $(EXECUTABLE)
-	$(CPP_BINDIR)/$(EXECUTABLE)
-	
+build: $(CPP_BINDIR)/$(EXECUTABLE)
+
+$(CPP_BINDIR)/$(EXECUTABLE): $(CPP_BINDIR)/$(OBJECTS)
+	mkdir $(CPP_BINDIR) -p
+	$(CXX) $^ $(CXXFLAGS) $(LDFLAGS) -o $@
+
+$(CPP_BINDIR)/%.o: %.cpp
+	mkdir $(CPP_BINDIR) -p
+	$(CXX) -c $(CXXFLAGS) $< -o $@
+
+run: $(CPP_BINDIR)/$(EXECUTABLE)
+	@echo Running $(EXECUTABLE) program:
+	cd $(CURDIR)/$(CPP_BINDIR) && \
+	./$(EXECUTABLE)
+
 clean:
-	rm -rf $(CPP_BINDIR)/$(EXECUTABLE)*
+	cd $(CPP_BINDIR) && \
+	rm -rf $(EXECUTABLE) $(OBJECTS)
+

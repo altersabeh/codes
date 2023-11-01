@@ -3,15 +3,27 @@ CFLAGS = -Wall -Werror -g -O2 -fno-strict-aliasing -fexceptions
 LDFLAGS =
 EXECUTABLE = c-hello
 C_BINDIR = ../../bin/c
+OBJECTS = $(patsubst %.c,%.o,$(wildcard *.c))
 
-$(EXECUTABLE):
-	mkdir -p $(C_BINDIR)
-	$(CC) *.c $(CFLAGS) $(LDFLAGS) -o $(C_BINDIR)/$(EXECUTABLE)
+.PHONY: $(EXECUTABLE) build run clean
 
-build: $(EXECUTABLE)
+$(EXECUTABLE): build
 
-run: $(EXECUTABLE)
-	$(C_BINDIR)/$(EXECUTABLE)
+build: $(C_BINDIR)/$(EXECUTABLE)
+
+$(C_BINDIR)/$(EXECUTABLE): $(C_BINDIR)/$(OBJECTS)
+	mkdir $(C_BINDIR) -p
+	$(CC) $^ $(CFLAGS) $(LDFLAGS) -o $@
+
+$(C_BINDIR)/%.o: %.c
+	mkdir $(C_BINDIR) -p
+	$(CC) -c $(CFLAGS) $< -o $@
+
+run: $(C_BINDIR)/$(EXECUTABLE)
+	@echo Running $(EXECUTABLE) program:
+	cd $(CURDIR)/$(C_BINDIR) && \
+	./$(EXECUTABLE)
 
 clean:
-	rm -rf $(C_BINDIR)/$(EXECUTABLE)*
+	cd $(C_BINDIR) && \
+	rm -rf $(EXECUTABLE) $(OBJECTS)
