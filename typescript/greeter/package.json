@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Greeter in TypeScript",
   "main": "greeter.ts",
+  "bin": {
+    "ts-greeter": "./index.ts"
+  },
   "scripts": {
     "ts-greeter": "ts-node greeter.ts"
   }

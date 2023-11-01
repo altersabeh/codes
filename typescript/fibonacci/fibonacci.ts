@@ -14,7 +14,7 @@
 import * as readline from "readline";
 import * as moment from "moment";
 
-function main() {
+export function main() {
   console.log("============Fibonacci Series Calculator============");
   console.log("This Program was Written Using: TypeScript");
 

@@ -2,9 +2,12 @@
   "name": "ts-fibonacci",
   "version": "1.0.0",
   "description": "Fibonacci in TypeScript",
-  "main": "fibonacci.ts",
+  "main": "index.ts",
+  "bin": {
+    "ts-fibonacci": "./index.ts"
+  },
   "scripts": {
     "ts-fibonacci": "ts-node fibonacci.ts"
   }
-  
+
 }

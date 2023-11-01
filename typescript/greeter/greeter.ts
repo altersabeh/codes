@@ -23,7 +23,7 @@ class Greeter {
   }
 }
 
-function main(): void {
+export function main(): void {
   let name: string = InputHandler.getUserName();
   let greeter: Greeter = new Greeter(name);
 
