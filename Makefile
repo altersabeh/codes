@@ -60,34 +60,34 @@ $(foreach lang,$(LANGUAGES),\
     $(eval $(call PROJECT_OPERATION,$(op),$(lang)))))
 
 help:
-	@echo "To run a task, run make <task> ..."
+	@echo "To run a task, \033[1mrun make <task> ...\033[0m"
 	@echo
-	@echo "To see a list of available targets, run make targets"
+	@echo "To see a list of available targets, \033[1mrun make targets\033[0m"
 	@echo
-	@echo	"Language supported: C, C++, Objective-C"
+	@echo	"Language supported: \033[1mC, C++, Objective-C\033[0m"
 	@echo "Available operations for each targets:"
-	@echo "    build, run, clean, help"
+	@echo "    \033[1mbuild, run, clean, help\033[0m"
 	@echo
-	@echo "Example task: make build-c++-hello // builds hello in c++"
-	@echo "              make clean-c++-hello // cleans build artifacts"
-	@echo "              make build-c++       // builds all c++ targets"
-	@echo "              make build           // builds all targets"
+	@echo "Example task: \033[1mmake build-c++-hello\033[0m // builds hello in c++"
+	@echo "              \033[1mmake clean-c++-hello\033[0m // cleans build artifacts"
+	@echo "              \033[1mmake build-c++\033[0m       // builds all c++ targets"
+	@echo "              \033[1mmake build\033[0m           // builds all targets"
 
 targets: help-c help-c++ help-objc
-	@echo "Available operations for each targets:"
+	@echo "\033[1mAvailable operations for each targets:\033[0m"
 	@echo "    build, run, clean, help"
 
 _help-c-message:
-	@echo "C Applications"
-	@echo --------------
+	@echo "\033[1mC Applications\033[0m"
+	@echo "\033[1m--------------\033[0m"
 
 _help-c++-message:
-	@echo "C++ Applications"
-	@echo ----------------
+	@echo "\033[1mC++ Applications\033[0m"
+	@echo "\033[1m----------------\033[0m"
 
 _help-objc-message:
-	@echo "Objective-C Applications"
-	@echo ------------------------
+	@echo "\033[1mObjective-C Applications\033[0m"
+	@echo "\033[1m------------------------\033[0m"
 
 .DEFAULT_GOAL := help
 

@@ -32,4 +32,4 @@ TITLE = Hello World
 LANGUAGE = C++
 
 help:
-	@echo $(EXECUTABLE) - $(TITLE) written in $(LANGUAGE)
+	@echo $(EXECUTABLE) - $(TITLE) program written in $(LANGUAGE)
