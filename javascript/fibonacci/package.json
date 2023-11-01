@@ -2,7 +2,10 @@
   "name": "js-fibonacci",
   "version": "1.0.0",
   "description": "Fibonacci in JavaScript",
-  "main": "fibonacci.js",
+  "main": "index.js",
+  "bin": {
+    "js-fibonacci": "./index.js"
+  },
   "scripts": {
     "js-fibonacci": "node fibonacci.js"
   }
