@@ -1,0 +1,9 @@
+{
+  "name": "ts-greeter",
+  "version": "1.0.0",
+  "description": "Greeter in TypeScript",
+  "main": "greeter.ts",
+  "scripts": {
+    "ts-greeter": "ts-node greeter.ts"
+  }
+}

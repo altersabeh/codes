@@ -1,0 +1,9 @@
+{
+  "name": "js-fibonacci",
+  "version": "1.0.0",
+  "description": "Fibonacci in JavaScript",
+  "main": "fibonacci.js",
+  "scripts": {
+    "js-fibonacci": "node fibonacci.js"
+  }
+}

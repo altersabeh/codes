@@ -1,0 +1,10 @@
+{
+  "name": "ts-fibonacci",
+  "version": "1.0.0",
+  "description": "Fibonacci in TypeScript",
+  "main": "fibonacci.ts",
+  "scripts": {
+    "ts-fibonacci": "ts-node fibonacci.ts"
+  }
+  
+}

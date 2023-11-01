@@ -1,0 +1,9 @@
+{
+  "name": "ts-hello",
+  "version": "1.0.0",
+  "description": "Hello in TypeScript",
+  "main": "hello.ts",
+  "scripts": {
+    "ts-hello": "ts-node hello.ts"
+  }
+}

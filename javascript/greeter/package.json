@@ -1,0 +1,9 @@
+{
+  "name": "js-greeter",
+  "version": "1.0.0",
+  "description": "Greeter in JavaScript",
+  "main": "greeter.js",
+  "scripts": {
+    "js-greeter": "node greeter.js"
+  }
+}
