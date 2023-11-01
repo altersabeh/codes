@@ -1,5 +1,5 @@
 plugins {
-    id 'java' apply false
+    id 'java'
     id 'org.jetbrains.kotlin.jvm' version '1.9.10' apply false
 }
 
@@ -36,7 +36,7 @@ project(':java') {
     }
     subprojects.each { subproject ->
         tasks.named("build").configure {
-            dependsOn "${subproject.name}:build"
+            dependsOn ":java:${subproject.name}:build"
         }
     }
 }
@@ -66,7 +66,7 @@ project(':kotlin') {
     }
     subprojects.each { subproject ->
         tasks.named("build").configure {
-            dependsOn "${subproject.name}:build"
+            dependsOn ":kotlin:${subproject.name}:build"
         }
     }
 }
