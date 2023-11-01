@@ -1,6 +1,13 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.kotlin.jvm' version '1.9.10' apply false
+    id 'org.jetbrains.kotlin.jvm' version '1.9.20' apply false
+}
+
+ext {
+    guavaVersion = '32.1.1-jre'
+    kotlinVersion = '1.9.20'
+    javaToolchainVersion = 21
+    kotlinJvmToolchainVersion = 21
 }
 
 subprojects {
@@ -13,7 +20,7 @@ project(':java') {
     subprojects {
         apply plugin: 'java'
         dependencies {
-            implementation 'com.google.guava:guava:32.1.1-jre'
+            implementation "com.google.guava:guava:${guavaVersion}"
         }
         sourceSets {
             main {
@@ -25,7 +32,7 @@ project(':java') {
         buildDir = "../../bin/java/${projectDir.name}"
         java {
             toolchain {
-                languageVersion = JavaLanguageVersion.of(21)
+                languageVersion = JavaLanguageVersion.of(javaToolchainVersion)
             }
         }
         defaultTasks "java-${projectDir.name}"
@@ -45,7 +52,7 @@ project(':kotlin') {
     subprojects {
         apply plugin: 'kotlin'
         dependencies {
-            implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.9.10'
+            implementation "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}"
         }
         sourceSets {
             main {
@@ -56,7 +63,7 @@ project(':kotlin') {
         }
         buildDir = "../../bin/kotlin/${projectDir.name}"
         kotlin {
-            jvmToolchain(20)
+            jvmToolchain(kotlinJvmToolchainVersion)
         }
         defaultTasks "kotlin-${projectDir.name}"
     }
