@@ -1,7 +1,7 @@
 {
   "name": "ts-greeter",
   "version": "1.0.0",
-  "description": "Greeter in TypeScript",
+  "description": "Greeter program written in TypeScript",
   "main": "greeter.ts",
   "bin": {
     "ts-greeter": "./index.ts"

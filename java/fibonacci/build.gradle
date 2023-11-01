@@ -1,7 +1,7 @@
 jar {
     manifest {
         archiveFileName = "java-${projectDir.name}"
-        attributes('Main-Class': 'Fibonacci')
+        attributes('Main-Class': "{projectDir.name.capitalize()}")
     }
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     from {
@@ -10,9 +10,9 @@ jar {
 }
 
 task ("java-${projectDir.name}", type: JavaExec) {
-    description = "Run ${projectDir.name} program in Java"
+    description = "${projectDir.name.capitalize()} program written in Java"
     group = "Application (Java)"
     classpath = sourceSets.main.runtimeClasspath
-    mainClass = 'Fibonacci'
+    mainClass = "${projectDir.name.capitalize()}"
     standardInput = System.in
 }

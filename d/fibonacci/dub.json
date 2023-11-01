@@ -1,5 +1,6 @@
 {
   "name": "d-fibonacci",
+  "description": "Fibonacci program written in D",
   "targetType": "executable",
   "mainSourceFile": "fibonacci.d",
   "targetPath": "../../bin/d",

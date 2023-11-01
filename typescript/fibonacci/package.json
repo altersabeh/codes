@@ -1,7 +1,7 @@
 {
   "name": "ts-fibonacci",
   "version": "1.0.0",
-  "description": "Fibonacci in TypeScript",
+  "description": "Fibonacci program written in TypeScript",
   "main": "index.ts",
   "bin": {
     "ts-fibonacci": "./index.ts"

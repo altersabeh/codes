@@ -1,7 +1,7 @@
 {
   "name": "js-fibonacci",
   "version": "1.0.0",
-  "description": "Fibonacci in JavaScript",
+  "description": "Fibonacci program written in JavaScript",
   "main": "index.js",
   "bin": {
     "js-fibonacci": "./index.js"

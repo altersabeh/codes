@@ -1,7 +1,7 @@
 jar {
     manifest {
         archiveFileName = "kotlin-${projectDir.name}"
-        attributes('Main-Class': 'HelloKt')
+        attributes('Main-Class': "${projectDir.name.capitalize()}Kt")
     }
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     from {
@@ -10,9 +10,9 @@ jar {
 }
 
 task ("kotlin-${projectDir.name}", type: JavaExec) {
-    description = "Run ${projectDir.name} program in Kotlin"
+    description = "${projectDir.name.capitalize()} World program written in Kotlin"
     group = "Application (Kotlin)"
     classpath = sourceSets.main.runtimeClasspath
-    mainClass = 'HelloKt'
+    mainClass = "${projectDir.name.capitalize()}Kt"
     standardInput = System.in
 }

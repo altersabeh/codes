@@ -1,5 +1,6 @@
 {
   "name": "d-hello",
+  "description": "Hello World program written in D",
   "targetType": "executable",
   "mainSourceFile": "hello.d",
   "targetPath": "../../bin/d",
