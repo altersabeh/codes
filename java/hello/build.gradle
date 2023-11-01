@@ -1,33 +1,3 @@
-plugins {
-    id 'java'
-}
-
-repositories {
-    mavenCentral()
-}
-
-defaultTasks "java-${projectDir.name}"
-
-buildDir = "../../bin/java/${projectDir.name}"
-
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
-    }
-}
-
-sourceSets {
-    main {
-        java {
-            srcDirs = ['.']
-        }
-    }
-}
-
-dependencies {
-    implementation 'com.google.guava:guava:32.1.1-jre'
-}
-
 jar {
     manifest {
         archiveFileName = "java-${projectDir.name}"

@@ -1,31 +1,3 @@
-plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.9.10'
-}
-
-repositories {
-    mavenCentral()
-}
-
-defaultTasks "kotlin-${projectDir.name}"
-
-buildDir = "../../bin/kotlin/${projectDir.name}"
-
-kotlin {
-    jvmToolchain(20)
-}
-
-sourceSets {
-    main {
-        kotlin {
-            srcDirs = ['.']
-        }
-    }
-}
-
-dependencies {
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.9.10'
-}
-
 jar {
     manifest {
         archiveFileName = "kotlin-${projectDir.name}"
