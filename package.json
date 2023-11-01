@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "moment": "^2.29.4",
-    "prompt-sync": "^4.2.0"
+    "prompt-sync": "^4.2.0",
+    "ts-node": "^10.9.1"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
