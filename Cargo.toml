@@ -8,14 +8,17 @@ members = [
   "rust/fibonacci"
 ]
 
+publish = false
+
 [workspace.package]
 version = "1.0.0"
-authors = ["AlterSabeh"]
-edition = "2021"
 description = "Repository for My Codes"
-repository = "https://github.com/altersabeh/codes"
 license = "MIT"
-publish = false
+repository = "https://github.com/altersabeh/codes"
+homepage = "https://github.com/altersabeh/codes#README.md"
+authors = ["AlterSabeh"]
+categories = ["command-line-utilities"]
+edition = "2021"
 
 [workspace.dependencies]
 num-bigint = "0.4"
