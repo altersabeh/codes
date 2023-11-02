@@ -1,9 +1,0 @@
-{
-  "name": "d-hello",
-  "version": "1.0.0",
-  "description": "Hello World program written in D",
-  "targetType": "executable",
-  "mainSourceFile": "hello.d",
-  "targetPath": "../../bin/d",
-  "targetName": "d-hello"
-}

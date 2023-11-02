@@ -1,0 +1,13 @@
+name "d-greeter"
+version "1.0.0"
+description "Greeter program written in D"
+license "MIT"
+homepage "https://github.com/altersabeh/codes#README.md"
+authors "AlterSabeh"
+copyright "Copyright © 2023, AlterSabeh"
+
+mainSourceFile "greeter.d"
+
+targetType "executable"
+targetName "d-greeter"
+targetPath "../../bin/d"

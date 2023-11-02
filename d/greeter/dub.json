@@ -1,8 +1,0 @@
-{
-  "name": "d-greeter",
-  "version": "1.0.0",
-  "description": "Greeter program written in D",
-  "mainSourceFile": "greeter.d",
-  "targetPath": "../../bin/d",
-  "targetName": "d-greeter"
-}
