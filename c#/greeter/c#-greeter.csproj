@@ -1,11 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <PackageId>cs-greeter</PackageId>
+    <Version>1.0.0</Version>
+    <Description>Greeter program Written in C#</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Authors>AlterSabeh</Authors>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/altersabeh/codes</RepositoryUrl>
+    <PackageType>DotnetTool</PackageType>
+    <PackAsTool>true</PackAsTool>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <OutputType>Exe</OutputType>
+    <AssemblyName>c#-greeter</AssemblyName>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyName>c#-greeter</AssemblyName>
     <BaseOutputPath>..\..\bin\c#\greeter</BaseOutputPath>
   </PropertyGroup>
 
