@@ -1,0 +1,11 @@
+52 error Error: Command failed with exit code 1: git add -- typescript/fibonacci/package.json javascript/hello/package.json javascript/greeter/package.json javascript/fibonacci/package.json typescript/greeter/package.json typescript/hello/package.json lerna.json package-lock.json
+52 error The following paths are ignored by one of your .gitignore files:
+52 error package-lock.json
+52 error hint: Use -f if you really want to add them.
+52 error hint: Turn this message off by running
+52 error hint: "git config advice.addIgnoredFile false"
+52 error     at makeError (/home/josh/.local/share/nodenv/versions/21.1.0/lib/node_modules/lerna/node_modules/execa/lib/error.js:59:11)
+52 error     at handlePromise (/home/josh/.local/share/nodenv/versions/21.1.0/lib/node_modules/lerna/node_modules/execa/index.js:114:26)
+52 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+52 error     at async VersionCommand.updatePackageVersions (/home/josh/.local/share/nodenv/versions/21.1.0/lib/node_modules/lerna/dist/index.js:8331:11)
+52 error     at async Promise.all (index 0)
