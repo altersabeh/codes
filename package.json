@@ -20,6 +20,11 @@
   "keywords": [
     "others"
   ],
+  "files": [
+    "README.md",
+    "LICENSE"
+  ],
+  "directories": {},
   "dependencies": {
     "moment": "^2.29.4",
     "prompt-sync": "^4.2.0",
