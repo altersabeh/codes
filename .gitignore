@@ -15,7 +15,6 @@
 # cargo
 **/bin
 **/target
-Cargo.lock
 
 # dotnet
 **/obj
@@ -28,18 +27,12 @@ Cargo.lock
 **/.gradle
 
 # python
-poetry.lock
 __pycache__/
 
 # js and ts
-package-lock.json
 node_modules
 **/.nx
 
 # stack cabal
 **/dist-newstyle
 **/.stack-work
-stack.yaml.lock
-
-# swift
-Package.resolved
