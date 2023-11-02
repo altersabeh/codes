@@ -1,9 +1,8 @@
 [package]
 name = "rust-fibonacci"
-version.workspace = true
-authors.workspace = true
-edition.workspace = true
+version = "1.0.0"
 description = "Fibonacci program written in Rust"
+edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
