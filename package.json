@@ -2,31 +2,24 @@
   "name": "codes",
   "version": "1.0.0",
   "description": "Repository for My Codes",
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/altersabeh/codes"
-  },
-  "keywords": [
-    "others"
-  ],
-  "author": "altersabeh",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/altersabeh/codes/issues"
-  },
-  "homepage": "https://github.com/altersabeh/codes#README.md",
+  "private": true,
   "workspaces": [
     "javascript/*",
     "typescript/*"
   ],
-  "devDependencies": {
-    "@types/node": "^20.8.7",
-    "@types/prompt-sync": "^4.2.2",
-    "bun-types": "latest",
-    "lerna": "^7.4.2",
-    "nx": "17.0.2"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/altersabeh/codes"
   },
+  "bugs": {
+    "url": "https://github.com/altersabeh/codes/issues"
+  },
+  "homepage": "https://github.com/altersabeh/codes#README.md",
+  "author": "AlterSabeh",
+  "keywords": [
+    "others"
+  ],
   "dependencies": {
     "moment": "^2.29.4",
     "prompt-sync": "^4.2.0",
@@ -34,5 +27,12 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.7",
+    "@types/prompt-sync": "^4.2.2",
+    "bun-types": "latest",
+    "lerna": "^7.4.2",
+    "nx": "17.0.2"
   }
 }

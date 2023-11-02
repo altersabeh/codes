@@ -2,6 +2,17 @@
   "name": "ts-hello",
   "version": "1.0.0",
   "description": "Hello World program writtenin TypeScript",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/altersabeh/codes",
+    "directory": "typescript/hello"
+  },
+  "homepage": "https://github.com/altersabeh/codes#README.md",
+  "author": "AlterSabeh",
+  "keywords": [
+    "others"
+  ],
   "main": "index.ts",
   "bin": {
     "ts-hello": "./index.ts"

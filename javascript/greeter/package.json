@@ -2,6 +2,17 @@
   "name": "js-greeter",
   "version": "1.0.0",
   "description": "Greeter in JavaScript",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/altersabeh/codes",
+    "directory": "javascript/hello"
+  },
+  "homepage": "https://github.com/altersabeh/codes#README.md",
+  "author": "AlterSabeh",
+  "keywords": [
+    "others"
+  ],
   "main": "index.js",
   "bin": {
     "js-greeter": "./index.js"

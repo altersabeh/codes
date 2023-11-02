@@ -2,6 +2,17 @@
   "name": "ts-greeter",
   "version": "1.0.0",
   "description": "Greeter program written in TypeScript",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/altersabeh/codes",
+    "directory": "typescript/greeter"
+  },
+  "homepage": "https://github.com/altersabeh/codes#README.md",
+  "author": "AlterSabeh",
+  "keywords": [
+    "others"
+  ],
   "main": "greeter.ts",
   "bin": {
     "ts-greeter": "./index.ts"

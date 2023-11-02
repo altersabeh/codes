@@ -2,6 +2,17 @@
   "name": "ts-fibonacci",
   "version": "1.0.0",
   "description": "Fibonacci program written in TypeScript",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/altersabeh/codes",
+    "directory": "typescript/fibonacci"
+  },
+  "homepage": "https://github.com/altersabeh/codes#README.md",
+  "author": "AlterSabeh",
+  "keywords": [
+    "others"
+  ],
   "main": "index.ts",
   "bin": {
     "ts-fibonacci": "./index.ts"
