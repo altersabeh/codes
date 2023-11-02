@@ -8,8 +8,6 @@ members = [
   "rust/fibonacci"
 ]
 
-publish = false
-
 [workspace.package]
 version = "1.0.0"
 description = "Repository for My Codes"
