@@ -2,4 +2,9 @@
   <PropertyGroup>
     <BaseIntermediateOutputPath>..\..\bin\f#\obj\hello</BaseIntermediateOutputPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="hello.fs"/>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 </Project>

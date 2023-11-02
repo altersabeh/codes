@@ -2,4 +2,8 @@
   <PropertyGroup>
     <BaseIntermediateOutputPath>..\..\bin\c#\obj\fibonacci</BaseIntermediateOutputPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 </Project>

@@ -9,6 +9,7 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/altersabeh/codes</RepositoryUrl>
     <PackageType>DotnetTool</PackageType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackAsTool>true</PackAsTool>
   </PropertyGroup>
 
@@ -18,9 +19,4 @@
     <TargetFramework>net7.0</TargetFramework>
     <BaseOutputPath>..\..\bin\f#\hello</BaseOutputPath>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Include="hello.fs" />
-  </ItemGroup>
-
 </Project>

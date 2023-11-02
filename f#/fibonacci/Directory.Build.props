@@ -2,4 +2,9 @@
   <PropertyGroup>
     <BaseIntermediateOutputPath>..\..\bin\f#\obj\fibonacci</BaseIntermediateOutputPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="fibonacci.fs" />
+    <None Include="README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 </Project>

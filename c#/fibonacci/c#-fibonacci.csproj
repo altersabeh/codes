@@ -1,5 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <PackageId>cs-fibonacci</PackageId>
     <Version>1.0.0</Version>
@@ -9,6 +8,7 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/altersabeh/codes</RepositoryUrl>
     <PackageType>DotnetTool</PackageType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackAsTool>true</PackAsTool>
   </PropertyGroup>
 
@@ -20,5 +20,4 @@
     <Nullable>enable</Nullable>
     <BaseOutputPath>..\..\bin\c#\fibonacci</BaseOutputPath>
   </PropertyGroup>
-
 </Project>

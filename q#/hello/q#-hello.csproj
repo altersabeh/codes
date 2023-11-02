@@ -9,6 +9,7 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/altersabeh/codes</RepositoryUrl>
     <PackageType>DotnetTool</PackageType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackAsTool>true</PackAsTool>
   </PropertyGroup>
 
