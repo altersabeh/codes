@@ -21,6 +21,9 @@
     "js-greeter": "node greeter.js",
     "run": "node index.js"
   },
+  "devDependencies": {
+    "@types/prompt-sync": "^4.2.2"
+  },
   "dependencies": {
     "prompt-sync": "^4.2.0"
   }
