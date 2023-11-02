@@ -1,21 +1,23 @@
-[package]
+[workspace]
 name = "codes"
+resolver = "2"
+
+members = [
+  "rust/hello",
+  "rust/greeter",
+  "rust/fibonacci"
+]
+
+[workspace.package]
 version = "1.0.0"
+authors = ["AlterSabeh"]
 edition = "2021"
+description = "Repository for My Codes"
+repository = "https://github.com/altersabeh/codes"
+license = "MIT"
+publish = false
 
-[[bin]]
-name = "rust-hello"
-path = "rust/hello/hello.rs"
-
-[[bin]]
-name = "rust-greeter"
-path = "rust/greeter/greeter.rs"
-
-[[bin]]
-name = "rust-fibonacci"
-path = "rust/fibonacci/fibonacci.rs"
-
-[dependencies]
+[workspace.dependencies]
 num-bigint = "0.4"
 num-traits = "0.2"
 ctrlc = "3.2"
