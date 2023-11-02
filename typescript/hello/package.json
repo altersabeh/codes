@@ -20,5 +20,9 @@
   "scripts": {
     "ts-hello": "ts-node hello.ts",
     "run": "ts-node index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "ts-node": "^10.9.1"
   }
 }

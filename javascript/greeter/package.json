@@ -20,5 +20,8 @@
   "scripts": {
     "js-greeter": "node greeter.js",
     "run": "node index.js"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
   }
 }
