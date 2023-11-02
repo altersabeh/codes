@@ -31,9 +31,10 @@ Cargo.lock
 poetry.lock
 __pycache__/
 
-# npm
+# js and ts
 package-lock.json
 node_modules
+**/.nx
 
 # stack cabal
 **/dist-newstyle
