@@ -7,6 +7,7 @@
     "ts-greeter": "./index.ts"
   },
   "scripts": {
-    "ts-greeter": "ts-node greeter.ts"
+    "ts-greeter": "ts-node greeter.ts",
+    "run": "ts-node index.ts"
   }
 }

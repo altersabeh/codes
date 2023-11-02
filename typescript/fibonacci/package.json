@@ -7,6 +7,7 @@
     "ts-fibonacci": "./index.ts"
   },
   "scripts": {
-    "ts-fibonacci": "ts-node fibonacci.ts"
+    "ts-fibonacci": "ts-node fibonacci.ts",
+    "run": "ts-node index.ts"
   }
 }

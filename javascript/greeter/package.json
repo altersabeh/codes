@@ -7,6 +7,7 @@
     "js-greeter": "./index.js"
   },
   "scripts": {
-    "js-greeter": "node greeter.js"
+    "js-greeter": "node greeter.js",
+    "run": "node index.js"
   }
 }

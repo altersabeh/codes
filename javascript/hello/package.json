@@ -7,6 +7,7 @@
     "js-hello": "./index.js"
   },
   "scripts": {
-    "js-hello": "node hello.js"
+    "js-hello": "node hello.js",
+    "run": "node index.js"
   }
 }
