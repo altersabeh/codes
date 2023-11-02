@@ -22,7 +22,9 @@
   ],
   "files": [
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "javascript",
+    "typescript"
   ],
   "directories": {},
   "dependencies": {
