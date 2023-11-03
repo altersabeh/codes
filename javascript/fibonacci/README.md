@@ -1,6 +1,6 @@
 # JavaScript/Fibonacci
 
-This is a **Fibonacci World** program written in **JavaScript**.
+This is a **Fibonacci** program written in **JavaScript**.
 
 ### Prerequisite
 

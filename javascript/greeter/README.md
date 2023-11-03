@@ -1,6 +1,6 @@
 # JavaScript/Greeter
 
-This is a **Greeter World** program written in **JavaScript**.
+This is a **Greeter** program written in **JavaScript**.
 
 ### Prerequisite
 
