@@ -1,4 +1,4 @@
-# Rust/Hello
+# `Rust/Hello`
 
 This is a **Hello World** program written in **Rust**.
 

@@ -1,4 +1,4 @@
-# JavaScript/Hello
+# `JavaScript/Hello`
 
 This is a **Hello World** program written in **JavaScript**.
 

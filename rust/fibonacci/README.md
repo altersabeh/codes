@@ -1,4 +1,4 @@
-# Rust/Fibonacci
+# `Rust/Fibonacci`
 
 This is a **Fibonacci** program written in **Rust**.
 

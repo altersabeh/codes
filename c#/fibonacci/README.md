@@ -1,4 +1,4 @@
-# C#/Fibonacci
+# `C#/Fibonacci`
 
 This is a **Fibonacci** program written in **C#**.
 

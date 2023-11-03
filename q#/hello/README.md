@@ -1,4 +1,4 @@
-# Q#/Hello
+# `Q#/Hello`
 
 This is a **Hello World** program written in **Q#**.
 

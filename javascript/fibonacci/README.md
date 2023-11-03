@@ -1,4 +1,4 @@
-# JavaScript/Fibonacci
+# `JavaScript/Fibonacci`
 
 This is a **Fibonacci** program written in **JavaScript**.
 

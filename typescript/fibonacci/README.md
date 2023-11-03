@@ -1,4 +1,4 @@
-# TypeScript/Fibonacci
+# `TypeScript/Fibonacci`
 
 This is a **Fibonacci** program written in **TypeScript**.
 

@@ -1,4 +1,4 @@
-# Rust/Greeter
+# `Rust/Greeter`
 
 This is a **Greeter** program written in **Rust**.
 

@@ -1,4 +1,4 @@
-# TypeScript/Greeter
+# `TypeScript/Greeter`
 
 This is a **Greeter** program written in **TypeScript**.
 

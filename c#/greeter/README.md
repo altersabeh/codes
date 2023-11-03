@@ -1,4 +1,4 @@
-# C#/Greeter
+# `C#/Greeter`
 
 This is a **Greeter** program written in **C#**.
 

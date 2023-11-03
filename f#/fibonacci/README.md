@@ -1,4 +1,4 @@
-# F#/Fibonacci
+# `F#/Fibonacci`
 
 This is a **Fibonacci** program written in **F#**.
 

@@ -1,4 +1,4 @@
-# TypeScript/Hello
+# `TypeScript/Hello`
 
 This is a **Hello World** program written in **TypeScript**.
 

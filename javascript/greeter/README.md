@@ -1,4 +1,4 @@
-# JavaScript/Greeter
+# `JavaScript/Greeter`
 
 This is a **Greeter** program written in **JavaScript**.
 
