@@ -26,6 +26,7 @@ From the source directory you can run:
 * `cargo build`
 
 You can also use `rustc` from the source directory:
+
 * `rustc hello.rs -o rust-hello`
 
 ## Running
@@ -43,7 +44,7 @@ From the source directory you can run:
 
 * `cargo run`
 
-If you use `rustc` for building:
+If you used `rustc` for building:
 
 * `./rust-hello`
 
