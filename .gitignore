@@ -36,3 +36,6 @@ node_modules
 # stack cabal
 **/dist-newstyle
 **/.stack-work
+
+# swift
+**/.build
