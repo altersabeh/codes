@@ -23,6 +23,10 @@ From the root directory run:
 
 * `dotnet run --project c#/greeter`
 
+_**(optional)**_ From the source directory you can run:
+
+* `dotnet run`
+
 ### License
 
 Licensed under [**MIT License**](https://github.com/altersabeh/codes/blob/main/LICENSE).
