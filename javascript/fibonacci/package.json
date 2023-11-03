@@ -17,7 +17,7 @@
   "bin": "js-fibonacci.js",
   "scripts": {
     "js-fibonacci": "node fibonacci.js",
-    "start": "node index.js"
+    "start": "node js-fibonacci.js"
   },
   "dependencies": {
     "moment": "^2.29.4"

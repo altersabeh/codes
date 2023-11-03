@@ -17,6 +17,6 @@
   "bin": "js-hello.js",
   "scripts": {
     "js-hello": "node hello.js",
-    "start": "node index.js"
+    "start": "node js-hello.js"
   }
 }

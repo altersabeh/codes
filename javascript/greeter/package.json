@@ -17,7 +17,7 @@
   "bin": "js-greeter.js",
   "scripts": {
     "js-greeter": "node greeter.js",
-    "start": "node index.js"
+    "start": "node js-greeter.js"
   },
   "devDependencies": {
     "@types/prompt-sync": "^4.2.2"
