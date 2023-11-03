@@ -26,13 +26,12 @@ From the root directory run one of the following:
 * `npm start -w js-fibonacci`
 
 _**(optional)**_ Using `lerna` and `nx` from the root directory:
-:warning:
 
 * `npx lerna run js-fibonacci`
 * `npx nx start js-fibonacci`
 * `npx nx run js-fibonacci:start`
 
-_****(optional)****_ From the source directory you can run one of the following:
+_**(optional)**_ From the source directory you can run one of the following:
 
 * `npm start`
 * `node fibonacci.js`
