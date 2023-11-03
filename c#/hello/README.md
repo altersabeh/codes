@@ -1,13 +1,13 @@
-## C#/Hello
+# C#/Hello
 
 A Hello World program written in C#.
 
-## Building
+# Building
 
 From the root directory run the following command:
 
 `dotnet build --project c#/hello`
 
-## Running
+# Running
 
 `dotnet run --project c#/hello`
