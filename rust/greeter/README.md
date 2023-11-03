@@ -12,7 +12,7 @@ To run and build this program you need to install:
 
 ### Building
 
-From the root directory run one of the following command:
+From the root directory run one of the following commands:
 
 * `cargo build -p rust-greeter`
 * `cargo build --package rust-greeter`
