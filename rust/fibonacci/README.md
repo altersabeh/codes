@@ -1,27 +1,26 @@
-# C#/Hello
+# Rust/Fibonacci
 
-This is a **Hello World** program written in **C#**.
+This is a **Fibonacci** program written in **Rust**.
 
 ### Prerequisite
 
 To run and build this program you need to install:
 
-* [**.NET SDK**](https://dotnet.microsoft.com/)
-  * `dotnet`
+* [**Rust Toolchain**](https://www.rust-lang.org/tools/install)
+  * `cargo`
 
 ### Building
 
 From the root directory run one of the following command:
 
-* `dotnet build c#/hello`
-* `dotnet build c#/hello/hello.csproj`
-* `dotnet build --project c#/hello`
+* `cargo build -p rust-fibonacci`
+* `cargo build --package rust-fibonacci`
 
 ### Running
 
 From the root directory run:
 
-* `dotnet run --project c#/hello`
+* `cargo run --bin rust-fibonacci`
 
 ### License
 

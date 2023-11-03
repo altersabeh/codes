@@ -1,6 +1,6 @@
-# C#/Hello
+# C#/Fibonacci
 
-This is a **Hello World** program written in **C#**.
+This is a **Fibonacci** program written in **C#**.
 
 ### Prerequisite
 
@@ -13,15 +13,15 @@ To run and build this program you need to install:
 
 From the root directory run one of the following command:
 
-* `dotnet build c#/hello`
-* `dotnet build c#/hello/hello.csproj`
-* `dotnet build --project c#/hello`
+* `dotnet build c#/fibonacci`
+* `dotnet build c#/fibonacci/fibonacci.csproj`
+* `dotnet build --project c#/fibonacci`
 
 ### Running
 
 From the root directory run:
 
-* `dotnet run --project c#/hello`
+* `dotnet run --project c#/fibonacci`
 
 ### License
 
