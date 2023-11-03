@@ -13,7 +13,7 @@
   "keywords": [
     "command-line-utilities"
   ],
-  "main": "index.js",
+  "main": "js-fibonacci.js",
   "bin": "js-fibonacci.js",
   "scripts": {
     "js-fibonacci": "node fibonacci.js",

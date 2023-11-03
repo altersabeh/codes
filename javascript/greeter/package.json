@@ -13,7 +13,7 @@
   "keywords": [
     "command-line-utilities"
   ],
-  "main": "index.js",
+  "main": "js-greeter.js",
   "bin": "js-greeter.js",
   "scripts": {
     "js-greeter": "node greeter.js",

@@ -13,7 +13,7 @@
   "keywords": [
     "command-line-utilities"
   ],
-  "main": "index.js",
+  "main": "js-hello.js",
   "bin": "js-hello.js",
   "scripts": {
     "js-hello": "node hello.js",
