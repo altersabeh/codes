@@ -1,6 +1,6 @@
-# TypeScript/Fibonacci
+# TypeScript/Greeter
 
-This is a **Fibonacci** program written in **TypeScript**.
+This is a **Greeter** program written in **TypeScript**.
 
 ### Prerequisite
 
@@ -23,22 +23,22 @@ From the root directory run the following command:
 
 From the root directory run one of the following:
 
-* `npx ts-fibonacci`
-* `npm exec ts-fibonacci`
-* `npm start -w ts-fibonacci`
+* `npx ts-greeter`
+* `npm exec ts-greeter`
+* `npm start -w ts-greeter`
 
 _**(optional)**_ Using `lerna` and `nx` from the root directory:
 
-* `npx lerna run ts-fibonacci`
-* `npx nx start ts-fibonacci`
-* `npx nx run ts-fibonacci:start`
+* `npx lerna run ts-greeter`
+* `npx nx start ts-greeter`
+* `npx nx run ts-greeter:start`
 
 _**(optional)**_ From the source directory you can run one of the following:
 
 * `npm start`
-* `ts-node fibonacci.js`
-* `npx ts-node fibonacci.ts`
-* `./ts-fibonacci.ts`
+* `ts-node greeter.js`
+* `npx ts-node greeter.ts`
+* `./ts-greeter.ts`
 
 ### License
 

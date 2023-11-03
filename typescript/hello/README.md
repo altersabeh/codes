@@ -1,6 +1,6 @@
-# TypeScript/Fibonacci
+# TypeScript/Hello
 
-This is a **Fibonacci** program written in **TypeScript**.
+This is a **Hello World** program written in **TypeScript**.
 
 ### Prerequisite
 
@@ -23,22 +23,22 @@ From the root directory run the following command:
 
 From the root directory run one of the following:
 
-* `npx ts-fibonacci`
-* `npm exec ts-fibonacci`
-* `npm start -w ts-fibonacci`
+* `npx ts-hello`
+* `npm exec ts-hello`
+* `npm start -w ts-hello`
 
 _**(optional)**_ Using `lerna` and `nx` from the root directory:
 
-* `npx lerna run ts-fibonacci`
-* `npx nx start ts-fibonacci`
-* `npx nx run ts-fibonacci:start`
+* `npx lerna run ts-hello`
+* `npx nx start ts-hello`
+* `npx nx run ts-hello:start`
 
 _**(optional)**_ From the source directory you can run one of the following:
 
 * `npm start`
-* `ts-node fibonacci.js`
-* `npx ts-node fibonacci.ts`
-* `./ts-fibonacci.ts`
+* `ts-node hello.js`
+* `npx ts-node hello.ts`
+* `./ts-hello.ts`
 
 ### License
 
