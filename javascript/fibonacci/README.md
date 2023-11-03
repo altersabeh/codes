@@ -2,7 +2,7 @@
 
 This is a **Fibonacci** program written in **JavaScript**.
 
-### Prerequisite
+## Prerequisite
 
 To run and build this program you need to install:
 
@@ -11,13 +11,15 @@ To run and build this program you need to install:
   * `node`
   * `npx`
 
-### Building
+## Building
 
-From the root directory run the following command:
+From the root directory run:
 
 * `npm install`
 
-### Running
+## Running
+
+### Root Directory
 
 From the root directory run one of the following:
 
@@ -25,18 +27,24 @@ From the root directory run one of the following:
 * `npm exec js-fibonacci`
 * `npm start -w js-fibonacci`
 
-_**(optional)**_ Using `lerna` and `nx` from the root directory:
+You can also use  [`lerna`](https://lerna.js.org/) or [`nx`](https://nx.dev/) from the root directory: _**(optional)**_
 
 * `npx lerna run js-fibonacci`
 * `npx nx start js-fibonacci`
 * `npx nx run js-fibonacci:start`
 
-_**(optional)**_ From the source directory you can run one of the following:
+### Source DIrectory _(optional)_
+
+From the source directory you can run one of the following:
 
 * `npm start`
 * `node fibonacci.js`
 * `./js-fibonacci.js`
 
-### License
+You can also use [`nx`](https://nx.dev/) from the source directory:
+
+* `npx nx start`
+
+## License
 
 Licensed under [**MIT License**](https://github.com/altersabeh/codes/blob/main/LICENSE).

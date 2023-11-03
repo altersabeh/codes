@@ -2,24 +2,24 @@
 
 This is a **Fibonacci** program written in **TypeScript**.
 
-### Prerequisite
+## Prerequisite
 
 To run and build this program you need to install:
 
 * [**Node.js**](https://nodejs.org/en/download/current)
   * `npm`
+  * `node`
   * `npx`
 
-* [**ts-node**](https://typestrong.org/ts-node/docs/installation) _**(Recommended)**_
-  * `ts-node`
+## Building
 
-### Building
-
-From the root directory run the following command:
+From the root directory run:
 
 * `npm install`
 
-### Running
+## Running
+
+### Root Directory
 
 From the root directory run one of the following:
 
@@ -27,19 +27,24 @@ From the root directory run one of the following:
 * `npm exec ts-fibonacci`
 * `npm start -w ts-fibonacci`
 
-_**(optional)**_ Using `lerna` and `nx` from the root directory:
+You can also use  [`lerna`](https://lerna.js.org/) or [`nx`](https://nx.dev/) from the root directory: _**(optional)**_
 
 * `npx lerna run ts-fibonacci`
 * `npx nx start ts-fibonacci`
 * `npx nx run ts-fibonacci:start`
 
-_**(optional)**_ From the source directory you can run one of the following:
+### Source DIrectory _(optional)_
+
+From the source directory you can run one of the following:
 
 * `npm start`
-* `ts-node fibonacci.js`
-* `npx ts-node fibonacci.ts`
+* `node fibonacci.ts`
 * `./ts-fibonacci.ts`
 
-### License
+You can also use [`nx`](https://nx.dev/) from the source directory:
+
+* `npx nx start`
+
+## License
 
 Licensed under [**MIT License**](https://github.com/altersabeh/codes/blob/main/LICENSE).

@@ -2,35 +2,43 @@
 
 This is a **Fibonacci** program written in **F#**.
 
-### Prerequisite
+## Prerequisite
 
 To run and build this program you need to install:
 
 * [**.NET SDK**](https://dotnet.microsoft.com/)
   * `dotnet`
 
-### Building
+## Building
 
-From the root directory run one of the following commands:
+### Root Directory
+
+From the root directory run one of the following:
 
 * `dotnet build f#/fibonacci`
-* `dotnet build f#/fibonacci/fibonacci.csproj`
+* `dotnet build f#/fibonacci/fibonacci.fsproj`
 * `dotnet build --project f#/fibonacci`
 
-_**(optional)**_ From the source directory you can run:
+### Source DIrectory _(optional)_
+
+From the source directory you can run:
 
 * `dotnet build`
 
-### Running
+## Running
+
+### Root Directory
 
 From the root directory run:
 
 * `dotnet run --project f#/fibonacci`
 
-_**(optional)**_ From the source directory you can run:
+### Source DIrectory _(optional)_
+
+From the source directory you can run:
 
 * `dotnet run`
 
-### License
+## License
 
 Licensed under [**MIT License**](https://github.com/altersabeh/codes/blob/main/LICENSE).

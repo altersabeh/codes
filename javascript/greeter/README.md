@@ -2,7 +2,7 @@
 
 This is a **Greeter** program written in **JavaScript**.
 
-### Prerequisite
+## Prerequisite
 
 To run and build this program you need to install:
 
@@ -11,13 +11,15 @@ To run and build this program you need to install:
   * `node`
   * `npx`
 
-### Building
+## Building
 
-From the root directory run the following command:
+From the root directory run:
 
 * `npm install`
 
-### Running
+## Running
+
+### Root Directory
 
 From the root directory run one of the following:
 
@@ -25,18 +27,24 @@ From the root directory run one of the following:
 * `npm exec js-greeter`
 * `npm start -w js-greeter`
 
-_**(optional)**_ Using `lerna` and `nx` from the root directory:
+You can also use  [`lerna`](https://lerna.js.org/) or [`nx`](https://nx.dev/) from the root directory: _**(optional)**_
 
 * `npx lerna run js-greeter`
 * `npx nx start js-greeter`
 * `npx nx run js-greeter:start`
 
-_**(optional)**_ From the source directory you can run one of the following:
+### Source DIrectory _(optional)_
+
+From the source directory you can run one of the following:
 
 * `npm start`
 * `node greeter.js`
 * `./js-greeter.js`
 
-### License
+You can also use [`nx`](https://nx.dev/) from the source directory:
+
+* `npx nx start`
+
+## License
 
 Licensed under [**MIT License**](https://github.com/altersabeh/codes/blob/main/LICENSE).
