@@ -14,9 +14,7 @@
     "command-line-utilities"
   ],
   "main": "index.js",
-  "bin": {
-    "js-fibonacci": "./index.js"
-  },
+  "bin": "js-fibonacci.js",
   "scripts": {
     "js-fibonacci": "node fibonacci.js",
     "start": "node index.js"

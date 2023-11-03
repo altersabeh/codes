@@ -14,9 +14,7 @@
     "command-line-utilities"
   ],
   "main": "index.js",
-  "bin": {
-    "js-greeter": "./index.js"
-  },
+  "bin": "js-greeter.js",
   "scripts": {
     "js-greeter": "node greeter.js",
     "start": "node index.js"
