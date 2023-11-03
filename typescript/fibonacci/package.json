@@ -17,7 +17,7 @@
   "bin": "ts-fibonacci.js",
   "scripts": {
     "ts-fibonacci": "ts-node fibonacci.ts",
-    "start": "ts-node ts-fibonacci.js"
+    "start": "ts-node ts-fibonacci.ts"
   },
   "devDependencies": {
     "@types/node": "^20.8.10",
