@@ -1,6 +1,6 @@
 # C#/Hello
 
-<div style="display: flex; align-items: right;">
+<div style="display: flex; align-items: left;">
   <p>A Hello World program written in C#.</p>
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C# Logo" width="30" height="20"/>
 </div>
@@ -27,4 +27,4 @@ From the root directory run:
 
 ## License
 
-Licensed under [**MIT License**](https://github.com/altersabeh/codes/blob/master/LICENSE).
+Licensed under [**MIT License**](https://github.com/altersabeh/codes/blob/main/LICENSE).
