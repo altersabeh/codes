@@ -1,18 +1,19 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.9.20' apply false
+    id 'org.jetbrains.kotlin.jvm' version '1.9.10' apply false
 }
 
 ext {
     guavaVersion = '32.1.1-jre'
-    kotlinVersion = '1.9.20'
+    kotlinVersion = '1.9.10'
     javaToolchainVersion = 21
-    kotlinJvmToolchainVersion = 21
+    kotlinJvmToolchainVersion = 20
 }
 
 subprojects {
     repositories {
         mavenCentral()
     }
+    version = "1.0.0"
 }
 
 project(':java') {
