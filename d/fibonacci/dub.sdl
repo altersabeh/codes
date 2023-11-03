@@ -10,4 +10,4 @@ mainSourceFile "fibonacci.d"
 
 targetType "executable"
 targetName "d-fibonacci"
-targetPath "../../bin/d"
+targetPath "$DUB_PACKAGE_TARGET_PATH"

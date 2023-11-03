@@ -10,4 +10,4 @@ mainSourceFile "hello.d"
 
 targetType "executable"
 targetName "d-hello"
-targetPath "../../bin/d"
+targetPath "$DUB_PACKAGE_TARGET_PATH"

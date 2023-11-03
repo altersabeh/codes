@@ -15,4 +15,3 @@ dependency "codes:d-fibonacci" version = "*"
 subPackage "d/hello"
 subPackage "d/greeter"
 subPackage "d/fibonacci"
-

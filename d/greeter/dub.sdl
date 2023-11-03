@@ -10,4 +10,4 @@ mainSourceFile "greeter.d"
 
 targetType "executable"
 targetName "d-greeter"
-targetPath "../../bin/d"
+targetPath "$DUB_PACKAGE_TARGET_PATH"
