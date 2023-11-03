@@ -17,7 +17,7 @@ From the root directory run one of the following commands:
 * `cargo build -p rust-hello`
 * `cargo build --package rust-hello`
 
-_(optional)_ From the source directory you can run:
+_**(optional)**_ From the source directory you can run:
 
 * `rustc hello.rs -o rust-hello`
 
@@ -27,7 +27,7 @@ From the root directory run:
 
 * `cargo run --bin rust-hello`
 
-_(optional)_ From the source directory you can run:
+_**(optional)**_ From the source directory you can run:
 
 * `./rust-hello`
 

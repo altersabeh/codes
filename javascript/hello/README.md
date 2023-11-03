@@ -25,13 +25,13 @@ From the root directory run one of the following:
 * `npm exec js-hello`
 * `npm start -w js-hello`
 
-_(optional)_ Using `lerna` and `nx` from the root directory:
+_**(optional)**_ Using `lerna` and `nx` from the root directory:
 
 * `npx lerna run js-hello`
 * `npx nx start js-hello`
 * `npx nx run js-hello:start`
 
-_(optional)_ From the source directory you can run one of the following:
+_**(optional)**_ From the source directory you can run one of the following:
 
 * `npm start`
 * `node hello.js`

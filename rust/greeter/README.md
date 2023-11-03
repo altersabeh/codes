@@ -17,7 +17,7 @@ From the root directory run one of the following commands:
 * `cargo build -p rust-greeter`
 * `cargo build --package rust-greeter`
 
-_(optional)_ From the source directory you can run:
+_**(optional)**_ From the source directory you can run:
 
 * `rustc greeter.rs -o rust-greeter`
 
@@ -27,7 +27,7 @@ From the root directory run:
 
 * `cargo run --bin rust-greeter`
 
-_(optional)_ From the source directory you can run:
+_**(optional)**_ From the source directory you can run:
 
 * `./rust-greeter`
 
