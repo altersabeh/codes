@@ -9,6 +9,8 @@ To run and build this program you need to install:
 * [**.NET SDK**](https://dotnet.microsoft.com/)
   * `dotnet`
 
+* [**Quantum Development Kit**](https://learn.microsoft.com/en-us/azure/quantum/install-overview-qdk?tabs=tabid-vscode%2Ctabid-dotnetcli#use-q-and-python-with-jupyter-notebooks)
+
 ## Building
 
 ### Root Directory

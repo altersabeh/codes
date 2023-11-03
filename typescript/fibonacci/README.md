@@ -11,6 +11,9 @@ To run and build this program you need to install:
   * `node`
   * `npx`
 
+* [**ts-node**](https://typestrong.org/ts-node/docs/installation) _**(Recommended)**_
+  * `ts-node`
+
 ## Building
 
 From the root directory run:
