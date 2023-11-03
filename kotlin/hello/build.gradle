@@ -1,7 +1,9 @@
 jar {
+    archiveBaseName = "kotlin-${projectDir.name}"
+    archiveVersion = "${version}"
+    archiveExtension = "jar"
     manifest {
-        archiveFileName = "kotlin-${projectDir.name}"
-        attributes('Main-Class': "${projectDir.name.capitalize()}Kt")
+        attributes('Main-Class': "${projectDir.name.capitalize()}")
     }
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     from {
