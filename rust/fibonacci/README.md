@@ -16,11 +16,19 @@ From the root directory run one of the following commands:
 * `cargo build -p rust-fibonacci`
 * `cargo build --package rust-fibonacci`
 
+_**(optional)**_ From the source directory you can run:
+
+* `cargo build`
+
 ### Running
 
 From the root directory run:
 
 * `cargo run --bin rust-fibonacci`
+
+_**(optional)**_ From the source directory you can run:
+
+* `cargo run`
 
 ### License
 

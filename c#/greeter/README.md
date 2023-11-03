@@ -17,6 +17,10 @@ From the root directory run one of the following commands:
 * `dotnet build c#/greeter/greeter.csproj`
 * `dotnet build --project c#/greeter`
 
+_**(optional)**_ From the source directory you can run:
+
+* `dotnet build`
+
 ### Running
 
 From the root directory run:

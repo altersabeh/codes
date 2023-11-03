@@ -19,6 +19,7 @@ From the root directory run one of the following commands:
 
 _**(optional)**_ From the source directory you can run:
 
+* `cargo build`
 * `rustc greeter.rs -o rust-greeter`
 
 ### Running
@@ -29,6 +30,7 @@ From the root directory run:
 
 _**(optional)**_ From the source directory you can run:
 
+* `cargo run`
 * `./rust-greeter`
 
 ### License

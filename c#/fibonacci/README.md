@@ -17,6 +17,10 @@ From the root directory run one of the following commands:
 * `dotnet build c#/fibonacci/fibonacci.csproj`
 * `dotnet build --project c#/fibonacci`
 
+_**(optional)**_ From the source directory you can run:
+
+* `dotnet build`
+
 ### Running
 
 From the root directory run:
