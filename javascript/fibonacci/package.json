@@ -19,7 +19,7 @@
   },
   "scripts": {
     "js-fibonacci": "node fibonacci.js",
-    "run": "node index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "moment": "^2.29.4"

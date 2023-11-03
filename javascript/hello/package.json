@@ -19,6 +19,6 @@
   },
   "scripts": {
     "js-hello": "node hello.js",
-    "run": "node index.js"
+    "start": "node index.js"
   }
 }
