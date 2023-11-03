@@ -16,7 +16,7 @@ To run and build this program you need to install:
 From the root directory run one of the following:
 
 * `dotnet build c#/hello`
-* `dotnet build c#/hello/hello.csproj`
+* `dotnet build c#/hello/c#-hello.csproj`
 * `dotnet build --project c#/hello`
 
 ### Source DIrectory _(optional)_

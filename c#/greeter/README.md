@@ -16,7 +16,7 @@ To run and build this program you need to install:
 From the root directory run one of the following:
 
 * `dotnet build c#/greeter`
-* `dotnet build c#/greeter/greeter.csproj`
+* `dotnet build c#/greeter/c#-greeter.csproj`
 * `dotnet build --project c#/greeter`
 
 ### Source DIrectory _(optional)_

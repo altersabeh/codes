@@ -16,7 +16,7 @@ To run and build this program you need to install:
 From the root directory run one of the following:
 
 * `dotnet build f#/fibonacci`
-* `dotnet build f#/fibonacci/fibonacci.fsproj`
+* `dotnet build f#/fibonacci/f#-fibonacci.fsproj`
 * `dotnet build --project f#/fibonacci`
 
 ### Source DIrectory _(optional)_

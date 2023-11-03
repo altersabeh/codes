@@ -16,7 +16,7 @@ To run and build this program you need to install:
 From the root directory run one of the following:
 
 * `dotnet build f#/hello`
-* `dotnet build f#/hello/hello.fsproj`
+* `dotnet build f#/hello/f#-hello.fsproj`
 * `dotnet build --project f#/hello`
 
 ### Source DIrectory _(optional)_
