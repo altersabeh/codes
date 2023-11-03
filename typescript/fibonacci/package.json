@@ -13,13 +13,11 @@
   "keywords": [
     "command-line-utilities"
   ],
-  "main": "index.ts",
-  "bin": {
-    "ts-fibonacci": "./index.ts"
-  },
+  "main": "ts-fibonacci.js",
+  "bin": "ts-fibonacci.js",
   "scripts": {
     "ts-fibonacci": "ts-node fibonacci.ts",
-    "run": "ts-node index.ts"
+    "start": "ts-node ts-fibonacci.js"
   },
   "devDependencies": {
     "@types/node": "^20.8.10",

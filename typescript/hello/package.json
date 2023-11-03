@@ -13,13 +13,11 @@
   "keywords": [
     "command-line-utilities"
   ],
-  "main": "index.ts",
-  "bin": {
-    "ts-hello": "./index.ts"
-  },
+  "main": "ts-hello.ts",
+  "bin": "ts-hello.ts",
   "scripts": {
     "ts-hello": "ts-node hello.ts",
-    "run": "ts-node index.ts"
+    "start": "ts-node ts-hello.ts"
   },
   "devDependencies": {
     "@types/node": "^20.8.10",

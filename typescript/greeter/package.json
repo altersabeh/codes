@@ -14,12 +14,10 @@
     "command-line-utilities"
   ],
   "main": "greeter.ts",
-  "bin": {
-    "ts-greeter": "./index.ts"
-  },
+  "bin": "ts-greeter.ts",
   "scripts": {
     "ts-greeter": "ts-node greeter.ts",
-    "run": "ts-node index.ts"
+    "start": "ts-node ts-greeter.ts"
   },
   "devDependencies": {
     "@types/node": "^20.8.10",
