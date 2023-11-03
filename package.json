@@ -26,6 +26,9 @@
     "javascript",
     "typescript"
   ],
+  "scripts": {
+    "prepack": "mkdir -p $NPM_CONFIG_PACK_DESTINATION"
+  },
   "devDependencies": {
     "lerna": "^7.4.2",
     "nx": "17.0.2",

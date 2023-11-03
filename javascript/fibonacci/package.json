@@ -17,6 +17,7 @@
   "bin": "js-fibonacci.js",
   "scripts": {
     "js-fibonacci": "node fibonacci.js",
+    "prepack": "mkdir -p $NPM_CONFIG_PACK_DESTINATION",
     "start": "node js-fibonacci.js"
   },
   "dependencies": {

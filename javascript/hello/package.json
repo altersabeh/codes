@@ -17,6 +17,7 @@
   "bin": "js-hello.js",
   "scripts": {
     "js-hello": "node hello.js",
+    "prepack": "mkdir -p $NPM_CONFIG_PACK_DESTINATION",
     "start": "node js-hello.js"
   }
 }

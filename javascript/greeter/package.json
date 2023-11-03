@@ -17,6 +17,7 @@
   "bin": "js-greeter.js",
   "scripts": {
     "js-greeter": "node greeter.js",
+    "prepack": "mkdir -p $NPM_CONFIG_PACK_DESTINATION",
     "start": "node js-greeter.js"
   },
   "devDependencies": {

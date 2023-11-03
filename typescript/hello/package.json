@@ -17,6 +17,7 @@
   "bin": "ts-hello.ts",
   "scripts": {
     "ts-hello": "ts-node hello.ts",
+    "prepack": "mkdir -p $NPM_CONFIG_PACK_DESTINATION",
     "start": "ts-node ts-hello.ts"
   },
   "devDependencies": {

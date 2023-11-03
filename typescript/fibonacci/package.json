@@ -17,6 +17,7 @@
   "bin": "ts-fibonacci.js",
   "scripts": {
     "ts-fibonacci": "ts-node fibonacci.ts",
+    "prepack": "mkdir -p $NPM_CONFIG_PACK_DESTINATION",
     "start": "ts-node ts-fibonacci.ts"
   },
   "devDependencies": {

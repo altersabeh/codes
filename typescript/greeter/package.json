@@ -17,6 +17,7 @@
   "bin": "ts-greeter.ts",
   "scripts": {
     "ts-greeter": "ts-node greeter.ts",
+    "prepack": "mkdir -p $NPM_CONFIG_PACK_DESTINATION",
     "start": "ts-node ts-greeter.ts"
   },
   "devDependencies": {
