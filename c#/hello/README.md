@@ -6,8 +6,9 @@ A Hello World program written in C#.
 
 From the root directory run the following command:
 
-`dotnet build --project c#/hello`
+```dotnet build --project c#/hello```
 
 # Running
 
-`dotnet run --project c#/hello`
+```dotnet run --project c#/hello```
+
