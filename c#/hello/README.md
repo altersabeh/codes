@@ -1,10 +1,9 @@
 # C#/Hello
 
-<span style="float: right;">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C# Logo" width="30" height="20"/>
+This is a Hello World program written in C#.
+<span>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C# Logo" width="20" height="20"/>
 </span>
-
-This is a Hello World program written in C#
 
 ## Prerequisite
 
