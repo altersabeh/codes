@@ -1,6 +1,8 @@
 jar {
+    archiveBaseName = "java-${projectDir.name}"
+    archiveVersion = "${version}"
+    archiveExtension = "jar"
     manifest {
-        archiveFileName = "java-${projectDir.name}"
         attributes('Main-Class': "${projectDir.name.capitalize()}")
     }
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE

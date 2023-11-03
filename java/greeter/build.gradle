@@ -1,6 +1,8 @@
 jar {
+    archiveBaseName = "java-${projectDir.name}"
+    archiveVersion = "${version}"
+    archiveExtension = "jar"
     manifest {
-        archiveFileName = "java-${projectDir.name}"
         attributes('Main-Class': "${projectDir.name.capitalize()}")
     }
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
@@ -8,6 +10,7 @@ jar {
         configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
     }
 }
+
 
 task ("java-${projectDir.name}", type: JavaExec) {
     description = "${projectDir.name.capitalize()} program written in Java"
