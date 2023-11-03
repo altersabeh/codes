@@ -30,7 +30,7 @@ From the root directory run one of the following:
 * `npm exec ts-fibonacci`
 * `npm start -w ts-fibonacci`
 
-You can also use  [`lerna`](https://lerna.js.org/) or [`nx`](https://nx.dev/) from the root directory: _**(optional)**_
+You can also use [`lerna`](https://lerna.js.org/) or [`nx`](https://nx.dev/) from the root directory: _**(optional)**_
 
 * `npx lerna run ts-fibonacci`
 * `npx nx start ts-fibonacci`
