@@ -1,6 +1,6 @@
 (lang dune 3.7)
 
-(name codes)
+(name ocaml-hello)
 
 (generate_opam_files true)
 
@@ -11,14 +11,14 @@
 
 (maintainers "AlterSabeh")
 
-(license LICENSE)
+(license MIT)
 
 (documentation https://github.com/altersabeh/codes#README.md)
 
 (package
- (name codes)
+ (name ocaml-hello)
  (synopsis "Programs")
- (description "Repository for My Codes")
+ (description "Hello World program written in OCaml")
  (depends ocaml dune)
  (tags
   (topics "to describe" your project)))
