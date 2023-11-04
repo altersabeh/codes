@@ -22,6 +22,8 @@
 # dune
 !dune
 !dune-project
+!dune-workspace
+_build
 
 # gradle
 **/.gradle
