@@ -39,8 +39,8 @@ You can also use `kotlinc` from the source directory:
 
 From the root directory run:
 
-* ` gradle kotlin-hello`
-* ` gradle kotlin:hello:run`
+* `gradle kotlin-hello`
+* `gradle kotlin:hello:run`
 
 ### Source DIrectory _(optional)_
 

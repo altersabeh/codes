@@ -37,12 +37,12 @@ You can also use `javac` from the source directory:
 
 From the root directory run:
 
-* ` gradle java-hello`
-* ` gradle java:hello:run`
+* `gradle java-hello`
+* `gradle java:hello:run`
 
 You can also use `java` to run it directly:
 
-* `java java\hello\hello.java`
+* `java java/hello/hello.java`
 
 ### Source DIrectory _(optional)_
 

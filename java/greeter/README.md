@@ -37,12 +37,12 @@ You can also use `javac` from the source directory:
 
 From the root directory run:
 
-* ` gradle java-greeter`
-* ` gradle java:greeter:run`
+* `gradle java-greeter`
+* `gradle java:greeter:run`
 
 You can also use `java` to run it directly:
 
-* `java java\greeter\greeter.java`
+* `java java/greeter/greeter.java`
 
 ### Source DIrectory _(optional)_
 

@@ -37,12 +37,12 @@ You can also use `javac` from the source directory:
 
 From the root directory run:
 
-* ` gradle java-fibonacci`
-* ` gradle java:fibonacci:run`
+* `gradle java-fibonacci`
+* `gradle java:fibonacci:run`
 
 You can also use `java` to run it directly:
 
-* `java java\fibonacci\fibonacci.java`
+* `java java/fibonacci/fibonacci.java`
 
 ### Source DIrectory _(optional)_
 
