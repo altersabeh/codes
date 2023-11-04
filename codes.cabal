@@ -7,7 +7,7 @@ cabal-version: 1.12
 name:           codes
 version:        1.0.0.0
 synopsis:       Repository for My Codes
-description:    Please see the README on GitHub at <https://github.com/altersabeh/codes#README.md>
+description:    Please see the README on GitHub at <https://github.com/altersabeh/codes#README>
 category:       Others
 homepage:       https://github.com/altersabeh/codes#readme
 bug-reports:    https://github.com/altersabeh/codes/issues

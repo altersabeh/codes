@@ -2,7 +2,7 @@ name "d-fibonacci"
 version "1.0.0"
 description "Fibonacci program written in D"
 license "MIT"
-homepage "https://github.com/altersabeh/codes#README.md"
+homepage "https://github.com/altersabeh/codes#README"
 authors "AlterSabeh"
 copyright "Copyright © 2023, AlterSabeh"
 

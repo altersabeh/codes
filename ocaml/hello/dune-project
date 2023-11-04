@@ -13,7 +13,7 @@
 
 (license MIT)
 
-(documentation https://github.com/altersabeh/codes#README.md)
+(documentation https://github.com/altersabeh/codes#README)
 
 (package
  (name ocaml-hello)

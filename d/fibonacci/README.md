@@ -1,6 +1,6 @@
 # `D/Fibonacci`
 
-This is a **Fibonacci../hello/README.md** program written in **D**.
+This is a **Fibonacci** program written in **D**.
 
 ## Prerequisite
 
