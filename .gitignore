@@ -41,3 +41,12 @@ node_modules
 
 # swift
 **/.build
+
+# object files
+*.o
+*.out
+*.cmi
+*.cmo
+*.class
+*.exe
+*.dll
