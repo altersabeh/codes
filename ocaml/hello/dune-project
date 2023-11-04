@@ -17,7 +17,7 @@
 
 (package
  (name ocaml-hello)
- (synopsis "Programs")
+ (synopsis "An OCaml Program")
  (description "Hello World program written in OCaml")
  (depends ocaml dune)
  (tags
