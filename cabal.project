@@ -1,12 +1,9 @@
-resolver:
-  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/nightly/2023/10/29.yaml
-
 packages:
-- haskell/hello
-- haskell/fibonacci
+  haskell/hello
+  haskell/fibonacci
 
-ghc-options:
-  "$everything":
+package *
+  ghc-options:
     -Wall
     -Wcompat
     -Widentities
@@ -19,3 +16,5 @@ ghc-options:
     -threaded
     -rtsopts
     -with-rtsopts=-N
+
+with-compiler: ghc

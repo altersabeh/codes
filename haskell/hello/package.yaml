@@ -1,0 +1,24 @@
+name:                haskell-hello
+version:             1.0.0.0
+synopsis:            Fibonacci program written in Haskell
+description:         Please see the README on GitHub at <https://github.com/altersabeh/codes#README>
+github:              "altersabeh/codes"
+homepage:            "https://github.com/altersabeh/codes"
+license:             MIT
+author:              "altersabeh"
+maintainer:          "betamaximum22@gmail.com"
+copyright:           "2023 altersabeh"
+category:            Others
+
+extra-source-files:
+  - README.md
+
+language: GHC2021
+
+dependencies:
+  - base >= 4.18 && < 5
+
+executables:
+  haskell-hello:
+    main:                hello.hs
+    source-dirs:         .
