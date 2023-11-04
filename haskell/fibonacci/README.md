@@ -60,7 +60,7 @@ If you used `ghc` for building:
 
 You can also use `runhaskell` to run it directly:
 
-* `run-haskell fibonacci.hs`
+* `runhaskell fibonacci.hs`
 
 ## License
 
