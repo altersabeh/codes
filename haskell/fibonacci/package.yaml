@@ -15,6 +15,20 @@ extra-source-files:
 
 language: GHC2021
 
+ghc-options:
+  -Wall
+  -Wcompat
+  -Widentities
+  -Wincomplete-record-updates
+  -Wincomplete-uni-patterns
+  -Wmissing-export-lists
+  -Wmissing-home-modules
+  -Wpartial-fields
+  -Wredundant-constraints
+  -threaded
+  -rtsopts
+  -with-rtsopts=-N
+
 dependencies:
   - base >= 4.18 && < 5
   - time >= 1.12 && < 2
@@ -23,4 +37,4 @@ dependencies:
 executables:
   haskell-fibonacci:
     main:                fibonacci.hs
-    source-dirs:         .
+    source-dirs:         src
