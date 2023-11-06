@@ -13,20 +13,20 @@ build: $(OBJC_BINDIR)/$(EXECUTABLE)
 $(EXECUTABLE): build
 
 $(OBJC_BINDIR)/$(EXECUTABLE): $(OBJC_BINDIR)/$(OBJECTS)
-	mkdir $(OBJC_BINDIR) -p
+	@mkdir $(OBJC_BINDIR) -p
 	$(OBJC) $^ $(MXFLAGS) $(LDFLAGS) -o $@
 
 $(OBJC_BINDIR)/%.o: $(SRCDIR)/%.m
-	mkdir $(OBJC_BINDIR) -p
+	@mkdir $(OBJC_BINDIR) -p
 	$(OBJC) -c $(MXFLAGS) $< -o $@
 
 run: $(OBJC_BINDIR)/$(EXECUTABLE)
 	@echo Running $(EXECUTABLE) program:
-	cd $(CURDIR)/$(OBJC_BINDIR) && \
+	@cd $(CURDIR)/$(OBJC_BINDIR) && \
 	./$(EXECUTABLE)
 
 clean:
-	cd $(OBJC_BINDIR) && \
+	@cd $(OBJC_BINDIR) && \
 	rm -rf $(EXECUTABLE) $(OBJECTS) $(DEPS)
 
 TITLE = Hello World

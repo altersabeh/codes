@@ -12,20 +12,20 @@ $(EXECUTABLE): build
 build: $(C_BINDIR)/$(EXECUTABLE)
 
 $(C_BINDIR)/$(EXECUTABLE): $(C_BINDIR)/$(OBJECTS)
-	mkdir $(C_BINDIR) -p
+	@mkdir $(C_BINDIR) -p
 	$(CC) $^ $(CFLAGS) $(LDFLAGS) -o $@
 
 $(C_BINDIR)/%.o: $(SRCDIR)/%.c
-	mkdir $(C_BINDIR) -p
+	@mkdir $(C_BINDIR) -p
 	$(CC) -c $(CFLAGS) $< -o $@
 
 run: $(C_BINDIR)/$(EXECUTABLE)
 	@echo Running $(EXECUTABLE) program:
-	cd $(CURDIR)/$(C_BINDIR) && \
+	@cd $(CURDIR)/$(C_BINDIR) && \
 	./$(EXECUTABLE)
 
 clean:
-	cd $(C_BINDIR) && \
+	@cd $(C_BINDIR) && \
 	rm -rf $(EXECUTABLE) $(OBJECTS)
 
 TITLE = Fibonacci

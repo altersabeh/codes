@@ -25,7 +25,7 @@ run: $(CPP_BINDIR)/$(EXECUTABLE)
 	./$(EXECUTABLE)
 
 clean:
-	cd $(CPP_BINDIR) && \
+	@cd $(CPP_BINDIR) && \
 	rm -rf $(EXECUTABLE) $(OBJECTS)
 
 TITLE = Greeter

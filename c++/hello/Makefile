@@ -13,20 +13,20 @@ $(EXECUTABLE): build
 build: $(CPP_BINDIR)/$(EXECUTABLE)
 
 $(CPP_BINDIR)/$(EXECUTABLE): $(CPP_BINDIR)/$(OBJECTS)
-	mkdir $(CPP_BINDIR) -p
+	@mkdir $(CPP_BINDIR) -p
 	$(CXX) $^ $(CXXFLAGS) $(LDFLAGS) -o $@
 
 $(CPP_BINDIR)/%.o: $(SRCDIR)/%.cpp
-	mkdir $(CPP_BINDIR) -p
+	@mkdir $(CPP_BINDIR) -p
 	$(CXX) -c $(CXXFLAGS) $< -o $@
 
 run: $(CPP_BINDIR)/$(EXECUTABLE)
 	@echo Running $(EXECUTABLE) program:
-	cd $(CURDIR)/$(CPP_BINDIR) && \
+	@cd $(CURDIR)/$(CPP_BINDIR) && \
 	./$(EXECUTABLE)
 
 clean:
-	cd $(CPP_BINDIR) && \
+	@cd $(CPP_BINDIR) && \
 	rm -rf $(EXECUTABLE) $(OBJECTS)
 
 TITLE = Hello World
