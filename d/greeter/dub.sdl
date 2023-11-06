@@ -6,7 +6,8 @@ homepage "https://github.com/altersabeh/codes#README"
 authors "AlterSabeh"
 copyright "Copyright © 2023, AlterSabeh"
 
-mainSourceFile "greeter.d"
+sourcePaths "src"
+mainSourceFile "src/greeter.d"
 
 targetType "executable"
 targetName "d-greeter"

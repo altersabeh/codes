@@ -6,7 +6,8 @@ homepage "https://github.com/altersabeh/codes#README"
 authors "AlterSabeh"
 copyright "Copyright © 2023, AlterSabeh"
 
-mainSourceFile "fibonacci.d"
+sourcePaths "src"
+mainSourceFile "src/fibonacci.d"
 
 targetType "executable"
 targetName "d-fibonacci"
