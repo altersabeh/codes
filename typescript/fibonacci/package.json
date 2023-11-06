@@ -13,12 +13,14 @@
   "keywords": [
     "command-line-utilities"
   ],
-  "main": "ts-fibonacci.js",
-  "bin": "ts-fibonacci.js",
+  "main": "index.js",
+  "bin": {
+    "ts-fibonacci": "index.js"
+  },
   "scripts": {
-    "ts-fibonacci": "ts-node fibonacci.ts",
+    "ts-fibonacci": "ts-node index.ts",
     "prepack": "mkdir -p $NPM_CONFIG_PACK_DESTINATION",
-    "start": "ts-node ts-fibonacci.ts"
+    "start": "ts-node index.ts"
   },
   "devDependencies": {
     "@types/node": "^20.8.10",

@@ -1,7 +1,7 @@
 {
   "name": "js-hello",
   "version": "1.0.0",
-  "description": "Hello in JavaScript",
+  "description": "Hello World program written in JavaScript",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -13,11 +13,13 @@
   "keywords": [
     "command-line-utilities"
   ],
-  "main": "js-hello.js",
-  "bin": "js-hello.js",
+  "main": "index.js",
+  "bin": {
+    "js-hello": "index.js"
+  },
   "scripts": {
-    "js-hello": "node hello.js",
+    "js-hello": "node index.js",
     "prepack": "mkdir -p $NPM_CONFIG_PACK_DESTINATION",
-    "start": "node js-hello.js"
+    "start": "node index.js"
   }
 }

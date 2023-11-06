@@ -1,24 +1,26 @@
 {
   "name": "js-greeter",
   "version": "1.0.0",
-  "description": "Greeter in JavaScript",
+  "description": "Greeter program written in JavaScript",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/altersabeh/codes",
-    "directory": "javascript/hello"
+    "directory": "javascript/greeter"
   },
   "homepage": "https://github.com/altersabeh/codes#README",
   "author": "AlterSabeh",
   "keywords": [
     "command-line-utilities"
   ],
-  "main": "js-greeter.js",
-  "bin": "js-greeter.js",
+  "main": "index.js",
+  "bin": {
+    "js-greeter": "index.js"
+  },
   "scripts": {
-    "js-greeter": "node greeter.js",
+    "js-greeter": "node index.js",
     "prepack": "mkdir -p $NPM_CONFIG_PACK_DESTINATION",
-    "start": "node js-greeter.js"
+    "start": "node index.js"
   },
   "devDependencies": {
     "@types/prompt-sync": "^4.2.2"

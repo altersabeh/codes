@@ -1,7 +1,7 @@
 {
   "name": "ts-hello",
   "version": "1.0.0",
-  "description": "Hello World program writtenin TypeScript",
+  "description": "Hello World program written in TypeScript",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -13,12 +13,14 @@
   "keywords": [
     "command-line-utilities"
   ],
-  "main": "ts-hello.ts",
-  "bin": "ts-hello.ts",
+  "main": "index.js",
+  "bin": {
+    "ts-hello": "index.js"
+  },
   "scripts": {
-    "ts-hello": "ts-node hello.ts",
+    "ts-hello": "ts-node index.ts",
     "prepack": "mkdir -p $NPM_CONFIG_PACK_DESTINATION",
-    "start": "ts-node ts-hello.ts"
+    "start": "ts-node index.ts"
   },
   "devDependencies": {
     "@types/node": "^20.8.10",

@@ -6,19 +6,21 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/altersabeh/codes",
-    "directory": "javascript/hello"
+    "directory": "javascript/fibonacci"
   },
   "homepage": "https://github.com/altersabeh/codes#README",
   "author": "AlterSabeh",
   "keywords": [
     "command-line-utilities"
   ],
-  "main": "js-fibonacci.js",
-  "bin": "js-fibonacci.js",
+  "main": "index.js",
+  "bin": {
+    "js-fibonacci": "index.js"
+  },
   "scripts": {
-    "js-fibonacci": "node fibonacci.js",
+    "js-fibonacci": "node index.js",
     "prepack": "mkdir -p $NPM_CONFIG_PACK_DESTINATION",
-    "start": "node js-fibonacci.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "moment": "^2.29.4"
