@@ -2,6 +2,7 @@
 !*.*
 !*/
 !LICENSE
+*.log
 
 # alire
 **/alire
