@@ -4,7 +4,7 @@ LDFLAGS = -lgnustep-base -lobjc
 EXECUTABLE = objc-greeter
 OBJC_BINDIR = ../../bin/objc
 OBJECTS = $(patsubst %.m,%.o,$(wildcard *.m))
-DEPS = $(patsubst %.m,%.d,$(wildcard *.m))
+DEPS = $(patsubst $(SRCDIR)/%.m,%.d,$(wildcard $(SRCDIR)/*.m))
 
 .PHONY: $(EXECUTABLE) build run clean help
 
@@ -16,7 +16,7 @@ $(OBJC_BINDIR)/$(EXECUTABLE): $(OBJC_BINDIR)/$(OBJECTS)
 	mkdir $(OBJC_BINDIR) -p
 	$(OBJC) $^ $(MXFLAGS) $(LDFLAGS) -o $@
 
-$(OBJC_BINDIR)/%.o: %.m
+$(OBJC_BINDIR)/%.o: $(SRCDIR)/%.m
 	mkdir $(OBJC_BINDIR) -p
 	$(OBJC) -c $(MXFLAGS) $< -o $@
 

@@ -3,7 +3,7 @@ CFLAGS = -Wall -Werror -g -O2 -fno-strict-aliasing -fexceptions
 LDFLAGS = -lgmp
 EXECUTABLE = c-fibonacci
 C_BINDIR = ../../bin/c
-OBJECTS = $(patsubst %.c,%.o,$(wildcard *.c))
+OBJECTS = $(patsubst $(SRCDIR)/%.c,%.o,$(wildcard $(SRCDIR)/*.c))
 
 .PHONY: $(EXECUTABLE) build run clean help
 
@@ -15,7 +15,7 @@ $(C_BINDIR)/$(EXECUTABLE): $(C_BINDIR)/$(OBJECTS)
 	mkdir $(C_BINDIR) -p
 	$(CC) $^ $(CFLAGS) $(LDFLAGS) -o $@
 
-$(C_BINDIR)/%.o: %.c
+$(C_BINDIR)/%.o: $(SRCDIR)/%.c
 	mkdir $(C_BINDIR) -p
 	$(CC) -c $(CFLAGS) $< -o $@
 
