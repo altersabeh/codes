@@ -2,18 +2,10 @@ plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.9.10' apply false
 }
 
-ext {
-    guavaVersion = '32.1.1-jre'
-    kotlinVersion = '1.9.10'
-    javaToolchainVersion = 21
-    kotlinJvmToolchainVersion = 20
-}
-
 subprojects {
     repositories {
         mavenCentral()
     }
-    version = "1.0.0"
 }
 
 project(':java') {
@@ -29,7 +21,7 @@ project(':java') {
                 }
             }
         }
-        buildDir = "../../bin/java/${projectDir.name}"
+        buildDir = "${project.rootDir}/bin/java/${projectDir.name}"
         java {
             toolchain {
                 languageVersion = JavaLanguageVersion.of(javaToolchainVersion)
@@ -61,9 +53,11 @@ project(':kotlin') {
                 }
             }
         }
-        buildDir = "../../bin/kotlin/${projectDir.name}"
-        kotlin {
-            jvmToolchain(kotlinJvmToolchainVersion)
+        buildDir = "${project.rootDir}/bin/kotlin/${projectDir.name}"
+        java {
+            toolchain {
+                languageVersion = JavaLanguageVersion.of(kotlinJvmToolchainVersion)
+            }
         }
         defaultTasks "kotlin-${projectDir.name}"
     }
