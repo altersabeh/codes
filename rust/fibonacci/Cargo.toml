@@ -20,4 +20,4 @@ lazy_static = { workspace = true }
 
 [[bin]]
 name = "rust-fibonacci"
-path = "fibonacci.rs"
+path = "src/fibonacci.rs"

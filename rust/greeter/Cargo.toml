@@ -15,4 +15,4 @@ edition.workspace = true
 
 [[bin]]
 name = "rust-greeter"
-path = "greeter.rs"
+path = "src/greeter.rs"

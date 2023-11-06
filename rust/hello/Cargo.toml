@@ -15,4 +15,4 @@ edition.workspace = true
 
 [[bin]]
 name = "rust-hello"
-path = "hello.rs"
+path = "src/hello.rs"
