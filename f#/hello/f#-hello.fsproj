@@ -17,6 +17,5 @@
     <OutputType>Exe</OutputType>
     <AssemblyName>f#-hello</AssemblyName>
     <TargetFramework>net7.0</TargetFramework>
-    <BaseOutputPath>..\..\bin\f#\hello</BaseOutputPath>
   </PropertyGroup>
 </Project>

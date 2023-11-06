@@ -17,6 +17,5 @@
     <OutputType>Exe</OutputType>
     <AssemblyName>f#-fibonacci</AssemblyName>
     <TargetFramework>net7.0</TargetFramework>
-    <BaseOutputPath>..\..\bin\f#\fibonacci</BaseOutputPath>
   </PropertyGroup>
 </Project>

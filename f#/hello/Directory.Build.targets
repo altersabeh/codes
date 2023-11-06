@@ -1,9 +1,6 @@
 <Project>
-  <PropertyGroup>
-    <BaseIntermediateOutputPath>..\..\bin\c#\obj\hello</BaseIntermediateOutputPath>
-  </PropertyGroup>
-
   <ItemGroup>
+    <Compile Include="src/hello.fs"/>
     <None Include="README.md" Pack="true" PackagePath="\"/>
     <None Include="LICENSE" Pack="true" PackagePath="\"/>
   </ItemGroup>

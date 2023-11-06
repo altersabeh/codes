@@ -18,6 +18,5 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <BaseOutputPath>..\..\bin\c#\fibonacci</BaseOutputPath>
   </PropertyGroup>
 </Project>

@@ -1,9 +1,6 @@
 <Project>
-  <PropertyGroup>
-    <BaseIntermediateOutputPath>..\..\bin\c#\obj\greeter</BaseIntermediateOutputPath>
-  </PropertyGroup>
-
   <ItemGroup>
+    <Compile Include="src/fibonacci.fs" />
     <None Include="README.md" Pack="true" PackagePath="\"/>
     <None Include="LICENSE" Pack="true" PackagePath="\"/>
   </ItemGroup>

@@ -1,5 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <PackageId>cs-hello</PackageId>
     <Version>1.0.0</Version>
@@ -19,7 +18,5 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <BaseOutputPath>..\..\bin\c#\hello</BaseOutputPath>
   </PropertyGroup>
-
 </Project>
