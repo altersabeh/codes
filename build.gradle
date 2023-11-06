@@ -25,7 +25,7 @@ project(':java') {
         sourceSets {
             main {
                 java {
-                    srcDirs = ['.']
+                    srcDirs = ['src']
                 }
             }
         }
@@ -57,7 +57,7 @@ project(':kotlin') {
         sourceSets {
             main {
                 kotlin {
-                    srcDirs = ['.']
+                    srcDirs = ['src']
                 }
             }
         }
