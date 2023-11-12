@@ -3,15 +3,11 @@
 !*/
 !LICENSE
 *.log
+**/test
 
 # alire
 **/alire
 **/config
-
-# makefiles
-!Makefile
-
-**/test
 
 # cargo
 **/bin
@@ -29,12 +25,20 @@ _build
 # gradle
 **/.gradle
 
-# python
-__pycache__/
-
 # js and ts
 node_modules
 **/.nx
+
+# makefiles
+!Makefile
+
+# pants
+/.pants.*
+/dist/
+/.pids
+
+# python
+__pycache__/
 
 # stack cabal
 **/dist-newstyle
