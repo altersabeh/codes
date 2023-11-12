@@ -3,6 +3,11 @@ name = "codes"
 version = "1.0.0"
 description = "Repository for My Codes"
 authors = ["altersabeh"]
+packages = [
+  { include = "*/*.py", from = "python/hello/src" },
+  { include = "*/*.py", from = "python/greeter/src" },
+  { include = "*/*.py", from = "python/fibonacci/src" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -10,10 +15,15 @@ python = "^3.11"
 [tool.poetry.group.dev.dependencies]
 poethepoet = "^0.24.2"
 
+[tool.poetry.scripts]
+python-hello = "python_hello.hello:main"
+python-greeter = "python_greeter.greeter:main"
+python-fibonacci = "python_fibonacci.fibonacci:main"
+
 [tool.poe.tasks]
 python-hello = "python python/hello/src/*/hello.py"
-python-greeter = "python python/greeter/*/greeter.py"
-python-fibonacci = "python python/fibonacci/*/fibonacci.py"
+python-greeter = "python python/greeter/src/*/greeter.py"
+python-fibonacci = "python python/fibonacci/src/*/fibonacci.py"
 
 [build-system]
 requires = ["poetry-core"]
