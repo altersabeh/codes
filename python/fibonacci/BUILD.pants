@@ -1,33 +1,33 @@
 python_sources(
-  name="src",
-  sources=["src/python_fibonacci/**"]
+    name = "src",
+    sources = ["src/python_fibonacci/**"]
 )
 
 pex_binary(
-  name="pex",
-  entry_point="src/python_fibonacci/fibonacci.py",
-  output_path="python/bin/python-fibonacci.pex",
+    name = "pex",
+    entry_point = "src/python_fibonacci/fibonacci.py",
+    output_path = "python/bin/python-fibonacci.pex",
 )
 
 resources(
-  name="pyproject",
-  sources=[
-    "pyproject.toml",
-    "README.md",
-    "LICENSE",
-  ]
+    name = "pyproject",
+    sources = [
+        "pyproject.toml",
+        "README.md",
+        "LICENSE",
+    ]
 )
 
 python_distribution(
-  name="wheel",
-  dependencies=[
-    ":pyproject",
-    ":src",
-  ],
-  provides=python_artifact(
-    name="python_fibonacci",
-    version="1.0.0",
-  ),
-  generate_setup = False,
-  output_path = "python/package",
+    name = "wheel",
+    dependencies = [
+        ":pyproject",
+        ":src",
+    ],
+    provides = python_artifact (
+        name = "python_fibonacci",
+        version = "1.0.0",
+    ),
+    generate_setup = False,
+    output_path = "python/package",
 )

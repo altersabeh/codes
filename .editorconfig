@@ -12,7 +12,7 @@ trim_trailing_whitespace = true
 insert_final_newline = true
 max_line_length = 80
 
-[{Package.swift,*.gradle}]
+[{Package.swift,*.gradle,*.pants}]
 indent_size = 4
 
 [*.json]

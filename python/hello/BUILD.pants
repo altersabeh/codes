@@ -1,33 +1,33 @@
 python_sources(
-  name="src",
-  sources=["src/python_hello/**"]
+    name = "src",
+    sources = ["src/python_hello/**"]
 )
 
 pex_binary(
-  name="pex",
-  entry_point="src/python_hello/hello.py",
-  output_path="python/bin/python-hello.pex",
+    name = "pex",
+    entry_point = "src/python_hello/hello.py",
+    output_path = "python/bin/python-hello.pex",
 )
 
 resources(
-  name="pyproject",
-  sources=[
-    "pyproject.toml",
-    "README.md",
-    "LICENSE",
-  ]
+    name = "pyproject",
+    sources = [
+        "pyproject.toml",
+        "README.md",
+        "LICENSE",
+    ]
 )
 
 python_distribution(
-  name="wheel",
-  dependencies=[
-    ":pyproject",
-    ":src",
-  ],
-  provides=python_artifact(
-    name="python_hello",
-    version="1.0.0",
-  ),
-  generate_setup = False,
-  output_path = "python/package",
+    name = "wheel",
+    dependencies = [
+        ":pyproject",
+        ":src",
+    ],
+    provides = python_artifact (
+        name = "python_hello",
+        version = "1.0.0",
+    ),
+    generate_setup = False,
+    output_path = "python/package",
 )

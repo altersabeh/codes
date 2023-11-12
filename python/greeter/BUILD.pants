@@ -1,33 +1,33 @@
 python_sources(
-  name="src",
-  sources=["src/python_greeter/**"]
+    name = "src",
+    sources = ["src/python_greeter/**"]
 )
 
 pex_binary(
-  name="pex",
-  entry_point="src/python_greeter/greeter.py",
-  output_path="python/bin/python-greeter.pex",
+    name = "pex",
+    entry_point = "src/python_greeter/greeter.py",
+    output_path = "python/bin/python-greeter.pex",
 )
 
 resources(
-  name="pyproject",
-  sources=[
-    "pyproject.toml",
-    "README.md",
-    "LICENSE",
-  ]
+    name = "pyproject",
+    sources = [
+        "pyproject.toml",
+        "README.md",
+        "LICENSE",
+    ]
 )
 
 python_distribution(
-  name="wheel",
-  dependencies=[
-    ":pyproject",
-    ":src",
-  ],
-  provides=python_artifact(
-    name="python_greeter",
-    version="1.0.0",
-  ),
-  generate_setup = False,
-  output_path = "python/package",
+    name = "wheel",
+    dependencies = [
+        ":pyproject",
+        ":src",
+    ],
+    provides = python_artifact (
+        name = "python_greeter",
+        version = "1.0.0",
+    ),
+    generate_setup = False,
+    output_path = "python/package",
 )
