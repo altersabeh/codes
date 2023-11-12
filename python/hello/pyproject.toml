@@ -17,9 +17,6 @@ classifiers = [
   "Operating System :: OS Independent",
 ]
 readme = "README.md"
-packages = [
-  { include = "*/*.py", from = "src" }
-]
 
 [tool.poetry.dependencies]
 python = "^3.11"
