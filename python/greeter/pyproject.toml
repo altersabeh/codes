@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "python-fibonacci"
+name = "python-greeter"
 version = "1.0.0"
-description = "Fibonacci program written in Python"
+description = "Greeter program written in Python"
 license = "MIT"
 repository = "https://github.com/altersabeh/codes"
 homepage = "https://github.com/altersabeh/codes#README"
@@ -17,12 +17,15 @@ classifiers = [
   "Operating System :: OS Independent",
 ]
 readme = "README.md"
+packages = [
+  { include = "*.py", from = "python_greeter" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 
 [tool.poetry.scripts]
-python-fibonacci = "fibonacci:main"
+python-greeter = "greeter:main"
 
 [build-system]
 requires = ["poetry-core"]

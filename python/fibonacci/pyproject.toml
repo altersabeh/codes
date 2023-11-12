@@ -17,6 +17,9 @@ classifiers = [
   "Operating System :: OS Independent",
 ]
 readme = "README.md"
+packages = [
+  { include = "*.py", from = "python_fibonacci" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.11"

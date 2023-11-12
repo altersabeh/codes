@@ -17,12 +17,15 @@ classifiers = [
   "Operating System :: OS Independent",
 ]
 readme = "README.md"
+packages = [
+  { include = "*.py", from = "python_hello" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 
 [tool.poetry.scripts]
-python-fibonacci = "fibonacci:main"
+python-hello = "hello:main"
 
 [build-system]
 requires = ["poetry-core"]
