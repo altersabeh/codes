@@ -6,7 +6,7 @@ python_sources(
 pex_binary(
   name="pex",
   entry_point="src/python_fibonacci/fibonacci.py",
-  output_path="python/python-fibonacci.pex",
+  output_path="python/bin/python-fibonacci.pex",
 )
 
 resources(
@@ -29,5 +29,5 @@ python_distribution(
     version="1.0.0",
   ),
   generate_setup = False,
-  output_path = "python",
+  output_path = "python/package",
 )
