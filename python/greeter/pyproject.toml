@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "python-fibonacci"
+version = "1.0.0"
+description = "Fibonacci program written in Python"
+license = "MIT"
+repository = "https://github.com/altersabeh/codes"
+homepage = "https://github.com/altersabeh/codes#README"
+authors = [
+  "AlterSabeh"
+]
+keywords = [
+  "command-line-utilities"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+readme = "README.md"
+packages = [
+  { include = "*/*.py", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.scripts]
+python-fibonacci = "fibonacci:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

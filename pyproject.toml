@@ -2,16 +2,18 @@
 name = "codes"
 version = "1.0.0"
 description = "Repository for My Codes"
-authors = ["altersabeh <betamaximum22@gmail.com>"]
-readme = "README.md"
+authors = ["altersabeh"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 
+[tool.poetry.group.dev.dependencies]
+poethepoet = "^0.24.2"
+
 [tool.poe.tasks]
-python-hello = "python python/hello/hello.py"
-python-greeter = "python python/greeter/greeter.py"
-python-fibonacci = "python python/fibonacci/fibonacci.py"
+python-hello = "python python/hello/src/*/hello.py"
+python-greeter = "python python/greeter/*/greeter.py"
+python-fibonacci = "python python/fibonacci/*/fibonacci.py"
 
 [build-system]
 requires = ["poetry-core"]
