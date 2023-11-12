@@ -29,7 +29,7 @@ From the source directory you can run:
 
 You can also use `javac` from the source directory:
 
-* `javac greeter.java`
+* `javac Greeter.java`
 
 ## Running
 
@@ -42,7 +42,7 @@ From the root directory run:
 
 You can also use `java` to run it directly:
 
-* `java java/greeter/greeter.java`
+* `java java/greeter/Greeter.java`
 
 ### Source Directory _(optional)_
 
@@ -53,11 +53,11 @@ From the source directory you can run:
 
 If you used `javac` for building:
 
-* `java greeter`
+* `java Greeter`
 
 You can also use `java` to run it directly:
 
-* `java greeter.java`
+* `java Greeter.java`
 
 ## License
 

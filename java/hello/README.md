@@ -29,7 +29,7 @@ From the source directory you can run:
 
 You can also use `javac` from the source directory:
 
-* `javac hello.java`
+* `javac Hello.java`
 
 ## Running
 
@@ -42,7 +42,7 @@ From the root directory run:
 
 You can also use `java` to run it directly:
 
-* `java java/hello/hello.java`
+* `java java/hello/src/Hello.java`
 
 ### Source Directory _(optional)_
 
@@ -53,11 +53,11 @@ From the source directory you can run:
 
 If you used `javac` for building:
 
-* `java hello`
+* `java Hello`
 
 You can also use `java` to run it directly:
 
-* `java hello.java`
+* `java Hello.java`
 
 ## License
 
