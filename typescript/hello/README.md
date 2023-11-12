@@ -42,7 +42,7 @@ From the source directory you can run one of the following:
 
 * `npm start`
 * `node hello.ts`
-* `./ts-hello.ts`
+* `./index.ts`
 
 You can also use [`nx`](https://nx.dev/) from the source directory:
 

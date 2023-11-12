@@ -39,7 +39,7 @@ From the source directory you can run one of the following:
 
 * `npm start`
 * `node greeter.js`
-* `./js-greeter.js`
+* `./index.js`
 
 You can also use [`nx`](https://nx.dev/) from the source directory:
 
