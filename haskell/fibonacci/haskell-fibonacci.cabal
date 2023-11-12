@@ -8,7 +8,7 @@ name:           haskell-fibonacci
 version:        1.0.0.0
 synopsis:       Fibonacci program written in Haskell
 description:    Please see the README on GitHub at <https://github.com/altersabeh/codes#README>
-category:       Others
+category:       command-line-utilities
 homepage:       https://github.com/altersabeh/codes
 bug-reports:    https://github.com/altersabeh/codes/issues
 author:         altersabeh
@@ -19,6 +19,7 @@ license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.md
+    LICENSE
 
 source-repository head
   type: git
