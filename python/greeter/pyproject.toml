@@ -18,7 +18,7 @@ classifiers = [
 ]
 readme = "README.md"
 packages = [
-  { include = "*.py", from = "python_greeter" }
+  { include = "*/*.py", from = "src" }
 ]
 
 [tool.poetry.dependencies]

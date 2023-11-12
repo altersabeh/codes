@@ -18,14 +18,14 @@ classifiers = [
 ]
 readme = "README.md"
 packages = [
-  { include = "*.py", from = "python_hello" }
+  { include = "*/*.py", from = "src" }
 ]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 
 [tool.poetry.scripts]
-python-hello = "hello:main"
+python-hello = "python_hello.hello:main"
 
 [build-system]
 requires = ["poetry-core"]
