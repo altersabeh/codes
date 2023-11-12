@@ -1,0 +1,17 @@
+[GLOBAL]
+pants_version = "2.17.0"
+build_ignore = [
+  "**/BUILD.bzl",
+]
+
+backend_packages = [
+  "pants.backend.python",
+]
+
+[python-bootstrap]
+search_path = [
+  "<PYENV>"
+]
+
+[python]
+interpreter_constraints = ['>=3.10,<3.12']

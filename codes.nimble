@@ -5,7 +5,7 @@ author      = "altersabeh"
 description = "Repository for My Codes"
 license     = "MIT"
 
-binDir = "bin/nim"
+binDir = "dist/nim"
 srcDir = "nim"
 
 namedBin = {"hello/hello" : "nim-hello",

@@ -2,7 +2,7 @@ CXX = g++
 CXXFLAGS = -Wall -Werror -g -O2 -fno-strict-aliasing -fexceptions
 LDFLAGS =
 EXECUTABLE = c++-hello
-CPP_BINDIR = ../../bin/c++
+CPP_BINDIR = ../../dist/c++
 SRCDIR = src
 OBJECTS = $(patsubst $(SRCDIR)/%.cpp,%.o,$(wildcard $(SRCDIR)/*.cpp))
 

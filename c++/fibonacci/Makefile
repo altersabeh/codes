@@ -2,7 +2,7 @@ CXX = g++
 CXXFLAGS = -Wall -Werror -g -O2 -fno-strict-aliasing -fexceptions
 LDFLAGS = -lntl -lgmp -lm
 EXECUTABLE = c++-fibonacci
-CPP_BINDIR = ../../bin/c++
+CPP_BINDIR = ../../dist/c++
 OBJECTS = $(patsubst $(SRCDIR)/%.cpp,%.o,$(wildcard $(SRCDIR)/*.cpp))
 
 .PHONY: $(EXECUTABLE) build run clean help

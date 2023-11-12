@@ -2,9 +2,9 @@
   <PropertyGroup>
     <RepoRoot>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))</RepoRoot>
     <ProjectRelativePath>$([MSBuild]::MakeRelative($(RepoRoot), $(MSBuildProjectDirectory)))</ProjectRelativePath>
-    <BaseOutputPath>$(RepoRoot)bin/$(ProjectRelativePath)</BaseOutputPath>
+    <BaseOutputPath>$(RepoRoot)dist/$(ProjectRelativePath)</BaseOutputPath>
     <OutputPath>$(BaseOutputPath)</OutputPath>
-    <BaseIntermediateOutputPath>$(RepoRoot)bin/intermediates/$(ProjectRelativePath)/obj</BaseIntermediateOutputPath>
+    <BaseIntermediateOutputPath>$(RepoRoot)dist/intermediates/$(ProjectRelativePath)/obj</BaseIntermediateOutputPath>
     <IntermediateOutputPath>$(BaseIntermediateOutputPath)</IntermediateOutputPath>
   </PropertyGroup>
 </Project>

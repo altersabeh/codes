@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Werror -g -O2 -fno-strict-aliasing -fexceptions
 LDFLAGS =
 EXECUTABLE = c-hello
-C_BINDIR = ../../bin/c
+C_BINDIR = ../../dist/c
 OBJECTS = $(patsubst %.c,%.o,$(wildcard *.c))
 
 .PHONY: $(EXECUTABLE) build run clean help

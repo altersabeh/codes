@@ -21,7 +21,7 @@ project(':java') {
                 }
             }
         }
-        buildDir = "${project.rootDir}/bin/java/${projectDir.name}"
+        buildDir = "${project.rootDir}/dist/java/${projectDir.name}"
         java {
             toolchain {
                 languageVersion = JavaLanguageVersion.of(javaToolchainVersion)
@@ -53,7 +53,7 @@ project(':kotlin') {
                 }
             }
         }
-        buildDir = "${project.rootDir}/bin/kotlin/${projectDir.name}"
+        buildDir = "${project.rootDir}/dist/kotlin/${projectDir.name}"
         java {
             toolchain {
                 languageVersion = JavaLanguageVersion.of(kotlinJvmToolchainVersion)

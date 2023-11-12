@@ -43,7 +43,7 @@ func Build() {
 // clean the build directory
 func Clean() {
   fmt.Println("Cleaning build directory...")
-  os.RemoveAll("bin/go")
+  os.RemoveAll("dist/go")
 }
 
 func Message() {
@@ -52,7 +52,7 @@ func Message() {
 
 func buildProgram(program string) error {
   fmt.Printf("Building %s program...\n", program)
-  cmd := exec.Command("go", "build", "-o", fmt.Sprintf("bin/go/%s", program), program)
-  fmt.Printf("Built %s successfully in bin/go directory\n", program)
+  cmd := exec.Command("go", "build", "-o", fmt.Sprintf("dist/go/%s", program), program)
+  fmt.Printf("Built %s successfully in dist/go directory\n", program)
   return cmd.Run()
 }
