@@ -4,18 +4,3 @@ resolver:
 packages:
 - haskell/hello
 - haskell/fibonacci
-
-ghc-options:
-  "$everything":
-    -Wall
-    -Wcompat
-    -Widentities
-    -Wincomplete-record-updates
-    -Wincomplete-uni-patterns
-    -Wmissing-export-lists
-    -Wmissing-home-modules
-    -Wpartial-fields
-    -Wredundant-constraints
-    -threaded
-    -rtsopts
-    -with-rtsopts=-N
