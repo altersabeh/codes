@@ -21,7 +21,7 @@ From the root directory run the following:
 
 * `gradle java:greeter:build`
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 From the source directory you can run:
 
@@ -44,7 +44,7 @@ You can also use `java` to run it directly:
 
 * `java java/greeter/greeter.java`
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 From the source directory you can run:
 

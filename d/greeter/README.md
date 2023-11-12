@@ -23,7 +23,7 @@ From the root directory run one of the following:
 * `dub build codes:d-greeter`
 * `dub build --root c#/greeter`
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 From the source directory you can run:
 
@@ -44,7 +44,7 @@ From the root directory run:
 * `dub run codes:d-greeter`
 * `dub run --root c#/greeter`
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 From the source directory you can run:
 

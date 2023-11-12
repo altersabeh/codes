@@ -33,7 +33,7 @@ You can also use [`lerna`](https://lerna.js.org/) or [`nx`](https://nx.dev/) fro
 * `npx nx start js-hello`
 * `npx nx run js-hello:start`
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 From the source directory you can run one of the following:
 

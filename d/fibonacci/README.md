@@ -23,7 +23,7 @@ From the root directory run one of the following:
 * `dub build codes:d-fibonacci`
 * `dub build --root c#/fibonacci`
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 From the source directory you can run:
 
@@ -44,7 +44,7 @@ From the root directory run:
 * `dub run codes:d-fibonacci`
 * `dub run --root c#/fibonacci`
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 From the source directory you can run:
 

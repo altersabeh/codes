@@ -23,7 +23,7 @@ From the root directory run the following:
 
 * `gradle kotlin:fibonacci:build`
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 From the source directory you can run:
 
@@ -42,7 +42,7 @@ From the root directory run:
 * `gradle kotlin-fibonacci`
 * `gradle kotlin:fibonacci:run`
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 From the source directory you can run:
 

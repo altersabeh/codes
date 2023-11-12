@@ -22,7 +22,7 @@ From the root directory run one of the following:
 * `stack build haskell-hello` _**(recommended)**_
 * `cabal build haskell-hello` _**(optional)**_
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 From the source directory you can run:
 
@@ -47,7 +47,7 @@ You can also use `runhaskell` to run it directly: _**(optional)**_
 
 * `runhaskell haskell/hello/hello.hs`
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 From the source directory you can run:
 

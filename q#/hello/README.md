@@ -21,7 +21,7 @@ From the root directory run one of the following:
 * `dotnet build q#/hello/q#-hello.csproj`
 * `dotnet build --project q#/hello`
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 From the source directory you can run:
 
@@ -35,7 +35,7 @@ From the root directory run:
 
 * `dotnet run --project q#/hello`
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 From the source directory you can run:
 

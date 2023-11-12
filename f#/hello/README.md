@@ -19,7 +19,7 @@ From the root directory run one of the following:
 * `dotnet build f#/hello/f#-hello.fsproj`
 * `dotnet build --project f#/hello`
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 From the source directory you can run:
 
@@ -33,7 +33,7 @@ From the root directory run:
 
 * `dotnet run --project f#/hello`
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 From the source directory you can run:
 

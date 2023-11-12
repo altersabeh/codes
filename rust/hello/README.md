@@ -19,7 +19,7 @@ From the root directory run one of the following commands:
 * `cargo build -p rust-hello`
 * `cargo build --package rust-hello`
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 From the source directory you can run:
 
@@ -37,7 +37,7 @@ From the root directory run:
 
 * `cargo run --bin rust-hello`
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 
 From the source directory you can run:

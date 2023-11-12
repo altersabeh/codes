@@ -47,7 +47,7 @@ You can also use `ocaml` to run it directly:
 
 * `ocaml ocaml/greeter/greeter.ml`
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 From the source directory you can run:
 

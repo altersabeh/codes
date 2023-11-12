@@ -19,7 +19,7 @@ From the root directory run one of the following:
 * `dotnet build c#/fibonacci/c#-fibonacci.csproj`
 * `dotnet build --project c#/fibonacci`
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 From the source directory you can run:
 
@@ -33,7 +33,7 @@ From the root directory run:
 
 * `dotnet run --project c#/fibonacci`
 
-### Source DIrectory _(optional)_
+### Source Directory _(optional)_
 
 From the source directory you can run:
 
