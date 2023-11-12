@@ -3,7 +3,8 @@ CFLAGS = -Wall -Werror -g -O2 -fno-strict-aliasing -fexceptions
 LDFLAGS =
 EXECUTABLE = c-hello
 C_BINDIR = ../../dist/c
-OBJECTS = $(patsubst %.c,%.o,$(wildcard *.c))
+SRCDIR = src
+OBJECTS = $(patsubst $(SRCDIR)/%.c,%.o,$(wildcard $(SRCDIR)/*.c))
 
 .PHONY: $(EXECUTABLE) build run clean help
 
@@ -15,7 +16,7 @@ $(C_BINDIR)/$(EXECUTABLE): $(C_BINDIR)/$(OBJECTS)
 	@mkdir $(C_BINDIR) -p
 	$(CC) $^ $(CFLAGS) $(LDFLAGS) -o $@
 
-$(C_BINDIR)/%.o: %.c
+$(C_BINDIR)/%.o: $(SRCDIR)/%.c
 	@mkdir $(C_BINDIR) -p
 	$(CC) -c $(CFLAGS) $< -o $@
 

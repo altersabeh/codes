@@ -3,7 +3,8 @@ MXFLAGS = -Wall -Werror -MMD -MP -DGNUSTEP -DGNUSTEP_BASE_LIBRARY=1 -DGNU_GUI_LI
 LDFLAGS = -lgnustep-base -lobjc
 EXECUTABLE = objc-hello
 OBJC_BINDIR = ../../dist/objc
-OBJECTS = $(patsubst %.m,%.o,$(wildcard *.m))
+SRCDIR = src
+OBJECTS = $(patsubst $(SRCDIR)/%.m,%.o,$(wildcard $(SRCDIR)/*.m))
 DEPS = $(patsubst $(SRCDIR)/%.m,%.d,$(wildcard $(SRCDIR)/*.m))
 
 .PHONY: $(EXECUTABLE) build run clean help

@@ -3,6 +3,7 @@ CXXFLAGS = -Wall -Werror -g -O2 -fno-strict-aliasing -fexceptions
 LDFLAGS =
 EXECUTABLE = c++-greeter
 CPP_BINDIR = ../../dist/c++
+SRCDIR = src
 OBJECTS = $(patsubst $(SRCDIR)/%.cpp,%.o,$(wildcard $(SRCDIR)/*.cpp))
 
 .PHONY: $(EXECUTABLE) build run clean help
