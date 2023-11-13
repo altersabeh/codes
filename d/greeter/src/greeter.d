@@ -3,10 +3,8 @@ import std.string;
 
 class InputHandler {
   static string getUserName() {
-    string userinput;
-
     write("Enter your name: ");
-    userinput = readln();
+    string userinput = readln();
 
     string name = strip(userinput);
 

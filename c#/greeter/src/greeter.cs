@@ -2,10 +2,8 @@ namespace Greeter;
 
 class InputHandler {
   public static string? GetUserName() {
-    string? userinput;
-
     Console.Write("Enter your name: ");
-    userinput = Console.ReadLine();
+    string? userinput = Console.ReadLine();
 
     string? name = userinput?.Trim();
 

@@ -11,7 +11,6 @@ type InputHandler struct{}
 
 func (inputHandler InputHandler) getUserName() string {
   fmt.Print("Enter your name: ")
-
   reader := bufio.NewReader(os.Stdin)
   userInput, _ := reader.ReadString('\n')
 
