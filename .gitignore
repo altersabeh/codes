@@ -13,6 +13,10 @@
 **/bin
 **/target
 
+# dart
+**/.dart_tool
+melos*.iml
+
 # dotnet
 **/obj
 
@@ -21,6 +25,9 @@
 !dune-project
 !dune-workspace
 _build
+
+# editors
+**/.idea
 
 # gradle
 **/.gradle

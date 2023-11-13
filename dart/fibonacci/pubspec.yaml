@@ -1,0 +1,18 @@
+name: dart_fibonacci
+description: A Fibonacci Program Written in Different Languages
+version: 1.0.0
+repository: https://github.com/altersabeh/fibonacci
+
+environment:
+  sdk: ^3.1.5
+
+executable:
+  dart-fibonacci: fibonacci.dart
+
+dependencies:
+  path: ^1.8.0
+  intl: ^0.18.1
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.21.0

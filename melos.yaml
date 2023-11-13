@@ -1,0 +1,30 @@
+name: codes
+
+packages:
+  - dart/*
+
+scripts:
+  dart-hello:
+    run: cd dart/hello && dart run
+    description: "Hello World program written in Dart"
+
+  dart-greeter:
+    run: cd dart/greeter && dart run
+    description: "Greeter program written in Dart"
+
+  dart-fibonacci:
+    run: cd dart/fibonacci && dart run
+    description: "Fibonacci program written in Dart"
+
+  get:
+    exec: dart pub get
+    description: "Get packages"
+
+  upgrade:
+    exec: dart pub upgrade --major-versions
+    description: "Upgrade all packages"
+
+  outdated:
+    exec: dart pub outdated
+    description: "Check for outdated packages"
+
