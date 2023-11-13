@@ -10,7 +10,6 @@
 **/config
 
 # cargo
-**/bin
 **/target
 
 # dart
