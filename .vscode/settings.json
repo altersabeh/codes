@@ -21,7 +21,6 @@
     "**/node_modules": true,
     "**/obj": true,
     "**/target": true,
-    "**/test": true
   },
   "files.watcherExclude": {
     "**.resolved": true,
