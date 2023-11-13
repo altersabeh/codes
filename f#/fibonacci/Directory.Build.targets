@@ -2,6 +2,7 @@
   <ItemGroup>
     <Compile Include="src/fibonacci.fs" />
     <None Include="README.md" Pack="true" PackagePath="\"/>
+    <None Include="CHANGELOG.md" Pack="true" PackagePath="\"/>
     <None Include="LICENSE" Pack="true" PackagePath="\"/>
   </ItemGroup>
 </Project>

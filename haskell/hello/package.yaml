@@ -12,6 +12,7 @@ category:            command-line-utilities
 
 extra-source-files:
   - README.md
+  - CHANGELOG.md
   - LICENSE
 
 language: GHC2021

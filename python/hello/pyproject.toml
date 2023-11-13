@@ -5,18 +5,15 @@ description = "Hello World program written in Python"
 license = "MIT"
 repository = "https://github.com/altersabeh/codes"
 homepage = "https://github.com/altersabeh/codes#README"
-authors = [
-  "AlterSabeh"
-]
-keywords = [
-  "command-line-utilities"
-]
+authors = ["AlterSabeh"]
+keywords = ["command-line-utilities"]
 classifiers = [
   "Programming Language :: Python :: 3",
   "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent",
 ]
 readme = "README.md"
+include = ["CHANGELOG.md"]
 packages = [
   { include = "*/*.py", from = "src" }
 ]
