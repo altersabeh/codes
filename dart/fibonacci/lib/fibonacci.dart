@@ -122,7 +122,9 @@ int validateInput(String? input) {
     if (n > 0) {
       return n;
     }
-  } catch (e) {}
+  } catch (e) {
+    return -1;
+  }
   return -1;
 }
 
