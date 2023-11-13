@@ -6,8 +6,8 @@ repository: https://github.com/altersabeh/fibonacci
 environment:
   sdk: ^3.1.5
 
-executable:
-  dart-fibonacci: fibonacci.dart
+executables:
+  dart-fibonacci: dart_fibonacci
 
 dependencies:
   path: ^1.8.0
