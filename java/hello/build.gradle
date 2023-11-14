@@ -15,6 +15,6 @@ task ("java-${projectDir.name}", type: JavaExec) {
     description = "${projectDir.name.capitalize()} World program written in Java"
     group = "Application (Java)"
     classpath = sourceSets.main.runtimeClasspath
-    mainClass = "${projectDir.name.capitalize()}"
+    mainClass = "${projectDir.name}.${projectDir.name.capitalize()}"
     standardInput = System.in
 }

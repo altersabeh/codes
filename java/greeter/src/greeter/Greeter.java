@@ -1,3 +1,5 @@
+package greeter;
+
 import java.util.Scanner;
 
 public class Greeter {
