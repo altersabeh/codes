@@ -42,7 +42,7 @@ From the root directory run:
 
 You can also use `java` to run it directly:
 
-* `java java/fibonacci/Fibonacci.java`
+* `java java/fibonacci/src/fibonacci/Fibonacci.java`
 
 ### Source Directory _(optional)_
 
@@ -53,6 +53,7 @@ From the source directory you can run:
 
 If you used `javac` for building:
 
+* `cd ..`
 * `java Fibonacci`
 
 You can also use `java` to run it directly:
