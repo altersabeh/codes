@@ -38,11 +38,10 @@ public class Fibonacci {
     Scanner scanner = new Scanner(System.in);
     while (true) {
       System.out.print("Enter the value of n (an integer): ");
-      String input = scanner.nextLine();
-
       if (scanner.hasNextLine() == false) {
         eofHandler();
       }
+      String input = scanner.nextLine();
 
       String trimmedInput = input.trim();
 
