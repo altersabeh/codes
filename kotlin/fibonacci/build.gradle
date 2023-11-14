@@ -15,6 +15,6 @@ task ("kotlin-${projectDir.name}", type: JavaExec) {
     description = "${projectDir.name.capitalize()} program written in Kotlin"
     group = "Application (Kotlin)"
     classpath = sourceSets.main.runtimeClasspath
-    mainClass = "${projectDir.name.capitalize()}Kt"
+    mainClass = "${projectDir.name}.${projectDir.name.capitalize()}Kt"
     standardInput = System.in
 }
