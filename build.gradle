@@ -10,6 +10,7 @@ subprojects {
 
 project(':java') {
     subprojects {
+        apply plugin: 'application'
         apply plugin: 'java'
         dependencies {
             implementation "com.google.guava:guava:${guavaVersion}"
@@ -18,6 +19,14 @@ project(':java') {
             main {
                 java {
                     srcDirs = ['src']
+                }
+            }
+            main {
+                resources {
+                    srcDirs = ['.']
+                    include "README.md"
+                    include "CHANGELOG.md"
+                    include "LICENSE"
                 }
             }
         }
@@ -50,6 +59,14 @@ project(':kotlin') {
             main {
                 kotlin {
                     srcDirs = ['src']
+                }
+            }
+            main {
+                resources {
+                    srcDirs = ['.']
+                    include "README.md"
+                    include "CHANGELOG.md"
+                    include "LICENSE"
                 }
             }
         }
