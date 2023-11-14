@@ -36,6 +36,9 @@ project(':java') {
                 languageVersion = JavaLanguageVersion.of(javaToolchainVersion)
             }
         }
+        run {
+            standardInput = System.in
+        }
         defaultTasks "java-${projectDir.name}"
     }
     tasks.register('build') {
@@ -76,6 +79,9 @@ project(':kotlin') {
             toolchain {
                 languageVersion = JavaLanguageVersion.of(kotlinJvmToolchainVersion)
             }
+        }
+        run {
+            standardInput = System.in
         }
         defaultTasks "kotlin-${projectDir.name}"
     }

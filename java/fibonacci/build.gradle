@@ -18,3 +18,14 @@ task ("java-${projectDir.name}", type: JavaExec) {
     mainClass = "${projectDir.name}.${projectDir.name.capitalize()}"
     standardInput = System.in
 }
+
+application {
+    applicationName = "java-${projectDir.name}"
+    mainClass = "${projectDir.name}.${projectDir.name.capitalize()}"
+}
+
+distributions {
+    main {
+        distributionBaseName = "java-${projectDir.name}"
+    }
+}
