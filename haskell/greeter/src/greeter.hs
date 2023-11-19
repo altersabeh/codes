@@ -1,3 +1,4 @@
+import Data.Char (isSpace)
 import System.IO (hFlush, stdout)
 
 getUserName :: IO String
@@ -6,9 +7,9 @@ getUserName = do
   hFlush stdout
 
   userinput <- getLine
-  let name = dropWhile (`elem` " \t\n\r") userinput
+  let name = dropWhile isSpace userinput
 
-  return $ reverse $ dropWhile (`elem` " \t\n\r") $ reverse name
+  return $ reverse $ dropWhile isSpace $ reverse name
 
 newtype Greeter = Greeter String
 
