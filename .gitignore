@@ -41,7 +41,7 @@ node_modules
 
 # pants
 /.pants.*
-/dist/
+**/dist/
 /.pids
 
 # python

@@ -1,5 +1,6 @@
 packages:
   haskell/hello
+  haskell/greeter
   haskell/fibonacci
 
 with-compiler: ghc

@@ -3,4 +3,5 @@ resolver:
 
 packages:
 - haskell/hello
+- haskell/greeter
 - haskell/fibonacci

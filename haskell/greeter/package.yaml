@@ -1,0 +1,40 @@
+name:                haskell-greeter
+version:             1.0.0.0
+synopsis:            Greeter program written in Haskell
+description:         Please see the README on GitHub at <https://github.com/altersabeh/codes#README>
+license:             MIT
+github:              "altersabeh/codes"
+homepage:            "https://github.com/altersabeh/codes"
+author:              "altersabeh"
+maintainer:          "betamaximum22@gmail.com"
+copyright:           "2023 altersabeh"
+category:            command-line-utilities
+
+extra-source-files:
+  - README.md
+  - CHANGELOG.md
+  - LICENSE
+
+language: GHC2021
+
+ghc-options:
+  -Wall
+  -Wcompat
+  -Widentities
+  -Wincomplete-record-updates
+  -Wincomplete-uni-patterns
+  -Wmissing-export-lists
+  -Wmissing-home-modules
+  -Wpartial-fields
+  -Wredundant-constraints
+  -threaded
+  -rtsopts
+  -with-rtsopts=-N
+
+dependencies:
+  - base >= 4.18 && < 5
+
+executables:
+  haskell-greeter:
+    main:                greeter.hs
+    source-dirs:         src
