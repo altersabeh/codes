@@ -3,8 +3,8 @@
 Gem::Specification.new do |spec|
   spec.name = "ruby-hello"
   spec.version = "1.0.0"
-  spec.summary = "A Ruby program"
-  spec.description = "Hello World program written in Ruby"
+  spec.summary = "Hello World program written in Ruby"
+  spec.description = "A Hello World program written in Ruby programming language"
   spec.licenses = ["MIT"]
   spec.homepage = "https://github.com/altersabeh/codes#README"
   spec.authors = ["AlterSabeh"]
