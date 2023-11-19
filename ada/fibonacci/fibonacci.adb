@@ -6,7 +6,7 @@ with Ada.Text_IO;           use Ada.Text_IO;
 with Ada.Numerics.Big_Numbers.Big_Integers;
 use Ada.Numerics.Big_Numbers.Big_Integers;
 
-procedure Fibonacci is
+procedure FIBONACCI is
   function Get_Suffix (N : Integer) return String is
   begin
     if N mod 10 = 1 and then N mod 100 /= 11 then
@@ -80,4 +80,4 @@ procedure Fibonacci is
   end Main;
 begin
   Main;
-end Fibonacci;
+end FIBONACCI;
