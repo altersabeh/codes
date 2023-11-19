@@ -3,9 +3,7 @@ class InputHandler
     print "Enter your name: "
     user_input = gets.chomp
 
-    name = user_input.strip
-
-    return name
+    user_input.strip
   end
 end
 
