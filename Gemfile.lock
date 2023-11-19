@@ -9,6 +9,11 @@ PATH
     ruby-fibonacci (1.0.0)
 
 PATH
+  remote: ruby/greeter
+  specs:
+    ruby-greeter (1.0.0)
+
+PATH
   remote: ruby/hello
   specs:
     ruby-hello (1.0.0)
@@ -25,6 +30,7 @@ DEPENDENCIES
   codes!
   rake (~> 13.0)
   ruby-fibonacci!
+  ruby-greeter!
   ruby-hello!
 
 BUNDLED WITH
