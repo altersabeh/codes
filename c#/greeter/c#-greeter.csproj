@@ -15,7 +15,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <AssemblyName>c#-greeter</AssemblyName>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
