@@ -2,6 +2,6 @@
 
 require "bundler/gem_tasks"
 
-task :"ruby-fibo" do
+task :"ruby-hello" do
   sh "ruby lib/hello.rb"
 end
