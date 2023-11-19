@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
     "homepage_uri"      => "https://github.com/altersabeh/codes#README",
     "source_code_uri"   => "https://github.com/altersabeh/codes",
   }
-  spec.files = Dir["lib/**/*.rb"] + Dir["bin/*"] + Dir[*.gemspec]
+  spec.files = Dir["lib/**/*.rb"] + Dir["bin/*"] + Dir["*.gemspec"]
   spec.files += [
     "README.md",
     "CHANGELOG.md",
