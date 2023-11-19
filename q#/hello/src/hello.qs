@@ -10,4 +10,3 @@ namespace Hello {
     Message("Hello World from Q# !");
   }
 }
-
