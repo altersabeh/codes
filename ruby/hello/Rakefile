@@ -2,6 +2,8 @@
 
 require "bundler/gem_tasks"
 
+task default: :"ruby-hello"
+
 task :"ruby-hello" do
   sh "ruby lib/hello.rb"
 end
