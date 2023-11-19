@@ -18,6 +18,7 @@ melos*.iml
 
 # dotnet
 **/obj
+.fake
 
 # dune
 !dune
