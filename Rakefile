@@ -4,6 +4,7 @@ require 'bundler/gem_tasks'
 
 PROGRAMS = [
   'hello',
+  'greeter',
   'fibonacci'
 ]
 

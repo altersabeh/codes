@@ -1,0 +1,12 @@
+# frozen_string_literal: true
+
+require "bundler/gem_tasks"
+
+current_directory_path = Dir.pwd
+current_directory_name = File.basename(current_directory_path)
+
+task default: :"ruby-#{current_directory_name}"
+
+task :"ruby-#{current_directory_name}" do
+  sh "ruby lib/#{current_directory_name}.rb"
+end
