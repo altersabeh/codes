@@ -1,10 +1,15 @@
 # frozen_string_literal: true
 
 require "bundler/gem_tasks"
+
 task :default do
-  puts "Specify the name of file to build !"
+  puts "Specify the name of Ruby program to run !"
 end
 
 task :"ruby-hello" do
-  sh "ruby ruby/hello/lib/hello.rb"
+  sh "cd ruby/hello && rake"
+end
+
+task :"ruby-fibonacci" do
+  sh "cd ruby/fibonacci && rake"
 end

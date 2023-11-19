@@ -1,0 +1,9 @@
+# frozen_string_literal: true
+
+require "bundler/gem_tasks"
+
+task default: :"ruby-fibonacci"
+
+task :"ruby-fibonacci" do
+  sh "ruby lib/fibonacci.rb"
+end

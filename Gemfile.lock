@@ -4,6 +4,11 @@ PATH
     codes (1.0.0)
 
 PATH
+  remote: ruby/fibonacci
+  specs:
+    ruby-fibonacci (1.0.0)
+
+PATH
   remote: ruby/hello
   specs:
     ruby-hello (1.0.0)
@@ -19,6 +24,7 @@ PLATFORMS
 DEPENDENCIES
   codes!
   rake (~> 13.0)
+  ruby-fibonacci!
   ruby-hello!
 
 BUNDLED WITH
