@@ -1,0 +1,25 @@
+PATH
+  remote: .
+  specs:
+    codes (1.0.0)
+
+PATH
+  remote: ruby/hello
+  specs:
+    ruby-hello (1.0.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (13.1.0)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  codes!
+  rake (~> 13.0)
+  ruby-hello!
+
+BUNDLED WITH
+   2.4.20

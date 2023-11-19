@@ -1,0 +1,7 @@
+# frozen_string_literal: true
+
+require "bundler/gem_tasks"
+
+task :"ruby-fibo" do
+  sh "ruby lib/hello.rb"
+end

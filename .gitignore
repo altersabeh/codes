@@ -46,6 +46,11 @@ node_modules
 # python
 __pycache__/
 
+# rubygem
+!Gemfile
+!Rakefile
+!ruby/**
+
 # stack cabal
 **/dist-newstyle
 **/.stack-work
