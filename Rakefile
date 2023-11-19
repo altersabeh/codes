@@ -1,15 +1,19 @@
 # frozen_string_literal: true
 
-require "bundler/gem_tasks"
+require 'bundler/gem_tasks'
+
+PROGRAMS = [
+  'hello',
+  'fibonacci'
+]
 
 task :default do
-  puts "Specify the name of Ruby program to run !"
+  puts 'Specify the name of Ruby program to run !'
 end
 
-task :"ruby-hello" do
-  sh "cd ruby/hello && rake"
-end
-
-task :"ruby-fibonacci" do
-  sh "cd ruby/fibonacci && rake"
+PROGRAMS.each do |program|
+  desc "Run the #{program} program"
+  task "ruby-#{program}".to_sym do
+    sh "cd ruby/#{program} && rake"
+  end
 end
