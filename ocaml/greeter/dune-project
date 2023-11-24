@@ -1,8 +1,12 @@
 (lang dune 3.7)
 
+(generate_opam_files true)
+
 (name ocaml-greeter)
 
-(generate_opam_files true)
+(version 1.0.0)
+
+(license MIT)
 
 (source
  (github altersabeh/codes))
@@ -11,16 +15,14 @@
 
 (maintainers "AlterSabeh")
 
-(license MIT)
-
 (documentation https://github.com/altersabeh/codes#README)
+
+(homepage https://github.com/altersabeh/codes#README)
 
 (package
  (name ocaml-greeter)
  (synopsis "An OCaml Program")
- (description "Hello World program written in OCaml")
+ (description "Greeter program written in OCaml")
  (depends ocaml dune)
  (tags
-  (topics "to describe" your project)))
-
-; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
+  (command-line-utilities)))
