@@ -11,6 +11,10 @@ public class Greeter {
 
       String name = userinput.trim();
 
+      if (name.isEmpty()) {
+        name = "Stranger";
+      }
+
       return name;
     }
   }

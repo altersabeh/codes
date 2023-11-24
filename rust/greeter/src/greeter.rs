@@ -12,7 +12,11 @@ impl InputHandler {
 
     let name = userinput.trim().to_string();
 
-    return name;
+    if name.is_empty() {
+      "Stranger".to_string()
+    } else {
+      name
+    }
   }
 }
 

@@ -14,6 +14,10 @@ public:
     name.erase(0, name.find_first_not_of(" \t\n\r"));
     name.erase(name.find_last_not_of(" \t\n\r") + 1);
 
+    if (name.empty()) {
+      name = "Stranger";
+    }
+
     return name;
   }
 };

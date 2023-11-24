@@ -4,7 +4,10 @@ class InputHandler:
     username = input("Enter your name: ")
 
     name = username.strip()
-    
+
+    if name == "":
+      name = "Stranger"
+
     return name
 
 class Greeter:

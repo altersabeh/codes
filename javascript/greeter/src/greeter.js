@@ -6,6 +6,10 @@ class InputHandler {
 
     let name = userinput.trim();
 
+    if (name === "") {
+      name = "Stranger";
+    }
+
     return name;
   }
 }

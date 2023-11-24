@@ -7,6 +7,10 @@ class InputHandler {
 
     String? name = userInput?.trim();
 
+    if (name == null || name.isEmpty) {
+      name = "Stranger";
+    }
+
     return name;
   }
 }

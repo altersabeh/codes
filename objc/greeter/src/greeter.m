@@ -14,6 +14,10 @@
   NSString *name = [NSString stringWithUTF8String:userinput];
   name = [name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 
+  if ([name isEqualToString:@""]) {
+    name = @"Stranger";
+  }
+
   return name;
 }
 @end

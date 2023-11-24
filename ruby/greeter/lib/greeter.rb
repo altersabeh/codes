@@ -3,7 +3,11 @@ class InputHandler
     print "Enter your name: "
     user_input = gets.chomp
 
-    user_input.strip
+    name = user_input.strip
+
+    name = "Stranger" if name.empty?
+
+    name
   end
 end
 

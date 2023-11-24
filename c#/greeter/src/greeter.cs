@@ -7,6 +7,10 @@ class InputHandler {
 
     string? name = userinput?.Trim();
 
+    if (string.IsNullOrEmpty(name)) {
+      name = "Stranger";
+    }
+
     return name;
   }
 }

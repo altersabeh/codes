@@ -16,6 +16,10 @@ func (inputHandler InputHandler) getUserName() string {
 
   name := strings.TrimSpace(userInput)
 
+  if name == "" {
+    name = "Stranger"
+  }
+
   return name
 }
 

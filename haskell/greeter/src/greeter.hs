@@ -8,8 +8,11 @@ getUserName = do
 
   userinput <- getLine
   let name = dropWhile isSpace userinput
+  let trimmedName = reverse $ dropWhile isSpace $ reverse name
 
-  return $ reverse $ dropWhile isSpace $ reverse name
+  if null trimmedName
+    then return "Stranger"
+    else return trimmedName
 
 newtype Greeter = Greeter String
 

@@ -8,6 +8,10 @@ class InputHandler {
 
     string name = strip(userinput);
 
+    if (name.length == 0) {
+      name = "Stranger";
+    }
+
     return name;
   }
 }
@@ -20,7 +24,7 @@ class Greeter {
   }
 
   void greet() {
-    writefln("Hello, %s !", username);
+    writefln("Hello, %s!", username);
     writeln("Greetings from D!");
   }
 }
