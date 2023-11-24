@@ -1,7 +1,9 @@
 module InputHandler = struct
   let get_user_name () =
     print_string "Enter your name: ";
+
     let userinput = read_line () in
+
     String.trim userinput
 end
 
@@ -24,4 +26,5 @@ end
 let () =
   let name = InputHandler.get_user_name () in
   let greeter = Greeter.create (Some name) in
+
   Greeter.greet greeter
