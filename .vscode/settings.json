@@ -20,7 +20,7 @@
     "**/melos_*.iml": true,
     "**/node_modules": true,
     "**/obj": true,
-    "**/target": true,
+    "**/target": true
   },
   "files.watcherExclude": {
     "**.resolved": true,
@@ -43,5 +43,23 @@
     "**/obj": true,
     "**/target": true,
     "**/test": true
+  },
+  "terminal.integrated.env.linux": {
+    "CARGO_TARGET_DIR": "${workspaceFolder}/dist/rust",
+    "DUB_PACKAGE_TARGET_PATH": "${workspaceFolder}/dist/d",
+    "DUNE_BUILD_DIR": "${workspaceFolder}/dist/ocaml",
+    "NPM_CONFIG_PACK_DESTINATION": "${workspaceFolder}/dist/npm/package"
+  },
+  "terminal.integrated.env.osx": {
+    "CARGO_TARGET_DIR": "${workspaceFolder}/dist/rust",
+    "DUB_PACKAGE_TARGET_PATH": "${workspaceFolder}/dist/d",
+    "DUNE_BUILD_DIR": "${workspaceFolder}/dist/ocaml",
+    "NPM_CONFIG_PACK_DESTINATION": "${workspaceFolder}/dist/npm/package"
+  },
+  "terminal.integrated.env.windows": {
+    "CARGO_TARGET_DIR": "${workspaceFolder}\\dist\\rust",
+    "DUB_PACKAGE_TARGET_PATH": "${workspaceFolder}\\dist\\d",
+    "DUNE_BUILD_DIR": "${workspaceFolder}\\dist\\ocaml",
+    "NPM_CONFIG_PACK_DESTINATION": "${workspaceFolder}\\dist\\npm\\package"
   }
 }
