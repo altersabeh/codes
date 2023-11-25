@@ -78,10 +78,10 @@ let fibonacci_series n =
   print_endline
     ("The Fibonacci series up to " ^ string_of_int n ^ get_suffix n ^ " term:");
 
-  let fib = Array.make (n + 1) zero_big_int in
+  let series = Array.make (n + 1) zero_big_int in
 
   for i = 0 to n do
-    if n <= 5000 then fib.(i) <- !a
+    if n <= 5000 then series.(i) <- !a
     else (
       (* Print the series without using array *)
       print_string (string_of_big_int !a);
@@ -98,7 +98,7 @@ let fibonacci_series n =
       (fun i x ->
         print_string (string_of_big_int x);
         if i < n then print_string ", ")
-      fib;
+      series;
 
   print_endline "\n";
   print_endline ("Sum of the Fibonacci series: " ^ string_of_big_int !sum)
