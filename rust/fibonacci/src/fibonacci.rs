@@ -125,7 +125,7 @@ fn date_and_time() {
   let layout = "%B %d, %Y - %H:%M:%S";
   let formatted_date = current_date.format(layout).to_string();
 
-  println!("Date and time: {}", formatted_date);
+  println!("Date and Time: {}", formatted_date);
 }
 
 /// Functions to handle user input and errors
