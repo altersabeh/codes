@@ -1,0 +1,28 @@
+(lang dune 3.7)
+
+(generate_opam_files true)
+
+(name ocaml-fibonacci)
+
+(version 1.0.0)
+
+(license MIT)
+
+(source
+ (github altersabeh/codes))
+
+(authors "AlterSabeh")
+
+(maintainers "AlterSabeh")
+
+(documentation https://github.com/altersabeh/codes#README)
+
+(homepage https://github.com/altersabeh/codes#README)
+
+(package
+ (name ocaml-fibonacci)
+ (synopsis "An OCaml Program")
+ (description "Fibonacci program written in OCaml")
+ (depends ocaml dune zarith)
+ (tags
+  (command-line-utilities)))

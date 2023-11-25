@@ -1,0 +1,4 @@
+(executable
+ (public_name ocaml-fibonacci)
+ (name fibonacci)
+ (libraries unix num zarith))

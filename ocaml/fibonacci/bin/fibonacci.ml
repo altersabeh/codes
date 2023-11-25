@@ -1,0 +1,106 @@
+(* Fibonacci Series Calculator
+ *
+ * The Fibonacci Series Calculator is an OCaml program that calculates
+ * and prints the Fibonacci series up to the nth term with arbitrary
+ * precision. It includes features such as error handling for input
+ * validation, handling special cases where numbers don't end in "th"
+ * (e.g. 1, 2, 3), displaying the sum of the series, and providing
+ * the current date and time.
+ *
+ * License: This program is in the public domain.
+ *)
+
+open Big_int
+
+let rec get_user_input () =
+  let rec get_input () =
+    print_string "Enter the value of n (an integer): ";
+    let input = read_line () in
+    match input with
+    | "" ->
+        print_endline "Please enter something...";
+        get_input ()
+    | "exit" ->
+        print_endline "Exiting the program...";
+        ()
+    | _ ->
+        let n = validate_input input in
+        if n > 0 then fibonacci_series n
+        else (
+          print_endline "Please enter a valid positive integer.";
+          get_input ())
+  in
+  get_input ()
+
+and fibonacci_series n =
+  let a = ref zero_big_int in
+  let b = ref unit_big_int in
+  let sum = ref zero_big_int in
+  let temp = ref zero_big_int in
+
+  print_endline ("The Fibonacci series up to " ^ string_of_int n ^ " term:");
+
+  let fib = Array.make (n + 1) zero_big_int in
+
+  for i = 0 to n do
+    if n <= 5000 then fib.(i) <- !a
+    else (
+      print_string (string_of_big_int !a);
+      if i < n then print_string ", ");
+
+    temp := !a;
+    a := !b;
+    b := add_big_int !temp !b;
+    sum := add_big_int !sum !temp
+  done;
+
+  if n <= 5000 then
+    Array.iteri
+      (fun i x ->
+        print_string (string_of_big_int x);
+        if i < n then print_string ", ")
+      fib;
+
+  print_endline "\n";
+  print_endline ("Sum of the Fibonacci series: " ^ string_of_big_int !sum)
+
+and validate_input input = try int_of_string input with Failure _ -> -1
+
+let rec date_and_time () =
+  let current_time = Unix.gettimeofday () in
+  let tm = Unix.localtime current_time in
+  let formatted_date =
+    Printf.sprintf "%s %02d, %04d - %02d:%02d:%02d"
+      (month_to_string tm.Unix.tm_mon)
+      tm.Unix.tm_mday (tm.Unix.tm_year + 1900) tm.Unix.tm_hour tm.Unix.tm_min
+      tm.Unix.tm_sec
+  in
+  Printf.printf "Date and Time: %s\n" formatted_date
+
+and month_to_string month =
+  match month with
+  | 0 -> "January"
+  | 1 -> "February"
+  | 2 -> "March"
+  | 3 -> "April"
+  | 4 -> "May"
+  | 5 -> "June"
+  | 6 -> "July"
+  | 7 -> "August"
+  | 8 -> "September"
+  | 9 -> "October"
+  | 10 -> "November"
+  | 11 -> "December"
+  | _ -> failwith "Invalid month"
+
+let () =
+  print_endline "============Fibonacci Series Calculator============";
+  print_endline "This Program was Written Using: OCaml";
+
+  (*SignalHandler();
+    DateAndTime();
+    GetUserInput();*)
+  date_and_time ();
+  get_user_input ();
+
+  print_endline "==================================================="
