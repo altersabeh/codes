@@ -12,59 +12,22 @@
 
 open Big_int
 
-let rec get_user_input () =
-  let rec get_input () =
-    print_string "Enter the value of n (an integer): ";
-    let input = read_line () in
-    match input with
-    | "" ->
-        print_endline "Please enter something...";
-        get_input ()
-    | "exit" ->
-        print_endline "Exiting the program...";
-        ()
-    | _ ->
-        let n = validate_input input in
-        if n > 0 then fibonacci_series n
-        else (
-          print_endline "Please enter a valid positive integer.";
-          get_input ())
-  in
-  get_input ()
+let validate_input input = try int_of_string input with Failure _ -> -1
 
-and fibonacci_series n =
-  let a = ref zero_big_int in
-  let b = ref unit_big_int in
-  let sum = ref zero_big_int in
-  let temp = ref zero_big_int in
+let eof_handler _ =
+  print_endline "";
+  print_endline "End of File encountered.. Stopping...";
+  print_endline "===================================================";
+  exit 0
 
-  print_endline ("The Fibonacci series up to " ^ string_of_int n ^ " term:");
+and interrupt_handler _ =
+  print_endline "";
+  print_endline "Interrupt received.. Exiting...";
+  print_endline "===================================================";
+  exit 0
 
-  let fib = Array.make (n + 1) zero_big_int in
-
-  for i = 0 to n do
-    if n <= 5000 then fib.(i) <- !a
-    else (
-      print_string (string_of_big_int !a);
-      if i < n then print_string ", ");
-
-    temp := !a;
-    a := !b;
-    b := add_big_int !temp !b;
-    sum := add_big_int !sum !temp
-  done;
-
-  if n <= 5000 then
-    Array.iteri
-      (fun i x ->
-        print_string (string_of_big_int x);
-        if i < n then print_string ", ")
-      fib;
-
-  print_endline "\n";
-  print_endline ("Sum of the Fibonacci series: " ^ string_of_big_int !sum)
-
-and validate_input input = try int_of_string input with Failure _ -> -1
+let rec signal_handler () =
+  Sys.set_signal Sys.sigint (Sys.Signal_handle interrupt_handler)
 
 let rec date_and_time () =
   let current_time = Unix.gettimeofday () in
@@ -93,13 +56,73 @@ and month_to_string month =
   | 11 -> "December"
   | _ -> failwith "Invalid month"
 
+let get_suffix n =
+  match n mod 10 with
+  | 1 when n mod 100 <> 11 -> "st"
+  | 2 when n mod 100 <> 12 -> "nd"
+  | 3 when n mod 100 <> 13 -> "rd"
+  | _ -> "th"
+
+let fibonacci_series n =
+  let a = ref zero_big_int in
+  let b = ref unit_big_int in
+  let sum = ref zero_big_int in
+  let temp = ref zero_big_int in
+
+  print_endline
+    ("The Fibonacci series up to " ^ string_of_int n ^ get_suffix n ^ " term:");
+
+  let fib = Array.make (n + 1) zero_big_int in
+
+  for i = 0 to n do
+    if n <= 5000 then fib.(i) <- !a
+    else (
+      print_string (string_of_big_int !a);
+      if i < n then print_string ", ");
+
+    temp := !a;
+    a := !b;
+    b := add_big_int !temp !b;
+    sum := add_big_int !sum !temp
+  done;
+
+  if n <= 5000 then
+    Array.iteri
+      (fun i x ->
+        print_string (string_of_big_int x);
+        if i < n then print_string ", ")
+      fib;
+
+  print_endline "\n";
+  print_endline ("Sum of the Fibonacci series: " ^ string_of_big_int !sum)
+
+let rec get_user_input () =
+  let rec get_input () =
+    print_string "Enter the value of n (an integer): ";
+    try
+      let input = read_line () in
+      match input with
+      | "" ->
+          print_endline "Please enter something...";
+          get_input ()
+      | "exit" ->
+          print_endline "Exiting the program...";
+          ()
+      | _ ->
+          let n = validate_input input in
+          if n > 0 then fibonacci_series n
+          else (
+            print_endline "Please enter a valid positive integer.";
+            get_input ())
+    with End_of_file -> eof_handler ()
+  in
+  get_input ()
+
 let () =
   print_endline "============Fibonacci Series Calculator============";
   print_endline "This Program was Written Using: OCaml";
 
-  (*SignalHandler();
-    DateAndTime();
-    GetUserInput();*)
+  signal_handler ();
   date_and_time ();
   get_user_input ();
 
