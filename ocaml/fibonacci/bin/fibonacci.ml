@@ -11,6 +11,8 @@
  *)
 
 open Big_int
+open Unix
+open Printf
 
 (* Functions to handle user input and errors *)
 let validate_input input = try int_of_string input with Failure _ -> -1
@@ -32,15 +34,15 @@ let signal_handler () =
 
 (* Display the current date and time *)
 let rec date_and_time () =
-  let current_time = Unix.gettimeofday () in
-  let tm = Unix.localtime current_time in
+  let current_time = gettimeofday () in
+  let tm = localtime current_time in
   let formatted_date =
-    Printf.sprintf "%s %02d, %04d - %02d:%02d:%02d"
-      (month_to_string tm.Unix.tm_mon)
-      tm.Unix.tm_mday (tm.Unix.tm_year + 1900) tm.Unix.tm_hour tm.Unix.tm_min
-      tm.Unix.tm_sec
+    sprintf "%s %02d, %04d - %02d:%02d:%02d"
+      (month_to_string tm.tm_mon)
+      tm.tm_mday (tm.tm_year + 1900) tm.tm_hour tm.tm_min
+      tm.tm_sec
   in
-  Printf.printf "Date and Time: %s\n" formatted_date
+  printf "Date and Time: %s\n" formatted_date
 
 and month_to_string month =
   match month with
