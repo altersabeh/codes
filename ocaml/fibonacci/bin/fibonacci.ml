@@ -12,6 +12,7 @@
 
 open Big_int
 
+(* Functions to handle user input and errors *)
 let validate_input input = try int_of_string input with Failure _ -> -1
 
 and eof_handler _ =
@@ -29,6 +30,7 @@ and interrupt_handler _ =
 let signal_handler () =
   Sys.set_signal Sys.sigint (Sys.Signal_handle interrupt_handler)
 
+(* Display the current date and time *)
 let rec date_and_time () =
   let current_time = Unix.gettimeofday () in
   let tm = Unix.localtime current_time in
@@ -56,6 +58,7 @@ and month_to_string month =
   | 11 -> "December"
   | _ -> failwith "Invalid month"
 
+(* Handle special cases where numbers don't end in "th" *)
 let get_suffix n =
   match n mod 10 with
   | 1 when n mod 100 <> 11 -> "st"
@@ -63,6 +66,7 @@ let get_suffix n =
   | 3 when n mod 100 <> 13 -> "rd"
   | _ -> "th"
 
+(* Calculates and prints the Fibonacci series up to the nth term. *)
 let fibonacci_series n =
   let a = ref zero_big_int in
   let b = ref unit_big_int in
@@ -77,13 +81,14 @@ let fibonacci_series n =
   for i = 0 to n do
     if n <= 5000 then fib.(i) <- !a
     else (
+      (* Print the series without using array *)
       print_string (string_of_big_int !a);
       if i < n then print_string ", ");
 
     temp := !a;
     a := !b;
     b := add_big_int !temp !b;
-    sum := add_big_int !sum !temp
+    sum := add_big_int !sum !temp (* Calculate the sum *)
   done;
 
   if n <= 5000 then
@@ -96,6 +101,7 @@ let fibonacci_series n =
   print_endline "\n";
   print_endline ("Sum of the Fibonacci series: " ^ string_of_big_int !sum)
 
+(* Function to Get the User Input *)
 let get_user_input () =
   let rec get_input () =
     print_string "Enter the value of n (an integer): ";
