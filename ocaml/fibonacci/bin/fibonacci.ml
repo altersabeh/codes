@@ -109,7 +109,8 @@ let get_user_input () =
     print_string "Enter the value of n (an integer): ";
     try
       let input = read_line () in
-      match input with
+      let trimmedinput = String.trim input in
+      match trimmedinput with
       | "" ->
           print_endline "Please enter something...";
           get_input ()
@@ -117,7 +118,7 @@ let get_user_input () =
           print_endline "Exiting the program...";
           ()
       | _ ->
-          let n = validate_input input in
+          let n = validate_input trimmedinput in
           if n > 0 then fibonacci_series n
           else (
             print_endline "Please enter a valid positive integer.";
