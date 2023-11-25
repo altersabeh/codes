@@ -14,7 +14,7 @@ open Big_int
 
 let validate_input input = try int_of_string input with Failure _ -> -1
 
-let eof_handler _ =
+and eof_handler _ =
   print_endline "";
   print_endline "End of File encountered.. Stopping...";
   print_endline "===================================================";
@@ -26,7 +26,7 @@ and interrupt_handler _ =
   print_endline "===================================================";
   exit 0
 
-let rec signal_handler () =
+let signal_handler () =
   Sys.set_signal Sys.sigint (Sys.Signal_handle interrupt_handler)
 
 let rec date_and_time () =
@@ -96,7 +96,7 @@ let fibonacci_series n =
   print_endline "\n";
   print_endline ("Sum of the Fibonacci series: " ^ string_of_big_int !sum)
 
-let rec get_user_input () =
+let get_user_input () =
   let rec get_input () =
     print_string "Enter the value of n (an integer): ";
     try
