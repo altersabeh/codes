@@ -20,19 +20,29 @@ To run and build this program you need to install:
 
 From the root directory run the following:
 
-* `dune build -p ocaml-hello`
-* `dune build --only-package ocaml-hello`
+* ```
+  dune build -p ocaml-hello
+  ```
+* ```
+  dune build --only-package ocaml-hello
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `dune build`
+* ```
+  dune build
+  ```
 
-You can also use `ocamlc` or `ocamlopt` from the source directory:
+You can also use `ocamlc` _**(bytecode)**_ or `ocamlopt` _**(native code)**_ from the source directory:
 
-* `ocamlc hello.ml -o ocaml-hello` _**(bytecode)**_
-* `ocamlopt hello.ml -o ocaml-hello` _**(native code)**_
+* ```
+  ocamlc hello.ml -o ocaml-hello
+  ```
+* ```
+  ocamlopt hello.ml -o ocaml-hello
+  ```
 
 ## Running
 
@@ -40,27 +50,41 @@ You can also use `ocamlc` or `ocamlopt` from the source directory:
 
 From the root directory run:
 
-* `dune exec ocaml-hello`
-* `dune exec ocaml/hello/bin/hello.exe`
+* ```
+  dune exec ocaml-hello
+  ```
+* ```
+  dune exec ocaml/hello/bin/hello.exe
+  ```
 
 You can also use `ocaml` to run it directly:
 
-* `ocaml ocaml/hello/bin/hello.ml`
+* ```
+  ocaml ocaml/hello/bin/hello.ml
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `dune exec ocaml-hello`
-* `dune exec ./hello.exe`
+* ```
+  dune exec ocaml-hello
+  ```
+* ```
+  dune exec ./hello.exe
+  ```
 
 If you used `ocamlc` or `ocamlopt` for building:
 
-* `./ocaml-hello`
+* ```
+  ./ocaml-hello
+  ```
 
 You can also use `ocaml` to run it directly:
 
-* `ocaml hello.ml`
+* ```
+  ocaml hello.ml
+  ```
 
 ## License
 

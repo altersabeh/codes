@@ -19,17 +19,23 @@ To run and build this program you need to install:
 
 From the root directory run the following:
 
-* `gradle java:fibonacci:build`
+* ```
+  gradle java:fibonacci:build
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `gradle build`
+* ```
+  gradle build
+  ```
 
 You can also use `javac` from the source directory:
 
-* `javac Fibonacci.java`
+* ```
+  javac Fibonacci.java
+  ```
 
 ## Running
 
@@ -37,28 +43,41 @@ You can also use `javac` from the source directory:
 
 From the root directory run:
 
-* `gradle java-fibonacci`
-* `gradle java:fibonacci:run`
+* ```
+  gradle java-fibonacci
+  ```
+* ```
+  gradle java:fibonacci:run
+  ```
 
 You can also use `java` to run it directly:
 
-* `java java/fibonacci/src/fibonacci/Fibonacci.java`
+* ```
+  java java/fibonacci/src/fibonacci/Fibonacci.java
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `gradle run`
-* `gradle java-fibonacci`
+* ```
+  gradle run
+  ```
+* ```
+  gradle java-fibonacci
+  ```
 
 If you used `javac` for building:
 
-* `cd ..`
-* `java Fibonacci`
+* ```
+  cd .. && java Fibonacci
+  ```
 
 You can also use `java` to run it directly:
 
-* `java Fibonacci.java`
+* ```
+  java Fibonacci.java
+  ```
 
 ## License
 

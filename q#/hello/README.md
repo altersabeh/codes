@@ -17,15 +17,23 @@ To run and build this program you need to install:
 
 From the root directory run one of the following:
 
-* `dotnet build q#/hello`
-* `dotnet build q#/hello/q#-hello.csproj`
-* `dotnet build --project q#/hello`
+* ```
+  dotnet build q#/hello
+  ```
+* ```
+  dotnet build q#/hello/q#-hello.csproj
+  ```
+* ```
+  dotnet build --project q#/hello
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `dotnet build`
+* ```
+  dotnet build
+  ```
 
 ## Running
 
@@ -33,13 +41,17 @@ From the source directory you can run:
 
 From the root directory run:
 
-* `dotnet run --project q#/hello`
+* ```
+  dotnet run --project q#/hello
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `dotnet run`
+* ```
+  dotnet run
+  ```
 
 ## License
 

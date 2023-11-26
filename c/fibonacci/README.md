@@ -21,18 +21,26 @@ To run and build this program you need to install:
 
 From the root directory run one of the following:
 
-* `make build-c-fibonacci`
+* ```
+  make build-c-fibonacci
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `make build`
+* ```
+  make build
+  ```
 
 You can also use `gcc` or `clang` from the source directory:
 
-* `gcc fibonacci.c -lgmp -o c-fibonacci`
-* `clang fibonacci.c -lgmp -o c-fibonacci`
+* ```
+  gcc fibonacci.c -lgmp -o c-fibonacci
+  ```
+* ```
+  clang fibonacci.c -lgmp -o c-fibonacci
+  ```
 
 ## Running
 
@@ -40,18 +48,26 @@ You can also use `gcc` or `clang` from the source directory:
 
 From the root directory run one of the following:
 
-* `make c-fibonacci`
-* `make run-c-fibonacci`
+* ```
+  make c-fibonacci
+  ```
+* ```
+  make run-c-fibonacci
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `make run`
+* ```
+  make run
+  ```
 
 If you used `gcc` or `clang` for building:
 
-* `./c-fibonacci`
+* ```
+  ./c-fibonacci
+  ```
 
 ## License
 

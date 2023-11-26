@@ -1,6 +1,6 @@
 # `D/Greeter`
 
-This is a **Greeter World** program written in **D**.
+This is a **Greeter** program written in **D**.
 
 ## Prerequisite
 
@@ -19,20 +19,29 @@ To run and build this program you need to install:
 
 From the root directory run one of the following:
 
-* `dub build :d-greeter`
-* `dub build codes:d-greeter`
-* `dub build --root c#/greeter`
+* ```
+  dub build :d-greeter
+  ```
+* ```
+  dub build codes:d-greeter
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `dub build`
+* ```
+  dub build
+  ```
 
 You can also use `dmd` or `gdc` from the source directory:
 
-* `dmd greeter.d -of=d-greeter`
-* `gdc greeter.d -o d-greeter`
+* ```
+  dmd greeter.d -of=d-greeter
+  ```
+* ```
+  gdc greeter.d -o d-greeter
+  ```
 
 ## Running
 
@@ -40,20 +49,32 @@ You can also use `dmd` or `gdc` from the source directory:
 
 From the root directory run:
 
-* `dub run :d-greeter`
-* `dub run codes:d-greeter`
-* `dub run --root c#/greeter`
+* ```
+  dub run :d-greeter
+  ```
+* ```
+  dub run codes:d-greeter
+  ```
+* ```
+  dub run --root c#/greeter
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `dub run`
-* `dmd -run greeter.d`
+* ```
+  dub run
+  ```
+* ```
+  dmd -run greeter.d
+  ```
 
 If you used `dmd` or `gdc` for building:
 
-* `./d-greeter`
+* ```
+  ./d-greeter
+  ```
 
 ## License
 

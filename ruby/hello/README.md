@@ -16,14 +16,17 @@ To run and build this program you need to install:
 
 From the root directory run:
 
-* `bundle install`
-
+* ```
+  bundle install
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `bundle install`
+* ```
+  bundle install
+  ```
 
 ## Running
 
@@ -31,21 +34,29 @@ From the source directory you can run:
 
 From the root directory run one of the following:
 
-* `bundle exec ruby-hello`
+* ```
+  bundle exec ruby-hello
+  ```
 
 You can also use `ruby` to run it directly: _**(optional)**_
 
-* `ruby ruby/hello/lib/hello.rb`
+* ```
+  ruby ruby/hello/lib/hello.rb
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `bundle exec ruby-hello`
+* ```
+  bundle exec ruby-hello
+  ```
 
 You can also use `ruby` to run it directly: _**(optional)**_
 
-* `ruby hello.rb`
+* ```
+  ruby hello.rb
+  ```
 
 ## License
 

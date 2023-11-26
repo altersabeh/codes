@@ -16,18 +16,26 @@ To run and build this program you need to install:
 
 From the root directory run one of the following commands:
 
-* `cargo build -p rust-greeter`
-* `cargo build --package rust-greeter`
+* ```
+  cargo build -p rust-greeter
+  ```
+* ```
+  cargo build --package rust-greeter
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `cargo build`
+* ```
+  cargo build
+  ```
 
 You can also use `rustc` from the source directory:
 
-* `rustc greeter.rs -o rust-greeter`
+* ```
+  rustc greeter.rs -o rust-greeter
+  ```
 
 ## Running
 
@@ -35,18 +43,23 @@ You can also use `rustc` from the source directory:
 
 From the root directory run:
 
-* `cargo run --bin rust-greeter`
+* ```
+  cargo run --bin rust-greeter
+  ```
 
 ### Source Directory _(optional)_
 
-
 From the source directory you can run:
 
-* `cargo run`
+* ```
+  cargo run
+  ```
 
 If you used `rustc` for building:
 
-* `./rust-greeter`
+* ```
+  ./rust-greeter
+  ```
 
 ## License
 

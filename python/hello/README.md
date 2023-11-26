@@ -16,17 +16,22 @@ To run and build this program you need to install:
 
 ### Root Directory
 
-From the root directory run the following:
+From the root directory run:
 
-* `poetry env use python`
-* `poetry install`
+* ```
+  poetry env use python
+  poetry install
+  ```
 
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `poetry install`
+* ```
+  poetry env use python
+  poetry install
+  ```
 
 ## Running
 
@@ -34,27 +39,41 @@ From the source directory you can run:
 
 From the root directory run one of the following:
 
-* `poe python-hello`
-* `poetry poe python-hello`
-* `poetry run python-hello`
+* ```
+  poe python-hello
+  ```
+* ```
+  poetry poe python-hello
+  ```
+* ```
+  poetry run python-hello
+  ```
 
 You can also use `python` to run it directly: _**(optional)**_
 
-* `python python/hello/src/python_hello/hello.py`
+* ```
+  python python/hello/src/python_hello/hello.py
+  ```
 
 You can also use [`pants`](https://www.pantsbuild.org/docs/installation) from the root directory: _**(optional)**_
 
-* `pants run python/hello`
+* ```
+  pants run python/hello
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `poetry run python-hello`
+* ```
+  poetry run python-hello
+  ```
 
 You can also use `python` to run it directly: _**(optional)**_
 
-* `python hello.py`
+* ```
+  python hello.py
+  ```
 
 ## License
 

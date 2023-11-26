@@ -15,14 +15,20 @@ To run and build this program you need to install:
 
 From the root directory run one of the following:
 
-* `cargo build -p rust-fibonacci`
-* `cargo build --package rust-fibonacci`
+* ```
+  cargo build -p rust-fibonacci
+  ```
+* ```
+  cargo build --package rust-fibonacci
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `cargo build`
+* ```
+  cargo build
+  ```
 
 ## Running
 
@@ -30,13 +36,17 @@ From the source directory you can run:
 
 From the root directory run:
 
-* `cargo run --bin rust-fibonacci`
+* ```
+  cargo run --bin rust-fibonacci
+  ```
 
 ### Source Directory _(optional)_
 
  From the source directory you can run:
 
-* `cargo run`
+* ```
+  cargo run
+  ```
 
 ## License
 

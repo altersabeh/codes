@@ -21,17 +21,23 @@ To run and build this program you need to install:
 
 From the root directory run the following:
 
-* `gradle kotlin:hello:build`
+* ```
+  gradle kotlin:hello:build
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `gradle build`
+* ```
+  gradle build
+  ```
 
 You can also use `kotlinc` from the source directory:
 
-* `kotlinc hello.kt -include-runtime -d kotlin-hello.jar`
+* ```
+  kotlinc hello.kt -include-runtime -d kotlin-hello.jar
+  ```
 
 ## Running
 
@@ -39,19 +45,29 @@ You can also use `kotlinc` from the source directory:
 
 From the root directory run:
 
-* `gradle kotlin-hello`
-* `gradle kotlin:hello:run`
+* ```
+  gradle kotlin-hello
+  ```
+* ```
+  gradle kotlin:hello:run
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `gradle run`
-* `gradle kotlin-hello`
+* ```
+  gradle run
+  ```
+* ```
+  gradle kotlin-hello
+  ```
 
 If you used `kotlinc` for building:
 
-* `java -jar kotlin-hello.jar`
+* ```
+  java -jar kotlin-hello.jar
+  ```
 
 ## License
 

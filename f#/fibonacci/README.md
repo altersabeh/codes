@@ -15,15 +15,23 @@ To run and build this program you need to install:
 
 From the root directory run one of the following:
 
-* `dotnet build f#/fibonacci`
-* `dotnet build f#/fibonacci/f#-fibonacci.fsproj`
-* `dotnet build --project f#/fibonacci`
+* ```
+  dotnet build f#/fibonacci
+  ```
+* ```
+  dotnet build f#/fibonacci/f#-fibonacci.fsproj
+  ```
+* ```
+  dotnet build --project f#/fibonacci
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `dotnet build`
+* ```
+  dotnet build
+  ```
 
 ## Running
 
@@ -31,13 +39,17 @@ From the source directory you can run:
 
 From the root directory run:
 
-* `dotnet run --project f#/fibonacci`
+* ```
+  dotnet run --project f#/fibonacci
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `dotnet run`
+* ```
+  dotnet run
+  ```
 
 ## License
 

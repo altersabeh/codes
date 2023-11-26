@@ -19,20 +19,29 @@ To run and build this program you need to install:
 
 From the root directory run one of the following:
 
-* `dub build :d-fibonacci`
-* `dub build codes:d-fibonacci`
-* `dub build --root c#/fibonacci`
+* ```
+  dub build :d-fibonacci
+  ```
+* ```
+  dub build codes:d-fibonacci
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `dub build`
+* ```
+  dub build
+  ```
 
 You can also use `dmd` or `gdc` from the source directory:
 
-* `dmd fibonacci.d -of=d-fibonacci`
-* `gdc fibonacci.d -o d-fibonacci`
+* ```
+  dmd fibonacci.d -of=d-fibonacci
+  ```
+* ```
+  gdc fibonacci.d -o d-fibonacci
+  ```
 
 ## Running
 
@@ -40,20 +49,32 @@ You can also use `dmd` or `gdc` from the source directory:
 
 From the root directory run:
 
-* `dub run :d-fibonacci`
-* `dub run codes:d-fibonacci`
-* `dub run --root c#/fibonacci`
+* ```
+  dub run :d-fibonacci
+  ```
+* ```
+  dub run codes:d-fibonacci
+  ```
+* ```
+  dub run --root c#/fibonacci
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `dub run`
-* `dmd -run fibonacci.d`
+* ```
+  dub run
+  ```
+* ```
+  dmd -run fibonacci.d
+  ```
 
 If you used `dmd` or `gdc` for building:
 
-* `./d-fibonacci`
+* ```
+  ./d-fibonacci
+  ```
 
 ## License
 

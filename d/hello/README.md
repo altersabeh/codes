@@ -19,20 +19,29 @@ To run and build this program you need to install:
 
 From the root directory run one of the following:
 
-* `dub build :d-hello`
-* `dub build codes:d-hello`
-* `dub build --root c#/hello`
+* ```
+  dub build :d-hello
+  ```
+* ```
+  dub build codes:d-hello
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `dub build`
+* ```
+  dub build
+  ```
 
 You can also use `dmd` or `gdc` from the source directory:
 
-* `dmd hello.d -of=d-hello`
-* `gdc hello.d -o d-hello`
+* ```
+  dmd hello.d -of=d-hello
+  ```
+* ```
+  gdc hello.d -o d-hello
+  ```
 
 ## Running
 
@@ -40,20 +49,32 @@ You can also use `dmd` or `gdc` from the source directory:
 
 From the root directory run:
 
-* `dub run :d-hello`
-* `dub run codes:d-hello`
-* `dub run --root c#/hello`
+* ```
+  dub run :d-hello
+  ```
+* ```
+  dub run codes:d-hello
+  ```
+* ```
+  dub run --root c#/hello
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `dub run`
-* `dmd -run hello.d`
+* ```
+  dub run
+  ```
+* ```
+  dmd -run hello.d
+  ```
 
 If you used `dmd` or `gdc` for building:
 
-* `./d-hello`
+* ```
+  ./d-hello
+  ```
 
 ## License
 

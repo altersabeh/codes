@@ -15,15 +15,23 @@ To run and build this program you need to install:
 
 From the root directory run one of the following:
 
-* `dotnet build c#/greeter`
-* `dotnet build c#/greeter/c#-greeter.csproj`
-* `dotnet build --project c#/greeter`
+* ```
+  dotnet build c#/greeter
+  ```
+* ```
+  dotnet build c#/greeter/c#-greeter.csproj
+  ```
+* ```
+  dotnet build --project c#/greeter
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `dotnet build`
+* ```
+  dotnet build
+  ```
 
 ## Running
 
@@ -31,13 +39,17 @@ From the source directory you can run:
 
 From the root directory run:
 
-* `dotnet run --project c#/greeter`
+* ```
+  dotnet run --project c#/greeter
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `dotnet run`
+* ```
+  dotnet run
+  ```
 
 ## License
 

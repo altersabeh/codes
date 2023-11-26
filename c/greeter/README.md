@@ -21,18 +21,26 @@ To run and build this program you need to install:
 
 From the root directory run one of the following:
 
-* `make build-c-greeter`
+* ```
+  make build-c-greeter
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `make build`
+* ```
+  make build
+  ```
 
 You can also use `gcc` or `clang` from the source directory:
 
-* `gcc greeter.c -o c-greeter`
-* `clang greeter.c -o c-greeter`
+* ```
+  gcc greeter.c -o c-greeter
+  ```
+* ```
+  clang greeter.c -o c-greeter
+  ```
 
 ## Running
 
@@ -40,18 +48,26 @@ You can also use `gcc` or `clang` from the source directory:
 
 From the root directory run one of the following:
 
-* `make c-greeter`
-* `make run-c-greeter`
+* ```
+  make c-greeter
+  ```
+* ```
+  make run-c-greeter
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `make run`
+* ```
+  make run
+  ```
 
 If you used `gcc` or `clang` for building:
 
-* `./c-greeter`
+* ```
+  ./c-greeter
+  ```
 
 ## License
 

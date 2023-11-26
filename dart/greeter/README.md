@@ -18,18 +18,26 @@ To run and build this program you need to install:
 
 From the root directory run one of the following:
 
-* `melos bootstrap`
-* `melos run get`
+* ```
+  melos bootstrap
+  ```
+* ```
+  melos run get
+  ```
 
 ### Source Directory _(recommended)_
 
 From the source directory you can run:
 
-* `dart pub get`
+* ```
+  dart pub get
+  ```
 
 You can also use `dart` from the source directory:
 
-* `dart compile exe greeter.dart -o dart-greeter`\
+* ```
+  dart compile exe greeter.dart -o dart-greeter
+  ```
 
 ## Running
 
@@ -37,27 +45,41 @@ You can also use `dart` from the source directory:
 
 From the root directory run:
 
-* `melos run dart-greeter`
+* ```
+  melos run dart-greeter
+  ```
 
 You can also use `dart` to run it directly using one of the following:
 
-* `dart dart/greeter/lib/greeter.dart`
-* `dart run dart/greeter/lib/greeter.dart`
+* ```
+  dart dart/greeter/lib/greeter.dart
+  ```
+* ```
+  dart run dart/greeter/lib/greeter.dart
+  ```
 
 ### Source Directory _(recommended)_
 
 From the source directory you can run:
 
-* `dart run`
+* ```
+  dart run
+  ```
 
 If you used `dart compile` for building:
 
-* `./dart-greeter`
+* ```
+  ./dart-greeter
+  ```
 
 You can also use `dart` to run it directly using one of the following:
 
-* `dart greeter.dart`
-* `dart run greeter.dart`
+* ```
+  dart greeter.dart
+  ```
+* ```
+  dart run greeter.dart
+  ```
 
 ## License
 

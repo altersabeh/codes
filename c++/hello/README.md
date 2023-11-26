@@ -21,18 +21,26 @@ To run and build this program you need to install:
 
 From the root directory run one of the following:
 
-* `make build-c++-hello`
+* ```
+  make build-c++-hello
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `make build`
+* ```
+  make build
+  ```
 
 You can also use `g++` or `clang++` from the source directory:
 
-* `g++ hello.cpp -o c++-hello`
-* `clang++ hello.cpp -o c++-hello`
+* ```
+  g++ hello.cpp -o c++-hello
+  ```
+* ```
+  clang++ hello.cpp -o c++-hello
+  ```
 
 ## Running
 
@@ -40,18 +48,26 @@ You can also use `g++` or `clang++` from the source directory:
 
 From the root directory run one of the following:
 
-* `make c++-hello`
-* `make run-c++-hello`
+* ```
+  make c++-hello
+  ```
+* ```
+  make run-c++-hello
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `make run`
+* ```
+  make run
+  ```
 
 If you used `g++` or `clang++` for building:
 
-* `./c++-hello`
+* ```
+  ./c++-hello
+  ```
 
 ## License
 

@@ -15,7 +15,9 @@ To run and build this program you need to install:
 
 From the root directory run:
 
-* `npm install`
+* ```
+  npm install
+  ```
 
 ## Running
 
@@ -23,27 +25,55 @@ From the root directory run:
 
 From the root directory run one of the following:
 
-* `npx js-hello`
-* `npm exec js-hello`
-* `npm start -w js-hello`
+* ```
+  npx js-hello
+  ```
+* ```
+  npm exec js-hello
+  ```
+* ```
+  npm start -w js-hello
+  ```
+You can also use `node` from the root directory:
+
+* ```
+  node typescript/hello/src/hello.js
+  ```
+* ```
+  npx node typescript/hello/src/hello.js
+  ```
 
 You can also use [`lerna`](https://lerna.js.org/) or [`nx`](https://nx.dev/) from the root directory: _**(optional)**_
 
-* `npx lerna run js-hello`
-* `npx nx start js-hello`
-* `npx nx run js-hello:start`
+* ```
+  npx lerna run js-hello
+  ```
+* ```
+  npx nx start js-hello
+  ```
+* ```
+  npx nx run js-hello:start
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run one of the following:
 
-* `npm start`
-* `node hello.js`
-* `./index.js`
+* ```
+  npm start
+  ```
+* ```
+  node hello.js
+  ```
+* ```
+  ./index.js
+  ```
 
 You can also use [`nx`](https://nx.dev/) from the source directory:
 
-* `npx nx start`
+* ```
+  npx nx start
+  ```
 
 ## License
 

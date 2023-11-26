@@ -16,14 +16,17 @@ To run and build this program you need to install:
 
 From the root directory run:
 
-* `bundle install`
-
+* ```
+  bundle install
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `bundle install`
+* ```
+  bundle install
+  ```
 
 ## Running
 
@@ -31,21 +34,29 @@ From the source directory you can run:
 
 From the root directory run one of the following:
 
-* `bundle exec ruby-greeter`
+* ```
+  bundle exec ruby-greeter
+  ```
 
 You can also use `ruby` to run it directly: _**(optional)**_
 
-* `ruby ruby/greeter/lib/greeter.rb`
+* ```
+  ruby ruby/greeter/lib/greeter.rb
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `bundle exec ruby-greeter`
+* ```
+  bundle exec ruby-greeter
+  ```
 
 You can also use `ruby` to run it directly: _**(optional)**_
 
-* `ruby greeter.rb`
+* ```
+  ruby greeter.rb
+  ```
 
 ## License
 

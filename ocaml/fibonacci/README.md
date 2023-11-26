@@ -20,19 +20,29 @@ To run and build this program you need to install:
 
 From the root directory run the following:
 
-* `dune build -p ocaml-fibonacci`
-* `dune build --only-package ocaml-fibonacci`
+* ```
+  dune build -p ocaml-fibonacci
+  ```
+* ```
+  dune build --only-package ocaml-fibonacci
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `dune build`
+* ```
+  dune build
+  ```
 
-You can also use `ocamlc` or `ocamlopt` from the source directory:
+You can also use `ocamlc` _**(bytecode)**_ or `ocamlopt` _**(native code)**_ from the source directory:
 
-* ``ocamlc -I `ocamlfind query zarith` zarith.cmxa unix.cmxa fibonacci.ml -o ocaml-fibonacci`` _**(bytecode)**_
-* ``ocamlopt -I `ocamlfind query zarith` zarith.cmxa unix.cmxa fibonacci.ml -o ocaml-fibonacci`` _**(native code)**_
+* ```
+  ocamlc -I `ocamlfind query zarith` zarith.cmxa unix.cmxa fibonacci.ml -o ocaml-fibonacci
+  ```
+* ```
+  ocamlopt -I `ocamlfind query zarith` zarith.cmxa unix.cmxa fibonacci.ml -o ocaml-fibonacci
+  ```
 
 ## Running
 
@@ -40,19 +50,29 @@ You can also use `ocamlc` or `ocamlopt` from the source directory:
 
 From the root directory run:
 
-* `dune exec ocaml-fibonacci`
-* `dune exec ocaml/fibonacci/bin/fibonacci.exe`
+* ```
+  dune exec ocaml-fibonacci
+  ```
+* ```
+  dune exec ocaml/fibonacci/bin/fibonacci.exe
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `dune exec ocaml-fibonacci`
-* `dune exec ./fibonacci.exe`
+* ```
+  dune exec ocaml-fibonacci
+  ```
+* ```
+  dune exec ./fibonacci.exe
+  ```
 
 If you used `ocamlc` or `ocamlopt` for building:
 
-* `./ocaml-fibonacci`
+* ```
+  ./ocaml-fibonacci
+  ```
 
 ## License
 

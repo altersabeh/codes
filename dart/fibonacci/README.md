@@ -18,18 +18,26 @@ To run and build this program you need to install:
 
 From the root directory run one of the following:
 
-* `melos bootstrap`
-* `melos run get`
+* ```
+  melos bootstrap
+  ```
+* ```
+  melos run get
+  ```
 
 ### Source Directory _(recommended)_
 
 From the source directory you can run:
 
-* `dart pub get`
+* ```
+  dart pub get
+  ```
 
 You can also use `dart` from the source directory:
 
-* `dart compile exe fibonacci.dart -o dart-fibonacci`\
+* ```
+  dart compile exe fibonacci.dart -o dart-fibonacci
+  ```
 
 ## Running
 
@@ -37,27 +45,41 @@ You can also use `dart` from the source directory:
 
 From the root directory run:
 
-* `melos run dart-fibonacci`
+* ```
+  melos run dart-fibonacci
+  ```
 
 You can also use `dart` to run it directly using one of the following:
 
-* `dart dart/fibonacci/lib/fibonacci.dart`
-* `dart run dart/fibonacci/lib/fibonacci.dart`
+* ```
+  dart dart/fibonacci/lib/fibonacci.dart
+  ```
+* ```
+  dart run dart/fibonacci/lib/fibonacci.dart
+  ```
 
 ### Source Directory _(recommended)_
 
 From the source directory you can run:
 
-* `dart run`
+* ```
+  dart run
+  ```
 
 If you used `dart compile` for building:
 
-* `./dart-fibonacci`
+* ```
+  ./dart-fibonacci
+  ```
 
 You can also use `dart` to run it directly using one of the following:
 
-* `dart fibonacci.dart`
-* `dart run fibonacci.dart`
+* ```
+  dart fibonacci.dart
+  ```
+* ```
+  dart run fibonacci.dart
+  ```
 
 ## License
 

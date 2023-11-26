@@ -16,17 +16,22 @@ To run and build this program you need to install:
 
 ### Root Directory
 
-From the root directory run the following:
+From the root directory run:
 
-* `poetry env use python`
-* `poetry install`
+* ```
+  poetry env use python
+  poetry install
+  ```
 
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `poetry install`
+* ```
+  poetry env use python
+  poetry install
+  ```
 
 ## Running
 
@@ -34,27 +39,41 @@ From the source directory you can run:
 
 From the root directory run one of the following:
 
-* `poe python-fibonacci`
-* `poetry poe python-fibonacci`
-* `poetry run python-fibonacci`
+* ```
+  poe python-fibonacci
+  ```
+* ```
+  poetry poe python-fibonacci
+  ```
+* ```
+  poetry run python-fibonacci
+  ```
 
 You can also use `python` to run it directly: _**(optional)**_
 
-* `python python/fibonacci/src/python_fibonacci/fibonacci.py`
+* ```
+  python python/fibonacci/src/python_fibonacci/fibonacci.py
+  ```
 
 You can also use [`pants`](https://www.pantsbuild.org/docs/installation) from the root directory: _**(optional)**_
 
-* `pants run python/fibonacci`
+* ```
+  pants run python/fibonacci
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `poetry run python-fibonacci`
+* ```
+  poetry run python-fibonacci
+  ```
 
 You can also use `python` to run it directly: _**(optional)**_
 
-* `python fibonacci.py`
+* ```
+  python fibonacci.py
+  ```
 
 ## License
 

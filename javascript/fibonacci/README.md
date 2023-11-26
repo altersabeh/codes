@@ -15,7 +15,9 @@ To run and build this program you need to install:
 
 From the root directory run:
 
-* `npm install`
+* ```
+  npm install
+  ```
 
 ## Running
 
@@ -23,27 +25,56 @@ From the root directory run:
 
 From the root directory run one of the following:
 
-* `npx js-fibonacci`
-* `npm exec js-fibonacci`
-* `npm start -w js-fibonacci`
+* ```
+  npx js-fibonacci
+  ```
+* ```
+  npm exec js-fibonacci
+  ```
+* ```
+  npm start -w js-fibonacci
+  ```
+
+You can also use `node` from the root directory:
+
+* ```
+  node typescript/fibonacci/src/fibonacci.js
+  ```
+* ```
+  npx node typescript/fibonacci/src/fibonacci.js
+  ```
 
 You can also use [`lerna`](https://lerna.js.org/) or [`nx`](https://nx.dev/) from the root directory: _**(optional)**_
 
-* `npx lerna run js-fibonacci`
-* `npx nx start js-fibonacci`
-* `npx nx run js-fibonacci:start`
+* ```
+  npx lerna run js-fibonacci
+  ```
+* ```
+  npx nx start js-fibonacci
+  ```
+* ```
+  npx nx run js-fibonacci:start
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run one of the following:
 
-* `npm start`
-* `node fibonacci.js`
-* `./index.js`
+* ```
+  npm start
+  ```
+* ```
+  node fibonacci.js
+  ```
+* ```
+  ./index.js
+  ```
 
 You can also use [`nx`](https://nx.dev/) from the source directory:
 
-* `npx nx start`
+* ```
+  npx nx start
+  ```
 
 ## License
 

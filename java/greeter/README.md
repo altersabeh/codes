@@ -19,17 +19,23 @@ To run and build this program you need to install:
 
 From the root directory run the following:
 
-* `gradle java:greeter:build`
+* ```
+  gradle java:greeter:build
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `gradle build`
+* ```
+  gradle build
+  ```
 
 You can also use `javac` from the source directory:
 
-* `javac Greeter.java`
+* ```
+  javac Greeter.java
+  ```
 
 ## Running
 
@@ -37,28 +43,41 @@ You can also use `javac` from the source directory:
 
 From the root directory run:
 
-* `gradle java-greeter`
-* `gradle java:greeter:run`
+* ```
+  gradle java-greeter
+  ```
+* ```
+  gradle java:greeter:run
+  ```
 
 You can also use `java` to run it directly:
 
-* `java java/greeter/src/greeter/Greeter.java`
+* ```
+  java java/greeter/src/greeter/Greeter.java
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `gradle run`
-* `gradle java-greeter`
+* ```
+  gradle run
+  ```
+* ```
+  gradle java-greeter
+  ```
 
 If you used `javac` for building:
 
-* `cd ..`
-* `java Greeter`
+* ```
+  cd .. && java Greeter
+  ```
 
 You can also use `java` to run it directly:
 
-* `java Greeter.java`
+* ```
+  java Greeter.java
+  ```
 
 ## License
 

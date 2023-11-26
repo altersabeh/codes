@@ -24,20 +24,28 @@ To run and build this program you need to install:
 
 From the root directory run one of the following:
 
-* `make build-objc-greeter`
+* ```
+  make build-objc-greeter
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `make build`
+* ```
+  make build
+  ```
 
 You can also use `gcc` or `clang` from the source directory:
 
 _(**Note :** @autoreleasepool block notation is not supported by **gcc**)_
 
-* ``gcc greeter.m `gnustep-config --objc-flags` -lgnustep-base -lobjc -o objc-greeter``
-* ``clang greeter.m `gnustep-config --objc-flags` -lgnustep-base -lobjc -o objc-greeter``
+* ```
+  gcc greeter.m `gnustep-config --objc-flags` -lgnustep-base -lobjc -o objc-greeter
+  ```
+* ```
+  clang greeter.m `gnustep-config --objc-flags` -lgnustep-base -lobjc -o objc-greeter
+  ```
 
 ## Running
 
@@ -45,18 +53,26 @@ _(**Note :** @autoreleasepool block notation is not supported by **gcc**)_
 
 From the root directory run one of the following:
 
-* `make objc-greeter`
-* `make run-objc-greeter`
+* ```
+  make objc-greeter
+  ```
+* ```
+  make run-objc-greeter
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `make run`
+* ```
+  make run
+  ```
 
 If you used `gcc` or `clang` for building:
 
-* `./objc-greeter`
+* ```
+  ./objc-greeter
+  ```
 
 ## License
 

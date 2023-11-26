@@ -19,17 +19,23 @@ To run and build this program you need to install:
 
 From the root directory run the following:
 
-* `gradle java:hello:build`
+* ```
+  gradle java:hello:build
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `gradle build`
+* ```
+  gradle build
+  ```
 
 You can also use `javac` from the source directory:
 
-* `javac Hello.java`
+* ```
+  javac Hello.java
+  ```
 
 ## Running
 
@@ -37,28 +43,41 @@ You can also use `javac` from the source directory:
 
 From the root directory run:
 
-* `gradle java-hello`
-* `gradle java:hello:run`
+* ```
+  gradle java-hello
+  ```
+* ```
+  gradle java:hello:run
+  ```
 
 You can also use `java` to run it directly:
 
-* `java java/hello/src/hello/Hello.java`
+* ```
+  java java/hello/src/hello/Hello.java
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `gradle run`
-* `gradle java-hello`
+* ```
+  gradle run
+  ```
+* ```
+  gradle java-hello
+  ```
 
 If you used `javac` for building:
 
-* `cd ..`
-* `java hello.Hello`
+* ```
+  cd .. && java Hello
+  ```
 
 You can also use `java` to run it directly:
 
-* `java Hello.java`
+* ```
+  java Hello.java
+  ```
 
 ## License
 

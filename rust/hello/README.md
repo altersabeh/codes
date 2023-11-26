@@ -16,18 +16,26 @@ To run and build this program you need to install:
 
 From the root directory run one of the following commands:
 
-* `cargo build -p rust-hello`
-* `cargo build --package rust-hello`
+* ```
+  cargo build -p rust-hello
+  ```
+* ```
+  cargo build --package rust-hello
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `cargo build`
+* ```
+  cargo build
+  ```
 
 You can also use `rustc` from the source directory:
 
-* `rustc hello.rs -o rust-hello`
+* ```
+  rustc hello.rs -o rust-hello
+  ```
 
 ## Running
 
@@ -35,18 +43,23 @@ You can also use `rustc` from the source directory:
 
 From the root directory run:
 
-* `cargo run --bin rust-hello`
+* ```
+  cargo run --bin rust-hello
+  ```
 
 ### Source Directory _(optional)_
 
-
 From the source directory you can run:
 
-* `cargo run`
+* ```
+  cargo run
+  ```
 
 If you used `rustc` for building:
 
-* `./rust-hello`
+* ```
+  ./rust-hello
+  ```
 
 ## License
 

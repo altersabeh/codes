@@ -8,7 +8,6 @@ To run and build this program you need to install:
 
 * [**Node.js**](https://nodejs.org/en/download/current)
   * `npm`
-  * `node`
   * `npx`
 
 * [**ts-node**](https://typestrong.org/ts-node/docs/installation) _**(Recommended)**_
@@ -18,7 +17,9 @@ To run and build this program you need to install:
 
 From the root directory run:
 
-* `npm install`
+* ```
+  npm install
+  ```
 
 ## Running
 
@@ -26,27 +27,56 @@ From the root directory run:
 
 From the root directory run one of the following:
 
-* `npx ts-fibonacci`
-* `npm exec ts-fibonacci`
-* `npm start -w ts-fibonacci`
+* ```
+  npx ts-fibonacci
+  ```
+* ```
+  npm exec ts-fibonacci
+  ```
+* ```
+  npm start -w ts-fibonacci
+  ```
+
+You can also use `ts-node` from the root directory:
+
+* ```
+  ts-node typescript/fibonacci/src/fibonacci.ts
+  ```
+* ```
+  npx ts-node typescript/fibonacci/src/fibonacci.ts
+  ```
 
 You can also use [`lerna`](https://lerna.js.org/) or [`nx`](https://nx.dev/) from the root directory: _**(optional)**_
 
-* `npx lerna run ts-fibonacci`
-* `npx nx start ts-fibonacci`
-* `npx nx run ts-fibonacci:start`
+* ```
+  npx lerna run ts-fibonacci
+  ```
+* ```
+  npx nx start ts-fibonacci
+  ```
+* ```
+  npx nx run ts-fibonacci:start
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run one of the following:
 
-* `npm start`
-* `node fibonacci.ts`
-* `./index.ts`
+* ```
+  npm start
+  ```
+* ```
+  ts-node fibonacci.ts
+  ```
+* ```
+  ./index.ts
+  ```
 
 You can also use [`nx`](https://nx.dev/) from the source directory:
 
-* `npx nx start`
+* ```
+  npx nx start
+  ```
 
 ## License
 
