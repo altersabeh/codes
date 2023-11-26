@@ -36,8 +36,12 @@ You can also use `gcc` or `clang` from the source directory:
 
 _(**Note :** @autoreleasepool block notation is not supported by **gcc**)_
 
-* ``gcc fibonacci.m `gnustep-config --objc-flags` -lgnustep-base -lobjc -lcrypto -o objc-fibonacci``
-* ``clang fibonacci.m `gnustep-config --objc-flags` -lgnustep-base -lobjc -lcrypto -o objc-fibonacci``
+* ```
+  gcc fibonacci.m `gnustep-config --objc-flags` -lgnustep-base -lobjc -lcrypto -o objc-fibonacci
+  ```
+* ```
+  clang fibonacci.m `gnustep-config --objc-flags` -lgnustep-base -lobjc -lcrypto -o objc-fibonacci
+  ```
 
 ## Running
 
