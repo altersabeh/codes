@@ -41,11 +41,11 @@ You can also use `ocamlc` or `ocamlopt` from the source directory:
 From the root directory run:
 
 * `dune exec ocaml-hello`
-* `dune exec ocaml/hello/hello.exe`
+* `dune exec ocaml/hello/bin/hello.exe`
 
 You can also use `ocaml` to run it directly:
 
-* `ocaml ocaml/hello/hello.ml`
+* `ocaml ocaml/hello/bin/hello.ml`
 
 ### Source Directory _(optional)_
 

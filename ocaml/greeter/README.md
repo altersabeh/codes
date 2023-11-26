@@ -41,11 +41,11 @@ You can also use `ocamlc` or `ocamlopt` from the source directory:
 From the root directory run:
 
 * `dune exec ocaml-greeter`
-* `dune exec ocaml/greeter/greeter.exe`
+* `dune exec ocaml/greeter/bin/greeter.exe`
 
 You can also use `ocaml` to run it directly:
 
-* `ocaml ocaml/greeter/greeter.ml`
+* `ocaml ocaml/greeter/bin/greeter.ml`
 
 ### Source Directory _(optional)_
 

@@ -1,6 +1,6 @@
-# `OCaml/Hello`
+# `OCaml/Fibonacci`
 
-This is a **Hello World** program written in **OCaml**.
+This is a **Fibonacci World** program written in **OCaml**.
 
 ## Prerequisite
 
@@ -20,8 +20,8 @@ To run and build this program you need to install:
 
 From the root directory run the following:
 
-* `dune build -p ocaml-hello`
-* `dune build --only-package ocaml-hello`
+* `dune build -p ocaml-fibonacci`
+* `dune build --only-package ocaml-fibonacci`
 
 ### Source Directory _(optional)_
 
@@ -31,8 +31,8 @@ From the source directory you can run:
 
 You can also use `ocamlc` or `ocamlopt` from the source directory:
 
-* `ocamlc hello.ml -o ocaml-hello` _**(bytecode)**_
-* `ocamlopt hello.ml -o ocaml-hello` _**(native code)**_
+* ``ocamlc -I `ocamlfind query zarith` zarith.cmxa unix.cmxa fibonacci.ml -o ocaml-fibonacci`` _**(bytecode)**_
+* ``ocamlopt -I `ocamlfind query zarith` zarith.cmxa unix.cmxa fibonacci.ml -o ocaml-fibonacci`` _**(native code)**_
 
 ## Running
 
@@ -40,27 +40,19 @@ You can also use `ocamlc` or `ocamlopt` from the source directory:
 
 From the root directory run:
 
-* `dune exec ocaml-hello`
-* `dune exec ocaml/hello/hello.exe`
-
-You can also use `ocaml` to run it directly:
-
-* `ocaml ocaml/hello/hello.ml`
+* `dune exec ocaml-fibonacci`
+* `dune exec ocaml/fibonacci/bin/fibonacci.exe`
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `dune exec ocaml-hello`
-* `dune exec ./hello.exe`
+* `dune exec ocaml-fibonacci`
+* `dune exec ./fibonacci.exe`
 
 If you used `ocamlc` or `ocamlopt` for building:
 
-* `./ocaml-hello`
-
-You can also use `ocaml` to run it directly:
-
-* `ocaml hello.ml`
+* `./ocaml-fibonacci`
 
 ## License
 
