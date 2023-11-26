@@ -10,10 +10,6 @@
  * License: This program is in the public domain.
  *)
 
-open Big_int
-open Unix
-open Printf
-
 (* Functions to handle user input and errors *)
 let validate_input input = try int_of_string input with Failure _ -> -1
 
@@ -34,15 +30,15 @@ let signal_handler () =
 
 (* Display the current date and time *)
 let rec date_and_time () =
-  let current_time = gettimeofday () in
-  let tm = localtime current_time in
+  let current_time = Unix.gettimeofday () in
+  let tm = Unix.localtime current_time in
   let formatted_date =
-    sprintf "%s %02d, %04d - %02d:%02d:%02d"
-      (month_to_string tm.tm_mon)
-      tm.tm_mday (tm.tm_year + 1900) tm.tm_hour tm.tm_min
-      tm.tm_sec
+    Printf.sprintf "%s %02d, %04d - %02d:%02d:%02d"
+      (month_to_string tm.Unix.tm_mon)
+      tm.Unix.tm_mday (tm.Unix.tm_year + 1900) tm.Unix.tm_hour tm.Unix.tm_min
+      tm.Unix.tm_sec
   in
-  printf "Date and Time: %s\n" formatted_date
+  Printf.printf "Date and Time: %s\n" formatted_date
 
 and month_to_string month =
   match month with
@@ -70,38 +66,38 @@ let get_suffix n =
 
 (* Calculates and prints the Fibonacci series up to the nth term. *)
 let fibonacci_series n =
-  let a = ref zero_big_int in
-  let b = ref unit_big_int in
-  let sum = ref zero_big_int in
-  let temp = ref zero_big_int in
+  let a = ref Big_int.zero_big_int in
+  let b = ref Big_int.unit_big_int in
+  let sum = ref Big_int.zero_big_int in
+  let temp = ref Big_int.zero_big_int in
 
   print_endline
     ("The Fibonacci series up to " ^ string_of_int n ^ get_suffix n ^ " term:");
 
-  let series = Array.make (n + 1) zero_big_int in
+  let series = Array.make (n + 1) Big_int.zero_big_int in
 
   for i = 0 to n do
     if n <= 5000 then series.(i) <- !a
     else (
       (* Print the series without using array *)
-      print_string (string_of_big_int !a);
+      print_string (Big_int.string_of_big_int !a);
       if i < n then print_string ", ");
 
     temp := !a;
     a := !b;
-    b := add_big_int !temp !b;
-    sum := add_big_int !sum !temp (* Calculate the sum *)
+    b := Big_int.add_big_int !temp !b;
+    sum := Big_int.add_big_int !sum !temp (* Calculate the sum *)
   done;
 
   if n <= 5000 then
     Array.iteri
       (fun i x ->
-        print_string (string_of_big_int x);
+        print_string (Big_int.string_of_big_int x);
         if i < n then print_string ", ")
       series;
 
   print_endline "\n";
-  print_endline ("Sum of the Fibonacci series: " ^ string_of_big_int !sum)
+  print_endline ("Sum of the Fibonacci series: " ^ Big_int.string_of_big_int !sum)
 
 (* Function to Get the User Input *)
 let get_user_input () =
