@@ -24,13 +24,17 @@ To run and build this program you need to install:
 
 From the root directory run one of the following:
 
-* `make build-objc-fibonacci`
+* ```
+  make build-objc-fibonacci
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `make build`
+* ```
+  make build
+  ```
 
 You can also use `gcc` or `clang` from the source directory:
 
@@ -49,18 +53,26 @@ _(**Note :** @autoreleasepool block notation is not supported by **gcc**)_
 
 From the root directory run one of the following:
 
-* `make objc-fibonacci`
-* `make run-objc-fibonacci`
+* ```
+  make objc-fibonacci
+  ```
+* ```
+  make run-objc-fibonacci
+  ```
 
 ### Source Directory _(optional)_
 
 From the source directory you can run:
 
-* `make run`
+* ```
+  make run
+  ```
 
 If you used `gcc` or `clang` for building:
 
-* `./objc-fibonacci`
+* ```
+  ./objc-fibonacci
+  ```
 
 ## License
 
