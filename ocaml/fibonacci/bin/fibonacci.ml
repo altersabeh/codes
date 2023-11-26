@@ -68,39 +68,38 @@ let get_suffix n =
 
 (* Calculates and prints the Fibonacci series up to the nth term. *)
 let fibonacci_series n =
-  let a = ref Big_int.zero_big_int in
-  let b = ref Big_int.unit_big_int in
-  let sum = ref Big_int.zero_big_int in
-  let temp = ref Big_int.zero_big_int in
+  let a = ref Z.zero in
+  let b = ref Z.one in
+  let sum = ref Z.zero in
+  let temp = ref Z.zero in
 
   print_endline
     ("The Fibonacci series up to " ^ string_of_int n ^ get_suffix n ^ " term:");
 
-  let series = Array.make (n + 1) Big_int.zero_big_int in
+  let series = Array.make (n + 1) Z.zero in
 
   for i = 0 to n do
     if n <= 5000 then series.(i) <- !a
     else (
       (* Print the series without using array *)
-      print_string (Big_int.string_of_big_int !a);
+      print_string (Z.to_string !a);
       if i < n then print_string ", ");
 
     temp := !a;
     a := !b;
-    b := Big_int.add_big_int !temp !b;
-    sum := Big_int.add_big_int !sum !temp (* Calculate the sum *)
+    b := Z.add !temp !b;
+    sum := Z.add !sum !temp (* Calculate the sum *)
   done;
 
   if n <= 5000 then
     Array.iteri
       (fun i num ->
-        print_string (Big_int.string_of_big_int num);
+        print_string (Z.to_string num);
         if i < n then print_string ", ")
       series;
 
   print_endline "\n";
-  print_endline
-    ("Sum of the Fibonacci series: " ^ Big_int.string_of_big_int !sum)
+  print_endline ("Sum of the Fibonacci series: " ^ Z.to_string !sum)
 
 (* Function to Get the User Input *)
 let get_user_input () =

@@ -23,6 +23,6 @@
  (name ocaml-fibonacci)
  (synopsis "An OCaml Program")
  (description "Fibonacci program written in OCaml")
- (depends ocaml dune)
+ (depends ocaml dune zarith)
  (tags
   (command-line-utilities)))
