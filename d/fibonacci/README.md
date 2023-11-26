@@ -10,7 +10,7 @@ To run and build this program you need to install:
   * `dub`
   * `dmd`
 
-* [**GNU Compiler Collection**](https://gcc.gnu.org/) _**(Optional)**_
+* [**GNU D Compiler**](https://gcc.gnu.org/) _**(Optional)**_
   * `gdc`
 
 ## Building

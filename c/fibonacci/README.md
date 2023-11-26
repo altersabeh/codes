@@ -6,7 +6,7 @@ This is a **Fibonacci** program written in **C**.
 
 To run and build this program you need to install:
 
-* [**GNU C Collection**](https://gcc.gnu.org)
+* [**GNU C Compiler**](https://gcc.gnu.org)
   * `gcc`
 
 * [**LLVM**](https://releases.llvm.org/)
