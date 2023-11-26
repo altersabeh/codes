@@ -62,5 +62,5 @@
     "DUNE_BUILD_DIR": "${workspaceFolder}\\dist\\ocaml",
     "NPM_CONFIG_PACK_DESTINATION": "${workspaceFolder}\\dist\\npm\\package"
   },
-  "editor.inlineSuggest.showToolbar": "always"
+  "editor.inlineSuggest.showToolbar": "onHover"
 }

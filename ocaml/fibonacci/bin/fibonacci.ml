@@ -32,12 +32,14 @@ let signal_handler () =
 let rec date_and_time () =
   let current_time = Unix.gettimeofday () in
   let tm = Unix.localtime current_time in
+
   let formatted_date =
     Printf.sprintf "%s %02d, %04d - %02d:%02d:%02d"
       (month_to_string tm.Unix.tm_mon)
       tm.Unix.tm_mday (tm.Unix.tm_year + 1900) tm.Unix.tm_hour tm.Unix.tm_min
       tm.Unix.tm_sec
   in
+
   Printf.printf "Date and Time: %s\n" formatted_date
 
 and month_to_string month =
@@ -91,13 +93,14 @@ let fibonacci_series n =
 
   if n <= 5000 then
     Array.iteri
-      (fun i x ->
-        print_string (Big_int.string_of_big_int x);
+      (fun i num ->
+        print_string (Big_int.string_of_big_int num);
         if i < n then print_string ", ")
       series;
 
   print_endline "\n";
-  print_endline ("Sum of the Fibonacci series: " ^ Big_int.string_of_big_int !sum)
+  print_endline
+    ("Sum of the Fibonacci series: " ^ Big_int.string_of_big_int !sum)
 
 (* Function to Get the User Input *)
 let get_user_input () =
@@ -105,7 +108,9 @@ let get_user_input () =
     print_string "Enter the value of n (an integer): ";
     try
       let input = read_line () in
+
       let trimmedinput = String.trim input in
+
       match trimmedinput with
       | "" ->
           print_endline "Please enter something...";
@@ -115,6 +120,7 @@ let get_user_input () =
           ()
       | _ ->
           let n = validate_input trimmedinput in
+
           if n > 0 then fibonacci_series n
           else (
             print_endline "Please enter a valid positive integer.";
