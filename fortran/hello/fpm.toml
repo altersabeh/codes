@@ -1,0 +1,25 @@
+name = "fortran-hello"
+version = "1.0.0"
+description = "Hello World program written in Fortran"
+license = "MIT"
+homepage = "https://github.com/altersabeh/codes"
+author = "AlterSabeh"
+maintainer = "betamaximum@gmail.com"
+copyright = "Copyright 2023, AlterSabeh"
+categories = ["command-line-utilities"]
+keywords = ["command-line-utilities"]
+
+[[executable]]
+name = "fortran-hello"
+main = "hello.f90"
+
+[build]
+auto-executables = true
+auto-tests = true
+auto-examples = true
+
+[install]
+library = false
+
+[fortran]
+source-form = "free"

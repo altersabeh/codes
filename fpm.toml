@@ -1,0 +1,13 @@
+name = "codes"
+description = "Repository for My Codes"
+license = "MIT"
+homepage = "https://github.com/altersabeh/codes"
+author = "AlterSabeh"
+maintainer = "betamaximum@gmail.com"
+
+executable = [
+  { name = "fortran-hello", source-dir = "fortran/hello/app", main = "hello.f90" },
+]
+
+[fortran]
+source-form = "free"
