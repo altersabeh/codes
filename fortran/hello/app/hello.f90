@@ -1,6 +1,6 @@
 ! Hello World in Fortran !
 
-program HELLO
+program hello
   implicit none
   print '(A)', 'Hello World from Fortran !'
-end program HELLO
+end program hello
