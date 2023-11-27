@@ -7,6 +7,7 @@ maintainer = "betamaximum@gmail.com"
 
 executable = [
   { name = "fortran-hello", source-dir = "fortran/hello/app", main = "hello.f90" },
+  { name = "fortran-greeter", source-dir = "fortran/greeter/app", main = "greeter.f90" }
 ]
 
 [fortran]
