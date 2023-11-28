@@ -4,16 +4,14 @@ This is a **Fibonacci** program written in **C++**.
 
 ## Prerequisite
 
-To run and build this program you need to install:
+To run and build this program you need to have the following:
 
-* [**GNU C++ Compiler**](https://gcc.gnu.org)
-  * `g++`
-
-* [**LLVM**](https://releases.llvm.org/)
-  * `clang++`'
-
-* [**GNU Make**](https://www.gnu.org/software/make/)
-  * `make`
+| Name | Command | Required | Recommended | Optional |
+|------|---------|----------|-------------|----------|
+| [**GNU C++ Compiler**](https://gcc.gnu.org) | `g++` | :heavy_check_mark: | No |
+| [**Clang C++ Compiler**](https://releases.llvm.org/download.html) | `clang++` | Yes | Yes |
+| [**Intel C++ Compiler**](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compiler.html) | `icpx` | No | Yes |
+| [**GNU Make**](https://www.gnu.org/software/make/) | `make` | Yes | No |
 
 ## Building
 
@@ -67,7 +65,7 @@ To use `g++`,`clang++`, or `icpx` from the source directory, run one of the foll
   icpx fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci
   ```
 
-#### Using [`bazel`](https://bazel.build/install) _(optional)_
+#### Using [`bazel`](https://bazel.build/install)
 
 To use `bazel` from the source directory, run one of the following:
 
