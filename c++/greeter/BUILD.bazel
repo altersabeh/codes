@@ -1,0 +1,13 @@
+package(
+  default_visibility = ["//visibility:public"]
+)
+
+cc_binary(
+  name = "c++-greeter",
+  srcs = ["src/greeter.cpp"]
+)
+
+alias(
+  name = "main",
+  actual = ":c++-greeter"
+)

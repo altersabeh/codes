@@ -1,0 +1,13 @@
+package(
+  default_visibility = ["//visibility:public"]
+)
+
+cc_binary(
+  name = "c-hello",
+  srcs = ["src/hello.c"]
+)
+
+alias(
+  name = "main",
+  actual = ":c-hello"
+)

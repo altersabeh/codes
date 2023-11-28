@@ -9,6 +9,9 @@
 **/alire
 **/config
 
+# bazel
+**/bazel*
+
 # cargo
 **/target
 

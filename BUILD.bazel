@@ -1,0 +1,29 @@
+alias(
+  name = "c++-hello",
+  actual = "//c++/hello:c++-hello",
+)
+
+alias(
+  name = "c++-greeter",
+  actual = "//c++/greeter:c++-greeter",
+)
+
+alias(
+  name = "c++-fibonacci",
+  actual = "//c++/fibonacci:c++-fibonacci",
+)
+
+alias(
+  name = "c-hello",
+  actual = "//c/hello:c-hello",
+)
+
+alias(
+  name = "c-greeter",
+  actual = "//c/greeter:c-greeter",
+)
+
+alias(
+  name = "c-fibonacci",
+  actual = "//c/fibonacci:c-fibonacci",
+)
