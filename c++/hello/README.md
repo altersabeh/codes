@@ -25,6 +25,15 @@ From the root directory run one of the following:
   make build-c++-hello
   ```
 
+You can also use [`bazel`](https://bazel.build/install) from the root directory: _**(optional)**_
+
+* ```
+  bazel build c++-hello
+  ```
+* ```
+  bazel build c++/hello:main
+  ```
+
 ### Source Directory _(optional)_
 
 From the source directory you can run:
@@ -42,6 +51,15 @@ You can also use `g++` or `clang++` from the source directory:
   clang++ hello.cpp -o c++-hello
   ```
 
+You can also use [`bazel`](https://bazel.build/install) from the source directory: _**(optional)**_
+
+* ```
+  bazel build main
+  ```
+* ```
+  bazel build c++-hello
+  ```
+
 ## Running
 
 ### Root Directory
@@ -53,6 +71,15 @@ From the root directory run one of the following:
   ```
 * ```
   make run-c++-hello
+  ```
+
+You can also use [`bazel`](https://bazel.build/install) from the root directory: _**(optional)**_
+
+* ```
+  bazel run c++-hello
+  ```
+* ```
+  bazel run c++/hello:main
   ```
 
 ### Source Directory _(optional)_
@@ -67,6 +94,15 @@ If you used `g++` or `clang++` for building:
 
 * ```
   ./c++-hello
+  ```
+
+You can also use [`bazel`](https://bazel.build/install) from the source directory: _**(optional)**_
+
+* ```
+  bazel run main
+  ```
+* ```
+  bazel run c++-hello
   ```
 
 ## License
