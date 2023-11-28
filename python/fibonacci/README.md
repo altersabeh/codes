@@ -23,7 +23,6 @@ From the root directory run:
   poetry install
   ```
 
-
 ### Source Directory _(optional)_
 
 From the source directory you can run:
