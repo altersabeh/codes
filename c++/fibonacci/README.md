@@ -6,12 +6,12 @@ This is a **Fibonacci** program written in **C++**.
 
 To run and build this program you need to have the following:
 
-| Name | Command | Required | Recommended | Optional |
+| Name | Commands | Required | Recommended | Optional |
 |------|---------|----------|-------------|----------|
-| [**GNU C++ Compiler**](https://gcc.gnu.org) | `g++` | :heavy_check_mark: | No |
-| [**Clang C++ Compiler**](https://releases.llvm.org/download.html) | `clang++` | Yes | Yes |
-| [**Intel C++ Compiler**](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compiler.html) | `icpx` | No | Yes |
-| [**GNU Make**](https://www.gnu.org/software/make/) | `make` | Yes | No |
+| [**GNU C++ Compiler**](https://gcc.gnu.org) | **`g++`** | &#9989; | &#9989; | &#10062; |
+| [**Clang C++ Compiler**](https://releases.llvm.org/download.html) | **`clang++`** | &#10062; | &#9989; | &#9989; |
+| [**Intel C++ Compiler**](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compiler.html) | **`icpx`** | &#10062; | &#10062; | &#9989; |
+| [**GNU Make**](https://www.gnu.org/software/make/) | **`make`** | &#9989; | &#9989; | &#10062; |
 
 ## Building
 
@@ -29,7 +29,7 @@ From the root directory:
 
 #### Using [`bazel`](https://bazel.build/install) _(optional)_
 
-To use `bazel` from the root directory, run one of the following:
+To use **`bazel`** from the root directory, run one of the following:
 
 * ```
   bazel build c++-fibonacci
@@ -50,7 +50,7 @@ From the source directory:
 
 #### Using `c++ compilers`
 
-To use `g++`,`clang++`, or `icpx` from the source directory, run one of the following:
+To use **`g++`**,**`clang++`**, or **`icpx`** from the source directory, run one of the following:
 
 * ```
   cd src
@@ -67,7 +67,7 @@ To use `g++`,`clang++`, or `icpx` from the source directory, run one of the foll
 
 #### Using [`bazel`](https://bazel.build/install)
 
-To use `bazel` from the source directory, run one of the following:
+To use **`bazel`** from the source directory, run one of the following:
 
 * ```
   bazel build main
@@ -95,7 +95,7 @@ From the root directory, run one of the following:
 
 #### Using [`bazel`](https://bazel.build/install) _(optional)_
 
-To use `bazel` from the root directory, run one of the following:
+To use **`bazel`** from the root directory, run one of the following:
 
 * ```
   bazel run c++-fibonacci
@@ -116,7 +116,7 @@ From the source directory you can run:
 
 #### Using `c++ compilers`
 
-If you used `g++`, `clang++`, or `icpx` for building the program:
+If you used **`g++`**, **`clang++`**, or **`icpx`** for building the program:
 
 * ```
   cd src
@@ -125,7 +125,7 @@ If you used `g++`, `clang++`, or `icpx` for building the program:
 
 #### Using [`bazel`](https://bazel.build/install)
 
-To use `bazel` from the source directory, run one of the following:
+To use **`bazel`** from the source directory, run one of the following:
 
 * ```
   bazel run main
