@@ -1,0 +1,6 @@
+package:
+  name: ps-hello
+  dependencies:
+    - console
+    - effect
+    - prelude

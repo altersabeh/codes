@@ -1,0 +1,7 @@
+workspace:
+  lock: true
+  extra_packages: {}
+  package_set:
+    registry: 46.5.0
+  build_opts:
+    output: dist/purescript

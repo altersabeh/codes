@@ -52,6 +52,13 @@ __pycache__/
 !Rakefile
 !ruby/**
 
+# spago
+.psc*
+.purs*
+.psa*
+.spago
+output/**
+
 # stack cabal
 **/dist-newstyle
 **/.stack-work

@@ -12,6 +12,7 @@
     "**/.pants.d": true,
     "**/.pids": true,
     "**/.ruby-lsp": true,
+    "**/.spago": true,
     "**/.stack-work": true,
     "**/.vscode": true,
     "**/_build": true,
@@ -23,6 +24,7 @@
     "**/melos_*.iml": true,
     "**/node_modules": true,
     "**/obj": true,
+    "**/output": true,
     "**/target": true
   },
   "files.watcherExclude": {
@@ -37,6 +39,7 @@
     "**/.pants.d": true,
     "**/.pids": true,
     "**/.ruby-lsp": true,
+    "**/.spago": true,
     "**/.stack-work": true,
     "**/_build": true,
     "**/alire": true,
@@ -46,6 +49,7 @@
     "**/dist-newstyle": true,
     "**/node_modules": true,
     "**/obj": true,
+    "**/output": true,
     "**/target": true,
     "**/test": true
   },
