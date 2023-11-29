@@ -6,10 +6,14 @@ This is a **Fibonacci** program written in **Dart**.
 
 To run and build this program you need to have the following:
 
+<div align="center">
+
 | Name | Commands | Required | Recommended | Optional | Notes |
 |:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
-| [**Dart SDK**](https://dlang.org/download.html) | **`dart`** | &#9989; | &#9989; | &#10062; | **`sudo apt install dart`** |
+| [**Dart SDK**](https://dlang.org/download.html) | **`dart`**<br>**`dartaotruntime`** | &#9989; | &#9989; | &#10062; | **`sudo apt install dart`** |
 | [**Melos**](https://gcc.gnu.org) | **`melos`** | &#10062; | &#10062; | &#9989; | **`dart pub global activate melos`** |
+
+</div>
 
 ## Building
 
