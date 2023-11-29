@@ -113,8 +113,19 @@ dart run
 If you used `dart compile` or other **Dart Compilers** for building the program:
 
 ```
+# using dart compile exe
 cd lib
 ./dart-fibonacci
+```
+```
+# using dart compile js
+cd lib
+node dart-fibonacci.js
+```
+```
+# using dart compile kernel
+cd lib
+dart dart-fibonacci.dill
 ```
 
 #### Using `dart interpreter`
