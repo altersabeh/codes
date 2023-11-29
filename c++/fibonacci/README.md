@@ -25,20 +25,20 @@ This program is designed to be built automatically using tools such as `make` an
 
 From the root directory:
 
-* ```
-  make build-c++-fibonacci
-  ```
+* <pre>
+  <code><b>make build-c++-fibonacci</b></code>
+  </pre>
 
 #### Using [`bazel`](https://bazel.build/install)
 
 To use **`bazel`** from the root directory, run one of the following:
 
-* ```
-  bazel build c++-fibonacci
-  ```
-* ```
-  bazel build c++/fibonacci:main
-  ```
+* <pre>
+  <code><b>bazel build c++-fibonacci</b></code>
+  </pre>
+* <pre>
+  <code><b>bazel build c++/fibonacci:main</b></code>
+  </pre>
 
 ### Source Directory _(optional)_
 
@@ -46,40 +46,44 @@ To use **`bazel`** from the root directory, run one of the following:
 
 From the source directory:
 
-* ```
-  make build
-  ```
+* <pre>
+  <code><b>
+  make build</b></code>
+  </pre>
 
 #### Using `c++ compilers`
 
 To use **`g++`**,**`clang++`**, **`icpx`**, or other **C++ Compilers** from the source directory, run one of the following:
 
 > [!NOTE]
-> This will create build artifacts that may have to manually remove.
+> This will create build artifacts in the source directory that you may have to manually remove.
 
-* ```
+* <pre>
+  <code><b>cd src</b></code>
+  <code><b>g++ fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci</b></code>
+  </pre>
+* <pre>
+  <code><b>
   cd src
-  g++ fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci
-  ```
-* ```
-  cd src
-  clang++ fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci
-  ```
-* <pre><code>
-  <b>cd src
-  icpx fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci</b>
-  </code></pre>
+  clang++ fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci</b></code>
+  </pre>
+* <pre>
+  <code><b>cd src
+  icpx fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci</b></code>
+  </pre>
 
 #### Using [`bazel`](https://bazel.build/install)
 
 To use **`bazel`** from the source directory, run one of the following:
 
-* ```
-  bazel build main
-  ```
-* ```
-  bazel build c++-fibonacci
-  ```
+* <pre>
+  <code><b>
+  bazel build main</b></code>
+  </pre>
+* <pre>
+  <code><b>
+  bazel build c++-fibonacci</b></code>
+  </pre>
 
 ## Running
 
@@ -91,23 +95,27 @@ The execution of this program can be seamlessly handled using automated build to
 
 From the root directory, run one of the following:
 
-* ```
-  make c++-fibonacci
-  ```
-* ```
-  make run-c++-fibonacci
-  ```
+* <pre>
+  <code><b>
+  make c++-fibonacci</b></code>
+  </pre>
+* <pre>
+  <code><b>
+  make run-c++-fibonacci</b></code>
+  </pre>
 
 #### Using [`bazel`](https://bazel.build/install)
 
 To use **`bazel`** from the root directory, run one of the following:
 
-* ```
-  bazel run c++-fibonacci
-  ```
-* ```
-  bazel run c++/fibonacci:main
-  ```
+* <pre>
+  <code><b>
+  bazel run c++-fibonacci</b></code>
+  </pre>
+* <pre>
+  <code><b>
+  bazel run c++/fibonacci:main</b></code>
+  </pre>
 
 ### Source Directory _(optional)_
 
@@ -115,29 +123,33 @@ From the source directory you can run:
 
 #### Using `make`
 
-* ```
-  make run
-  ```
+* <pre>
+  <code><b>
+  make run</b></code>
+  </pre>
 
 #### Using `c++ compilers`
 
 If you used **`g++`**, **`clang++`**, **`icpx`** or other **C++ Compilers** for building the program:
 
-* ```
+* <pre>
+  <code><b>
   cd src
-  ./c++-fibonacci
-  ```
+  ./c++-fibonacci</b></code>
+  </pre>
 
 #### Using [`bazel`](https://bazel.build/install)
 
 To use **`bazel`** from the source directory, run one of the following:
 
-* ```
-  bazel run main
-  ```
-* ```
-  bazel run c++-fibonacci
-  ```
+* <pre>
+  <code><b>
+  bazel run main</b></code>
+  </pre>
+* <pre>
+  <code><b>
+  bazel run c++-fibonacci</b></code>
+  </pre>
 
 ## License
 
