@@ -62,10 +62,10 @@ To use **`g++`**,**`clang++`**, **`icpx`**, or other **C++ Compilers** from the 
   cd src
   clang++ fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci
   ```
-* ```
-  cd src
-  icpx fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci
-  ```
+* <pre>
+  <b>cd src
+  icpx fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci</b>
+  </pre>
 
 #### Using [`bazel`](https://bazel.build/install)
 
