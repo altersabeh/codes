@@ -61,7 +61,7 @@ To use **`mono`** from the source directory, you can run:
 
 ## Running
 
-The execution of this program can be seamlessly handled using automated build tools like `dotnet`, or manually with `mono`, using `fsharpc` or other **F# Compilers**. You can run the program from either the root directory or the source directory.
+The execution of this program can be seamlessly handled using automated build tools like **`dotnet`**, or manually with **`mono`**, using **`fsharpc`** or other **F# Compilers**. You can run the program from either the root directory or the source directory.
 
 ### Root Directory
 
