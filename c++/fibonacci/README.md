@@ -13,9 +13,9 @@ To run and build this program you need to have the following:
 | [**GNU Make**](https://www.gnu.org/software/make/) | **`make`** | &#9989; | &#9989; | &#10062; | **`sudo apt install make`** |
 | [**GNU C++ Compiler**](https://gcc.gnu.org) | **`g++`** | &#9989; | &#9989; | &#10062; | **`sudo apt install g++`** |
 | [**LLVM C++ Compiler**](https://releases.llvm.org/download.html) | **`clang++`** | &#10062; | &#9989; | &#9989; | **`sudo apt install clang`** |
-| [**Intel C++ Compiler**](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compiler.html) | **`icpx`**<br>**`dpcpp`** | &#10062; | &#10062; | &#9989; | **`sudo apt install intel-basekit`**<br>**`sudo apt install intel-hpckit`** |
-| [**NVIDIA Cuda Compiler**](https://developer.nvidia.com/cuda-downloads) | **`nvcc`** | &#10062; | &#10062; | &#9989; | **`sudo apt install nvidia-cuda-toolkit`**<br>**`sudo apt instal cuda`** |
-| [**Bazel**](https://bazel.build/) | **`bazel`**<br>**`bazelisk`** | &#10062; | &#10062; | &#9989; | **`npm install -g @bazel/bazelisk`**<br>**`sudo apt install bazel`** |
+| [**Intel C++ Compiler**](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compiler.html) | **`icpx`**<br>**`dpcpp`** | &#10062; | &#10062; | &#9989; | **`sudo apt install intel-basekit`**<br>or<br>**`sudo apt install intel-hpckit`** |
+| [**NVIDIA Cuda Compiler**](https://developer.nvidia.com/cuda-downloads) | **`nvcc`** | &#10062; | &#10062; | &#9989; | **`sudo apt install nvidia-cuda-toolkit`**<br>or<br>**`sudo apt instal cuda`** |
+| [**Bazel**](https://bazel.build/) | **`bazel`**<br>**`bazelisk`** | &#10062; | &#10062; | &#9989; | **`npm install -g @bazel/bazelisk`**<br>or<br>**`sudo apt install bazel`** |
 
 </div>
 
