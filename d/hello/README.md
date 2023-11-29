@@ -6,11 +6,15 @@ This is a **Hello World** program written in **D**.
 
 To run and build this program you need to have the following:
 
+<div align="center">
+
 | Name | Commands | Required | Recommended | Optional | Notes |
 |:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
 | [**DMD Compiler**](https://dlang.org/download.html) | **`dub`**<br>**`dmd`** | &#9989; | &#9989; | &#10062; | **`sudo apt install dub`**<br>**`sudo apt install dmd-compiler`** |
 | [**GNU D Compiler**](https://gcc.gnu.org) | **`gdc`** | &#10062; | &#10062; | &#9989; | **`sudo apt install gdc`** |
 | [**LLVM D Compiler**](https://wiki.dlang.org/LDC) | **`ldc2`**<br>**`ldmd2`** | &#10062; | &#10062; | &#9989; | **`sudo apt install ldc`** |
+
+</div>
 
 ## Building
 
@@ -22,12 +26,12 @@ This program is designed to be built automatically using tools such as **`dub`**
 
 From the root directory, run one of the following:
 
-* ```
-  dub build :d-hello
-  ```
-* ```
-  dub build codes:d-hello
-  ```
+```
+dub build :d-hello
+```
+```
+dub build codes:d-hello
+```
 
 ### Source Directory _(optional)_
 
@@ -35,9 +39,9 @@ From the root directory, run one of the following:
 
 From the source directory, you can run:
 
-* ```
-  dub build
-  ```
+```
+dub build
+```
 
 #### Using `d compilers`
 
@@ -46,21 +50,21 @@ To use **`dmd`**, **`gdc`**, **`ldc2`**, or other **D Compilers** from the sourc
 > [!CAUTION]
 > This **will create build artifacts** in the source directory that you may **have to manually remove**.
 
-> [!TIP]
-> The **sources** are located in the **`src`** directory.
+> [!NOTE]
+> The **sources** are located in the **src** directory.
 
-* ```
-  cd src
-  dmd hello.d -of=d-hello
-  ```
-* ```
-  cd src
-  gdc hello.d -o d-hello
-  ```
-* ```
-  cd src
-  ldc2 hello.d -o d-hello
-  ```
+```
+cd src
+dmd hello.d -of=d-hello
+```
+```
+cd src
+gdc hello.d -o d-hello
+```
+```
+cd src
+ldc2 hello.d -o d-hello
+```
 
 ## Running
 
@@ -72,37 +76,37 @@ The execution of this program can be seamlessly handled using automated build to
 
 From the root directory, run one of the following:
 
-* ```
-  dub run :d-hello
-  ```
-* ```
-  dub run codes:d-hello
-  ```
-* ```
-  dub run --root c#/hello
-  ```
+```
+dub run :d-hello
+```
+```
+dub run codes:d-hello
+```
+```
+dub run --root c#/hello
+```
 
 ### Source Directory _(optional)_
 
 #### Using `dub`
 
-From the source directory you can run one of the following:
+From the source directory, you can run one of the following:
 
-* ```
-  dub run
-  ```
-* ```
-  dmd -run hello.d
-  ```
+```
+dub run
+```
+```
+dmd -run hello.d
+```
 
 #### Using `d compilers`
 
 If you used **`dmd`**, **`gdc`**, **`ldc2`** or other **D Compilers** for building the program:
 
-* ```
-  cd src
-  ./d-hello
-  ```
+```
+cd src
+./d-hello
+```
 
 ## License
 
