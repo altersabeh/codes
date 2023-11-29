@@ -58,7 +58,7 @@ To use **`qsc`** or other **Q# Compilers** from the source directory, you can ru
 
 ## Running
 
-The execution of this program can be seamlessly handled using automated build tools like `dotnet`, or manually  using `qsc` or other **Q# Compilers**. You can run the program from either the root directory or the source directory.
+The execution of this program can be seamlessly handled using automated build tools like **`dotnet`**, or manually  using **`qsc`** or other **Q# Compilers**. You can run the program from either the root directory or the source directory.
 
 ### Root Directory
 
