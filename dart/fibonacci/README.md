@@ -25,12 +25,12 @@ This program is designed to be built automatically using tools such as **`melos`
 
 From the root directory, run one of the following:
 
-* ```
-  melos bootstrap
-  ```
-* ```
-  melos run get
-  ```
+```
+melos bootstrap
+```
+```
+melos run get
+```
 
 ### Source Directory _(recommended)_
 
@@ -38,9 +38,9 @@ From the root directory, run one of the following:
 
 From the source directory, you can run:
 
-* ```
-  dart pub get
-  ```
+```
+dart pub get
+```
 
 #### Using `dart compiler`
 
@@ -57,18 +57,18 @@ To use **`dart compile`** from the source directory, run one of the following:
 > * The **dart compile js** compiles the program into a deployable javascript file.
 > * The **dart compile kernel** compiles the program into a portable kernel module.
 
-* ```
-  cd lib
-  dart compile exe fibonacci.dart -o dart-fibonacci
-  ```
-* ```
-  cd lib
-  dart compile js fibonacci.dart -o dart-fibonacci.js
-  ```
-* ```
-  cd lib
-  dart compile kernel fibonacci.dart -o dart-fibonacci.dill
-  ```
+```
+cd lib
+dart compile exe fibonacci.dart -o dart-fibonacci
+```
+```
+cd lib
+dart compile js fibonacci.dart -o dart-fibonacci.js
+```
+```
+cd lib
+dart compile kernel fibonacci.dart -o dart-fibonacci.dill
+```
 
 ## Running
 
@@ -83,20 +83,20 @@ From the root directory run:
 > [!IMPORTANT]
 > Melos may **not support running programs which requires user input** and may **require modifying the source code**.
 
-* ```
-  melos run dart-fibonacci
-  ```
+```
+melos run dart-fibonacci
+```
 
 #### Using `dart interpreter`
 
 To use `dart` to run it directly from root directory, run one of the following:
 
-* ```
-  dart dart/fibonacci/lib/fibonacci.dart
-  ```
-* ```
-  dart run dart/fibonacci/lib/fibonacci.dart
-  ```
+```
+dart dart/fibonacci/lib/fibonacci.dart
+```
+```
+dart run dart/fibonacci/lib/fibonacci.dart
+```
 
 ### Source Directory _(recommended)_
 
@@ -104,29 +104,29 @@ To use `dart` to run it directly from root directory, run one of the following:
 
 From the source directory you can run:
 
-* ```
-  dart run
-  ```
+```
+dart run
+```
 
 #### Using `dart compile`
 
 If you used `dart compile` or other **Dart Compilers** for building the program:
 
-* ```
-  cd lib
-  ./dart-fibonacci
-  ```
+```
+cd lib
+./dart-fibonacci
+```
 
 #### Using `dart interpreter`
 
 To use `dart` to run it directly from source directory, run one of the following:
 
-* ```
-  dart lib/fibonacci.dart
-  ```
-* ```
-  dart run lib/fibonacci.dart
-  ```
+```
+dart lib/fibonacci.dart
+```
+```
+dart run lib/fibonacci.dart
+```
 
 ## License
 
