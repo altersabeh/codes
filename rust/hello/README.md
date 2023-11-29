@@ -63,4 +63,4 @@ If you used `rustc` for building:
 
 ## License
 
-Licensed under [**MIT License**](https://github.com/altersabeh/codes/blob/main/LICENSE).
+Licensed under [**MIT License**](LICENSE).

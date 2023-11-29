@@ -80,4 +80,4 @@ You can also use [`nx`](https://nx.dev/) from the source directory:
 
 ## License
 
-Licensed under [**MIT License**](https://github.com/altersabeh/codes/blob/main/LICENSE).
+Licensed under [**MIT License**](LICENSE).

@@ -60,4 +60,4 @@ You can also use `ruby` to run it directly: _**(optional)**_
 
 ## License
 
-Licensed under [**MIT License**](https://github.com/altersabeh/codes/blob/main/LICENSE).
+Licensed under [**MIT License**](LICENSE).
