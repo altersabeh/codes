@@ -64,7 +64,7 @@ To use **`dmd`**, **`gdc`**, **`ldc2`**, or other **D Compilers** from the sourc
 
 ## Running
 
-The execution of this program can be seamlessly handled using automated build tools like `dub`, or manually with `dmd`, `gdc`, `ldc2` or other **D Compilers**. You can run the program from either the root directory or the source directory.
+The execution of this program can be seamlessly handled using automated build tools like **`dub`**, or manually with **`dmd`**, **`gdc`**, **`ldc2`** or other **D Compilers**. You can run the program from either the root directory or the source directory.
 
 ### Root Directory
 
