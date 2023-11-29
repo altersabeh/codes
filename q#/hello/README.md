@@ -2,6 +2,25 @@
 
 This is a **Hello World** program written in **Q#**.
 
+<div align="left">
+
+``` Q#
+/// Hello World in Q# !
+
+namespace Hello {
+
+  open Microsoft.Quantum.Canon;
+  open Microsoft.Quantum.Intrinsic;
+
+  @EntryPoint()
+  operation Main() : Unit {
+    Message("Hello World from Q# !");
+  }
+}
+```
+
+</div>
+
 ## Prerequisite
 
 To run and build this program you need to have the following:
