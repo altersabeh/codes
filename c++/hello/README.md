@@ -95,7 +95,7 @@ To use **`bazel`** from the source directory, run one of the following:
 
 ## Running
 
-The execution of this program can be seamlessly handled using automated build tools like `make` and `bazel`, or manually with `g++`, `clang++`, `icpx` or other **C++ Compilers**. You can run the program from either the root directory or the source directory.
+The execution of this program can be seamlessly handled using automated build tools like **`make`** and **`bazel`**, or manually with **`g++`**, **`clang++`**, **`icpx`** or other **C++ Compilers**. You can run the program from either the root directory or the source directory.
 
 ### Root Directory
 
