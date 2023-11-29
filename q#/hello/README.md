@@ -10,7 +10,7 @@ To run and build this program you need to have the following:
 
 | Name | Commands | Required | Recommended | Optional | Notes |
 |:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
-| [**.Net SDK**](https://dotnet.microsoft.com/) | **`dotnet`** | &#9989; | &#9989; | &#10062; | **`sudo apt install dotnet-sdk-5.0`**<br>**`sudo apt install dotnet-sdk-6.0`**<br>**`sudo apt install dotnet-sdk-7.0`**<br>**`sudo apt install dotnet-sdk-8.0`** |
+| [**.Net SDK**](https://dotnet.microsoft.com/) | **`dotnet`** | &#9989; | &#9989; | &#10062; | **`sudo apt install dotnet-sdk-5.0`**<br>or<br>**`sudo apt install dotnet-sdk-6.0`**<br>or<br>**`sudo apt install dotnet-sdk-7.0`**<br>or<br>**`sudo apt install dotnet-sdk-8.0`** |
 | [**Quantum Development Kit**](https://learn.microsoft.com/en-us/azure/quantum/install-overview-qdk?tabs=tabid-vscode%2Ctabid-dotnetcli#use-q-and-python-with-jupyter-notebooks) | **`qsc`**  | &#9989; | &#9989; | &#10062; | **`dotnet new install Microsoft.Quantum.ProjectTemplates`** |
 
 </div>
