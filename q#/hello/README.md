@@ -25,15 +25,15 @@ This program is designed to be built automatically using tools such as **`dotnet
 
 From the root directory, run one of the following:
 
-* ```
-  dotnet build q#/hello
-  ```
-* ```
-  dotnet build q#/hello/q#-hello.csproj
-  ```
-* ```
-  dotnet build --project q#/hello
-  ```
+```
+dotnet build q#/hello
+```
+```
+dotnet build q#/hello/q#-hello.csproj
+```
+```
+dotnet build --project q#/hello
+```
 
 ### Source Directory _(optional)_
 
@@ -41,9 +41,9 @@ From the root directory, run one of the following:
 
 From the source directory, you can run:
 
-* ```
-  dotnet build
-  ```
+```
+dotnet build
+```
 
 #### Using `q# compiler`
 
@@ -55,10 +55,10 @@ To use **`qsc`** or other **Q# Compilers** from the source directory, you can ru
 > [!NOTE]
 > The **sources** are located in the **src** directory.
 
-* ```
-  cd src
-  dotnet qsc.exe build --input hello.qs -o q#-hello
-  ```
+```
+cd src
+dotnet qsc.exe build --input hello.qs -o q#-hello
+```
 
 ## Running
 
@@ -70,9 +70,9 @@ The execution of this program can be seamlessly handled using automated build to
 
 From the root directory run:
 
-* ```
-  dotnet run --project q#/hello
-  ```
+```
+dotnet run --project q#/hello
+```
 
 ### Source Directory _(optional)_
 
@@ -80,18 +80,18 @@ From the root directory run:
 
 From the source directory, you can run:
 
-* ```
-  dotnet run
-  ```
+```
+dotnet run
+```
 
 #### Using `q# compiler`
 
 If you used **`qsc`**, or other **Q# Compilers** for building the program:
 
-* ```
-  cd src
-  dotnet q#-hello.exe
-  ```
+```
+cd src
+dotnet q#-hello.exe
+```
 
 ## License
 
