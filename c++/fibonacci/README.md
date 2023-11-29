@@ -54,6 +54,9 @@ From the source directory:
 
 To use **`g++`**,**`clang++`**, **`icpx`**, or other **C++ Compilers** from the source directory, run one of the following:
 
+> [!NOTE]
+> This will create build artifacts that may have to manually remove.
+
 * ```
   cd src
   g++ fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci
@@ -62,10 +65,10 @@ To use **`g++`**,**`clang++`**, **`icpx`**, or other **C++ Compilers** from the 
   cd src
   clang++ fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci
   ```
-* <pre>
+* <pre><code>
   <b>cd src
   icpx fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci</b>
-  </pre>
+  </code></pre>
 
 #### Using [`bazel`](https://bazel.build/install)
 
