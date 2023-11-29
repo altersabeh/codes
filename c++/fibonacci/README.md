@@ -6,14 +6,14 @@ This is a **Fibonacci** program written in **C++**.
 
 To run and build this program you need to have the following:
 
-| Name | Commands | Required | Recommended | Optional | Notes | Type |
-|:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|:----:|
-| [**GNU Make**](https://www.gnu.org/software/make/) | **`make`** | &#9989; | &#9989; | &#10062; | **`sudo apt install make`** | Compiler |
+| Name | Commands | Required | Recommended | Optional | Notes |
+|:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
+| [**GNU Make**](https://www.gnu.org/software/make/) | **`make`** | &#9989; | &#9989; | &#10062; | **`sudo apt install make`** |
 | [**GNU C++ Compiler**](https://gcc.gnu.org) | **`g++`** | &#9989; | &#9989; | &#10062; | **`sudo apt install g++`** |
-| [**Clang C++ Compiler**](https://releases.llvm.org/download.html) | **`clang++`** | &#10062; | &#9989; | &#9989; | **`sudo apt install clang`** |
+| [**LLVM C++ Compiler**](https://releases.llvm.org/download.html) | **`clang++`** | &#10062; | &#9989; | &#9989; | **`sudo apt install clang`** |
 | [**Intel C++ Compiler**](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compiler.html) | **`icpx`**<br>**`dpcpp`** | &#10062; | &#10062; | &#9989; | **`sudo apt install intel-basekit`**<br>**`sudo apt install intel-hpckit`** |
 | [**NVIDIA Cuda Compiler**](https://developer.nvidia.com/cuda-downloads) | **`nvcc`** | &#10062; | &#10062; | &#9989; | **`sudo apt install nvidia-cuda-toolkit`**<br>**`sudo apt instal cuda`** |
-| [**Bazel Build**](https://bazel.build/) | **`bazel`**<br>**`bazelisk`** | &#10062; | &#10062; | &#9989; | **`npm install -g @bazel/bazelisk`**<br>**`sudo apt install bazel`** |
+| [**Bazel**](https://bazel.build/) | **`bazel`**<br>**`bazelisk`** | &#10062; | &#10062; | &#9989; | **`npm install -g @bazel/bazelisk`**<br>**`sudo apt install bazel`** |
 
 ## Building
 
@@ -44,7 +44,7 @@ To use **`bazel`** from the root directory, run one of the following:
 
 #### Using `make`
 
-From the source directory:
+From the source directory, you can run:
 
 * ```
   make build
@@ -52,10 +52,13 @@ From the source directory:
 
 #### Using `c++ compilers`
 
-To use **`g++`**,**`clang++`**, **`icpx`**, or other **C++ Compilers** from the source directory, run one of the following:
+To use **`g++`**, **`clang++`**, **`icpx`**, or other **C++ Compilers** from the source directory, run one of the following:
 
-> [!NOTE]
-> This will create build artifacts in the source directory that you may have to manually remove.
+> [!CAUTION]
+> This **will create build artifacts** in the source directory that you may **have to manually remove**.
+
+> [!TIP]
+> The **sources** are located in the **`src`** directory.
 
 * ```
   cd src
@@ -92,7 +95,7 @@ To use **`bazel`** from the source directory, run one of the following:
 
 ## Running
 
-The execution of this program can be seamlessly handled using automated build tools like `make` and `bazel`, or manually with `g++`, `clang++`, and `icpx` or other **C++ Compilers**. You can run the program from either the root directory or the source directory.
+The execution of this program can be seamlessly handled using automated build tools like `make` and `bazel`, or manually with `g++`, `clang++`, `icpx` or other **C++ Compilers**. You can run the program from either the root directory or the source directory.
 
 ### Root Directory
 
@@ -120,7 +123,7 @@ To use **`bazel`** from the root directory, run one of the following:
 
 ### Source Directory _(optional)_
 
-From the source directory you can run:
+From the source directory, you can run:
 
 #### Using `make`
 
@@ -150,4 +153,4 @@ To use **`bazel`** from the source directory, run one of the following:
 
 ## License
 
-Licensed under [**MIT License**](https://github.com/altersabeh/codes/blob/main/LICENSE).
+Licensed under [**MIT License**](LICENSE).
