@@ -10,8 +10,8 @@ To run and build this program you need to have the following:
 
 | Name | Commands | Required | Recommended | Optional | Notes |
 |:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
-| [**.Net SDK**](https://dotnet.microsoft.com/) | **`dotnet`** | &#9989; | &#9989; | &#10062; | **`sudo apt install dotnet-sdk-5.0`**<br>**`sudo apt install dotnet-sdk-6.0`**<br>**`sudo apt install dotnet-sdk-7.0`**<br>**`sudo apt install dotnet-sdk-8.0`** |
-| [**Mono C# Compiler**](https://www.mono-project.com/download/stable/#download-lin) | **`mono`**<br>**`csc`**<br>**`mcs`** | &#10062; | &#10062; | &#9989; | **`sudo apt install mono-devel`**<br>**`sudo apt install mono-complete`** |
+| [**.Net SDK**](https://dotnet.microsoft.com/) | **`dotnet`** | &#9989; | &#9989; | &#10062; | **`sudo apt install dotnet-sdk-5.0`**<br>or<br>**`sudo apt install dotnet-sdk-6.0`**<br>or<br>**`sudo apt install dotnet-sdk-7.0`**<br>or<br>**`sudo apt install dotnet-sdk-8.0`** |
+| [**Mono C# Compiler**](https://www.mono-project.com/download/stable/#download-lin) | **`mono`**<br>**`csc`**<br>**`mcs`** | &#10062; | &#10062; | &#9989; | **`sudo apt install mono-devel`**<br>or<br>**`sudo apt install mono-complete`** |
 
 </div>
 
