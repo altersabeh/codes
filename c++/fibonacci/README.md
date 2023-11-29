@@ -6,12 +6,14 @@ This is a **Fibonacci** program written in **C++**.
 
 To run and build this program you need to have the following:
 
-| Name | Commands | Required | Recommended | Optional |
-|------|---------|----------|-------------|----------|
-| [**GNU C++ Compiler**](https://gcc.gnu.org) | **`g++`** | &#9989; | &#9989; | &#10062; |
-| [**Clang C++ Compiler**](https://releases.llvm.org/download.html) | **`clang++`** | &#10062; | &#9989; | &#9989; |
-| [**Intel C++ Compiler**](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compiler.html) | **`icpx`** | &#10062; | &#10062; | &#9989; |
-| [**GNU Make**](https://www.gnu.org/software/make/) | **`make`** | &#9989; | &#9989; | &#10062; |
+| Name | Commands | Required | Recommended | Optional | Notes |
+|:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
+| [**GNU Make**](https://www.gnu.org/software/make/) | **`make`** | &#9989; | &#9989; | &#10062; | **`sudo apt install make`** |
+| [**GNU C++ Compiler**](https://gcc.gnu.org) | **`g++`** | &#9989; | &#9989; | &#10062; | **`sudo apt install g++`** |
+| [**Clang C++ Compiler**](https://releases.llvm.org/download.html) | **`clang++`** | &#10062; | &#9989; | &#9989; | **`sudo apt install clang`** |
+| [**Intel C++ Compiler**](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compiler.html) | **`icpx`**<br>**`dpcpp`** | &#10062; | &#10062; | &#9989; | **`sudo apt install intel-basekit`**<br>**`sudo apt install intel-hpckit`** |
+| [**NVIDIA Cuda Compiler**](https://developer.nvidia.com/cuda-downloads) | **`nvcc`** | &#10062; | &#10062; | &#9989; | **`sudo apt install nvidia-cuda-toolkit`**<br>**`sudo apt instal cuda`** |
+| [**Bazel Build**](https://bazel.build/) | **`bazel`** | &#10062; | &#10062; | &#9989; | **`sudo apt install bazel`** |
 
 ## Building
 
@@ -27,7 +29,7 @@ From the root directory:
   make build-c++-fibonacci
   ```
 
-#### Using [`bazel`](https://bazel.build/install) _(optional)_
+#### Using [`bazel`](https://bazel.build/install)
 
 To use **`bazel`** from the root directory, run one of the following:
 
@@ -50,7 +52,7 @@ From the source directory:
 
 #### Using `c++ compilers`
 
-To use **`g++`**,**`clang++`**, or **`icpx`** from the source directory, run one of the following:
+To use **`g++`**,**`clang++`**, **`icpx`**, or other **C++ Compilers** from the source directory, run one of the following:
 
 * ```
   cd src
@@ -93,7 +95,7 @@ From the root directory, run one of the following:
   make run-c++-fibonacci
   ```
 
-#### Using [`bazel`](https://bazel.build/install) _(optional)_
+#### Using [`bazel`](https://bazel.build/install)
 
 To use **`bazel`** from the root directory, run one of the following:
 
@@ -116,7 +118,7 @@ From the source directory you can run:
 
 #### Using `c++ compilers`
 
-If you used **`g++`**, **`clang++`**, or **`icpx`** for building the program:
+If you used **`g++`**, **`clang++`**, **`icpx`** or other **C++ Compilers** for building the program:
 
 * ```
   cd src
