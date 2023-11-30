@@ -18,7 +18,10 @@ To run and build this program you need to have the following:
 
 ## Building
 
-This program is designed to be built automatically using tools such as **`dub`**, or manually with **`dmd`**, **`gdc`**, **`ldc2`**, or other **D Compilers**. You can initiate the build process either from the root directory or the source directory.
+This program is designed to be built automatically using tools such as
+**`dub`**, or manually with **`dmd`**, **`gdc`**, **`ldc2`**, or other **D
+Compilers**. You can initiate the build process either from the root directory
+or the source directory.
 
 ### Root Directory
 
@@ -45,10 +48,12 @@ dub build
 
 #### Using `d compilers`
 
-To use **`dmd`**, **`gdc`**, **`ldc2`**, or other **D Compilers** from the source directory, run one of the following:
+To use **`dmd`**, **`gdc`**, **`ldc2`**, or other **D Compilers** from the
+source directory, run one of the following:
 
 > [!CAUTION]
-> This **will create build artifacts** in the source directory that you may **have to manually remove**.
+> This **will create build artifacts** in the source directory that you may
+> **have to manually remove**.
 
 > [!NOTE]
 > The **sources** are located in the **src** directory.
@@ -68,7 +73,10 @@ ldc2 hello.d -o d-hello
 
 ## Running
 
-The execution of this program can be seamlessly handled using automated build tools like **`dub`**, or manually with **`dmd`**, **`gdc`**, **`ldc2`** or other **D Compilers**. You can run the program from either the root directory or the source directory.
+The execution of this program can be seamlessly handled using automated build
+tools like **`dub`**, or manually with **`dmd`**, **`gdc`**, **`ldc2`** or other
+**D Compilers**. You can run the program from either the root directory or the
+source directory.
 
 ### Root Directory
 
@@ -101,7 +109,8 @@ dmd -run hello.d
 
 #### Using `d compilers`
 
-If you used **`dmd`**, **`gdc`**, **`ldc2`** or other **D Compilers** for building the program:
+If you used **`dmd`**, **`gdc`**, **`ldc2`** or other **D Compilers** for
+building the program:
 
 ```
 cd src
