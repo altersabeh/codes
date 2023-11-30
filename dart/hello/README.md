@@ -46,16 +46,18 @@ dart pub get
 
 To use **`dart compile`** from the source directory, run one of the following:
 
-> [!CAUTION]
-> This **will create build artifacts** in the source directory that you may **have to manually remove**.
+> [!CAUTION] This **will create build artifacts** in the source
+> directory that you may **have to manually remove**.
 
-> [!NOTE]
-> The **sources** are located in the **lib** directory.
+> [!NOTE] The **sources** are located in the **lib** directory.
 
 > [!TIP]
-> * The **dart compile exe** compiles the program into a self contained executable.
-> * The **dart compile js** compiles the program into a deployable javascript file.
-> * The **dart compile kernel** compiles the program into a portable kernel module.
+> * The **dart compile exe** compiles the program into a **self
+>   contained executable**.
+> * The **dart compile js** compiles the program into a **deployable
+>   javascript file**.
+> * The **dart compile kernel** compiles the program into a **portable
+>   kernel module**.
 
 ```
 cd lib
