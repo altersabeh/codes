@@ -6,7 +6,7 @@ This is a **Fibonacci** program written in **Java**.
 
 To run and build this program you need to have the following:
 
-<div align="center">
+<div align="center" style="overflow-x: auto;">
 
 | Name | Commands | Required | Recommended | Optional | Notes |
 |:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
