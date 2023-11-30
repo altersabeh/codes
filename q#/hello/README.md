@@ -19,7 +19,10 @@ To run and build this program you need to have the following:
 
 ### Root Directory
 
-This program is designed to be built automatically using tools such as **`dotnet`**, or manually with **`qsc`**, or other **Q# Compilers**. You can initiate the build process either from the root directory or the source directory.
+This program is designed to be built automatically using tools such as
+**`dotnet`**, or manually with **`qsc`**, or other **Q# Compilers**. You can
+initiate the build process either from the root directory or the source
+directory.
 
 #### Using `dotnet`
 
@@ -47,10 +50,12 @@ dotnet build
 
 #### Using `q# compiler`
 
-To use **`qsc`** or other **Q# Compilers** from the source directory, you can run:
+To use **`qsc`** or other **Q# Compilers** from the source directory, you can
+run:
 
 > [!CAUTION]
-> This **will create build artifacts** in the source directory that you may **have to manually remove**.
+> This **will create build artifacts** in the source directory that you may
+> **have to manually remove**.
 
 > [!NOTE]
 > The **sources** are located in the **src** directory.
@@ -62,7 +67,9 @@ dotnet qsc.exe build --input hello.qs -o q#-hello
 
 ## Running
 
-The execution of this program can be seamlessly handled using automated build tools like **`dotnet`**, or manually  using **`qsc`** or other **Q# Compilers**. You can run the program from either the root directory or the source directory.
+The execution of this program can be seamlessly handled using automated build
+tools like **`dotnet`**, or manually  using **`qsc`** or other **Q# Compilers**.
+You can run the program from either the root directory or the source directory.
 
 ### Root Directory
 
