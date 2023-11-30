@@ -59,7 +59,8 @@ stack build
 To use **`ghc`**, or other **Haskell Compilers** from the source directory, run:
 
 > [!CAUTION]
-> This **will create build artifacts** in the source directory that you may **have to manually remove**.
+> This **will create build artifacts** in the source directory that you may
+> **have to manually remove**.
 
 > [!NOTE]
 > The **sources** are located in the **src** directory.
