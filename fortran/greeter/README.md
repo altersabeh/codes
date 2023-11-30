@@ -19,7 +19,10 @@ To run and build this program you need to have the following:
 
 ## Building
 
-This program is designed to be built automatically using tools such as **`fpm`**, or manually with **`gfortran`**, **`flang`**, **`ifx`**, or other **Fortran Compilers**. You can initiate the build process either from the root directory or the source directory.
+This program is designed to be built automatically using tools such as
+**`fpm`**, or manually with **`gfortran`**, **`flang`**, **`ifx`**, or other
+**Fortran Compilers**. You can initiate the build process either from the root
+directory or the source directory.
 
 ### Root Directory
 
@@ -46,10 +49,12 @@ fpm build
 
 #### Using `fortran compilers`
 
-To use **`gfortran`**, **`flang-new`**, **`ifx`**, or other **Fortran Compilers** from the source directory, run one of the following:
+To use **`gfortran`**, **`flang-new`**, **`ifx`**, or other **Fortran
+Compilers** from the source directory, run one of the following:
 
 > [!CAUTION]
-> This **will create build artifacts** in the source directory that you may **have to manually remove**.
+> This **will create build artifacts** in the source directory that you may
+> **have to manually remove**.
 
 > [!NOTE]
 > The **sources** are located in the **app** directory.
@@ -73,7 +78,10 @@ ifort greeter.f90 -o fortran-greeter
 
 ## Running
 
-The execution of this program can be seamlessly handled using automated build tools like **`fpm`**, or manually with **`gfortran`**, **`flang-new`**, **`ifx`** or other **Fortran Compilers**. You can run the program from either the root directory or the source directory
+The execution of this program can be seamlessly handled using automated build
+tools like **`fpm`**, or manually with **`gfortran`**, **`flang-new`**,
+**`ifx`** or other **Fortran Compilers**. You can run the program from either
+the root directory or the source directory
 
 ### Root Directory
 
@@ -100,7 +108,8 @@ fpm run
 
 #### Using `fortran compilers`
 
-If you used **`gfortran`**, **`flang-new`**, **`ifx`** or other **Fortran Compilers** for building the program:
+If you used **`gfortran`**, **`flang-new`**, **`ifx`** or other **Fortran
+Compilers** for building the program:
 
 ```
 cd app
