@@ -102,7 +102,7 @@ dart run dart/hello/lib/hello.dart
 
 #### Using `dart`
 
-From the source directory you can run:
+From the source directory, you can run:
 
 ```
 dart run
