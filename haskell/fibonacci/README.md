@@ -10,7 +10,7 @@ To run and build this program you need to have the following:
 
 | Name | Commands | Required | Recommended | Optional | Notes |
 |:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
-| [**Glasgow Haskell Compiler**](https://www.haskell.org/ghc/distribution_packages.html) | **`ghc`**<br>**`runhaskell`**<br>**`runghc`**` | &#9989; | &#9989; | &#10062; | **`ghcup install ghc`**<br>or<br>**`sudo apt install ghc`** |
+| [**Glasgow Haskell Compiler**](https://www.haskell.org/ghc/distribution_packages.html) | **`ghc`**<br>**`runhaskell`**<br>**`runghc`** | &#9989; | &#9989; | &#10062; | **`ghcup install ghc`**<br>or<br>**`sudo apt install ghc`** |
 | [**Haskell Cabal**](https://www.haskell.org/cabal/download.html) | **`cabal`** | &#9989; | &#9989; | &#10062; | **`ghcup install cabal`**<br>or<br>**`sudo apt install cabal-install`** |
 | [**Haskell Stack**](https://releases.llvm.org/download.html) | **`stack`** | &#10062; | &#9989; | &#9989; | **`ghcup install stack`**<br>or<br>**`sudo apt install haskell-stack`** |
 
@@ -64,9 +64,6 @@ To use **`ghc`**, or other **Haskell Compilers** from the source directory, run 
 > [!NOTE]
 > The **sources** are located in the **src** directory.
 
-
-You can also use `ghc` from the source directory:
-
 ```
 cd src
 ghc fibonacci.hs -o haskell-fibonacci
@@ -80,7 +77,7 @@ The execution of this program can be seamlessly handled using automated build to
 
 #### Using `cabal`
 
-From the root directory::
+From the root directory:
 
 ```
 cabal run haskell-fibonacci
@@ -99,7 +96,7 @@ stack exec haskell-fibonacci
 
 #### Using `haskell interpreter`
 
-To use `runghc` or `runhaskell` to run it directly from the root directory, run one of the following:
+To use **`runghc`** or **`runhaskell`** to run it directly from the root directory, run one of the following:
 
 ```
 runghc haskell/fibonacci/src/fibonacci.hs
@@ -128,7 +125,7 @@ stack run
 
 #### Using `haskell compilers`
 
-If you used `ghc` or other **Haskell Compilers** for building the program:
+If you used **`ghc`** or other **Haskell Compilers** for building the program:
 
 ```
 cd src
@@ -137,9 +134,7 @@ cd src
 
 #### Using `haskell interpreter`
 
-You can also use `runhaskell` to run it directly:
-
-To use `runghc` or `runhaskell` to run it directly from source directory, run one of the following:
+To use **`runghc`** or **`runhaskell`** to run it directly from source directory, run one of the following:
 
 ```
 runghc src/fibonacci.hs
