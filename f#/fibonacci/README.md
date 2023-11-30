@@ -19,7 +19,10 @@ To run and build this program you need to have the following:
 
 ### Root Directory
 
-This program is designed to be built automatically using tools such as **`dotnet`**, or manually with **`fsharpc`**, or other **F# Compilers**. You can initiate the build process either from the root directory or the source directory.
+This program is designed to be built automatically using tools such as
+**`dotnet`**, or manually with **`fsharpc`**, or other **F# Compilers**. You can
+initiate the build process either from the root directory or the source
+directory.
 
 #### Using `dotnet`
 
@@ -50,13 +53,14 @@ dotnet build
 To use **`mono`** from the source directory, you can run:
 
 > [!CAUTION]
-> This **will create build artifacts** in the source directory that you may **have to manually remove**.
+> This **will create build artifacts** in the source directory that you may
+> **have to manually remove**.
 
 > [!NOTE]
 > The **sources** are located in the **src** directory.
 
-> [!IMPORTANT]
-> Mono compiler may **not support latest F# features** and may **require modifying the source code**.
+> [!IMPORTANT] Mono compiler may **not support latest F# features** and may
+> **require modifying the source code**.
 
 ```
 cd src
@@ -65,7 +69,10 @@ fsharpc fibonacci.cs --out:f#-fibonacci
 
 ## Running
 
-The execution of this program can be seamlessly handled using automated build tools like **`dotnet`**, or manually with **`mono`**, using **`fsharpc`** or other **F# Compilers**. You can run the program from either the root directory or the source directory.
+The execution of this program can be seamlessly handled using automated build
+tools like **`dotnet`**, or manually with **`mono`**, using **`fsharpc`** or
+other **F# Compilers**. You can run the program from either the root directory
+or the source directory.
 
 ### Root Directory
 
