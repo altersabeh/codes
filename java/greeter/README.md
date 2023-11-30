@@ -83,8 +83,9 @@ source directory, run one of the following:
 > The **sources** are located in the **lib** directory.
 
 > [!TIP]
-> * The **javac** compiles the program into a java bytecode.
-> * The **native-image** compiles the program into a self contained executable.
+> * The **javac** compiles the program into a **java bytecode**.
+> * The **native-image** compiles the program into a **self contained
+>   executable**.
 
 ```
 cd src
