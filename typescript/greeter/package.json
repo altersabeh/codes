@@ -13,9 +13,9 @@
   "keywords": [
     "command-line-utilities"
   ],
-  "main": "index.js",
+  "main": "index.ts",
   "bin": {
-    "ts-greeter": "index.js"
+    "ts-greeter": "index.ts"
   },
   "scripts": {
     "ts-greeter": "ts-node index.ts",

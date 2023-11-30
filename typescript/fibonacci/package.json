@@ -13,9 +13,9 @@
   "keywords": [
     "command-line-utilities"
   ],
-  "main": "index.js",
+  "main": "index.ts",
   "bin": {
-    "ts-fibonacci": "index.js"
+    "ts-fibonacci": "index.ts"
   },
   "scripts": {
     "ts-fibonacci": "ts-node index.ts",
