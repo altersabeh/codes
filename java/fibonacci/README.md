@@ -4,80 +4,232 @@ This is a **Fibonacci** program written in **Java**.
 
 ## Prerequisite
 
-To run and build this program you need to install:
+To run and build this program you need to have the following:
 
-* [**Gradle Build Tool**](https://gradle.org/install/)
-  * `gradle`
+<div align="center">
 
-* [**Java Development Kit (JDK)**](https://sdkman.io/jdks)
-  * `java`
-  * `javac`
+| Name | Commands | Required | Recommended | Optional | Notes |
+|:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
+| [**Gradle Build Tool**](https://gradle.org/install/#with-a-package-manager) | **`gradle`** | &#9989; | &#9989; | &#10062; | **`sdk install gradle`**<br>or<br>**`sudo apt install gradle`** |
+| [**OpenJDK**](https://openjdk.org/install/) | **`java`**<br>**`javac`** | &#9989; | &#9989; | &#10062; | **`sdk install java x.y.z-open`**<br>or<br>**`sudo apt install openjdk-x-jdk`** |
+| [**Eclipse Adoptium Temurin**](https://adoptium.net/installation/linux/) | **`java`**<br>**`javac`** | &#10062; | &#9989; | &#9989; | **`sdk install java x.y.z-tem`**<br>or<br>**`sudo apt install temurin-x-jdk`** |
+| [**Oracle GraalVM**](https://www.graalvm.org/downloads/#) | **`java`**<br>**`javac`**<br>**`native-image`** | &#10062; | &#9989; | &#9989; | **`sdk install java x.y.z-graal`** |
+| [**Apache Maven**](https://maven.apache.org/install.html) | **`bazel`**<br>**`bazelisk`** | &#10062; | &#10062; | &#9989; | **`sdk install maven`**<br>or<br>**`sudo apt install maven`** |
+| [**Apache Ant**](https://ant.apache.org/bindownload.cgi) | **`bazel`**<br>**`bazelisk`** | &#10062; | &#10062; | &#9989; | **`sdk install ant`**<br>or<br>**`sudo apt install ant`** |
+| [**Bazel**](https://bazel.build/) | **`bazel`**<br>**`bazelisk`** | &#10062; | &#10062; | &#9989; | **`npm install -g @bazel/bazelisk`**<br>or<br>**`sudo apt install bazel`** |
+
+</div>
 
 ## Building
 
+This program is designed to be built automatically using tools such as
+**`gradle`**, **`maven`**, **`ant`**, and **`bazel`** or manually with
+**`javac`**, **`native-image`**, or other **Java Compilers**. You can initiate
+the build process either from the root directory or the source directory.
+
 ### Root Directory
 
-From the root directory run the following:
+#### Using `gradle`
 
-* ```
-  gradle java:fibonacci:build
-  ```
+From the root directory:
+
+```
+gradle java:fibonacci:build
+```
+
+<!--
+
+#### Using `maven`
+
+TODO:
+
+#### Using `ant`
+
+TODO:
+
+-->
+
+#### Using `bazel`
+
+To use **`bazel`** from the root directory, run one of the following:
+
+```
+bazel build java-fibonacci
+```
+```
+bazel build java/fibonacci:main
+```
 
 ### Source Directory _(optional)_
 
-From the source directory you can run:
+#### Using `gradle`
 
-* ```
-  gradle build
-  ```
+From the source directory, you can run:
 
-You can also use `javac` from the source directory:
+```
+gradle build
+```
 
-* ```
-  javac Fibonacci.java
-  ```
+#### Using `java compilers`
+
+To use **`javac`**, **`native-image`**, or other **Java Compilers** from the
+source directory, run one of the following:
+
+> [!CAUTION]
+> This **will create build artifacts** in the source directory that you may
+> **have to manually remove**.
+
+> [!NOTE]
+> The **sources** are located in the **lib** directory.
+
+> [!TIP]
+> * The **javac** compiles the program into a java bytecode.
+> * The **native-image** compiles the program into a self contained executable.
+
+```
+cd src
+javac fibonacci/Fibonacci.java
+```
+```
+cd src
+javac fibonacci/Fibonacci.java
+native-image fibonacci.Fibonacci -o fibonacci/java-fibonacci
+```
+
+<!--
+
+#### Using `maven`
+
+TODO:
+
+#### Using `ant`
+
+TODO:
+
+-->
+
+#### Using `bazel`
+
+To use **`bazel`** from the source directory, run one of the following:
+
+```
+bazel build main
+```
+```
+bazel build java-fibonacci
+```
 
 ## Running
 
+The execution of this program can be seamlessly handled using automated build
+tools like **`gradle`**, **`maven`**, **`ant`**, and **`bazel`**, or manually
+with **`javac`**, **`native-image`**, or other **Java Compilers**. You can run
+the program from either the root directory or the source directory.
+
 ### Root Directory
 
-From the root directory run:
+#### Using `gradle`
 
-* ```
-  gradle java-fibonacci
-  ```
-* ```
-  gradle java:fibonacci:run
-  ```
+From the root directory, run one of the following:
 
-You can also use `java` to run it directly:
+```
+gradle java-fibonacci
+```
+```
+gradle java:fibonacci:run
+```
 
-* ```
-  java java/fibonacci/src/fibonacci/Fibonacci.java
-  ```
+#### Using `java interpreter`
+
+To use **`java`** to run it directly from root directory:
+
+```
+java java/fibonacci/src/fibonacci/Fibonacci.java
+```
+
+<!--
+
+#### Using `maven`
+
+TODO:
+
+#### Using `ant`
+
+TODO:
+
+-->
+
+#### Using `bazel`
+
+To use **`bazel`** from the root directory, run one of the following:
+
+```
+bazel run java-fibonacci
+```
+```
+bazel run java/fibonacci:main
+```
 
 ### Source Directory _(optional)_
 
-From the source directory you can run:
+#### Using `gradle`
 
-* ```
-  gradle run
-  ```
-* ```
-  gradle java-fibonacci
-  ```
+From the source directory, you can run one of the following:
 
-If you used `javac` for building:
+```
+gradle run
+```
+```
+gradle java-fibonacci
+```
 
-* ```
-  cd .. && java Fibonacci
-  ```
+#### Using `java compilers`
 
-You can also use `java` to run it directly:
+If you used **`javac`**, **`native-image`**, or other **Java Compilers** for
+building the program:
 
-* ```
-  java Fibonacci.java
-  ```
+```
+# using javac
+cd src
+java fibonacci.Fibonacci
+```
+```
+# using native-image
+cd src/fibonacci
+./java-fibonacci
+```
+
+#### Using `java interpreters`
+
+To use **`java`** to run it directly from source directory, run one of the
+following:
+
+```
+java src/fibonacci/Fibonacci.java
+```
+
+<!--
+
+#### Using `maven`
+
+TODO:
+
+#### Using `ant`
+
+TODO:
+
+-->
+
+#### Using `bazel`
+
+To use **`bazel`** from the source directory, run one of the following:
+
+```
+bazel run main
+```
+```
+bazel run java-fibonacci
+```
 
 ## License
 
