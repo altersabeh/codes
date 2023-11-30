@@ -21,7 +21,10 @@ To run and build this program you need to have the following:
 
 ## Building
 
-This program is designed to be built automatically using tools such as **`make`** and **`bazel`**, or manually with **`gcc`**, **`clang`**, **`icx`**, or other **C Compilers**. You can initiate the build process either from the root directory or the source directory.
+This program is designed to be built automatically using tools such as
+**`make`** and **`bazel`**, or manually with **`gcc`**, **`clang`**, **`icx`**,
+or other **C Compilers**. You can initiate the build process either from the
+root directory or the source directory.
 
 ### Root Directory
 
@@ -33,7 +36,7 @@ From the root directory:
 make build-c-hello
 ```
 
-#### Using [`bazel`](https://bazel.build/install)
+#### Using `bazel`
 
 To use **`bazel`** from the root directory, run one of the following:
 
@@ -56,10 +59,12 @@ make build
 
 #### Using `c compilers`
 
-To use **`gcc`**, **`clang`**, **`icx`**, or other **C Compilers** from the source directory, run one of the following:
+To use **`gcc`**, **`clang`**, **`icx`**, or other **C Compilers** from the
+source directory, run one of the following:
 
 > [!CAUTION]
-> This **will create build artifacts** in the source directory that you may **have to manually remove**.
+> This **will create build artifacts** in the source directory that you may
+> **have to manually remove**.
 
 > [!NOTE]
 > The **sources** are located in the **src** directory.
@@ -86,7 +91,7 @@ nvcc hello.cpp -o c-hello
 ```
 
 
-#### Using [`bazel`](https://bazel.build/install)
+#### Using `bazel`
 
 To use **`bazel`** from the source directory, run one of the following:
 
@@ -99,7 +104,10 @@ bazel build c-hello
 
 ## Running
 
-The execution of this program can be seamlessly handled using automated build tools like **`make`** and **`bazel`**, or manually with **`gcc`**, **`clang`**, **`icx`** or other **C Compilers**. You can run the program from either the root directory or the source directory.
+The execution of this program can be seamlessly handled using automated build
+tools like **`make`** and **`bazel`**, or manually with **`gcc`**, **`clang`**,
+**`icx`** or other **C Compilers**. You can run the program from either the root
+directory or the source directory.
 
 ### Root Directory
 
@@ -114,7 +122,7 @@ make c-hello
 make run-c-hello
 ```
 
-#### Using [`bazel`](https://bazel.build/install)
+#### Using `bazel`
 
 To use **`bazel`** from the root directory, run one of the following:
 
@@ -137,14 +145,15 @@ make run
 
 #### Using `c compilers`
 
-If you used **`gcc`**, **`clang`**, **`icx`** or other **C Compilers** for building the program:
+If you used **`gcc`**, **`clang`**, **`icx`** or other **C Compilers** for
+building the program:
 
 ```
 cd src
 ./c-hello
 ```
 
-#### Using [`bazel`](https://bazel.build/install)
+#### Using `bazel`
 
 To use **`bazel`** from the source directory, run one of the following:
 
