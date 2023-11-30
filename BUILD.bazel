@@ -27,3 +27,18 @@ alias(
   name = "c-fibonacci",
   actual = "//c/fibonacci:c-fibonacci",
 )
+
+alias(
+  name = "java-hello",
+  actual = "//java/hello:java-hello",
+)
+
+alias(
+  name = "java-greeter",
+  actual = "//java/greeter:java-greeter",
+)
+
+alias(
+  name = "java-fibonacci",
+  actual = "//java/fibonacci:java-fibonacci",
+)
