@@ -19,7 +19,10 @@ To run and build this program you need to have the following:
 
 ### Root Directory
 
-This program is designed to be built automatically using tools such as **`dotnet`**, or manually with **`csc`**, **`mcs`**, or other **C# Compilers**. You can initiate the build process either from the root directory or the source directory.
+This program is designed to be built automatically using tools such as
+**`dotnet`**, or manually with **`csc`**, **`mcs`**, or other **C# Compilers**.
+You can initiate the build process either from the root directory or the source
+directory.
 
 #### Using `dotnet`
 
@@ -50,13 +53,15 @@ dotnet build
 To use **`mono`** from the source directory, you can run one of the following:
 
 > [!CAUTION]
-> This **will create build artifacts** in the source directory that you may **have to manually remove**.
+> This **will create build artifacts** in the source directory that you may
+> **have to manually remove**.
 
 > [!NOTE]
 > The **sources** are located in the **src** directory.
 
 > [!IMPORTANT]
-> Mono compiler may **not support latest C# features** and may **require modifying the source code**.
+> Mono compiler may **not support latest C# features** and may **require
+> modifying the source code**.
 
 ```
 cd src
@@ -69,7 +74,10 @@ mcs hello.cs -out:c#-hello
 
 ## Running
 
-The execution of this program can be seamlessly handled using automated build tools like **`dotnet`**, or manually with **`mono`**, using **`mcs`**, **`csc`** or other **C# Compilers**. You can run the program from either the root directory or the source directory.
+The execution of this program can be seamlessly handled using automated build
+tools like **`dotnet`**, or manually with **`mono`**, using **`mcs`**, **`csc`**
+or other **C# Compilers**. You can run the program from either the root
+directory or the source directory.
 
 ### Root Directory
 
@@ -93,7 +101,8 @@ dotnet run
 
 #### Using `mono compiler`
 
-If you used **`csc`**, **`mcs`**, or other **C# Compilers** for building the program:
+If you used **`csc`**, **`mcs`**, or other **C# Compilers** for building the
+program:
 
 ```
 cd src
