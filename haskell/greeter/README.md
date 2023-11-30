@@ -56,7 +56,7 @@ stack build
 
 #### Using `haskell compilers`
 
-To use **`ghc`**, or other **Haskell Compilers** from the source directory, run one of the following:
+To use **`ghc`**, or other **Haskell Compilers** from the source directory, run:
 
 > [!CAUTION]
 > This **will create build artifacts** in the source directory that you may **have to manually remove**.
