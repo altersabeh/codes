@@ -89,7 +89,7 @@ melos run dart-fibonacci
 
 #### Using `dart interpreter`
 
-To use `dart` to run it directly from root directory, run one of the following:
+To use **`dart`** to run it directly from root directory, run one of the following:
 
 ```
 dart dart/fibonacci/lib/fibonacci.dart
@@ -110,7 +110,7 @@ dart run
 
 #### Using `dart compile`
 
-If you used `dart compile` or other **Dart Compilers** for building the program:
+If you used **`dart compile`** or other **Dart Compilers** for building the program:
 
 ```
 # using dart compile exe
@@ -130,7 +130,7 @@ dart dart-fibonacci.dill
 
 #### Using `dart interpreter`
 
-To use `dart` to run it directly from source directory, run one of the following:
+To use **`dart`** to run it directly from source directory, run one of the following:
 
 ```
 dart lib/fibonacci.dart
