@@ -14,6 +14,7 @@
     "**/.ruby-lsp": true,
     "**/.spago": true,
     "**/.stack-work": true,
+    "**/.turbo": true,
     "**/.vscode": true,
     "**/_build": true,
     "**/alire": true,
@@ -26,7 +27,7 @@
     "**/node_modules": true,
     "**/obj": true,
     "**/output": true,
-    "**/target": true
+    "**/target": true,
   },
   "files.watcherExclude": {
     "**.resolved": true,
@@ -42,6 +43,7 @@
     "**/.ruby-lsp": true,
     "**/.spago": true,
     "**/.stack-work": true,
+    "**/.turbo": true,
     "**/_build": true,
     "**/alire": true,
     "**/bazel**": true,
@@ -72,6 +74,5 @@
     "DUB_PACKAGE_TARGET_PATH": "${workspaceFolder}\\dist\\d",
     "DUNE_BUILD_DIR": "${workspaceFolder}\\dist\\ocaml",
     "NPM_CONFIG_PACK_DESTINATION": "${workspaceFolder}\\dist\\npm\\package"
-  },
-  "editor.inlineSuggest.showToolbar": "onHover"
+  }
 }
