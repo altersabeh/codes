@@ -4,77 +4,203 @@ This is a **Fibonacci** program written in **JavaScript**.
 
 ## Prerequisite
 
-To run and build this program you need to install:
+<div align="center">
 
-* [**Node.js**](https://nodejs.org/en/download/current)
-  * `npm`
-  * `node`
-  * `npx`
+| Name | Commands | Required | Recommended | Optional | Notes |
+|:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
+| [**Node.js**](https://nodejs.org/en/download/current) | **`npm`**<br>**`npx`**<br>**`node`** | &#9989; | &#9989; | &#10062; | **`nvm install node`**<br>or<br>**`nodenv install x.y.z`** |
+| [**Nx**](https://nx.dev/getting-started/installation) | **`nx`** | &#10062; | &#9989; | &#9989; | **`npx nx init`**<br>or<br>**`npm install -g nx`** |
+| [**Lerna**](https://lerna.js.org/docs/getting-started#adding-lerna-to-an-existing-repo) | **`lerna`** | &#10062; | &#10062; | &#9989; | **`npx lerna init`**<br>or<br>**`npm install -g lerna`** |
+| [**Yarn**](https://www.graalvm.org/downloads/#) | **`yarn`** | &#10062; | &#10062; | &#9989; | **`npm install -g yarn`** |
+| [**pnpm**](https://maven.apache.org/install.html) | **`pnpm`** | &#10062; | &#10062; | &#9989; | **`npm install -g pnpm`** |
+
+</div>
 
 ## Building
 
-From the root directory run:
-
-* ```
-  npm install
-  ```
-
-## Running
+This program is designed to be built automatically using tools such as
+**`npm`**, **`yarn`**, **`pnpm`**, **`nx`**, and **`lerna`**. You can initiate
+the build process either from the root directory or the source directory.
 
 ### Root Directory
 
-From the root directory run one of the following:
+> [!NOTE]
+>
+> This **will install all dependencies** from **all the packages in the
+> workspace**. Installing **will require some time**.
 
-* ```
-  npx js-fibonacci
-  ```
-* ```
-  npm exec js-fibonacci
-  ```
-* ```
-  npm start -w js-fibonacci
-  ```
+#### Using `npm`
 
-You can also use `node` from the root directory:
+From the root directory:
 
-* ```
-  node typescript/fibonacci/src/fibonacci.js
-  ```
-* ```
-  npx node typescript/fibonacci/src/fibonacci.js
-  ```
+```
+npm install
+```
 
-You can also use [`lerna`](https://lerna.js.org/) or [`nx`](https://nx.dev/) from the root directory: _**(optional)**_
+#### Using `yarn`
 
-* ```
-  npx lerna run js-fibonacci
-  ```
-* ```
-  npx nx start js-fibonacci
-  ```
-* ```
-  npx nx run js-fibonacci:start
-  ```
+To use **`yarn`** from the root directory:
+
+> [!CAUTION]
+> Using **yarn together with npm or pnpm** may issue a warning due to
+> **unsynchronized lock files**.
+
+```
+yarn install
+```
+
+#### Using `pnpm`
+
+> [!CAUTION]
+> Using **pnpm together with npm or yarn** may issue an **error when updating or
+> installing dependencies**.
+
+To use **`pnpm`** from the root directory:
+
+```
+pnpm install
+```
+
+### Source Directory
+
+> [!NOTE]
+> Building from source directory is the **same as building from root
+> directory**.
+
+## Running
+
+The execution of this program can be seamlessly handled using automated build
+tools like **`npm`**, **`yarn`**, **`pnpm`**, **`nx`**, and **`lerna`**. You can
+run the program from either the root directory or the source directory.
+
+### Root Directory
+
+#### Using `npm`
+
+From the root directory, run one of the following:
+
+```
+npx js-fibonacci
+```
+```
+npm exec js-fibonacci
+```
+```
+npm start -w js-fibonacci
+```
+
+#### Using `yarn`
+
+To use **`yarn`** from the root directory:
+
+```
+yarn run js-fibonacci
+```
+```
+yarn exec js-hello
+```
+```
+yarn workspace js-fibonacci start
+```
+
+#### Using `pnpm`
+
+To use **`pnpm`** from the root directory:
+
+```
+pnpm js-hello start
+```
+```
+pnpm --filter js-hello start
+```
+
+#### Using `javascript runtime environment`
+
+To use **`node`**, **`bun`**, **`deno`** or other **JavaScript runtime
+environment** to run it directly from root directory, run one of the following:
+
+```
+node javascript/fibonacci/src/fibonacci.js
+```
+```
+bun javascript/fibonacci/src/fibonacci.js
+```
+
+#### Using `nx`
+
+> [!IMPORTANT]
+> Nx may **not properly display prompts that require user input** and may
+> **require modifying the source code**.
+
+To use **`nx`** from the root directory, run one of the following:
+
+```
+nx start js-fibonacci
+```
+```
+npx nx start js-fibonacci
+```
+```
+npx nx run js-fibonacci:start
+```
+
+#### Using `lerna`
+
+> [!IMPORTANT]
+> Lerna may **not properly display prompts that require user input** and may
+> **require modifying the source code**.
+
+To use **`lerna`** from the root directory, run one of the following::
+
+```
+lerna run js-fibonacci
+```
+```
+npx lerna run js-fibonacci
+```
 
 ### Source Directory _(optional)_
 
-From the source directory you can run one of the following:
+#### Using `npm`, `yarn`, or `pnpm`
 
-* ```
-  npm start
-  ```
-* ```
-  node fibonacci.js
-  ```
-* ```
-  ./index.js
-  ```
+From the source directory, you can run:
 
-You can also use [`nx`](https://nx.dev/) from the source directory:
+```
+npm start
+```
+```
+yarn start
+```
+```
+pnpm start
+```
 
-* ```
-  npx nx start
-  ```
+#### Using `javascript runtime environment`
+
+To use **`node`**, **`bun`**, **`deno`** or other **JavaScript runtime
+environment** to run it directly from source directory, run one of the
+following:
+
+```
+./index.js
+```
+```
+node src/fibonacci.js
+```
+```
+bun src/fibonacci.js
+```
+
+#### Using `nx`
+
+To use **`nx`** from the source directory, run one of the following:
+
+```
+nx start
+```
+```
+npx nx start
+```
 
 ## License
 
