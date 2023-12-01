@@ -218,10 +218,12 @@ following:
 ./index.js
 ```
 ```
-node src/fibonacci.js
+cd src
+node fibonacci.js
 ```
 ```
-bun src/fibonacci.js
+cd src
+bun fibonacci.js
 ```
 
 #### Using `nx`

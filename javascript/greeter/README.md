@@ -218,10 +218,12 @@ following:
 ./index.js
 ```
 ```
-node src/greeter.js
+cd src
+node greeter.js
 ```
 ```
-bun src/greeter.js
+cd src
+bun greeter.js
 ```
 
 #### Using `nx`
