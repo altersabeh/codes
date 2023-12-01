@@ -32,6 +32,12 @@
   "devDependencies": {
     "lerna": "^7.4.2",
     "nx": "17.0.2",
-    "@nx/js": "17.0.2"
+    "@nx/js": "17.0.2",
+    "bun-types": "latest"
+  },
+  "module": "index.ts",
+  "type": "module",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }
