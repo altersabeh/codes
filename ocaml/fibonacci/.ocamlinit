@@ -1,0 +1,8 @@
+#use "topfind";;
+
+#require "unix";;
+#require "zarith";;
+
+#use "bin/fibonacci.ml";
+
+#quit;;
