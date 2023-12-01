@@ -39,8 +39,8 @@ _build
 node_modules
 **/.nx
 **/.turbo
-yarn.lock 
-pnpm-lock.yaml 
+yarn.lock
+pnpm-lock.yaml
 bun.lockb
 
 # makefiles
@@ -82,3 +82,5 @@ output/**
 *.exe
 *.dll
 *.hi
+*.jar
+*.kexe
