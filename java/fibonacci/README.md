@@ -80,7 +80,7 @@ source directory, run one of the following:
 > **have to manually remove**.
 
 > [!NOTE]
-> The **sources** are located in the **lib** directory.
+> The **sources** are located in the **src** directory.
 
 > [!TIP]
 > * The **javac** compiles the program into a **java bytecode**.
