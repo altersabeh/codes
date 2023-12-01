@@ -2040,6 +2040,11 @@ builtins@^5.0.0:
   dependencies:
     semver "^7.0.0"
 
+bun-types@latest:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/bun-types/-/bun-types-1.0.14.tgz#b3e0dca2e18aeaa3585a3551af7b467be52c4566"
+  integrity sha512-hLVfM2fk8xSJeobfuPGilfvxM5gLtEy1bn7RJhrtw3u4OaC0kieXKYFFTVHU8jZ3hj8YyPLIFClIUodkFSrMBQ==
+
 byte-size@8.1.1:
   version "8.1.1"
   resolved "https://registry.yarnpkg.com/byte-size/-/byte-size-8.1.1.tgz#3424608c62d59de5bfda05d31e0313c6174842ae"
