@@ -19,6 +19,9 @@
   "affected": {
     "defaultBase": "main"
   },
+  "cli": {
+    "packageManager": "npm"
+  },
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "tasksRunnerOptions": {
     "default": {
