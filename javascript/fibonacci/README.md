@@ -111,6 +111,9 @@ To use **`pnpm`** from the root directory:
 pnpm js-hello start
 ```
 ```
+pnpm exec js-hello
+```
+```
 pnpm --filter js-hello start
 ```
 
