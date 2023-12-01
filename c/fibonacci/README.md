@@ -90,7 +90,6 @@ cd src
 nvcc fibonacci.cpp -lgmp -o c-fibonacci
 ```
 
-
 #### Using `bazel`
 
 To use **`bazel`** from the source directory, run one of the following:

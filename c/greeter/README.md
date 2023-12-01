@@ -90,7 +90,6 @@ cd src
 nvcc greeter.cpp -o c-greeter
 ```
 
-
 #### Using `bazel`
 
 To use **`bazel`** from the source directory, run one of the following:
