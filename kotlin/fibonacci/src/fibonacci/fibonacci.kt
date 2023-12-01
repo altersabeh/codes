@@ -11,6 +11,8 @@
  * License: This program is in the public domain.
  */
 
+package fibonacci;
+
 import java.math.BigInteger
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
