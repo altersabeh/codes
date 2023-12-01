@@ -4,79 +4,250 @@ This is a **Hello World** program written in **TypeScript**.
 
 ## Prerequisite
 
-To run and build this program you need to install:
+<div align="center">
 
-* [**Node.js**](https://nodejs.org/en/download/current)
-  * `npm`
-  * `npx`
+| Name | Commands | Required | Recommended | Optional | Notes |
+|:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
+| [**Node.js**](https://nodejs.org/en/download/current) | **`npm`**<br>**`npx`** | &#9989; | &#9989; | &#10062; | **`nvm install node`**<br>or<br>**`nodenv install x.y.z`** |
+| [**ts-node**](https://typestrong.org/ts-node/docs/installation) | **`ts-node`** | &#9989; | &#9989; | &#10062; | **`npm install -g ts-node`** |
+| [**Nx**](https://nx.dev/getting-started/installation) | **`nx`** | &#10062; | &#9989; | &#9989; | **`npm install nx`**<br>or<br>**`npm install -g nx`** |
+| [**Lerna**](https://lerna.js.org/docs/getting-started#adding-lerna-to-an-existing-repo) | **`lerna`** | &#10062; | &#10062; | &#9989; | **`npm install lerna`**<br>or<br>**`npm install -g lerna`** |
+| [**Turborepo**](https://turbo.build/repo/docs/getting-started/add-to-project) | **`turbo`** | &#10062; | &#10062; | &#9989; | **`npm install turbo`**<br>or<br>**`npm install -g turbo`** |
+| [**Yarn**](https://www.graalvm.org/downloads/#) | **`yarn`** | &#10062; | &#10062; | &#9989; | **`npm install -g yarn`** |
+| [**pnpm**](https://maven.apache.org/install.html) | **`pnpm`** | &#10062; | &#10062; | &#9989; | **`npm install -g pnpm`** |
+| [**Bun**](https://bun.sh/docs/installation) | **`bun`** | &#10062; | &#10062; | &#9989; | **`npm install -g bun`** |
 
-* [**ts-node**](https://typestrong.org/ts-node/docs/installation) _**(Recommended)**_
-  * `ts-node`
+</div>
 
 ## Building
 
-From the root directory run:
-
-* ```
-  npm install
-  ```
-
-## Running
+This program is designed to be built automatically using tools such as
+**`npm`**, **`yarn`**, **`pnpm`**, **`nx`**, **`lerna`**, and **`turbo`**. You
+can initiate the build process either from the root directory or the source
+directory.
 
 ### Root Directory
 
-From the root directory run one of the following:
+> [!NOTE]
+> This **will install all dependencies** from **all the packages in the
+> workspace**. Installing **will require some time**.
 
-* ```
-  npx ts-hello
-  ```
-* ```
-  npm exec ts-hello
-  ```
-* ```
-  npm start -w ts-hello
-  ```
+#### Using `npm`
 
-You can also use `ts-node` from the root directory:
+From the root directory:
 
-* ```
-  ts-node typescript/hello/src/hello.ts
-  ```
-* ```
-  npx ts-node typescript/hello/src/hello.ts
-  ```
+```
+npm install
+```
 
-You can also use [`lerna`](https://lerna.js.org/) or [`nx`](https://nx.dev/) from the root directory: _**(optional)**_
+#### Using `yarn`
 
-* ```
-  npx lerna run ts-hello
-  ```
-* ```
-  npx nx start ts-hello
-  ```
-* ```
-  npx nx run ts-hello:start
-  ```
+To use **`yarn`** from the root directory:
+
+> [!CAUTION]
+> Using **yarn together with npm or pnpm** may issue a warning due to
+> **unsynchronized lock files**.
+
+```
+yarn install --no-lockfile
+```
+
+#### Using `pnpm`
+
+> [!CAUTION]
+> Using **pnpm together with npm or yarn** may issue an **error when updating or
+> installing dependencies**.
+
+To use **`pnpm`** from the root directory:
+
+```
+pnpm install --no-lockfile
+```
+
+#### Using `bun`
+
+To use **`bun`**from the root directory:
+
+```
+bun install --no-save
+```
 
 ### Source Directory _(optional)_
 
-From the source directory you can run one of the following:
+> [!NOTE]
+> Building from source directory is the **same as building from root
+> directory**.
 
-* ```
-  npm start
-  ```
-* ```
-  ts-node hello.ts
-  ```
-* ```
-  ./index.ts
-  ```
+## Running
 
-You can also use [`nx`](https://nx.dev/) from the source directory:
+The execution of this program can be seamlessly handled using automated build
+tools like **`npm`**, **`yarn`**, **`pnpm`**, **`nx`**, **`lerna`**, and
+**`turbo`**. You can run the program from either the root directory or the
+source directory.
 
-* ```
-  npx nx start
-  ```
+### Root Directory
+
+#### Using `npm`
+
+From the root directory, run one of the following:
+
+```
+npx ts-hello
+```
+```
+npm exec ts-hello
+```
+```
+npm start -w ts-hello
+```
+
+#### Using `yarn`
+
+To use **`yarn`** from the root directory:
+
+```
+yarn run ts-hello
+```
+```
+yarn exec ts-hello
+```
+```
+yarn workspace ts-hello start
+```
+
+#### Using `pnpm`
+
+To use **`pnpm`** from the root directory:
+
+```
+pnpm ts-hello start
+```
+```
+pnpm exec ts-hello
+```
+```
+pnpm --filter ts-hello start
+```
+
+#### Using `typescript runtime environment`
+
+To use **`ts-node`**, **`bun`**, **`deno`** or other **TypeScript runtime
+environment** to run it directly from root directory, run one of the following:
+
+```
+ts-node typescript/hello/src/hello.ts
+```
+```
+bun typescript/hello/src/hello.ts
+```
+
+#### Using `nx`
+
+> [!IMPORTANT]
+> Nx may **not properly display prompts that require user input** and may
+> **require modifying the source code**.
+
+To use **`nx`** from the root directory, run one of the following:
+
+```
+nx start ts-hello
+```
+```
+npx nx start ts-hello
+```
+```
+npx nx run ts-hello:start
+```
+
+#### Using `lerna`
+
+> [!IMPORTANT]
+> Lerna may **not properly display prompts that require user input** and may
+> **require modifying the source code**.
+
+To use **`lerna`** from the root directory, run one of the following::
+
+```
+lerna run ts-hello
+```
+```
+npx lerna run ts-hello
+```
+
+#### Using `turbo`
+
+> [!NOTE]
+> Turbo **requires only one type of lock file**.
+
+> [!IMPORTANT]
+> Turbo may **not properly display prompts that require user input** and may
+> **require modifying the source code**.
+
+```
+turbo start --scope ts-hello
+```
+```
+npx turbo start --scope ts-hello
+```
+
+### Source Directory _(optional)_
+
+#### Using `npm`, `yarn`, `pnpm`, or `bun`
+
+From the source directory, you can run:
+
+```
+npm start
+```
+```
+yarn start
+```
+```
+pnpm start
+```
+```
+bun start
+```
+
+#### Using `typescript runtime environment`
+
+To use **`ts-node`**, **`bun`**, **`deno`** or other **TypeScript runtime
+environment** to run it directly from source directory, run one of the
+following:
+
+```
+./index.ts
+```
+```
+cd src
+ts-node hello.ts
+```
+```
+cd src
+bun hello.ts
+```
+
+#### Using `nx`
+
+To use **`nx`** from the source directory, run one of the following:
+
+```
+nx start
+```
+```
+npx nx start
+```
+
+#### Using `turbo`
+
+To use **`nx`** from the source directory, run one of the following:
+
+```
+turbo start
+```
+```
+npx turbo start
+```
 
 ## License
 
