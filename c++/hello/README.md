@@ -90,7 +90,6 @@ cd src
 nvcc hello.cpp -o c++-hello
 ```
 
-
 #### Using `bazel`
 
 To use **`bazel`** from the source directory, run one of the following:
