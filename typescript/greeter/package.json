@@ -23,8 +23,8 @@
     "start": "ts-node index.ts"
   },
   "devDependencies": {
-    "@types/node": "^20.8.10",
-    "@types/prompt-sync": "^4.2.2",
+    "@types/node": "^20.10.1",
+    "@types/prompt-sync": "^4.2.3",
     "ts-node": "^10.9.1"
   },
   "dependencies": {

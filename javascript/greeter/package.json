@@ -23,7 +23,7 @@
     "start": "node index.js"
   },
   "devDependencies": {
-    "@types/prompt-sync": "^4.2.2"
+    "@types/prompt-sync": "^4.2.3"
   },
   "dependencies": {
     "prompt-sync": "^4.2.0"
