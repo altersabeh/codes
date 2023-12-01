@@ -140,7 +140,7 @@ gradle java-hello
 gradle java:hello:run
 ```
 
-#### Using `java interpreter`
+#### Using `java virtual machine`
 
 To use **`java`** to run it directly from root directory:
 
@@ -200,7 +200,7 @@ cd src/hello
 ./java-hello
 ```
 
-#### Using `java interpreters`
+#### Using `java virtual machines`
 
 To use **`java`** to run it directly from source directory, run one of the
 following:
