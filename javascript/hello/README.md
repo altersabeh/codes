@@ -63,9 +63,9 @@ To use **`pnpm`** from the root directory:
 pnpm install --no-lockfile
 ```
 
-####
+#### Using `bun`
 
-To use **`bun`** from the root directory:
+To use **`bun`**from the root directory:
 
 ```
 bun install --no-save
