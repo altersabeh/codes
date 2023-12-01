@@ -38,6 +38,10 @@ _build
 # js and ts
 node_modules
 **/.nx
+**/.turbo
+yarn.lock 
+pnpm-lock.yaml 
+bun.lockb
 
 # makefiles
 !Makefile
