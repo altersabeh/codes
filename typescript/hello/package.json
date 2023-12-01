@@ -20,6 +20,7 @@
   "scripts": {
     "ts-hello": "ts-node index.ts",
     "prepack": "mkdir -p $NPM_CONFIG_PACK_DESTINATION",
+    "build": "npm pack",
     "start": "ts-node index.ts"
   },
   "devDependencies": {

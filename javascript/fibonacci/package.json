@@ -20,6 +20,7 @@
   "scripts": {
     "js-fibonacci": "node index.js",
     "prepack": "mkdir -p $NPM_CONFIG_PACK_DESTINATION",
+    "build": "npm pack",
     "start": "node index.js"
   },
   "dependencies": {
