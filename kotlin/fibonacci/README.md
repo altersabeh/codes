@@ -74,8 +74,8 @@ the source directory, run one of the following:
 > [!TIP]
 > * The **kotlinc** compiles the program into a **java bytecode** or
 >   **executable jar file**.
-> * The **kotlinc-native** or **konanc** compiles the program into a **self contained
->   executable**.
+> * The **kotlinc-native** or **konanc** compiles the program into a **self
+>   contained executable**.
 > * The **kotlinc-js** compiles the program into a **javascript file**.
 
 ```
@@ -107,8 +107,8 @@ TODO:
 
 The execution of this program can be seamlessly handled using automated build
 tools like **`gradle`**, **`maven`**, and **`ant`**, or manually with
-**`kotlinc`**, **`kotlinc-native`**, or other **Kotlin Compilers**. You can run the
-program from either the root directory or the source directory.
+**`kotlinc`**, **`kotlinc-native`**, or other **Kotlin Compilers**. You can run
+the program from either the root directory or the source directory.
 
 ### Root Directory
 
