@@ -1,1 +1,1 @@
-(data_only_dirs dist bazel*)
+(dirs ocaml)
