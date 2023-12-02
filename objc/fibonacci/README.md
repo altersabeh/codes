@@ -6,7 +6,7 @@ This is a **Fibonacci** program written in **Objective-C**.
 
 To run and build this program you need to have the following:
 
-<div align="center" style="display: block; min-width: 200px; overflow: visible">
+<div align="center">
 
 | Name | Commands | Required | Recommended | Optional | Notes |
 |:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
