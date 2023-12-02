@@ -46,7 +46,7 @@
 }
 @end
 
-int main() {
+int main(int argc, const char *argv[]) {
   @autoreleasepool {
     NSString *name = [InputHandler getUserName];
     Greeter *greeter = [[Greeter alloc] init:name];
