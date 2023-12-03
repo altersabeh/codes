@@ -23,7 +23,7 @@ To run and build this program you need to have the following:
 ## Building
 
 This program is designed to be built automatically using tools such as
-**`gradle`**, **`maven`**, **`ant`**, and **`bazel`** or manually with
+**`gradle`**, **`maven`**, **`ant`**, and **`bazel`**, or manually with
 **`javac`**, **`native-image`**, or other **Java Compilers**. You can initiate
 the build process either from the root directory or the source directory.
 
