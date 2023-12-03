@@ -9,6 +9,8 @@
 --
 -- License: This program is in the public domain.
 
+module Main (main) where
+
 import Control.Concurrent (ThreadId, killThread, myThreadId)
 import Data.Char (isSpace)
 import Data.List (intercalate)

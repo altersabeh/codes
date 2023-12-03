@@ -1,3 +1,5 @@
+module Main (main) where
+
 import Data.Char (isSpace)
 import System.IO (hFlush, stdout)
 
