@@ -28,6 +28,7 @@ melos*.iml
 !dune-project
 !dune-workspace
 _build
+**.install
 
 # editors
 **/.idea
