@@ -6,11 +6,7 @@ cxx_binary(
     "-O2",
     "-g",
   ],
-  linker_flags = [
-    "-lntl",
-    "-lgmp",
-    "-lm",
-  ],
+  linker_flags = [],
   visibility = ["PUBLIC"],
 )
 
