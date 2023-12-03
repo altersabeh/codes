@@ -12,6 +12,10 @@
 # bazel
 **/bazel*
 
+# buck
+**/buck-out
+!BUCK
+
 # cargo
 **/target
 
