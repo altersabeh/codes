@@ -1,0 +1,20 @@
+cxx_binary(
+  name = "c++-hello",
+  srcs = ["src/hello.cpp"],
+  compiler_flags = [
+    "-Wall",
+    "-O2",
+    "-g",
+  ],
+  linker_flags = [
+    "-lntl",
+    "-lgmp",
+    "-lm",
+  ],
+  visibility = ["PUBLIC"],
+)
+
+alias(
+  name = "main",
+  actual = ":c++-hello",
+)

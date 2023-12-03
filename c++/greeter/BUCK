@@ -1,0 +1,16 @@
+cxx_binary(
+  name = "c++-greeter",
+  srcs = ["src/greeter.cpp"],
+  compiler_flags = [
+    "-Wall",
+    "-O2",
+    "-g",
+  ],
+  linker_flags = [],
+  visibility = ["PUBLIC"],
+)
+
+alias(
+  name = "main",
+  actual = ":c++-greeter",
+)
