@@ -79,6 +79,7 @@ output/**
 *.out
 *.cmi
 *.cmo
+*.cmx
 *.class
 *.exe
 *.dll
