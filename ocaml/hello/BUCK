@@ -1,0 +1,26 @@
+ocaml_binary(
+    name = "ocaml-hello",
+    srcs = ["bin/hello.ml"],
+    compiler_flags = [
+        "-O2",
+        "-g",
+    ],
+    linker_flags = [],
+    visibility = ["PUBLIC"],
+)
+
+ocaml_binary(
+    name = "ocaml-hello.byte",
+    srcs = ["bin/hello.ml"],
+    compiler_flags = [
+        "-g",
+    ],
+    linker_flags = [],
+    bytecode_only = True,
+    visibility = ["PUBLIC"],
+)
+
+alias(
+    name = "main",
+    actual = ":ocaml-hello",
+)
