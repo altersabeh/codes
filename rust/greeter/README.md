@@ -1,65 +1,147 @@
-# `Rust/Greeter`
+# `RUST/Greeter`
 
-This is a **Greeter** program written in **Rust**.
+This is a **Greeter** program written in **RUST**.
 
 ## Prerequisite
 
-To run and build this program you need to install:
+To run and build this program you need to have the following:
 
-* [**Rust Toolchain**](https://www.rust-lang.org/tools/install)
-  * `cargo`
-  * `rustc`
+<div align="center">
+
+| Name | Commands | Required | Recommended | Optional | Notes |
+|:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
+| [**Rust Toolchain**](https://www.rust-lang.org/tools/install) | **`rustc`**<br>**`cargo`** | &#9989; | &#9989; | &#10062; | **`rustup install stable`** |
+| [**Buck 2**](https://buck2.build/docs/getting_started/) | **`buck2`** | &#10062; | &#10062; | &#9989; | **`cargo install buck2`** |
+
+</div>
 
 ## Building
 
+This program is designed to be built automatically using tools such as
+**`cargo`** and **`buck`**, or manually with **`rustc`**, **`gccrs`**, or other
+**Rust Compilers**. You can initiate the build process either from the root
+directory or the source directory.
+
 ### Root Directory
 
-From the root directory run one of the following commands:
+#### Using `cargo`
 
-* ```
-  cargo build -p rust-greeter
-  ```
-* ```
-  cargo build --package rust-greeter
-  ```
+From the root directory, run one of the following:
+
+```
+cargo build -p rust-greeter
+```
+```
+cargo build --package rust-greeter
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the root directory, run one of the following:
+
+```
+buck2 build :rust-greeter
+```
+```
+buck2 build rust/greeter:main
+```
 
 ### Source Directory _(optional)_
 
-From the source directory you can run:
+#### Using `cargo`
 
-* ```
-  cargo build
-  ```
+From the source directory, you can run:
 
-You can also use `rustc` from the source directory:
+```
+cargo build
+```
 
-* ```
-  rustc greeter.rs -o rust-greeter
-  ```
+#### Using `rust compilers`
+
+To use **`rustc`**, **`gccrs`**, or other **Rust Compilers** from the source
+directory, run one of the following:
+
+> [!CAUTION]
+> This **will create build artifacts** in the source directory that you may
+> **have to manually remove**.
+
+> [!NOTE]
+> The **sources** are located in the **src** directory.
+
+```
+cd src
+rustc -g -O greeter.rs -o rust-greeter
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the source directory, run one of the following:
+
+```
+buck2 build :main
+```
+```
+buck2 build :rust-greeter
+```
 
 ## Running
 
+The execution of this program can be seamlessly handled using automated build
+tools like **`cargo`** and **`buck`**, or manually with **`rustc`**,
+**`gccrs`**, or other **Rust Compilers**. You can run the program from either
+the root directory or the source directory.
+
 ### Root Directory
 
-From the root directory run:
+#### Using `cargo`
 
-* ```
-  cargo run --bin rust-greeter
-  ```
+From the root directory, run one of the following:
+
+```
+cargo run --bin rust-greeter
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the root directory, run one of the following:
+
+```
+buck2 run :rust-greeter
+```
+```
+buck2 run rust/greeter:main
+```
 
 ### Source Directory _(optional)_
 
-From the source directory you can run:
+#### Using `cargo`
 
-* ```
-  cargo run
-  ```
+From the source directory, you can run:
 
-If you used `rustc` for building:
+```
+cargo run
+```
 
-* ```
-  ./rust-greeter
-  ```
+#### Using `rust compilers`
+
+If you used **`rustc`**, **`gccrs`**, or other **Rust Compilers** for building
+the program:
+
+```
+cd src
+./rust-greeter
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the source directory, run one of the following:
+
+```
+buck2 run :main
+```
+```
+buck2 run :rust-greeter
+```
 
 ## License
 
