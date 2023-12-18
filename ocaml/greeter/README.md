@@ -12,13 +12,14 @@ To run and build this program you need to have the following:
 |:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
 | [**OCaml**](https://ocaml.org/install) | **`ocaml`**<br>**`ocamlc`**<br>**`ocamlopt`**<br>**`ocamlrun`** | &#9989; | &#9989; | &#10062; | **`opam switch create x.y.z`**<br>or<br>**`sudo apt install ocaml`** |
 | [**Dune**](https://dune.readthedocs.io/en/latest/quick-start.html) | **`dune`** | &#9989; | &#9989; | &#10062; | **`opam install dune`**<br>or<br>**`sudo apt install ocaml-dune`** |
+| [**Buck 2**](https://buck2.build/docs/getting_started/) | **`buck2`** | &#10062; | &#10062; | &#9989; | **`cargo install buck2`** |
 
 </div>
 
 ## Building
 
 This program is designed to be built automatically using tools such as
-**`dune`**, or manually with **`ocamlc`**, **`ocamlopt`**, or other **Ocaml
+**`dune`** or manually with **`ocamlc`**, **`ocamlopt`**, or other **Ocaml
 Compilers**. You can initiate the build process either from the root directory
 or the source directory.
 
@@ -33,6 +34,17 @@ dune build -p ocaml-greeter
 ```
 ```
 dune build --only-package ocaml-greeter
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the root directory, run one of the following:
+
+```
+buck2 build :ocaml-greeter
+```
+```
+buck2 build pcaml/greeter:main
 ```
 
 ### Source Directory _(optional)_
@@ -70,6 +82,17 @@ cd bin
 ocamlopt greeter.ml -o ocaml-greeter
 ```
 
+#### Using `buck2`
+
+To use **`buck2`** from the source directory, run one of the following:
+
+```
+buck2 build :main
+```
+```
+buck2 build :ocaml-greeter
+```
+
 ## Running
 
 The execution of this program can be seamlessly handled using automated build
@@ -96,6 +119,17 @@ To use **`ocaml`** to run it directly from root directory:
 
 ```
 ocaml ocaml/greeter/bin/greeter.ml
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the root directory, run one of the following:
+
+```
+buck2 run :ocaml-greeter
+```
+```
+buck2 run pcaml/greeter:main
 ```
 
 ### Source Directory _(optional)_
@@ -143,6 +177,17 @@ ocaml
 ```
 ```
 ocaml bin/greeter.ml
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the source directory, run one of the following:
+
+```
+buck2 run :main
+```
+```
+buck2 run :ocaml-greeter
 ```
 
 ## License

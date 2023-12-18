@@ -12,6 +12,7 @@ To run and build this program you need to have the following:
 |:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
 | [**OCaml**](https://ocaml.org/install) | **`ocaml`**<br>**`ocamlc`**<br>**`ocamlopt`**<br>**`ocamlrun`** | &#9989; | &#9989; | &#10062; | **`opam switch create x.y.z`**<br>or<br>**`sudo apt install ocaml`** |
 | [**Dune**](https://dune.readthedocs.io/en/latest/quick-start.html) | **`dune`** | &#9989; | &#9989; | &#10062; | **`opam install dune`**<br>or<br>**`sudo apt install ocaml-dune`** |
+| [**Buck 2**](https://buck2.build/docs/getting_started/) | **`buck2`** | &#10062; | &#10062; | &#9989; | **`cargo install buck2`** |
 
 </div>
 
@@ -33,6 +34,17 @@ dune build -p ocaml-fibonacci
 ```
 ```
 dune build --only-package ocaml-fibonacci
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the root directory, run one of the following:
+
+```
+buck2 build :ocaml-fibonacci
+```
+```
+buck2 build pcaml/fibonacci:main
 ```
 
 ### Source Directory _(optional)_
@@ -63,11 +75,22 @@ source directory, run one of the following:
 
 ```
 cd bin
-ocamlc fibonacci.ml -I `ocamlfind query zarith` zarith.cmxa unix.cmxa -o ocaml-fibonacci
+ocamlc -I `ocamlfind query zarith` zarith.cma unix.cma fibonacci.ml -o ocaml-fibonacci
 ```
 ```
 cd bin
-ocamlopt fibonacci.ml -I `ocamlfind query zarith` zarith.cmxa unix.cmxa -o ocaml-fibonacci
+ocamlopt -I `ocamlfind query zarith` zarith.cmxa unix.cmxa fibonacci.ml -o ocaml-fibonacci
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the source directory, run one of the following:
+
+```
+buck2 build :main
+```
+```
+buck2 build :ocaml-fibonacci
 ```
 
 ## Running
@@ -96,6 +119,17 @@ To use **`ocaml`** to run it directly from root directory:
 
 ```
 ocaml ocaml/fibonacci/bin/fibonacci.ml
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the root directory, run one of the following:
+
+```
+buck2 run :ocaml-fibonacci
+```
+```
+buck2 run pcaml/fibonacci:main
 ```
 
 ### Source Directory _(optional)_
@@ -140,6 +174,17 @@ following:
 ```
 # with the .ocamlinit file
 ocaml
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the source directory, run one of the following:
+
+```
+buck2 run :main
+```
+```
+buck2 run :ocaml-fibonacci
 ```
 
 ## License
