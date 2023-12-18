@@ -1,0 +1,15 @@
+rust_binary(
+    name = "rust-hello",
+    srcs = ["src/hello.rs"],
+    rustc_flags = [
+        "-O",
+        "-g",
+    ],
+    crate_root = "src/hello.rs",
+    visibility = ["PUBLIC"],
+)
+
+alias(
+    name = "main",
+    actual = ":rust-hello",
+)
