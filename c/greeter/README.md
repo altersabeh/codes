@@ -16,6 +16,7 @@ To run and build this program you need to have the following:
 | [**Intel C Compiler**](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compiler.html) | **`icx`**<br>**`dpcpp`** | &#10062; | &#10062; | &#9989; | **`sudo apt install intel-basekit`**<br>or<br>**`sudo apt install intel-hpckit`** |
 | [**NVIDIA Cuda Compiler**](https://developer.nvidia.com/cuda-downloads) | **`nvcc`** | &#10062; | &#10062; | &#9989; | **`sudo apt install nvidia-cuda-toolkit`**<br>or<br>**`sudo apt instal cuda`** |
 | [**Bazel**](https://bazel.build/) | **`bazel`**<br>**`bazelisk`** | &#10062; | &#10062; | &#9989; | **`npm install -g @bazel/bazelisk`**<br>or<br>**`sudo apt install bazel`** |
+| [**Buck 2**](https://buck2.build/docs/getting_started/) | **`buck2`** | &#10062; | &#10062; | &#9989; | **`cargo install buck2`** |
 
 </div>
 
@@ -47,6 +48,17 @@ bazel build c-greeter
 bazel build c/greeter:main
 ```
 
+#### Using `buck2`
+
+To use **`buck2`** from the root directory, run one of the following:
+
+```
+buck2 build :c-hello
+```
+```
+buck2 build c/hello:main
+```
+
 ### Source Directory _(optional)_
 
 #### Using `make`
@@ -71,23 +83,23 @@ source directory, run one of the following:
 
 ```
 cd src
-gcc greeter.cpp -o c-greeter
+gcc -g -O2 greeter.c -o c-greeter
 ```
 ```
 cd src
-clang greeter.cpp -o c-greeter
+clang -g -O2 greeter.c -o c-greeter
 ```
 ```
 cd src
-icx greeter.cpp -o c-greeter
+icx -g -O2 greeter.c -o c-greeter
 ```
 ```
 cd src
-dpcpp greeter.cpp -o c-greeter
+dpcpp -g -O2 greeter.c -o c-greeter
 ```
 ```
 cd src
-nvcc greeter.cpp -o c-greeter
+nvcc -g -O2 greeter.c -o c-greeter
 ```
 
 #### Using `bazel`
@@ -99,6 +111,17 @@ bazel build main
 ```
 ```
 bazel build c-greeter
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the source directory, run one of the following:
+
+```
+buck2 build :main
+```
+```
+buck2 build :c-greeter
 ```
 
 ## Running
@@ -132,6 +155,17 @@ bazel run c-greeter
 bazel run c/greeter:main
 ```
 
+#### Using `buck2`
+
+To use **`buck2`** from the root directory, run one of the following:
+
+```
+buck2 run :c-greeter
+```
+```
+buck2 run c/greeter:main
+```
+
 ### Source Directory _(optional)_
 
 #### Using `make`
@@ -161,6 +195,17 @@ bazel run main
 ```
 ```
 bazel run c-greeter
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the source directory, run one of the following:
+
+```
+buck2 run :main
+```
+```
+buck2 run :c-greeter
 ```
 
 ## License
