@@ -44,7 +44,7 @@ To use **`buck2`** from the root directory, run one of the following:
 buck2 build :ocaml-greeter
 ```
 ```
-buck2 build pcaml/greeter:main
+buck2 build ocaml/greeter:main
 ```
 
 ### Source Directory _(optional)_
@@ -75,11 +75,11 @@ source directory, run one of the following:
 
 ```
 cd bin
-ocamlc greeter.ml -o ocaml-greeter
+ocamlc -g greeter.ml -o ocaml-greeter
 ```
 ```
 cd bin
-ocamlopt greeter.ml -o ocaml-greeter
+ocamlopt -g -O2 greeter.ml -o ocaml-greeter
 ```
 
 #### Using `buck2`
@@ -129,7 +129,7 @@ To use **`buck2`** from the root directory, run one of the following:
 buck2 run :ocaml-greeter
 ```
 ```
-buck2 run pcaml/greeter:main
+buck2 run ocaml/greeter:main
 ```
 
 ### Source Directory _(optional)_

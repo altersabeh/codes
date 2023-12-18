@@ -44,7 +44,7 @@ To use **`buck2`** from the root directory, run one of the following:
 buck2 build :ocaml-hello
 ```
 ```
-buck2 build pcaml/hello:main
+buck2 build ocaml/hello:main
 ```
 
 ### Source Directory _(optional)_
@@ -75,11 +75,11 @@ source directory, run one of the following:
 
 ```
 cd bin
-ocamlc hello.ml -o ocaml-hello
+ocamlc -g hello.ml -o ocaml-hello
 ```
 ```
 cd bin
-ocamlopt hello.ml -o ocaml-hello
+ocamlopt -g -O2 hello.ml -o ocaml-hello
 ```
 
 #### Using `buck2`
@@ -129,7 +129,7 @@ To use **`buck2`** from the root directory, run one of the following:
 buck2 run :ocaml-hello
 ```
 ```
-buck2 run pcaml/hello:main
+buck2 run ocaml/hello:main
 ```
 
 ### Source Directory _(optional)_

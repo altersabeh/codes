@@ -44,7 +44,7 @@ To use **`buck2`** from the root directory, run one of the following:
 buck2 build :ocaml-fibonacci
 ```
 ```
-buck2 build pcaml/fibonacci:main
+buck2 build ocaml/fibonacci:main
 ```
 
 ### Source Directory _(optional)_
@@ -75,11 +75,11 @@ source directory, run one of the following:
 
 ```
 cd bin
-ocamlc -I `ocamlfind query zarith` zarith.cma unix.cma fibonacci.ml -o ocaml-fibonacci
+ocamlc -g -I `ocamlfind query zarith` zarith.cma unix.cma fibonacci.ml -o ocaml-fibonacci
 ```
 ```
 cd bin
-ocamlopt -I `ocamlfind query zarith` zarith.cmxa unix.cmxa fibonacci.ml -o ocaml-fibonacci
+ocamlopt -g -O2 -I `ocamlfind query zarith` zarith.cmxa unix.cmxa fibonacci.ml -o ocaml-fibonacci
 ```
 
 #### Using `buck2`
@@ -129,7 +129,7 @@ To use **`buck2`** from the root directory, run one of the following:
 buck2 run :ocaml-fibonacci
 ```
 ```
-buck2 run pcaml/fibonacci:main
+buck2 run ocaml/fibonacci:main
 ```
 
 ### Source Directory _(optional)_
