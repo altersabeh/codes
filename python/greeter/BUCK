@@ -1,0 +1,10 @@
+python_binary(
+    name = "python-greeter",
+    main = "src/python_greeter/greeter.py",
+    visibility = ["PUBLIC"],
+)
+
+alias(
+    name = "main",
+    actual = ":python-greeter",
+)

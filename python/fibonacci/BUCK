@@ -1,0 +1,10 @@
+python_binary(
+    name = "python-fibonacci",
+    main = "src/python_fibonacci/fibonacci.py",
+    visibility = ["PUBLIC"],
+)
+
+alias(
+    name = "main",
+    actual = ":python-fibonacci",
+)

@@ -1,0 +1,10 @@
+python_binary(
+    name = "python-hello",
+    main = "src/python_hello/hello.py",
+    visibility = ["PUBLIC"],
+)
+
+alias(
+    name = "main",
+    actual = ":python-hello",
+)
