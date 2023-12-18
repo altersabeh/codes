@@ -1,17 +1,17 @@
 cxx_binary(
-  name = "c++-fibonacci",
-  srcs = ["src/fibonacci.cpp"],
-  compiler_flags = [
-    "-Wall",
-    "-O2",
-    "-g",
-  ],
-  linker_flags = [
-    "-lntl",
-    "-lgmp",
-    "-lm",
-  ],
-  visibility = ["PUBLIC"],
+    name = "c++-fibonacci",
+    srcs = ["src/fibonacci.cpp"],
+    compiler_flags = [
+        "-Wall",
+        "-O2",
+        "-g",
+    ],
+    linker_flags = [
+        "-lntl",
+        "-lgmp",
+        "-lm",
+    ],
+    visibility = ["PUBLIC"],
 )
 
 alias(
