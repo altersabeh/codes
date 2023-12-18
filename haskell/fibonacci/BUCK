@@ -1,0 +1,17 @@
+haskell_binary(
+    name = "haskell-fibonacci",
+    srcs = ["Main.hs"],
+    compiler_flags = [
+        "-Wall",
+        "-O",
+        "-g",
+    ],
+    linker_flags = [],
+    link_style = "static",
+    visibility = ["PUBLIC"],
+)
+
+alias(
+    name = "main",
+    actual = ":haskell-fibonacci",
+)

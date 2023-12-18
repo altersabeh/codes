@@ -1,0 +1,16 @@
+haskell_binary(
+    name = "haskell-greeter",
+    srcs = ["Main.hs"],
+    compiler_flags = [
+        "-Wall",
+        "-O",
+        "-g",
+    ],
+    linker_flags = [],
+    visibility = ["PUBLIC"],
+)
+
+alias(
+    name = "main",
+    actual = ":haskell-greeter",
+)
