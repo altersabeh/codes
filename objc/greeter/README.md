@@ -16,6 +16,7 @@ To run and build this program you need to have the following:
 | [**LLVM C Compiler**](https://releases.llvm.org/download.html) | **`clang`** | &#9989; | &#9989; | &#9989; | **`sudo apt install clang`** |
 | [**Intel C Compiler**](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compiler.html) | **`icx`**<br>**`dpcpp`** | &#10062; | &#10062; | &#9989; | **`sudo apt install intel-basekit`**<br>or<br>**`sudo apt install intel-hpckit`** |
 | [**Bazel**](https://bazel.build/) | **`bazel`**<br>**`bazelisk`** | &#10062; | &#10062; | &#9989; | **`npm install -g @bazel/bazelisk`**<br>or<br>**`sudo apt install bazel`** |
+| [**Buck 2**](https://buck2.build/docs/getting_started/) | **`buck2`** | &#10062; | &#10062; | &#9989; | **`cargo install buck2`** |
 
 </div>
 
@@ -51,6 +52,17 @@ bazel build c/greeter:main
 
 -->
 
+#### Using `buck2`
+
+To use **`buck2`** from the root directory, run one of the following:
+
+```
+buck2 build :objc-greeter
+```
+```
+buck2 build objc/greeter:main
+```
+
 ### Source Directory _(optional)_
 
 #### Using `make`
@@ -79,15 +91,15 @@ from the source directory, run one of the following:
 
 ```
 cd src
-gcc greeter.m `gnustep-config --objc-flags` -lgnustep-base -lobjc -o objc-greeter
+gcc `gnustep-config --objc-flags` greeter.m -o objc-greeter
 ```
 ```
 cd src
-clang greeter.m `gnustep-config --objc-flags` -lgnustep-base -lobjc -o objc-greeter
+clang `gnustep-config --objc-flags` greeter.m -o objc-greeter
 ```
 ```
 cd src
-icx greeter.m `gnustep-config --objc-flags` -lgnustep-base -lobjc -o objc-greeter
+icx `gnustep-config --objc-flags` greeter.m -o objc-greeter
 ```
 
 <!--
@@ -104,6 +116,17 @@ bazel build objc-greeter
 ```
 
 -->
+
+#### Using `buck2`
+
+To use **`buck2`** from the source directory, run one of the following:
+
+```
+buck2 build :main
+```
+```
+buck2 build :objc-greeter
+```
 
 ## Running
 
@@ -140,6 +163,17 @@ bazel run c/greeter:main
 
 -->
 
+#### Using `buck2`
+
+To use **`buck2`** from the root directory, run one of the following:
+
+```
+buck2 run :objc-greeter
+```
+```
+buck2 run objc/greeter:main
+```
+
 ### Source Directory _(optional)_
 
 #### Using `make`
@@ -174,6 +208,17 @@ bazel run objc-greeter
 ```
 
 -->
+
+#### Using `buck2`
+
+To use **`buck2`** from the source directory, run one of the following:
+
+```
+buck2 run :main
+```
+```
+buck2 run :objc-greeter
+```
 
 ## License
 
