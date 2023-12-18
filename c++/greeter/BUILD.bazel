@@ -1,19 +1,19 @@
 package(
-  default_visibility = ["//visibility:public"],
+    default_visibility = ["//visibility:public"],
 )
 
 cc_binary(
-  name = "c++-greeter",
-  srcs = ["src/greeter.cpp"],
-  copts = [
-    "-Wall",
-    "-O2",
-    "-g",
-  ],
-  linkopts = [],
+    name = "c++-greeter",
+    srcs = ["src/greeter.cpp"],
+    copts = [
+        "-Wall",
+        "-O2",
+        "-g",
+    ],
+    linkopts = [],
 )
 
 alias(
-  name = "main",
-  actual = ":c++-greeter",
+    name = "main",
+    actual = ":c++-greeter",
 )

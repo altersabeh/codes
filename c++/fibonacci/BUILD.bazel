@@ -1,23 +1,23 @@
 package(
-  default_visibility = ["//visibility:public"],
+    default_visibility = ["//visibility:public"],
 )
 
 cc_binary(
-  name = "c++-fibonacci",
-  srcs = ["src/fibonacci.cpp"],
-  copts = [
-    "-Wall",
-    "-O2",
-    "-g",
-  ],
-  linkopts = [
-    "-lntl",
-    "-lgmp",
-    "-lm",
-  ],
+    name = "c++-fibonacci",
+    srcs = ["src/fibonacci.cpp"],
+    copts = [
+        "-Wall",
+        "-O2",
+        "-g",
+    ],
+    linkopts = [
+        "-lntl",
+        "-lgmp",
+        "-lm",
+    ],
 )
 
 alias(
-  name = "main",
-  actual = ":c++-fibonacci",
+    name = "main",
+    actual = ":c++-fibonacci",
 )
