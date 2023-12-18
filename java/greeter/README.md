@@ -89,11 +89,11 @@ source directory, run one of the following:
 
 ```
 cd src
-javac greeter/Greeter.java
+javac -ggreeter/Greeter.java
 ```
 ```
 cd src
-javac greeter/Greeter.java
+javac -ggreeter/Greeter.java
 native-image greeter.Greeter -o greeter/java-greeter
 ```
 

@@ -89,11 +89,11 @@ source directory, run one of the following:
 
 ```
 cd src
-javac fibonacci/Fibonacci.java
+javac -g fibonacci/Fibonacci.java
 ```
 ```
 cd src
-javac fibonacci/Fibonacci.java
+javac -g fibonacci/Fibonacci.java
 native-image fibonacci.Fibonacci -o fibonacci/java-fibonacci
 ```
 

@@ -89,11 +89,11 @@ source directory, run one of the following:
 
 ```
 cd src
-javac hello/Hello.java
+javac -ghello/Hello.java
 ```
 ```
 cd src
-javac hello/Hello.java
+javac -ghello/Hello.java
 native-image hello.Hello -o hello/java-hello
 ```
 
