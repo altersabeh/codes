@@ -1,0 +1,25 @@
+cxx_binary(
+    name = "objc-fibonacci",
+    srcs = ["src/fibonacci.m"],
+    compiler_flags = [
+        "-Wall",
+        "-O2",
+        "-g",
+        "-fconstant-string-class=NSConstantString",
+        "-I",
+        "/usr/include/GNUstep",
+        "-I",
+        "/usr/lib/gcc/x86_64-linux-gnu/13/include",
+    ],
+    linker_flags = [
+        "-lgnustep-base",
+        "-lobjc",
+        "-lcrypto",
+    ],
+    visibility = ["PUBLIC"],
+)
+
+alias(
+    name = "main",
+    actual = ":objc-fibonacci",
+)

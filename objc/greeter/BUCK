@@ -1,0 +1,24 @@
+cxx_binary(
+    name = "objc-greeter",
+    srcs = ["src/greeter.m"],
+    compiler_flags = [
+        "-Wall",
+        "-O2",
+        "-g",
+        "-I",
+        "-fconstant-string-class=NSConstantString",
+        "/usr/include/GNUstep",
+        "-I",
+        "/usr/lib/gcc/x86_64-linux-gnu/13/include",
+    ],
+    linker_flags = [
+        "-lgnustep-base",
+        "-lobjc",
+    ],
+    visibility = ["PUBLIC"],
+)
+
+alias(
+    name = "main",
+    actual = ":objc-greeter",
+)
