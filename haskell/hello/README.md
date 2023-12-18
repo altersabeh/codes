@@ -1,4 +1,4 @@
- # `Haskell/Hello`
+# `Haskell/Hello`
 
 This is a **Hello World** program written in **Haskell**.
 
@@ -13,6 +13,7 @@ To run and build this program you need to have the following:
 | [**Glasgow Haskell Compiler**](https://www.haskell.org/ghc/distribution_packages.html) | **`ghc`**<br>**`runhaskell`**<br>**`runghc`** | &#9989; | &#9989; | &#10062; | **`ghcup install ghc`**<br>or<br>**`sudo apt install ghc`** |
 | [**Haskell Cabal**](https://www.haskell.org/cabal/download.html) | **`cabal`** | &#9989; | &#9989; | &#10062; | **`ghcup install cabal`**<br>or<br>**`sudo apt install cabal-install`** |
 | [**Haskell Stack**](https://releases.llvm.org/download.html) | **`stack`** | &#10062; | &#9989; | &#9989; | **`ghcup install stack`**<br>or<br>**`sudo apt install haskell-stack`** |
+| [**Buck 2**](https://buck2.build/docs/getting_started/) | **`buck2`** | &#10062; | &#10062; | &#9989; | **`cargo install buck2`** |
 
 </div>
 
@@ -36,6 +37,17 @@ From the root directory:
 
 ```
 stack build haskell-hello
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the root directory, run one of the following:
+
+```
+buck2 build :haskell-hello
+```
+```
+buck2 build haskell/hello:main
 ```
 
 ### Source Directory _(optional)_
@@ -67,7 +79,18 @@ To use **`ghc`**, or other **Haskell Compilers** from the source directory, run:
 
 ```
 cd src
-ghc hello.hs -o haskell-hello
+ghc -g -O hello.hs -o haskell-hello
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the source directory, run one of the following:
+
+```
+buck2 build :main
+```
+```
+buck2 build :haskell-hello
 ```
 
 ## Running
@@ -106,6 +129,17 @@ runghc haskell/hello/src/hello.hs
 runhaskell haskell/hello/src/hello.hs
 ```
 
+#### Using `buck2`
+
+To use **`buck2`** from the root directory, run one of the following:
+
+```
+buck2 run :haskell-hello
+```
+```
+buck2 run haskell/hello:main
+```
+
 ### Source Directory _(optional)_
 
 #### Using `cabal`
@@ -142,6 +176,17 @@ runghc src/hello.hs
 ```
 ```
 runhaskell src/hello.hs
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the source directory, run one of the following:
+
+```
+buck2 run :main
+```
+```
+buck2 run :haskell-hello
 ```
 
 ## License

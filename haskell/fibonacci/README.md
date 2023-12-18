@@ -1,4 +1,4 @@
- # `Haskell/Fibonacci`
+# `Haskell/Fibonacci`
 
 This is a **Fibonacci** program written in **Haskell**.
 
@@ -13,6 +13,7 @@ To run and build this program you need to have the following:
 | [**Glasgow Haskell Compiler**](https://www.haskell.org/ghc/distribution_packages.html) | **`ghc`**<br>**`runhaskell`**<br>**`runghc`** | &#9989; | &#9989; | &#10062; | **`ghcup install ghc`**<br>or<br>**`sudo apt install ghc`** |
 | [**Haskell Cabal**](https://www.haskell.org/cabal/download.html) | **`cabal`** | &#9989; | &#9989; | &#10062; | **`ghcup install cabal`**<br>or<br>**`sudo apt install cabal-install`** |
 | [**Haskell Stack**](https://releases.llvm.org/download.html) | **`stack`** | &#10062; | &#9989; | &#9989; | **`ghcup install stack`**<br>or<br>**`sudo apt install haskell-stack`** |
+| [**Buck 2**](https://buck2.build/docs/getting_started/) | **`buck2`** | &#10062; | &#10062; | &#9989; | **`cargo install buck2`** |
 
 </div>
 
@@ -36,6 +37,17 @@ From the root directory:
 
 ```
 stack build haskell-fibonacci
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the root directory, run one of the following:
+
+```
+buck2 build :haskell-fibonacci
+```
+```
+buck2 build haskell/fibonacci:main
 ```
 
 ### Source Directory _(optional)_
@@ -67,7 +79,18 @@ To use **`ghc`**, or other **Haskell Compilers** from the source directory, run:
 
 ```
 cd src
-ghc fibonacci.hs -o haskell-fibonacci
+ghc -g -O fibonacci.hs -o haskell-fibonacci
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the source directory, run one of the following:
+
+```
+buck2 build :main
+```
+```
+buck2 build :haskell-fibonacci
 ```
 
 ## Running
@@ -106,6 +129,17 @@ runghc haskell/fibonacci/src/fibonacci.hs
 runhaskell haskell/fibonacci/src/fibonacci.hs
 ```
 
+#### Using `buck2`
+
+To use **`buck2`** from the root directory, run one of the following:
+
+```
+buck2 run :haskell-fibonacci
+```
+```
+buck2 run haskell/fibonacci:main
+```
+
 ### Source Directory _(optional)_
 
 #### Using `cabal`
@@ -142,6 +176,17 @@ runghc src/fibonacci.hs
 ```
 ```
 runhaskell src/fibonacci.hs
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the source directory, run one of the following:
+
+```
+buck2 run :main
+```
+```
+buck2 run :haskell-fibonacci
 ```
 
 ## License
