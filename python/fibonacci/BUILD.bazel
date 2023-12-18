@@ -1,0 +1,14 @@
+package(
+    default_visibility = ["//visibility:public"],
+)
+
+py_binary(
+    name = "python-fibonacci",
+    srcs = ["src/python_fibonacci/fibonacci.py"],
+    main = "fibonacci.py"
+)
+
+alias(
+    name = "main",
+    actual = ":python-fibonacci",
+)

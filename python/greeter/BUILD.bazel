@@ -1,0 +1,14 @@
+package(
+    default_visibility = ["//visibility:public"],
+)
+
+py_binary(
+    name = "python-greeter",
+    srcs = ["src/python_greeter/greeter.py"],
+    main = "greeter.py"
+)
+
+alias(
+    name = "main",
+    actual = ":python-greeter",
+)
