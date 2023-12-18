@@ -16,6 +16,7 @@ To run and build this program you need to have the following:
 | [**Intel C++ Compiler**](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compiler.html) | **`icpx`**<br>**`dpcpp`** | &#10062; | &#10062; | &#9989; | **`sudo apt install intel-basekit`**<br>or<br>**`sudo apt install intel-hpckit`** |
 | [**NVIDIA Cuda Compiler**](https://developer.nvidia.com/cuda-downloads) | **`nvcc`** | &#10062; | &#10062; | &#9989; | **`sudo apt install nvidia-cuda-toolkit`**<br>or<br>**`sudo apt instal cuda`** |
 | [**Bazel**](https://bazel.build/) | **`bazel`**<br>**`bazelisk`** | &#10062; | &#10062; | &#9989; | **`npm install -g @bazel/bazelisk`**<br>or<br>**`sudo apt install bazel`** |
+| [**Buck 2**](https://buck2.build/docs/getting_started/) | **`buck2`** | &#10062; | &#10062; | &#9989; | **`cargo install buck2`** |
 
 </div>
 
@@ -47,6 +48,17 @@ bazel build c++-fibonacci
 bazel build c++/fibonacci:main
 ```
 
+#### Using `buck2`
+
+To use **`buck2`** from the root directory, run one of the following:
+
+```
+buck2 build :c++-fibonacci
+```
+```
+buck2 build c++/fibonacci:main
+```
+
 ### Source Directory _(optional)_
 
 #### Using `make`
@@ -71,23 +83,23 @@ source directory, run one of the following:
 
 ```
 cd src
-g++ fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci
+g++ -g -O2 fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci
 ```
 ```
 cd src
-clang++ fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci
+clang++ -g -O2 fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci
 ```
 ```
 cd src
-icpx fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci
+icpx -g -O2 fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci
 ```
 ```
 cd src
-dpcpp fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci
+dpcpp -g -O2 fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci
 ```
 ```
 cd src
-nvcc fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci
+nvcc -g -O2 fibonacci.cpp -lntl -lgmp -lm -o c++-fibonacci
 ```
 
 #### Using `bazel`
@@ -99,6 +111,17 @@ bazel build main
 ```
 ```
 bazel build c++-fibonacci
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the source directory, run one of the following:
+
+```
+buck2 build :main
+```
+```
+buck2 build :c++-fibonacci
 ```
 
 ## Running
@@ -132,6 +155,17 @@ bazel run c++-fibonacci
 bazel run c++/fibonacci:main
 ```
 
+#### Using `buck2`
+
+To use **`buck2`** from the root directory, run one of the following:
+
+```
+buck2 run :c++-fibonacci
+```
+```
+buck2 run c++/fibonacci:main
+```
+
 ### Source Directory _(optional)_
 
 #### Using `make`
@@ -161,6 +195,17 @@ bazel run main
 ```
 ```
 bazel run c++-fibonacci
+```
+
+#### Using `buck2`
+
+To use **`buck2`** from the source directory, run one of the following:
+
+```
+buck2 run :main
+```
+```
+buck2 run :c++-fibonacci
 ```
 
 ## License
