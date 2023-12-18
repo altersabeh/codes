@@ -4,7 +4,7 @@ python_sources(
 )
 
 pex_binary(
-    name = "pex",
+    name = "python-fibonacci",
     entry_point = "src/python_fibonacci/fibonacci.py",
     output_path = "python/bin/python-fibonacci.pex",
 )

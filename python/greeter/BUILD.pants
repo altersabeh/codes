@@ -4,7 +4,7 @@ python_sources(
 )
 
 pex_binary(
-    name = "pex",
+    name = "python-greeter",
     entry_point = "src/python_greeter/greeter.py",
     output_path = "python/bin/python-greeter.pex",
 )

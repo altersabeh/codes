@@ -4,7 +4,7 @@ python_sources(
 )
 
 pex_binary(
-    name = "pex",
+    name = "python-hello",
     entry_point = "src/python_hello/hello.py",
     output_path = "python/bin/python-hello.pex",
 )
