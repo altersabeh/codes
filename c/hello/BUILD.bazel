@@ -1,19 +1,19 @@
 package(
-  default_visibility = ["//visibility:public"],
+    default_visibility = ["//visibility:public"],
 )
 
 cc_binary(
-  name = "c-hello",
-  srcs = ["src/hello.c"],
-  copts = [
-    "-Wall",
-    "-O2",
-    "-g",
-  ],
-  linkopts = [],
-)
+    name = "c-hello",
+    srcs = ["src/hello.c"],
+    copts = [
+        "-Wall",
+        "-O2",
+        "-g",
+    ],
+    linkopts = [],
+    )
 
 alias(
-  name = "main",
-  actual = ":c-hello",
+    name = "main",
+    actual = ":c-hello",
 )
