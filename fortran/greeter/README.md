@@ -11,9 +11,9 @@ To run and build this program you need to have the following:
 | Name | Commands | Required | Recommended | Optional | Notes |
 |:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
 | [**Fortran Package Manager**](https://fpm.fortran-lang.org/install/index.html#install) | **`fpm`** | &#9989; | &#9989; | &#10062; | **`conda install fpm`**<br>or<br>**`brew tap fortran-lang/homebrew-fortran`**<br>**`brew install fpm`** |
-| [**GNU Fortran Compiler**](https://gcc.gnu.org) | **`gfortran`** | &#9989; | &#9989; | &#10062; | **`sudo apt install gfortran`** |
-| [**LLVM Fortran Compiler**](https://releases.llvm.org/download.html) | **`flang-new`** | &#10062; | &#10062; | &#9989; | **`sudo apt install flang`** |
-| [**Intel Fortran Compiler**](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compiler.html) | **`ifx`**<br>**`ifort`** | &#10062; | &#10062; | &#9989; | **`sudo apt install intel-hpckit`** |
+| [**GNU Fortran Compiler**](https://gcc.gnu.org) | **`gfortran`** | &#9989; | &#9989; | &#10062; | **`apt install gfortran`** |
+| [**LLVM Fortran Compiler**](https://releases.llvm.org/download.html) | **`flang-new`** | &#10062; | &#10062; | &#9989; | **`apt install flang`** |
+| [**Intel Fortran Compiler**](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compiler.html) | **`ifx`**<br>**`ifort`** | &#10062; | &#10062; | &#9989; | **`apt install intel-hpckit`** |
 
 </div>
 
