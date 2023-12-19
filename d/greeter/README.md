@@ -10,9 +10,9 @@ To run and build this program you need to have the following:
 
 | Name | Commands | Required | Recommended | Optional | Notes |
 |:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
-| [**DMD Compiler**](https://dlang.org/download.html) | **`dub`**<br>**`dmd`** | &#9989; | &#9989; | &#10062; | **`sudo apt install dub`**<br>**`sudo apt install dmd-compiler`** |
-| [**GNU D Compiler**](https://gcc.gnu.org) | **`gdc`** | &#10062; | &#10062; | &#9989; | **`sudo apt install gdc`** |
-| [**LLVM D Compiler**](https://wiki.dlang.org/LDC) | **`ldc2`**<br>**`ldmd2`** | &#10062; | &#10062; | &#9989; | **`sudo apt install ldc`** |
+| [**DMD Compiler**](https://dlang.org/download.html) | **`dub`**<br>**`dmd`** | &#9989; | &#9989; | &#10062; | **`apt install dub`**<br>**`apt install dmd-compiler`** |
+| [**GNU D Compiler**](https://gcc.gnu.org) | **`gdc`** | &#10062; | &#10062; | &#9989; | **`apt install gdc`** |
+| [**LLVM D Compiler**](https://wiki.dlang.org/LDC) | **`ldc2`**<br>**`ldmd2`** | &#10062; | &#10062; | &#9989; | **`apt install ldc`** |
 
 </div>
 
