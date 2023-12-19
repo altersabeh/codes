@@ -10,8 +10,8 @@ To run and build this program you need to have the following:
 
 | Name | Commands | Required | Recommended | Optional | Notes |
 |:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
-| [**OCaml**](https://ocaml.org/install) | **`ocaml`**<br>**`ocamlc`**<br>**`ocamlopt`**<br>**`ocamlrun`** | &#9989; | &#9989; | &#10062; | **`opam switch create x.y.z`**<br>or<br>**`sudo apt install ocaml`** |
-| [**Dune**](https://dune.readthedocs.io/en/latest/quick-start.html) | **`dune`** | &#9989; | &#9989; | &#10062; | **`opam install dune`**<br>or<br>**`sudo apt install ocaml-dune`** |
+| [**OCaml**](https://ocaml.org/install) | **`ocaml`**<br>**`ocamlc`**<br>**`ocamlopt`**<br>**`ocamlrun`** | &#9989; | &#9989; | &#10062; | **`opam switch create x.y.z`**<br>or<br>**`apt install ocaml`** |
+| [**Dune**](https://dune.readthedocs.io/en/latest/quick-start.html) | **`dune`** | &#9989; | &#9989; | &#10062; | **`opam install dune`**<br>or<br>**`apt install ocaml-dune`** |
 | [**Buck 2**](https://buck2.build/docs/getting_started/) | **`buck2`** | &#10062; | &#10062; | &#9989; | **`cargo install buck2`** |
 
 </div>
