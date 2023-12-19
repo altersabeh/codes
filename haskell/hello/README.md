@@ -10,9 +10,9 @@ To run and build this program you need to have the following:
 
 | Name | Commands | Required | Recommended | Optional | Notes |
 |:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
-| [**Glasgow Haskell Compiler**](https://www.haskell.org/ghc/distribution_packages.html) | **`ghc`**<br>**`runhaskell`**<br>**`runghc`** | &#9989; | &#9989; | &#10062; | **`ghcup install ghc`**<br>or<br>**`sudo apt install ghc`** |
-| [**Haskell Cabal**](https://www.haskell.org/cabal/download.html) | **`cabal`** | &#9989; | &#9989; | &#10062; | **`ghcup install cabal`**<br>or<br>**`sudo apt install cabal-install`** |
-| [**Haskell Stack**](https://docs.haskellstack.org/en/stable/install_and_upgrade/) | **`stack`** | &#10062; | &#9989; | &#9989; | **`ghcup install stack`**<br>or<br>**`sudo apt install haskell-stack`** |
+| [**Glasgow Haskell Compiler**](https://www.haskell.org/ghc/distribution_packages.html) | **`ghc`**<br>**`runhaskell`**<br>**`runghc`** | &#9989; | &#9989; | &#10062; | **`ghcup install ghc`**<br>or<br>**`apt install ghc`** |
+| [**Haskell Cabal**](https://www.haskell.org/cabal/download.html) | **`cabal`** | &#9989; | &#9989; | &#10062; | **`ghcup install cabal`**<br>or<br>**`apt install cabal-install`** |
+| [**Haskell Stack**](https://docs.haskellstack.org/en/stable/install_and_upgrade/) | **`stack`** | &#10062; | &#9989; | &#9989; | **`ghcup install stack`**<br>or<br>**`apt install haskell-stack`** |
 | [**Buck 2**](https://buck2.build/docs/getting_started/) | **`buck2`** | &#10062; | &#10062; | &#9989; | **`cargo install buck2`** |
 
 </div>
