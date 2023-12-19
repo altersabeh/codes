@@ -10,10 +10,10 @@ To run and build this program you need to have the following:
 
 | Name | Commands | Required | Recommended | Optional | Notes |
 |:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
-| [**Python**](https://www.python.org/downloads/) | **`python`**<br>**`pip`** | &#9989; | &#9989; | &#10062; | **`pyenv install x.y.z`**<br>or<br>**`sudo apt install python3`** |
-| [**Poetry**](https://python-poetry.org/docs/#installing-with-pipx) | **`poetry`** | &#9989; | &#9989; | &#10062; | **`pipx install poetry`**<br>or<br>**`sudo apt install python3-poetry`** |
+| [**Python**](https://www.python.org/downloads/) | **`python`**<br>**`pip`** | &#9989; | &#9989; | &#10062; | **`pyenv install x.y.z`**<br>or<br>**`apt install python3`** |
+| [**Poetry**](https://python-poetry.org/docs/#installing-with-pipx) | **`poetry`** | &#9989; | &#9989; | &#10062; | **`pipx install poetry`**<br>or<br>**`apt install python3-poetry`** |
 | [**Pants Build**](https://www.pantsbuild.org/docs/installation) | **`pants`** | &#10062; | &#10062; | &#9989; | **`brew install pantsbuild/tap/pants`** |
-| [**Bazel**](https://bazel.build/) | **`bazel`**<br>**`bazelisk`** | &#10062; | &#10062; | &#9989; | **`npm install -g @bazel/bazelisk`**<br>or<br>**`sudo apt install bazel`** |
+| [**Bazel**](https://bazel.build/) | **`bazel`**<br>**`bazelisk`** | &#10062; | &#10062; | &#9989; | **`npm install -g @bazel/bazelisk`**<br>or<br>**`apt install bazel`** |
 | [**Buck 2**](https://buck2.build/docs/getting_started/) | **`buck2`** | &#10062; | &#10062; | &#9989; | **`cargo install buck2`** |
 
 </div>
