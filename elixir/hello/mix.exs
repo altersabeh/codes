@@ -8,7 +8,8 @@ defmodule Hello.MixProject do
       description: "Hello World program written in Elixir",
       package: package(),
       source_url: "https://github.com/altersabeh/codes",
-      homepage_url: "https://github.com/altersabeh/codes",
+      homepage_url: "https://github.com/altersabeh/codes#README",
+      docs: [main: "README.md", readme: true],
       app: :hello,
       aliases: aliases(),
       deps: deps(),
@@ -33,7 +34,7 @@ defmodule Hello.MixProject do
     [
       "elixir-hello": ["run.elixir.hello"],
       "build.elixir.hello": ["compile", "escript.build"],
-      "run.elixir.hello": ["run -e Hello.main([])"],
+      "run.elixir.hello": ["run -e Hello.start([])"],
       "archive.elixir.hello": ["archive.build -o ../../dist/elixir/archives/elixir_hello-1.0.0.ez"],
       "archive.build": ["archive.elixir.hello"],
     ]
@@ -46,7 +47,7 @@ defmodule Hello.MixProject do
   def escript do
     [
       main_module: Hello,
-      main_function: :main,
+      main_function: :start,
       path: "../../dist/elixir/escript/elixir-hello",
     ]
   end
