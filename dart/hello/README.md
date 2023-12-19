@@ -10,7 +10,7 @@ To run and build this program you need to have the following:
 
 | Name | Commands | Required | Recommended | Optional | Notes |
 |:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
-| [**Dart SDK**](https://dart.dev/get-dart#install) | **`dart`**<br>**`dartaotruntime`** | &#9989; | &#9989; | &#10062; | **`sudo apt install dart`** |
+| [**Dart SDK**](https://dart.dev/get-dart#install) | **`dart`**<br>**`dartaotruntime`** | &#9989; | &#9989; | &#10062; | **`apt install dart`** |
 | [**Melos**](https://melos.invertase.dev/getting-started#installation) | **`melos`** | &#10062; | &#10062; | &#9989; | **`dart pub global activate melos`** |
 
 </div>
