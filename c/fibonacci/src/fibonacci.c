@@ -181,10 +181,9 @@ void interruptHandler(int signum) {
   exit(0);
 }
 
-int signalHandler() {
+void signalHandler() {
   if (signal(SIGINT, interruptHandler) == SIG_ERR) {
     printf("Error setting SIGINT handler.\n");
     return 1;
   }
-  return 0;
 }

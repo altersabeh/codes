@@ -176,10 +176,9 @@ void interruptHandler(int signum) {
   exit(0);
 }
 
-int signalHandler() {
+void signalHandler() {
   if (signal(SIGINT, interruptHandler) == SIG_ERR) {
     cout << "Error setting SIGINT handler." << endl;
     return 1;
   }
-  return 0;
 }
