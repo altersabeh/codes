@@ -51,6 +51,9 @@ bun.lockb
 # makefiles
 !Makefile
 
+# mix
+**/deps
+
 # pants
 /.pants.*
 **/dist/
@@ -90,3 +93,7 @@ output/**
 *.hi
 *.jar
 *.kexe
+*.ez
+*.beam
+*.plt
+*.dump
