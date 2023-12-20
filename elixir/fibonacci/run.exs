@@ -1,4 +1,4 @@
 #!/usr/bin/env elixir
-Code.require_file(__DIR__ <> "/lib/greeter.ex")
+Code.require_file(__DIR__ <> "/lib/fibonacci.ex")
 
-Greeter.start([])
+Fibonacci.start([])
