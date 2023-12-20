@@ -33,9 +33,11 @@ directory.
 From the root directory, run one of the following:
 
 ```
+mix deps.get
 mix compile
 ```
 ```
+mix deps.get
 mix build.elixir.hello
 ```
 
@@ -46,6 +48,7 @@ mix build.elixir.hello
 From the source directory, you can run:
 
 ```
+mix deps.get
 mix compile
 ```
 
