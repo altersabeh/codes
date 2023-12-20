@@ -23,10 +23,11 @@ defmodule Fibonacci do
     IO.puts("===================================================")
   end
 
+  # Function to Get the User Input
   defp get_user_input do
     IO.write("Enter the value of n (an integer): ")
     input = IO.gets("")
-    
+
     if input == :eof do
       eof_handler()
     end
@@ -54,6 +55,7 @@ defmodule Fibonacci do
     end
   end
 
+  # Calculates and prints the Fibonacci series up to the nth term.
   def fibonacci_series(n) do
     a = 0
     b = 1
@@ -71,6 +73,7 @@ defmodule Fibonacci do
         series = if i <= n, do: [Integer.to_string(a) | series], else: series
 
         if n > 5000 and i <= n do
+          # Print the series without using array
           IO.write("#{a}")
           if i < n, do: IO.write(", ")
         end
@@ -78,7 +81,7 @@ defmodule Fibonacci do
         temp = a
         a = b
         b = temp + b
-        sum = sum + temp
+        sum = sum + temp # Calculate the sum
 
         {a, b, temp, sum, series}
       end)
@@ -91,6 +94,7 @@ defmodule Fibonacci do
     IO.puts("Sum of the Fibonacci series: #{sum}")
   end
 
+  # Handle special cases where numbers don't end in "th"
   def get_suffix(n) do
     cond do
       rem(n, 10) == 1 and rem(n, 100) != 11 -> "st"
@@ -100,6 +104,7 @@ defmodule Fibonacci do
     end
   end
 
+  # Display the current date and time
   def date_and_time do
     current_date = Timex.now()
 
@@ -109,6 +114,7 @@ defmodule Fibonacci do
     IO.puts("Date and Time: #{formatted_date}")
   end
 
+  # Functions to handle user input and errors
   defp validate_input(input) do
     case Integer.parse(input) do
       {n, _} when n > 0 -> n
@@ -131,8 +137,9 @@ defmodule Fibonacci do
   end
 
   def signal_handler do
+    # Not Working as Intended
     Process.flag(:trap_exit, true)
     Process.link(Process.whereis(:init))
-    Process.register(self(), :sig_handler)
+    Process.register(self(), :interrupt_handler)
   end
 end
