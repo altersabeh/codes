@@ -6,7 +6,8 @@ defmodule Codes.MixProject do
       apps_path: "elixir",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      build_path: "dist/elixir"
+      build_path: "dist/elixir",
+      deps_path: "dist/elixir/deps",
     ]
   end
 

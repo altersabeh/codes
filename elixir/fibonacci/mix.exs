@@ -15,7 +15,7 @@ defmodule Fibonacci.MixProject do
       deps: deps(),
       escript: escript(),
       build_path: "../../dist/elixir",
-      deps_path: "../../deps",
+      deps_path: "../../dist/elixir/deps",
       lockfile: "../../mix.lock",
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
@@ -41,7 +41,9 @@ defmodule Fibonacci.MixProject do
   end
 
   defp deps do
-    []
+    [
+      {:timex, "~> 3.7"}
+    ]
   end
 
   def escript do

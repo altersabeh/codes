@@ -15,7 +15,7 @@ defmodule Greeter.MixProject do
       deps: deps(),
       escript: escript(),
       build_path: "../../dist/elixir",
-      deps_path: "../../deps",
+      deps_path: "../../dist/elixir/deps",
       lockfile: "../../mix.lock",
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
