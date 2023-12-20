@@ -16,6 +16,7 @@ defmodule Fibonacci do
     IO.puts("============Fibonacci Series Calculator============")
     IO.puts("This Program was Written Using: Elixir")
 
+    date_and_time()
     get_user_input()
 
     IO.puts("===================================================")
@@ -23,7 +24,11 @@ defmodule Fibonacci do
 
   defp get_user_input do
     IO.write("Enter the value of n (an integer): ")
-    input = IO.gets("") |> String.trim()
+    input = IO.gets("")
+    
+    if input == :eof do
+      eof_handler()
+    end
 
     trimmedinput = String.trim(input)
 
@@ -59,7 +64,7 @@ defmodule Fibonacci do
     series = []
 
     {_, _, _, sum, series} =
-      Enum.reduce(0..n, {a, b, temp, sum, series}, fn i, state->
+      Enum.reduce(0..n, {a, b, temp, sum, series}, fn i, state ->
         {a, b, _, sum, series} = state
 
         series = if i <= n, do: [Integer.to_string(a) | series], else: series
@@ -94,10 +99,26 @@ defmodule Fibonacci do
     end
   end
 
+  def date_and_time do
+    current_date = Timex.now()
+
+    layout = "{Mfull} {D}, {YYYY} - {h24}:{m}:{s}"
+    formatted_date = Timex.format!(current_date, layout)
+
+    IO.puts("Date and Time: #{formatted_date}")
+  end
+
   defp validate_input(input) do
     case Integer.parse(input) do
       {n, _} when n > 0 -> n
       _ -> -1
     end
+  end
+
+  def eof_handler do
+    IO.puts("")
+    IO.puts("End of File encountered.. Stopping...")
+    IO.puts("===================================================")
+    System.halt()
   end
 end
