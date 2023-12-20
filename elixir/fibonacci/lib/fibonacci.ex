@@ -16,6 +16,7 @@ defmodule Fibonacci do
     IO.puts("============Fibonacci Series Calculator============")
     IO.puts("This Program was Written Using: Elixir")
 
+    signal_handler()
     date_and_time()
     get_user_input()
 
@@ -119,6 +120,19 @@ defmodule Fibonacci do
     IO.puts("")
     IO.puts("End of File encountered.. Stopping...")
     IO.puts("===================================================")
-    System.halt()
+    System.halt(0)
+  end
+
+  def interrupt_handler do
+    IO.puts("")
+    IO.puts("Interrupt received.. Exiting...")
+    IO.puts("===================================================")
+    System.halt(0)
+  end
+
+  def signal_handler do
+    Process.flag(:trap_exit, true)
+    Process.link(Process.whereis(:init))
+    Process.register(self(), :sig_handler)
   end
 end
