@@ -102,7 +102,7 @@ the source directory.
 
 ### Root Directory
 
-#### Using `dune `
+#### Using `dune`
 
 From the root directory, run one of the following:
 
