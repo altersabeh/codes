@@ -2,7 +2,7 @@
 /// Fibonacci Series Calculator
 ///
 /// The Fibonacci Series Calculator is a C# program that calculates
-/// and prints the Fibonacci series up to the nth term with arbitrary
+/// and prints the Fibonacci Series up to the nth term with arbitrary
 /// precision. It includes features such as error handling for input
 /// validation, handling special cases where numbers don't end in "th"
 /// (e.g. 1, 2, 3), displaying the sum of the series, and providing
@@ -58,14 +58,14 @@ class Program {
     }
   }
 
-  // Calculates and prints the Fibonacci series up to the nth term.
+  // Calculates and prints the Fibonacci Series up to the nth term.
   static void FibonacciSeries(int n) {
     BigInteger a = 0;
     BigInteger b = 1;
     BigInteger temp;
     BigInteger sum = 0;
 
-    Console.WriteLine("The Fibonacci series up to " + n + GetSuffix(n) + " term:");
+    Console.WriteLine("Fibonacci Series up to the " + n + GetSuffix(n) + " term:");
 
     var series = new System.Collections.Generic.List<string>();
 
@@ -91,7 +91,7 @@ class Program {
     }
 
     Console.WriteLine("\n");
-    Console.WriteLine("Sum of the Fibonacci series: " + sum);
+    Console.WriteLine("Sum of the Fibonacci Series: " + sum);
   }
 
   // Handle special cases where numbers don't end in "th"

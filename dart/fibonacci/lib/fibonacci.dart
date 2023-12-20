@@ -5,7 +5,7 @@ import 'package:intl/intl.dart';
 /// Fibonacci Series Calculator
 ///
 /// The Fibonacci Series Calculator is a Dart program that calculates
-/// and prints the Fibonacci series up to the nth term with arbitrary
+/// and prints the Fibonacci Series up to the nth term with arbitrary
 /// precision. It includes features such as error handling for input
 /// validation, handling special cases where numbers don't end in "th"
 /// (e.g. 1, 2, 3), displaying the sum of the series, and providing
@@ -62,7 +62,7 @@ void fibonacciSeries(int n) {
   BigInt temp;
   BigInt sum = BigInt.zero;
 
-  print("Fibonacci series up to the $n${getSuffix(n)} term:");
+  print("Fibonacci Series up to the $n${getSuffix(n)} term:");
 
   List<BigInt> series = [];
 
@@ -88,7 +88,7 @@ void fibonacciSeries(int n) {
   }
 
   print("\n");
-  print("Sum of the Fibonacci series: $sum");
+  print("Sum of the Fibonacci Series: $sum");
 }
 
 /// Handle special cases where numbers don't end in "th"

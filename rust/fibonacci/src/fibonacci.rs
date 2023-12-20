@@ -1,7 +1,7 @@
 /// Fibonacci Series Calculator
 ///
 /// The Fibonacci Series Calculator is a Rust program that calculates
-/// and prints the Fibonacci series up to the nth term with arbitrary
+/// and prints the Fibonacci Series up to the nth term with arbitrary
 /// precision. It includes features such as error handling for input
 /// validation, handling special cases where numbers don't end in "th"
 /// (e.g. 1, 2, 3), displaying the sum of the series, and providing
@@ -64,14 +64,14 @@ fn get_user_input() {
   }
 }
 
-/// Calculates and prints the Fibonacci series up to the nth term.
+/// Calculates and prints the Fibonacci Series up to the nth term.
 fn fibonacci_series(n: u32) {
   let mut a: BigUint = 0u32.into();
   let mut b: BigUint = 1u32.into();
   let mut temp: BigUint;
   let mut sum: BigUint = 0u32.into();
 
-  println!("Fibonacci series up to the {}{} term:", n, get_suffix(n));
+  println!("Fibonacci Series up to the {}{} term:", n, get_suffix(n));
 
   let mut series: Vec<BigUint> = Vec::new();
 
@@ -102,7 +102,7 @@ fn fibonacci_series(n: u32) {
   }
 
   println!("\n");
-  println!("Sum of the Fibonacci series: {}", sum);
+  println!("Sum of the Fibonacci Series: {}", sum);
 }
 
 /// Handle special cases where numbers don't end in "th"

@@ -1,7 +1,7 @@
 (* Fibonacci Series Calculator
  *
  * The Fibonacci Series Calculator is an OCaml program that calculates
- * and prints the Fibonacci series up to the nth term with arbitrary
+ * and prints the Fibonacci Series up to the nth term with arbitrary
  * precision. It includes features such as error handling for input
  * validation, handling special cases where numbers don't end in "th"
  * (e.g. 1, 2, 3), displaying the sum of the series, and providing
@@ -66,7 +66,7 @@ let get_suffix n =
   | 3 when n mod 100 <> 13 -> "rd"
   | _ -> "th"
 
-(* Calculates and prints the Fibonacci series up to the nth term. *)
+(* Calculates and prints the Fibonacci Series up to the nth term. *)
 let fibonacci_series n =
   let a = ref Z.zero in
   let b = ref Z.one in
@@ -74,7 +74,7 @@ let fibonacci_series n =
   let temp = ref Z.zero in
 
   print_endline
-    ("The Fibonacci series up to " ^ string_of_int n ^ get_suffix n ^ " term:");
+    ("Fibonacci Series up to the " ^ string_of_int n ^ get_suffix n ^ " term:");
 
   let series = Array.make (n + 1) Z.zero in
 
@@ -99,7 +99,7 @@ let fibonacci_series n =
       series;
 
   print_endline "\n";
-  print_endline ("Sum of the Fibonacci series: " ^ Z.to_string !sum)
+  print_endline ("Sum of the Fibonacci Series: " ^ Z.to_string !sum)
 
 (* Function to Get the User Input *)
 let get_user_input () =

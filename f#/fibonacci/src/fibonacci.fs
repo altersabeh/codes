@@ -4,7 +4,7 @@
 /// Fibonacci Series Calculator
 ///
 /// The Fibonacci  handling spSeries Calculator is a F# program that
-/// calculates and prints the Fibonacci series up to the nth term with
+/// calculates and prints the Fibonacci Series up to the nth term with
 /// arbitrary precision. It includes features such as error handling
 /// for input validation, special cases where numbers don't end in
 /// "th" (e.g. 1, 2, 3), displaying the sum of the series, and
@@ -54,9 +54,9 @@ let getSuffix n =
     | 3 -> "rd"
     | _ -> "th"
 
-// Calculates and prints the Fibonacci series up to the nth term.
+// Calculates and prints the Fibonacci Series up to the nth term.
 let fibonacciSeries n =
-  printfn "Fibonacci series up to the %d%s term: " n (getSuffix n)
+  printfn "Fibonacci Series up to the %d%s term: " n (getSuffix n)
 
   if n <= 5000 then
     let rec fib a b n temp =
@@ -70,7 +70,7 @@ let fibonacciSeries n =
 
     printf "%s" (String.Join(", ", List.map string (0I :: series)))
     printfn "\n"
-    printfn "Sum of the Fibonacci series: %A" sum
+    printfn "Sum of the Fibonacci Series: %A" sum
   else
     // Print the series without using array
     let rec fib n a b sum =
@@ -85,7 +85,7 @@ let fibonacciSeries n =
     let sum = fib (n) 0I 1I 0I
 
     printfn "\n"
-    printfn "Sum of the Fibonacci series: %A" sum
+    printfn "Sum of the Fibonacci Series: %A" sum
 
 // Function to Get the User Input
 let rec getUserInput () =

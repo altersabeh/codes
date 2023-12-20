@@ -2,7 +2,7 @@
   Fibonacci Series Calculator
 
   The Fibonacci Series Calculator is a Swift program that calculates
-  and prints the Fibonacci series up to the nth term with arbitrary
+  and prints the Fibonacci Series up to the nth term with arbitrary
   precision. It includes features such as error handling for input
   validation, handling special cases where numbers don't end in "th"
   (e.g. 1, 2, 3), displaying the sum of the series, and providing the
@@ -61,7 +61,7 @@ func fibonacciSeries(_ n: Int) {
   var temp: BigInt
   var sum: BigInt = 0
 
-  print("Fibonacci series up to the \(n)\(getSuffix(n)) term:")
+  print("Fibonacci Series up to the \(n)\(getSuffix(n)) term:")
 
   var series: [String] = []
 
@@ -84,7 +84,7 @@ func fibonacciSeries(_ n: Int) {
   }
 
   print("")
-  print("Sum of the Fibonacci series: \(sum)")
+  print("Sum of the Fibonacci Series: \(sum)")
 }
 
 // Function to get suffix for a number (e.g., "st", "nd", "rd", or "th")

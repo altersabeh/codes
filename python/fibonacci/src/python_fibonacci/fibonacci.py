@@ -2,7 +2,7 @@
 Fibonacci Series Calculator
 
 The Fibonacci Series Calculator is a Python program that calculates
-and prints the Fibonacci series up to the nth term with arbitrary
+and prints the Fibonacci Series up to the nth term with arbitrary
 precision. It includes features such as error handling for input
 validation, handling special cases where numbers don't end in "th"
 (e.g. 1, 2, 3), displaying the sum of the series, and providing the
@@ -52,13 +52,13 @@ def get_user_input():
     except EOFError:
       eof_handler()
 
-# Calculates and prints the Fibonacci series up to the nth term.
+# Calculates and prints the Fibonacci Series up to the nth term.
 def fibonacci_series(n):
   a, b = 0, 1
   temp = None
   sum = 0
 
-  print(f"Fibonacci series up to the {n}{get_suffix(n)} term:")
+  print(f"Fibonacci Series up to the {n}{get_suffix(n)} term:")
 
   series = []
 
@@ -79,7 +79,7 @@ def fibonacci_series(n):
     print(", ".join(map(str, series)), end="")
 
   print("\n")
-  print(f"Sum of the Fibonacci series: {sum}")
+  print(f"Sum of the Fibonacci Series: {sum}")
 
 # Handle special cases where numbers don't end in "th"
 def get_suffix(n):

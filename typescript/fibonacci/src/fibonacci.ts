@@ -2,7 +2,7 @@
  * Fibonacci Series Calculator
  *
  * The Fibonacci Series Calculator is a TypeScript program that
- * calculates and prints the Fibonacci series up to the nth term with
+ * calculates and prints the Fibonacci Series up to the nth term with
  * arbitrary precision. It includes features such as error handling
  * for input validation, handling special cases where numbers don't
  * end in "th" (e.g. 1, 2, 3), displaying the sum of the series, and
@@ -52,14 +52,14 @@ function getUserInput(callback: () => void): void {
   });
 }
 
-// Calculates and prints the Fibonacci series up to the nth term
+// Calculates and prints the Fibonacci Series up to the nth term
 function fibonacciSeries(n: number): void {
   let a = BigInt(0);
   let b = BigInt(1);
   let temp: bigint;
   let sum = BigInt(0);
 
-  console.log(`Fibonacci series up to the ${n}${getSuffix(n)} term:`);
+  console.log(`Fibonacci Series up to the ${n}${getSuffix(n)} term:`);
 
   let series: string[] = [];
 
@@ -87,7 +87,7 @@ function fibonacciSeries(n: number): void {
   }
 
   console.log();
-  console.log(`Sum of the Fibonacci series: ${sum}`);
+  console.log(`Sum of the Fibonacci Series: ${sum}`);
 }
 
 // Handle special cases where numbers don't end in "th"

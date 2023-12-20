@@ -2,7 +2,7 @@
  * Fibonacci Series Calculator
  *
  * The Fibonacci Series Calculator is a C++ program that calculates and
- * prints the Fibonacci series up to the nth term with arbitrary
+ * prints the Fibonacci Series up to the nth term with arbitrary
  * precision. It includes features such as error handling for input
  * validation, handling special cases where numbers don't end in "th"
  * (e.g. 1, 2, 3), displaying the sum of the series, and providing the
@@ -78,14 +78,14 @@ void getUserInput() {
   }
 }
 
-// Calculates and prints the Fibonacci series up to the nth term.
+// Calculates and prints the Fibonacci Series up to the nth term.
 void fibonacciSeries(int n) {
   ZZ a, b, temp, sum;
   a = 0;
   b = 1;
   sum = 0;
 
-  cout << "Fibonacci series up to the " << n << getSuffix(n)
+  cout << "Fibonacci Series up to the " << n << getSuffix(n)
        << " term:" << endl;
 
   vector<ZZ> series;
@@ -119,7 +119,7 @@ void fibonacciSeries(int n) {
   }
 
   cout << "\n" << endl;
-  cout << "Sum of the Fibonacci series: " << sum << endl;
+  cout << "Sum of the Fibonacci Series: " << sum << endl;
 }
 
 // Handle special cases where numbers don't end in "th"

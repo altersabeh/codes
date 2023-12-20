@@ -2,7 +2,7 @@
  * Fibonacci Series Calculator
  *
  * The Fibonacci Series Calculator is a Java program that calculates and
- * prints the Fibonacci series up to the nth term with arbitrary
+ * prints the Fibonacci Series up to the nth term with arbitrary
  * precision. It includes features such as error handling for input
  * validation, handling special cases where numbers don't end in "th"
  * (e.g. 1, 2, 3), displaying the sum of the series, and providing the
@@ -65,14 +65,14 @@ public class Fibonacci {
     scanner.close();
   }
 
-  // Calculates and prints the Fibonacci series up to the nth term.
+  // Calculates and prints the Fibonacci Series up to the nth term.
   public static void fibonacciSeries(int n) {
     BigDecimal a = BigDecimal.ZERO;
     BigDecimal b = BigDecimal.ONE;
     BigDecimal temp;
     BigDecimal sum = BigDecimal.ZERO;
 
-    System.out.println("Fibonacci series up to the " + n + getSuffix(n) + " term: ");
+    System.out.println("Fibonacci Series up to the " + n + getSuffix(n) + " term: ");
 
     ArrayList<String> series = new ArrayList<>();
 
@@ -98,7 +98,7 @@ public class Fibonacci {
     }
 
     System.out.println("\n");
-    System.out.println("Sum of the Fibonacci series: " + sum);
+    System.out.println("Sum of the Fibonacci Series: " + sum);
   }
 
   // Handle special cases where numbers don't end in "th"

@@ -4,7 +4,7 @@
  * Fibonacci Series Calculator
  *
  * The Fibonacci Series Calculator is a PHP program that calculates
- * and prints the Fibonacci series up to the nth term with arbitrary
+ * and prints the Fibonacci Series up to the nth term with arbitrary
  * precision. It includes features such as error handling for input
  * validation, handling special cases where numbers don't end in "th"
  * (e.g. 1, 2, 3), displaying the sum of the series, and providing the
@@ -53,7 +53,7 @@ function getUserInput() {
   }
 }
 
-// Calculates and prints the Fibonacci series up to the nth term
+// Calculates and prints the Fibonacci Series up to the nth term
 function fibonacciSeries($n) {
   bcscale(0);
 
@@ -62,7 +62,7 @@ function fibonacciSeries($n) {
   $temp;
   $sum = '0';
 
-  echo "Fibonacci series up to the " . $n . getSuffix($n) . " term:" . PHP_EOL;
+  echo "Fibonacci Series up to the " . $n . getSuffix($n) . " term:" . PHP_EOL;
 
   $series = [];
 
@@ -86,7 +86,7 @@ function fibonacciSeries($n) {
   }
 
   echo PHP_EOL;
-  echo "Sum of the Fibonacci series: " . $sum . PHP_EOL;
+  echo "Sum of the Fibonacci Series: " . $sum . PHP_EOL;
 }
 
 // Handle special cases where numbers don't end in "th"

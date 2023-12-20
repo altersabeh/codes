@@ -2,7 +2,7 @@
  * Fibonacci Series Calculator
  *
  * The Fibonacci Series Calculator is a C program that calculates and
- * prints the Fibonacci series up to the nth term with arbitrary
+ * prints the Fibonacci Series up to the nth term with arbitrary
  * precision. It includes features such as error handling for input
  * validation, handling special cases where numbers don't end in "th"
  * (e.g. 1, 2, 3), displaying the sum of the series, and providing the
@@ -80,7 +80,7 @@ void getUserInput() {
   }
 }
 
-// Calculates and prints the Fibonacci series up to the nth term.
+// Calculates and prints the Fibonacci Series up to the nth term.
 void fibonacciSeries(int n) {
   mpz_t a, b, temp, sum;
   mpz_inits(a, b, temp, sum, NULL);
@@ -88,7 +88,7 @@ void fibonacciSeries(int n) {
   mpz_set_ui(a, 0);
   mpz_set_ui(b, 1);
 
-  printf("Fibonacci series up to the %d%s term:\n", n, getSuffix(n));
+  printf("Fibonacci Series up to the %d%s term:\n", n, getSuffix(n));
 
   mpz_t series[n + 1];
 
@@ -123,7 +123,7 @@ void fibonacciSeries(int n) {
   }
 
   puts("\n");
-  gmp_printf("Sum of the Fibonacci series: %Zd\n", sum);
+  gmp_printf("Sum of the Fibonacci Series: %Zd\n", sum);
   mpz_clears(a, b, temp, sum, NULL);
 }
 

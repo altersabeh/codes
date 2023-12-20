@@ -1,7 +1,7 @@
 // Fibonacci Series Calculator
 //
 // The Fibonacci Series Calculator is a Go program that calculates and
-// prints the Fibonacci series up to the nth term with arbitrary
+// prints the Fibonacci Series up to the nth term with arbitrary
 // precision. It includes features such as error handling for input
 // validation, handling special cases where numbers don't end in "th"
 // (e.g. 1, 2, 3), displaying the sum of the series, and providing the
@@ -66,7 +66,7 @@ func getUserInput() {
   }
 }
 
-// Calculates and prints the Fibonacci series up to the nth term.
+// Calculates and prints the Fibonacci Series up to the nth term.
 func fibonacciSeries(n int) {
   a := new(big.Int)
   b := new(big.Int)
@@ -76,7 +76,7 @@ func fibonacciSeries(n int) {
   a.SetUint64(0)
   b.SetUint64(1)
 
-  fmt.Printf("Fibonacci series up to the %d%s term:\n", n, getSuffix(n))
+  fmt.Printf("Fibonacci Series up to the %d%s term:\n", n, getSuffix(n))
 
   var series []string
 
@@ -103,7 +103,7 @@ func fibonacciSeries(n int) {
   }
 
   fmt.Println("")
-  fmt.Println("Sum of the Fibonacci series:", sum.String())
+  fmt.Println("Sum of the Fibonacci Series:", sum.String())
 }
 
 // Handle special cases where numbers don't end in "th"

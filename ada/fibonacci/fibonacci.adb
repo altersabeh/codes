@@ -28,7 +28,7 @@ procedure FIBONACCI is
     Series : Unbounded_String;
   begin
     Put_Line
-     ("Fibonacci series up to the" & Integer'Image (N) & Get_Suffix (N) &
+     ("Fibonacci Series up to the" & Integer'Image (N) & Get_Suffix (N) &
       " term:");
 
     for I in 0 .. N loop

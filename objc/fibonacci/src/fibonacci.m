@@ -2,7 +2,7 @@
  * Fibonacci Series Calculator
  *
  * The Fibonacci Series Calculator is an Objective-C program that
- * calculates and prints the Fibonacci series up to the nth term with
+ * calculates and prints the Fibonacci Series up to the nth term with
  * arbitrary precision. It includes features such as error handling
  * for input validation, handling special cases where numbers don't
  * end in "th" (e.g. 1, 2, 3), displaying the sum of the series, and
@@ -73,7 +73,7 @@ void getUserInput() {
   }
 }
 
-// Calculates and prints the Fibonacci series up to the nth term.
+// Calculates and prints the Fibonacci Series up to the nth term.
 void fibonacciSeries(NSInteger n) {
   BIGNUM *a, *b, *temp, *sum;
   a = BN_new();
@@ -84,7 +84,7 @@ void fibonacciSeries(NSInteger n) {
   BN_zero(a);
   BN_one(b);
 
-  printf("Fibonacci series up to the %ld%s term:\n", (long)n,
+  printf("Fibonacci Series up to the %ld%s term:\n", (long)n,
          [[getSuffix(n) description] UTF8String]);
 
   NSMutableArray *series = [NSMutableArray array];
@@ -116,7 +116,7 @@ void fibonacciSeries(NSInteger n) {
   }
 
   puts("\n");
-  printf("Sum of the Fibonacci series: %s\n", BN_bn2dec(sum));
+  printf("Sum of the Fibonacci Series: %s\n", BN_bn2dec(sum));
 
   BN_free(a);
   BN_free(b);

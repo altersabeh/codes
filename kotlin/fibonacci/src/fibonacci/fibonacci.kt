@@ -2,7 +2,7 @@
  * Fibonacci Series Calculator
  *
  * The Fibonacci Series Calculator is a Kotlin program that calculates
- * and prints the Fibonacci series up to the nth term with arbitrary
+ * and prints the Fibonacci Series up to the nth term with arbitrary
  * precision. It includes features such as error handling for input
  * validation, handling special cases where numbers don't end in "th"
  * (e.g. 1, 2, 3), displaying the sum of the series, and providing the
@@ -65,14 +65,14 @@ fun getUserInput() {
   }
 }
 
-// Calculates and prints the Fibonacci series up to the nth term.
+// Calculates and prints the Fibonacci Series up to the nth term.
 fun fibonacciSeries(n: Int) {
   var a = BigInteger.ZERO
   var b = BigInteger.ONE
   var temp: BigInteger
   var sum = BigInteger.ZERO
 
-  println("Fibonacci series up to the $n${getSuffix(n)} term:")
+  println("Fibonacci Series up to the $n${getSuffix(n)} term:")
 
   val series = mutableListOf<BigInteger>()
 
@@ -98,7 +98,7 @@ fun fibonacciSeries(n: Int) {
   }
 
   println("\n")
-  println("Sum of the Fibonacci series: $sum")
+  println("Sum of the Fibonacci Series: $sum")
 }
 
 // Handle special cases where numbers don't end in "th"

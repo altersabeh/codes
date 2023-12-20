@@ -3,7 +3,7 @@ defmodule Fibonacci do
   Fibonacci Series Calculator
 
   The Fibonacci Series Calculator is an Elixir program that calculates
-  and prints the Fibonacci series up to the nth term with arbitrary
+  and prints the Fibonacci Series up to the nth term with arbitrary
   precision. It includes features such as error handling for input
   validation, handling special cases where numbers don't end in "th"
   (e.g. 1, 2, 3), displaying the sum of the series, and providing the
@@ -55,14 +55,14 @@ defmodule Fibonacci do
     end
   end
 
-  # Calculates and prints the Fibonacci series up to the nth term.
+  # Calculates and prints the Fibonacci Series up to the nth term.
   def fibonacci_series(n) do
     a = 0
     b = 1
     temp = 0
     sum = 0
 
-    IO.puts("The Fibonacci series up to the #{n}#{get_suffix(n)} term:")
+    IO.puts("The Fibonacci Series up to the #{n}#{get_suffix(n)} term:")
 
     series = []
 
@@ -91,7 +91,7 @@ defmodule Fibonacci do
     end
 
     IO.puts("\n")
-    IO.puts("Sum of the Fibonacci series: #{sum}")
+    IO.puts("Sum of the Fibonacci Series: #{sum}")
   end
 
   # Handle special cases where numbers don't end in "th"

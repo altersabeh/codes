@@ -2,7 +2,7 @@
  * Fibonacci Series Calculator
  *
  * The Fibonacci Series Calculator is a D program that calculates and
- * prints the Fibonacci series up to the nth term with arbitrary
+ * prints the Fibonacci Series up to the nth term with arbitrary
  * precision. It includes features such as error handling for input
  * validation, handling special cases where numbers don't end in "th"
  * (e.g. 1, 2, 3), displaying the sum of the series, and providing the
@@ -60,14 +60,14 @@ void getUserInput() {
   }
 }
 
-// Calculates and prints the Fibonacci series up to the nth term.
+// Calculates and prints the Fibonacci Series up to the nth term.
 void fibonacciSeries(int n) {
   BigInt a = BigInt(0);
   BigInt b = BigInt(1);
   BigInt temp;
   BigInt sum = BigInt(0);
 
-  writefln("Fibonacci series up to the %d%s term:", n, getSuffix(n));
+  writefln("Fibonacci Series up to the %d%s term:", n, getSuffix(n));
 
   string[] series;
 
@@ -93,7 +93,7 @@ void fibonacciSeries(int n) {
   }
 
   writeln("\n");
-  writefln("Sum of the Fibonacci series: %s", sum);
+  writefln("Sum of the Fibonacci Series: %s", sum);
 }
 
 // Handle special cases where numbers don't end in "th"

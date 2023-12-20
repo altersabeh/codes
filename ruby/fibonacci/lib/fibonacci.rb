@@ -1,7 +1,7 @@
 # Fibonacci Series Calculator
 #
 # The Fibonacci Series Calculator is a Ruby program that calculates
-# and prints the Fibonacci series up to the nth term with arbitrary
+# and prints the Fibonacci Series up to the nth term with arbitrary
 # precision. It includes features such as error handling for input
 # validation, handling special cases where numbers don't end in "th"
 # (e.g. 1, 2, 3), displaying the sum of the series, and providing the
@@ -53,13 +53,13 @@ def get_user_input
   end
 end
 
-# Calculates and prints the Fibonacci series up to the nth term
+# Calculates and prints the Fibonacci Series up to the nth term
 def fibonacci_series(n)
   a, b = 0, 1
   temp = nil
   sum = 0
 
-  puts "Fibonacci series up to the #{n}#{get_suffix(n)} term:"
+  puts "Fibonacci Series up to the #{n}#{get_suffix(n)} term:"
 
   series = []
 
@@ -83,7 +83,7 @@ def fibonacci_series(n)
   end
 
   puts "\n"
-  puts "Sum of the Fibonacci series: #{sum}"
+  puts "Sum of the Fibonacci Series: #{sum}"
 end
 
 # Handle special cases where numbers don't end in "th"

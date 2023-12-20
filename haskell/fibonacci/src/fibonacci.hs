@@ -1,7 +1,7 @@
 -- \| Fibonacci Series Calculator
 --
 -- The Fibonacci Series Calculator is a Haskell program that
--- calculates and prints the Fibonacci series up to the nth term with
+-- calculates and prints the Fibonacci Series up to the nth term with
 -- arbitrary precision. It includes features such as error handling
 -- for input validation, handling special cases where numbers don't
 -- end in "th" (e.g. 1, 2, 3), displaying the sum of the series, and
@@ -57,10 +57,10 @@ getUserInput = do
                 putStrLn "Please enter a valid positive integer."
                 getUserInput
 
--- | Calculates and prints the Fibonacci series up to the nth term.
+-- | Calculates and prints the Fibonacci Series up to the nth term.
 fibonacci :: Integer -> IO ()
 fibonacci n = do
-  putStrLn $ "Fibonacci series up to the " ++ getSuffix n ++ " term: "
+  putStrLn $ "Fibonacci Series up to the " ++ getSuffix n ++ " term: "
 
   if n <= 5000
     then do
@@ -68,7 +68,7 @@ fibonacci n = do
 
       putStrLn $ intercalate ", " (map show series)
       putStrLn ""
-      putStrLn $ "Sum of the Fibonacci series: " ++ show (sum series)
+      putStrLn $ "Sum of the Fibonacci Series: " ++ show (sum series)
     else do
       -- Print the series without using array
       fib (n + 1) 0 1 0
@@ -81,7 +81,7 @@ fibonacci n = do
     fib :: Integer -> Integer -> Integer -> Integer -> IO ()
     fib 0 _ _ sumVal = do
       putStrLn ""
-      putStrLn $ "Sum of the Fibonacci series: " ++ show sumVal
+      putStrLn $ "Sum of the Fibonacci Series: " ++ show sumVal
     fib m a b sumVal = do
       putStr $ show a ++ if m > 1 then ", " else "\n"
       fib (m - 1) b (a + b) (sumVal + a)
