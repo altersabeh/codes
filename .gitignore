@@ -39,6 +39,9 @@ _build
 
 # gradle
 **/.gradle
+java/**/bin
+kotlin/**/bin
+groovy/**/bin
 
 # js and ts
 node_modules
