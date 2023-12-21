@@ -61,6 +61,7 @@
     "**/target": true,
     "**/test": true
   },
+  "java.autobuild.enabled": false,
   "terminal.integrated.env.linux": {
     "CARGO_TARGET_DIR": "${workspaceFolder}/dist/rust",
     "DUB_PACKAGE_TARGET_PATH": "${workspaceFolder}/dist/d",
@@ -78,5 +79,6 @@
     "DUB_PACKAGE_TARGET_PATH": "${workspaceFolder}\\dist\\d",
     "DUNE_BUILD_DIR": "${workspaceFolder}\\dist\\ocaml",
     "NPM_CONFIG_PACK_DESTINATION": "${workspaceFolder}\\dist\\npm\\package"
-  }
+  },
+  "java.compile.nullAnalysis.mode": "automatic"
 }
