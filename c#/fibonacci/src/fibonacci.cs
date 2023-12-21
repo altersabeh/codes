@@ -69,7 +69,7 @@ class Program {
 
     var series = new System.Collections.Generic.List<string>();
 
-    for (int i = 0; i <= n; i++) {
+    for (int i = 0; i <= n && !stopOperation; i++) {
       if (n <= 5000) {
         series.Add(a.ToString());
       } else {
@@ -84,6 +84,10 @@ class Program {
       a = b;
       b = temp + b;
       sum += temp; // Calculate the sum
+    }
+
+    if (stopOperation) {
+      Environment.Exit(0);
     }
 
     if (n <= 5000) {
@@ -134,11 +138,14 @@ class Program {
   }
 
   static void InterruptHandler(object? sender, ConsoleCancelEventArgs e) {
+    stopOperation = true;
     Console.WriteLine();
     Console.WriteLine("Interrupt received.. Exiting...");
     Console.WriteLine("===================================================");
     Environment.Exit(0);
   }
+
+  static bool stopOperation = false;
 
   static void SignalHandler() {
     Console.CancelKeyPress += InterruptHandler;

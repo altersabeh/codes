@@ -1,6 +1,4 @@
-﻿open System
-
-/// <summary>
+﻿/// <summary>
 /// Fibonacci Series Calculator
 ///
 /// The Fibonacci  handling spSeries Calculator is a F# program that
@@ -12,6 +10,9 @@
 ///
 /// License: This program is in the public domain.
 /// </summary>
+
+open System
+open System.Numerics
 
 // Functions to handle user input and errors
 let validateInput input =
@@ -25,7 +26,10 @@ let eofHandler () =
   printfn "==================================================="
   Environment.Exit(1)
 
+let mutable cancelRequested = false
+
 let interruptHandler (e: ConsoleCancelEventArgs) =
+  cancelRequested <- true
   printfn ""
   printfn "Interrupt received.. Exiting..."
   printfn "==================================================="
@@ -59,43 +63,55 @@ let fibonacciSeries n =
   printfn "Fibonacci Series up to the %d%s term: " n (getSuffix n)
 
   if n <= 5000 then
-    let rec fib a b n temp =
-      if n = 0 then
-        List.rev temp
-      else
-        fib b (a + b) (n - 1) (b :: temp)
+    let rec fib
+      (a: BigInteger)
+      (b: BigInteger)
+      (n: int)
+      (temp: BigInteger list)
+      =
+      if cancelRequested then []
+      elif n = 0 then List.rev temp
+      else fib b (a + b) (n - 1) (b :: temp)
 
-    let series = fib 0I 1I (n) []
-    let sum = List.sum series // Calculate the sum
+    let series: BigInteger list = fib 0I 1I (n) []
+    let sum: BigInteger = List.sum series // Calculate the sum
 
     printf "%s" (String.Join(", ", List.map string (0I :: series)))
     printfn "\n"
     printfn "Sum of the Fibonacci Series: %A" sum
   else
     // Print the series without using array
-    let rec fib n a b sum =
-      if n >= 0 then
-        let temp = a
+    let rec fib n (a: BigInteger) (b: BigInteger) (sum: BigInteger) =
+      if cancelRequested then
+        sum
+      elif n >= 0 then
+        let temp: BigInteger = a
         printf "%A" a
+
         if n >= 1 then
           printf ", "
+
         fib (n - 1) b (b + temp) (sum + temp)
       else
         sum
-    let sum = fib (n) 0I 1I 0I
 
-    printfn "\n"
-    printfn "Sum of the Fibonacci Series: %A" sum
+    let sum: BigInteger = fib (n) 0I 1I 0I
+
+    if not cancelRequested then
+      printfn "\n"
+      printfn "Sum of the Fibonacci Series: %A" sum
+    else
+      Environment.Exit(0)
 
 // Function to Get the User Input
 let rec getUserInput () =
   printf "Enter the value of n (an integer): "
-  let input = Console.ReadLine()
+  let input: string = Console.ReadLine()
 
   if input = null then
     eofHandler ()
 
-  let trimmedInput = input.Trim()
+  let trimmedInput: string = input.Trim()
 
   match trimmedInput with
   | _ when String.IsNullOrWhiteSpace(trimmedInput) ->
@@ -112,7 +128,7 @@ let rec getUserInput () =
       getUserInput ()
 
 [<EntryPoint>]
-let main argv =
+let main (argv: string array) =
   printfn "============Fibonacci Series Calculator============"
   printfn "This Program was Written Using: F#"
 
