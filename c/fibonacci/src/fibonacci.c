@@ -23,12 +23,12 @@
 char* trim(char* str);
 const char *getSuffix(int n);
 int validateInput(const char *input);
-int signalHandler();
 void eofHandler();
 void dateAndTime();
 void fibonacciSeries(int n);
 void getUserInput();
 void interruptHandler(int signum);
+void signalHandler();
 
 int main() {
   printf("============Fibonacci Series Calculator============\n");
@@ -184,6 +184,5 @@ void interruptHandler(int signum) {
 void signalHandler() {
   if (signal(SIGINT, interruptHandler) == SIG_ERR) {
     printf("Error setting SIGINT handler.\n");
-    return 1;
   }
 }

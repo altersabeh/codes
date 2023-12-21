@@ -139,7 +139,7 @@ func validateInput(input string) int {
 }
 
 func eofHandler() {
-  fmt.Println()
+  fmt.Println("")
   fmt.Println("End of File encountered.. Stopping...")
   fmt.Println("===================================================")
   os.Exit(0)
@@ -150,7 +150,7 @@ func interruptHandler(callback func()) {
   signal.Notify(c, os.Interrupt)
   go func() {
     <-c
-    fmt.Println()
+    fmt.Println("")
     fmt.Println("Interrupt received.. Exiting...")
     fmt.Println("===================================================")
     callback()

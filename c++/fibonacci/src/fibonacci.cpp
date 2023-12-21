@@ -24,13 +24,13 @@ using namespace std;
 using namespace NTL;
 
 int validateInput(const string &input);
-int signalHandler();
 string getSuffix(int n);
 void dateAndTime();
 void eofHandler();
 void getUserInput();
 void interruptHandler(int signum);
 void fibonacciSeries(int n);
+void signalHandler();
 
 int main() {
   cout << "============Fibonacci Series Calculator============" << endl;
@@ -179,6 +179,5 @@ void interruptHandler(int signum) {
 void signalHandler() {
   if (signal(SIGINT, interruptHandler) == SIG_ERR) {
     cout << "Error setting SIGINT handler." << endl;
-    return 1;
   }
 }
