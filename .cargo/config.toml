@@ -1,2 +1,2 @@
 [build]
-target-dir = "bin/rust"
+target-dir = "dist/rust"
