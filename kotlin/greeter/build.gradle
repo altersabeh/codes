@@ -3,7 +3,7 @@ jar {
     archiveVersion = "${version}"
     archiveExtension = "jar"
     manifest {
-        attributes('Main-Class': "${projectDir.name}.${projectDir.name.capitalize()}")
+        attributes('Main-Class': "${projectDir.name}.${projectDir.name.capitalize()}Kt")
     }
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     from {
