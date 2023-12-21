@@ -14,10 +14,11 @@
 package fibonacci;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Scanner;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 import sun.misc.Signal;
 import sun.misc.SignalHandler;
 
