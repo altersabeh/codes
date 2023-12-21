@@ -15,6 +15,8 @@ public class Greeter {
         name = "Stranger";
       }
 
+      scanner.close();
+
       return name;
     }
   }
