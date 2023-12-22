@@ -11,8 +11,9 @@ current date and time.
 License: This program is in the public domain.
 """
 
-import sys
+import os
 import signal
+import sys
 
 from datetime import datetime
 
@@ -115,9 +116,9 @@ def eof_handler():
   sys.exit()
 
 def interrupt_handler(sig, frame):
-  print()
-  print("Interrupt received.. Exiting...")
-  print("==================================================")
+  os.write(sys.stdout.fileno(), b"\n")
+  os.write(sys.stdout.fileno(), b"Interrupt received.. Exiting...\n")
+  os.write(sys.stdout.fileno(), b"==================================================\n")
   sys.exit()
 
 def signal_handler():
