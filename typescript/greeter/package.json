@@ -24,9 +24,9 @@
     "start": "ts-node index.ts"
   },
   "devDependencies": {
-    "@types/node": "^20.10.1",
+    "@types/node": "^20.10.5",
     "@types/prompt-sync": "^4.2.3",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.2"
   },
   "dependencies": {
     "prompt-sync": "^4.2.0"
