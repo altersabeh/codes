@@ -55,7 +55,8 @@ def get_user_input():
 
 # Calculates and prints the Fibonacci Series up to the nth term.
 def fibonacci_series(n):
-  a, b = 0, 1
+  a = 0
+  b = 1
   temp = None
   sum = 0
 

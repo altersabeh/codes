@@ -55,7 +55,8 @@ end
 
 # Calculates and prints the Fibonacci Series up to the nth term
 def fibonacci_series(n)
-  a, b = 0, 1
+  a = 0
+  b = 1
   temp = nil
   sum = 0
 
@@ -74,7 +75,8 @@ def fibonacci_series(n)
     end
 
     temp = a
-    a, b = b, temp + b
+    a = b
+    b = temp + b
     sum += temp # Calculate the sum
   end
 
