@@ -73,7 +73,8 @@ def fibonacci_series(n):
         print(", ", end="")
 
     temp = a
-    a, b = b, temp + b
+    a = b
+    b = temp + b
     sum += temp  # Calculate the sum
 
   if n <= 5000:
