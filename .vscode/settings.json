@@ -29,6 +29,7 @@
     "**/node_modules": true,
     "**/obj": true,
     "**/output": true,
+    "**/sorbet": true,
     "**/target": true
   },
   "files.watcherExclude": {
@@ -58,6 +59,7 @@
     "**/node_modules": true,
     "**/obj": true,
     "**/output": true,
+    "**/sorbet": true,
     "**/target": true,
     "**/test": true
   },
