@@ -122,9 +122,9 @@ def eof_handler
 end
 
 def interrupt_handler
-  puts ""
-  puts "Interrupt received.. Exiting..."
-  puts "==================================================="
+  warn ""
+  warn "Interrupt received.. Exiting..."
+  warn "==================================================="
   exit
 end
 
