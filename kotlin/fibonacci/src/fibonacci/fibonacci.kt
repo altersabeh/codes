@@ -77,20 +77,28 @@ fun fibonacciSeries(n: Int) {
   val series = mutableListOf<BigInteger>()
 
   for (i in 0..n) {
-    if (n <= 5000) {
-      series.add(a)
-    } else {
-      //Print the series without using array
-      print("$a")
-      if (i < n) {
-        print(", ")
+    if (!stopOperation) {
+      if (n <= 5000) {
+        series.add(a)
+      } else {
+        //Print the series without using array
+        print("$a")
+        if (i < n) {
+          print(", ")
+        }
       }
-    }
 
-    temp = a
-    a = b
-    b += temp
-    sum += temp // Calculate the sum
+      temp = a
+      a = b
+      b += temp
+      sum += temp // Calculate the sum
+    } else {
+      break
+    }
+  }
+
+  if (stopOperation) {
+    exitProcess(0)
   }
 
   if (n <= 5000) {
@@ -140,11 +148,14 @@ fun eofHandler() {
 }
 
 fun interruptHandler() {
+  stopOperation = true
   println()
   println("Interrupt received.. Exiting...")
   println("===================================================")
   exitProcess(0)
 }
+
+var stopOperation = false
 
 fun signalHandler() {
   val sigintHandler = object : SignalHandler {
