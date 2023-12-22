@@ -14,46 +14,53 @@
 import * as readline from "readline";
 import * as moment from "moment";
 
-export function main() {
+export async function main(): Promise<void> {
   console.log("============Fibonacci Series Calculator============");
   console.log("This Program was Written Using: TypeScript");
 
   signalHandler();
   dateAndTime();
-  getUserInput(() => {
-    console.log("===================================================");
-  });
+  await getUserInput();
+
+  console.log("===================================================");
 }
 
 // Function to Get the User Input
-function getUserInput(callback: () => void): void {
-  rl.question("Enter the value of n (an integer): ", (input: string) => {
-    const trimmedInput = input.trim();
+async function getUserInput(): Promise<void> {
+  return new Promise((resolve, reject) => {
+    rl.question(
+      "Enter the value of n (an integer): ",
+      async (input: string) => {
+        const trimmedInput = input.trim();
 
-    if (trimmedInput === "") {
-      console.log("Please enter something...");
-      getUserInput(callback);
-    } else if (trimmedInput === "exit") {
-      console.log("Exiting the program...");
-      rl.close();
-      callback();
-    } else {
-      const n = validateInput(trimmedInput);
+        if (trimmedInput === "") {
+          console.log("Please enter something...");
+          await getUserInput();
+          resolve();
+        } else if (trimmedInput === "exit") {
+          console.log("Exiting the program...");
+          rl.close();
+          resolve();
+        } else {
+          const n = validateInput(trimmedInput);
 
-      if (n > 0) {
-        fibonacciSeries(n);
-        rl.close();
-        callback();
-      } else {
-        console.log("Please enter a valid positive integer.");
-        getUserInput(callback);
+          if (n > 0) {
+            await fibonacciSeries(n);
+            rl.close();
+            resolve();
+          } else {
+            console.log("Please enter a valid positive integer.");
+            await getUserInput();
+            resolve();
+          }
+        }
       }
-    }
+    );
   });
 }
 
 // Calculates and prints the Fibonacci Series up to the nth term
-function fibonacciSeries(n: number): void {
+function fibonacciSeries(n: number): Promise<void> {
   let a = BigInt(0);
   let b = BigInt(1);
   let temp: bigint;
@@ -63,31 +70,38 @@ function fibonacciSeries(n: number): void {
 
   let series: string[] = [];
 
-  for (let i = 0; i <= n; ++i) {
-    if (n <= 5000) {
-      series.push(a.toString());
-    } else {
-      // Print the series without using array
-      process.stdout.write(a.toString());
-      if (i < n) {
-        process.stdout.write(", ");
+  return new Promise<void>((resolve, reject) => {
+    (function fibonacciLoop() {
+      if (n <= 5000) {
+        series.push(a.toString());
       } else {
-        console.log();
+        // Print the series without using array
+        process.stdout.write(a.toString());
+        if (n > 1) {
+          process.stdout.write(", ");
+        } else {
+          console.log();
+        }
       }
-    }
 
-    temp = a;
-    a = b;
-    b += temp;
-    sum += temp; // Calculate the sum
-  }
+      temp = a;
+      a = b;
+      b += temp;
+      sum += temp; // Calculate the sum
 
-  if (n <= 5000) {
-    console.log(series.join(", "));
-  }
+      if (n-- > 0) {
+        setImmediate(fibonacciLoop);
+      } else {
+        if (n <= 5000) {
+          console.log(series.join(", "));
+        }
 
-  console.log();
-  console.log(`Sum of the Fibonacci Series: ${sum}`);
+        console.log();
+        console.log(`Sum of the Fibonacci Series: ${sum}`);
+        resolve();
+      }
+    })();
+  });
 }
 
 // Handle special cases where numbers don't end in "th"
