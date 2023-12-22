@@ -77,7 +77,7 @@ public class Fibonacci {
 
     ArrayList<String> series = new ArrayList<>();
 
-    for (int i = 0; i <= n; i++) {
+    for (int i = 0; i <= n && !stopOperation; i++) {
       if (n <= 5000) {
         series.add(a.toString());
       } else {
@@ -92,6 +92,10 @@ public class Fibonacci {
       a = b;
       b = b.add(temp);
       sum = sum.add(temp); // Calculate the sum
+    }
+
+    if (stopOperation) {
+      System.exit(0);
     }
 
     if (n <= 5000) {
@@ -147,11 +151,14 @@ public class Fibonacci {
   }
 
   public static void interruptHandler() {
+    stopOperation = true;
     System.out.println("");
     System.out.println("Interrupt received.. Exiting...");
     System.out.println("===================================================");
     System.exit(0);
   }
+
+  static boolean stopOperation = false;
 
   public static void signalHandler() {
     SignalHandler sigintHandler = new SignalHandler() {
