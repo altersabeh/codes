@@ -70,6 +70,10 @@ __pycache__/
 !Rakefile
 !ruby/**
 
+# sorbet
+!bin/tapioca
+sorbet/**/*.txt
+
 # spago
 .psc*
 .purs*
