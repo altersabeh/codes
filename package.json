@@ -26,6 +26,7 @@
     "javascript",
     "typescript"
   ],
+  "nx": {},
   "scripts": {
     "prepack": "mkdir -p $NPM_CONFIG_PACK_DESTINATION"
   },
@@ -36,8 +37,6 @@
     "nx": "17.2.7",
     "turbo": "^1.11.2"
   },
-  "module": "index.ts",
-  "type": "module",
   "dependencies": {
     "typescript": "^5.3.3"
   }
