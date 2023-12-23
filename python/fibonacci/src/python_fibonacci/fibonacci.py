@@ -117,7 +117,7 @@ def eof_handler():
   print("==================================================")
   sys.exit()
 
-def interrupt_handler():
+def interrupt_handler(_, __):
   os.write(sys.stdout.fileno(), b"\n")
   os.write(sys.stdout.fileno(), b"Interrupt received.. Exiting...\n")
   os.write(sys.stdout.fileno(), b"==================================================\n")
