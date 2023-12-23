@@ -17,11 +17,6 @@ project(':java') {
         }
         sourceSets {
             main {
-                java {
-                    srcDirs = ['src']
-                }
-            }
-            main {
                 resources {
                     srcDirs = ['.']
                     include "README.md"
@@ -60,11 +55,6 @@ project(':kotlin') {
             implementation "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}"
         }
         sourceSets {
-            main {
-                kotlin {
-                    srcDirs = ['src']
-                }
-            }
             main {
                 resources {
                     srcDirs = ['.']
