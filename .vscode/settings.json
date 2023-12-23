@@ -7,6 +7,7 @@
     "**/.build": true,
     "**/.cargo": true,
     "**/.dart_tool": true,
+    "**/.elixir_ls": true,
     "**/.gradle": true,
     "**/.idea": true,
     "**/.nx": true,
@@ -25,12 +26,16 @@
     "**/config": true,
     "**/dist": true,
     "**/dist-newstyle": true,
+    "**/gradle": true,
     "**/melos_*.iml": true,
     "**/node_modules": true,
     "**/obj": true,
     "**/output": true,
+    "**/prelude": true,
     "**/sorbet": true,
-    "**/target": true
+    "**/target": true,
+    "**/toolchains": true,
+    "bin": true
   },
   "files.watcherExclude": {
     "**.resolved": true,
@@ -39,6 +44,7 @@
     "**/.build": true,
     "**/.cargo": true,
     "**/.dart_tool": true,
+    "**/.elixir_ls": true,
     "**/.gradle": true,
     "**/.idea": true,
     "**/.nx": true,
@@ -56,14 +62,21 @@
     "**/config": true,
     "**/dist": true,
     "**/dist-newstyle": true,
+    "**/gradle": true,
     "**/node_modules": true,
     "**/obj": true,
     "**/output": true,
+    "**/prelude": true,
     "**/sorbet": true,
     "**/target": true,
-    "**/test": true
+    "**/test": true,
+    "**/toolchains": true,
+    "bin": true
   },
   "java.autobuild.enabled": false,
+  "java.compile.nullAnalysis.mode": "automatic",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "basic",
   "terminal.integrated.env.linux": {
     "CARGO_TARGET_DIR": "${workspaceFolder}/dist/rust",
     "DUB_PACKAGE_TARGET_PATH": "${workspaceFolder}/dist/d",
@@ -81,8 +94,5 @@
     "DUB_PACKAGE_TARGET_PATH": "${workspaceFolder}\\dist\\d",
     "DUNE_BUILD_DIR": "${workspaceFolder}\\dist\\ocaml",
     "NPM_CONFIG_PACK_DESTINATION": "${workspaceFolder}\\dist\\npm\\package"
-  },
-  "java.compile.nullAnalysis.mode": "automatic",
-  "python.analysis.typeCheckingMode": "basic",
-  "python.analysis.autoImportCompletions": true
+  }
 }
