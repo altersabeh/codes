@@ -82,5 +82,7 @@
     "DUNE_BUILD_DIR": "${workspaceFolder}\\dist\\ocaml",
     "NPM_CONFIG_PACK_DESTINATION": "${workspaceFolder}\\dist\\npm\\package"
   },
-  "java.compile.nullAnalysis.mode": "automatic"
+  "java.compile.nullAnalysis.mode": "automatic",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true
 }
