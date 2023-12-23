@@ -14,6 +14,7 @@ python = "^3.11"
 
 [tool.poetry.group.dev.dependencies]
 poethepoet = "^0.24.2"
+autopep8 = "^2.0.4"
 
 [tool.poetry.scripts]
 python-hello = "python_hello.hello:main"
@@ -24,6 +25,11 @@ python-fibonacci = "python_fibonacci.fibonacci:main"
 python-hello = "python python/hello/src/*/hello.py"
 python-greeter = "python python/greeter/src/*/greeter.py"
 python-fibonacci = "python python/fibonacci/src/*/fibonacci.py"
+
+[tool.autopep8]
+max-line-length = 100
+indent-size = 2
+ignore = "E305,E302,E301"
 
 [build-system]
 requires = ["poetry-core"]
