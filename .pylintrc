@@ -1,2 +1,8 @@
 [MESSAGES CONTROL]
-disable=W0311,C0116,C0103
+disable =
+  C0103,
+  C0114,
+  C0115,
+  C0116,
+  R0903,
+  W0311,
