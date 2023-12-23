@@ -39,7 +39,7 @@ def get_user_input():
       if trimmed_input == '':
         print("Please enter something...")
         continue
-      elif trimmed_input == 'exit':
+      if trimmed_input == 'exit':
         print("Exiting the program...")
         break
 
@@ -48,8 +48,8 @@ def get_user_input():
       if n is not None:
         fibonacci_series(n)
         break
-      else:
-        print("Please enter a valid positive integer.")
+
+      print("Please enter a valid positive integer.")
     except EOFError:
       eof_handler()
 
@@ -58,7 +58,7 @@ def fibonacci_series(n):
   a = 0
   b = 1
   temp = None
-  sum = 0
+  total = 0
 
   print(f"Fibonacci Series up to the {n}{get_suffix(n)} term:")
 
@@ -76,20 +76,20 @@ def fibonacci_series(n):
     temp = a
     a = b
     b = temp + b
-    sum += temp  # Calculate the sum
+    total += temp  # Calculate the sum
 
   if n <= 5000:
     print(", ".join(map(str, series)), end="")
 
   print("\n")
-  print(f"Sum of the Fibonacci Series: {sum}")
+  print(f"Sum of the Fibonacci Series: {total}")
 
 # Handle special cases where numbers don't end in "th"
 def get_suffix(n):
   if 11 <= n % 100 <= 13:
     return "th"
-  else:
-    return {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
+
+  return {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
 
 # Display the current date and time
 def date_and_time():
@@ -106,8 +106,8 @@ def validate_input(user_input):
     n = int(user_input)
     if n > 0:
       return n
-    else:
-      return None
+
+    return None
   except ValueError:
     return None
 
@@ -117,7 +117,7 @@ def eof_handler():
   print("==================================================")
   sys.exit()
 
-def interrupt_handler(sig, frame):
+def interrupt_handler():
   os.write(sys.stdout.fileno(), b"\n")
   os.write(sys.stdout.fileno(), b"Interrupt received.. Exiting...\n")
   os.write(sys.stdout.fileno(), b"==================================================\n")
