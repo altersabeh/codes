@@ -1,0 +1,11 @@
+{
+  "bracketSpacing": true,
+  "semi": true,
+  "trailingComma": "es5",
+  "singleQuote": true,
+  "multilineArraysWrapThreshold": 1,
+  "plugins": [
+    "prettier-plugin-toml",
+    "prettier-plugin-multiline-arrays"
+  ]
+}

@@ -1,0 +1,8 @@
+/*
+!/typescript
+!/javascript
+!*.json
+!*.toml
+*.md
+*.*rc
+node_modules
