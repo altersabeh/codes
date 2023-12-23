@@ -1,8 +1,8 @@
-import * as prompt from "prompt-sync";
+import * as readlineSync from 'readline-sync';
 
 class InputHandler {
   static getUserName(): string {
-    let userinput: string = prompt()("Enter your name: ");
+    let userinput: string = readlineSync.question("Enter your name: ");
 
     let name: string = userinput.trim();
 
