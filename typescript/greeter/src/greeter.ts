@@ -2,12 +2,12 @@ import * as readlineSync from 'readline-sync';
 
 class InputHandler {
   static getUserName(): string {
-    let userinput: string = readlineSync.question("Enter your name: ");
+    const userinput: string = readlineSync.question('Enter your name: ');
 
     let name: string = userinput.trim();
 
-    if (name === "") {
-      name = "Stranger";
+    if (name === '') {
+      name = 'Stranger';
     }
 
     return name;
@@ -22,14 +22,14 @@ class Greeter {
   }
 
   greet(): void {
-    console.log("Hello, " + this.username + "!");
-    console.log("Greetings from JavaScript!");
+    console.log('Hello, ' + this.username + '!');
+    console.log('Greetings from JavaScript!');
   }
 }
 
 export function main(): void {
-  let name: string = InputHandler.getUserName();
-  let greeter: Greeter = new Greeter(name);
+  const name: string = InputHandler.getUserName();
+  const greeter: Greeter = new Greeter(name);
 
   greeter.greet();
 }

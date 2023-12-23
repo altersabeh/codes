@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-const fibonacci = require("./src/fibonacci");
+const fibonacci = require('./src/fibonacci');
 
 fibonacci.main();

@@ -6,5 +6,4 @@ authors = ["altersabeh"]
 maintainers = ["altersabeh <betamaximum22@gmail.com>"]
 maintainers-logins = ["altersabeh"]
 
-executables = ["ada-hello",
-               "ada-fibonacci"]
+executables = ["ada-hello", "ada-fibonacci"]

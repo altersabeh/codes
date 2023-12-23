@@ -2,11 +2,7 @@
 name = "codes"
 resolver = "2"
 
-members = [
-  "rust/hello",
-  "rust/greeter",
-  "rust/fibonacci"
-]
+members = ["rust/hello", "rust/greeter", "rust/fibonacci"]
 
 [workspace.package]
 version = "1.0.0"

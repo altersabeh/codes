@@ -6,7 +6,7 @@ authors = ["altersabeh"]
 packages = [
   { include = "*/*.py", from = "python/hello/src" },
   { include = "*/*.py", from = "python/greeter/src" },
-  { include = "*/*.py", from = "python/fibonacci/src" }
+  { include = "*/*.py", from = "python/fibonacci/src" },
 ]
 
 [tool.poetry.dependencies]

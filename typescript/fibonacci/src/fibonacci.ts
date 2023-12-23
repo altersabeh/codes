@@ -11,34 +11,34 @@
  * License: This program is in the public domain.
  */
 
-import * as readline from "readline";
-import * as moment from "moment";
+import * as readline from 'readline';
+import * as moment from 'moment';
 
 export async function main(): Promise<void> {
-  console.log("============Fibonacci Series Calculator============");
-  console.log("This Program was Written Using: TypeScript");
+  console.log('============Fibonacci Series Calculator============');
+  console.log('This Program was Written Using: TypeScript');
 
   signalHandler();
   dateAndTime();
   await getUserInput();
 
-  console.log("===================================================");
+  console.log('===================================================');
 }
 
 // Function to Get the User Input
 async function getUserInput(): Promise<void> {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     rl.question(
-      "Enter the value of n (an integer): ",
+      'Enter the value of n (an integer): ',
       async (input: string) => {
         const trimmedInput = input.trim();
 
-        if (trimmedInput === "") {
-          console.log("Please enter something...");
+        if (trimmedInput === '') {
+          console.log('Please enter something...');
           await getUserInput();
           resolve();
-        } else if (trimmedInput === "exit") {
-          console.log("Exiting the program...");
+        } else if (trimmedInput === 'exit') {
+          console.log('Exiting the program...');
           rl.close();
           resolve();
         } else {
@@ -49,7 +49,7 @@ async function getUserInput(): Promise<void> {
             rl.close();
             resolve();
           } else {
-            console.log("Please enter a valid positive integer.");
+            console.log('Please enter a valid positive integer.');
             await getUserInput();
             resolve();
           }
@@ -68,9 +68,9 @@ function fibonacciSeries(n: number): Promise<void> {
 
   console.log(`Fibonacci Series up to the ${n}${getSuffix(n)} term:`);
 
-  let series: string[] = [];
+  const series: string[] = [];
 
-  return new Promise<void>((resolve, reject) => {
+  return new Promise<void>((resolve) => {
     (function fibonacciLoop() {
       if (n <= 5000) {
         series.push(a.toString());
@@ -78,7 +78,7 @@ function fibonacciSeries(n: number): Promise<void> {
         // Print the series without using array
         process.stdout.write(a.toString());
         if (n > 1) {
-          process.stdout.write(", ");
+          process.stdout.write(', ');
         } else {
           console.log();
         }
@@ -93,7 +93,7 @@ function fibonacciSeries(n: number): Promise<void> {
         setImmediate(fibonacciLoop);
       } else {
         if (n <= 5000) {
-          console.log(series.join(", "));
+          console.log(series.join(', '));
         }
 
         console.log();
@@ -107,13 +107,13 @@ function fibonacciSeries(n: number): Promise<void> {
 // Handle special cases where numbers don't end in "th"
 function getSuffix(n: number): string {
   if (n % 10 === 1 && n % 100 !== 11) {
-    return "st";
+    return 'st';
   } else if (n % 10 === 2 && n % 100 !== 12) {
-    return "nd";
+    return 'nd';
   } else if (n % 10 === 3 && n % 100 !== 13) {
-    return "rd";
+    return 'rd';
   } else {
-    return "th";
+    return 'th';
   }
 }
 
@@ -121,7 +121,7 @@ function getSuffix(n: number): string {
 function dateAndTime(): void {
   const currentDate = moment();
 
-  const layout = "MMMM DD, YYYY - HH:mm:ss";
+  const layout = 'MMMM DD, YYYY - HH:mm:ss';
   const formattedDate = currentDate.format(layout);
 
   console.log(`Date and Time: ${formattedDate}`);
@@ -143,26 +143,26 @@ const rl = readline.createInterface({
 
 function eofHandler(): void {
   console.log();
-  console.log("End of File encountered.. Stopping...");
-  console.log("==================================================");
+  console.log('End of File encountered.. Stopping...');
+  console.log('==================================================');
   process.exit(0);
 }
 
 function interruptHandler(): void {
   console.log();
-  console.log("Interrupt received.. Exiting...");
-  console.log("==================================================");
+  console.log('Interrupt received.. Exiting...');
+  console.log('==================================================');
   process.exit(0);
 }
 
 function signalHandler(): void {
-  process.stdin.on("keypress", (str: string, key: readline.Key) => {
-    if (key && key.ctrl && key.name == "d") {
+  process.stdin.on('keypress', (str: string, key: readline.Key) => {
+    if (key && key.ctrl && key.name == 'd') {
       eofHandler();
     }
   });
 
-  rl.on("SIGINT", () => {
+  rl.on('SIGINT', () => {
     interruptHandler();
   });
 }

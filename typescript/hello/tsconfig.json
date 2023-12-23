@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
-    "lib": [
-      "ESNext"
-    ],
+    "lib": ["ESNext"],
     "module": "commonjs",
     "target": "esnext",
     "moduleResolution": "node",
@@ -17,8 +15,6 @@
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
-    "types": [
-      "node"
-    ]
+    "types": ["node"]
   }
 }
