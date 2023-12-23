@@ -1,8 +1,8 @@
-const prompt = require("prompt-sync")();
+const readlineSync = require('readline-sync');
 
 class InputHandler {
   static getUserName() {
-    let userinput = prompt("Enter your name: ");
+    let userinput = readlineSync.question("Enter your name: ");
 
     let name = userinput.trim();
 

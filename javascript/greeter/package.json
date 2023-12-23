@@ -23,10 +23,7 @@
     "build": "npm pack",
     "start": "node index.js"
   },
-  "devDependencies": {
-    "@types/prompt-sync": "^4.2.3"
-  },
   "dependencies": {
-    "prompt-sync": "^4.2.0"
+    "readline-sync": "^1.4.10"
   }
 }
