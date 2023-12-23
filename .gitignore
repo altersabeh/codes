@@ -42,6 +42,7 @@ _build
 java/**/bin
 kotlin/**/bin
 groovy/**/bin
+!gradlew
 
 # js and ts
 node_modules
