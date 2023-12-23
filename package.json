@@ -28,6 +28,9 @@
   ],
   "nx": {},
   "scripts": {
+    "format": "npx nx exec -- npx prettier --write .",
+    "lint": "npx nx exec -- npx eslint .",
+    "lint:fix": "npx nx exec -- npx eslint . --fix",
     "prepack": "mkdir -p $NPM_CONFIG_PACK_DESTINATION"
   },
   "devDependencies": {
