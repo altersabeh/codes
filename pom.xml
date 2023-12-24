@@ -4,16 +4,6 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <properties>
-    <assembly.plugin.version>3.3.0</assembly.plugin.version>
-    <exec.plugin.version>1.6.0</exec.plugin.version>
-    <guava.version>33.0.0-jre</guava.version>
-    <java.version>21</java.version>
-    <kotlin.version>1.9.21</kotlin.version>
-    <project.version>1.0.0</project.version>
-    <utf.version>UTF-8</utf.version>
-  </properties>
-
   <groupId>github.altersabeh</groupId>
   <artifactId>codes</artifactId>
   <version>1.0.0</version>
@@ -26,7 +16,19 @@
     <module>java/hello</module>
     <module>java/greeter</module>
     <module>java/fibonacci</module>
+    <module>kotlin/hello</module>
   </modules>
+
+  <properties>
+    <assembly.plugin.version>3.3.0</assembly.plugin.version>
+    <exec.plugin.version>3.1.1</exec.plugin.version>
+    <guava.version>33.0.0-jre</guava.version>
+    <java.version>21</java.version>
+    <jar.plugin.version>3.3.0</jar.plugin.version>
+    <kotlin.version>1.9.21</kotlin.version>
+    <project.version>1.0.0</project.version>
+    <utf.version>UTF-8</utf.version>
+  </properties>
 
   <dependencyManagement>
     <dependencies>
@@ -59,6 +61,11 @@
             <descriptorRefs>
               <descriptorRef>jar-with-dependencies</descriptorRef>
             </descriptorRefs>
+            <archive>
+              <manifest>
+                <mainClass>${main.class}</mainClass>
+              </manifest>
+            </archive>
           </configuration>
           <executions>
             <execution>
@@ -71,9 +78,25 @@
           </executions>
         </plugin>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>${jar.plugin.version}</version>
+          <configuration>
+            <archive>
+              <manifest>
+                <addClasspath>true</addClasspath>
+                <mainClass>${main.class}</mainClass>
+              </manifest>
+            </archive>
+          </configuration>
+        </plugin>
+        <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>exec-maven-plugin</artifactId>
           <version>${exec.plugin.version}</version>
+          <configuration>
+            <mainClass>${main.class}</mainClass>
+          </configuration>
           <executions>
             <execution>
               <goals>

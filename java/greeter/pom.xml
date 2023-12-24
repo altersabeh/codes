@@ -21,6 +21,7 @@
     <project.build.sourceEncoding>${utf.version}</project.build.sourceEncoding>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
+    <main.class>greeter.Greeter</main.class>
   </properties>
 
   <dependencies>
@@ -36,20 +37,10 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>
-        <configuration>
-          <archive>
-            <manifest>
-              <mainClass>greeter.Greeter</mainClass>
-            </manifest>
-          </archive>
-        </configuration>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
-        <configuration>
-          <mainClass>greeter.Greeter</mainClass>
-        </configuration>
       </plugin>
     </plugins>
   </build>
