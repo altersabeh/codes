@@ -17,6 +17,8 @@
     <module>java/greeter</module>
     <module>java/fibonacci</module>
     <module>kotlin/hello</module>
+    <module>kotlin/greeter</module>
+    <module>kotlin/fibonacci</module>
   </modules>
 
   <properties>
@@ -36,6 +38,11 @@
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
         <version>${guava.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlin</groupId>
+        <artifactId>kotlin-stdlib</artifactId>
+        <version>${kotlin.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -104,6 +111,12 @@
               </goals>
             </execution>
           </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.jetbrains.kotlin</groupId>
+          <artifactId>kotlin-maven-plugin</artifactId>
+          <version>${kotlin.version}</version>
+          <extensions>true</extensions>
         </plugin>
       </plugins>
     </pluginManagement>
