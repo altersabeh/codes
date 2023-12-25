@@ -12,7 +12,7 @@ jar {
 }
 
 task ("groovy-${projectDir.name}", type: JavaExec) {
-    description = "${projectDir.name.capitalize()} World program written in Groovy"
+    description = "${projectDir.name.capitalize()} program written in Groovy"
     group = "Application (Groovy)"
     classpath = sourceSets.main.runtimeClasspath
     mainClass = "${projectDir.name}.${projectDir.name.capitalize()}"
