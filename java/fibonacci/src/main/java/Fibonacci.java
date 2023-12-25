@@ -35,7 +35,7 @@ public class Fibonacci {
   }
 
   // Function to get user input
-  public static void getUserInput() {
+  private static void getUserInput() {
     Scanner scanner = new Scanner(System.in);
     while (true) {
       System.out.print("Enter the value of n (an integer): ");
@@ -67,7 +67,7 @@ public class Fibonacci {
   }
 
   // Calculates and prints the Fibonacci Series up to the nth term.
-  public static void fibonacciSeries(int n) {
+  private static void fibonacciSeries(int n) {
     BigDecimal a = BigDecimal.ZERO;
     BigDecimal b = BigDecimal.ONE;
     BigDecimal temp;
@@ -107,7 +107,7 @@ public class Fibonacci {
   }
 
   // Handle special cases where numbers don't end in "th"
-  public static String getSuffix(int n) {
+  private static String getSuffix(int n) {
     if (n % 10 == 1 && n % 100 != 11) {
       return "st";
     } else if (n % 10 == 2 && n % 100 != 12) {
@@ -120,7 +120,7 @@ public class Fibonacci {
   }
 
   // Display the current date and time
-  public static void dateAndTime() {
+  private static void dateAndTime() {
     LocalDateTime currentDate = LocalDateTime.now();
 
     String layout = "MMMM dd, yyyy - HH:mm:ss";
@@ -131,7 +131,7 @@ public class Fibonacci {
   }
 
   // Functions to handle user input and errors
-  public static int validateInput(String input) {
+  private static int validateInput(String input) {
     try {
       int n = Integer.parseInt(input);
       if (n > 0) {
@@ -143,14 +143,14 @@ public class Fibonacci {
     return -1;
   }
 
-  public static void eofHandler() {
+  private static void eofHandler() {
     System.out.println("");
     System.out.println("End of File encountered.. Stopping...");
     System.out.println("===================================================");
     System.exit(0);
   }
 
-  public static void interruptHandler() {
+  private static void interruptHandler() {
     stopOperation = true;
     System.out.println("");
     System.out.println("Interrupt received.. Exiting...");
@@ -158,9 +158,9 @@ public class Fibonacci {
     System.exit(0);
   }
 
-  static boolean stopOperation = false;
+  private static boolean stopOperation = false;
 
-  public static void signalHandler() {
+  private static void signalHandler() {
     SignalHandler sigintHandler = new SignalHandler() {
       @Override
       public void handle(Signal signal) {
