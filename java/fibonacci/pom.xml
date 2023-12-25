@@ -4,18 +4,18 @@
 
   <modelVersion>4.0.0</modelVersion>
 
+  <groupId>java</groupId>
+  <artifactId>fibonacci</artifactId>
+  <name>${project.groupId}-${project.artifactId}</name>
+  <version>1.0.0</version>
+  <description>Fibonacci program written in Java</description>
+
   <parent>
     <groupId>github.altersabeh</groupId>
     <artifactId>codes</artifactId>
     <version>1.0.0</version>
     <relativePath>../..</relativePath>
   </parent>
-
-  <groupId>java</groupId>
-  <artifactId>java-fibonacci</artifactId>
-  <version>1.0.0</version>
-  <name>java-fibonacci</name>
-  <description>Fibonacci program written in Java</description>
 
   <properties>
     <project.build.sourceEncoding>${utf.version}</project.build.sourceEncoding>
@@ -32,7 +32,6 @@
   </dependencies>
 
   <build>
-    <directory>../../dist/java/maven/fibonacci</directory>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
