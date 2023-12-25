@@ -4,7 +4,7 @@ package(
 
 java_binary(
     name = "java-fibonacci",
-    srcs = ["src/fibonacci/Fibonacci.java"],
+    srcs = ["src/main/java/Fibonacci.java"],
     main_class = "fibonacci.Fibonacci",
 )
 

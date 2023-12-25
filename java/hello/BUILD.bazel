@@ -4,7 +4,7 @@ package(
 
 java_binary(
     name = "java-hello",
-    srcs = ["src/hello/Hello.java"],
+    srcs = ["src/main/java/Hello.java"],
     main_class = "hello.Hello",
 )
 
