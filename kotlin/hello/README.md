@@ -37,11 +37,18 @@ From the root directory:
 gradle kotlin:hello:build
 ```
 
-<!--
-
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the root directory, run one of the following:
+
+```
+mvn compile -pl kotlin:hello
+```
+```
+mvn package -pl kotlin:hello
+```
+
+<!--
 
 #### Using `ant`
 
@@ -79,23 +86,31 @@ the source directory, run one of the following:
 > * The **kotlinc-js** compiles the program into a **javascript file**.
 
 ```
-cd src
-kotlinc hello/hello.kt
+cd src/main/kotlin
+kotlinc hello.kt
 ```
 ```
-cd src
-kotlinc hello/hello.kt -include-runtime -d hello/kotlin-hello.jar
+cd src/main/kotlin
+kotlinc hello.kt -include-runtime -d kotlin-hello.jar
 ```
 ```
-cd src
-konanc hello/hello.kt -e hello.main -o hello/kotlin-hello
+cd src/main/kotlin
+konanc hello.kt -e hello.main -o kotlin-hello
 ```
-
-<!--
 
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the source directory, run one of the
+following:
+
+```
+mvn compile
+```
+```
+mvn package
+```
+
+<!--
 
 #### Using `ant`
 
@@ -123,11 +138,15 @@ gradle kotlin-hello
 gradle kotlin:hello:run
 ```
 
-<!--
-
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the root directory:
+
+```
+mvn exec:java -pl kotlin:hello
+```
+
+<!--
 
 #### Using `ant`
 
@@ -145,7 +164,7 @@ From the source directory, you can run one of the following:
 gradle run
 ```
 ```
-gradle java-hello
+gradle kotlin-hello
 ```
 
 #### Using `kotlin compilers`
@@ -155,25 +174,29 @@ for building the program:
 
 ```
 # using kotlinc
-cd src
+cd src/main/kotlin
 kotlin hello.HelloKt
 ```
 ```
 # using kotlinc for building jar
-cd src/hello
+cd src/main/kotlin
 java -jar kotlin-hello.jar
 ```
 ```
 # using kotlinc-native or konanc
-cd src/hello
+cd src/main/kotlin
 ./kotlin-hello.kexe
 ```
 
-<!--
-
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the source directory:
+
+```
+mvn exec:java
+```
+
+<!--
 
 #### Using `ant`
 

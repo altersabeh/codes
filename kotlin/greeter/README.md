@@ -37,11 +37,18 @@ From the root directory:
 gradle kotlin:greeter:build
 ```
 
-<!--
-
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the root directory, run one of the following:
+
+```
+mvn compile -pl kotlin:greeter
+```
+```
+mvn package -pl kotlin:greeter
+```
+
+<!--
 
 #### Using `ant`
 
@@ -79,23 +86,31 @@ the source directory, run one of the following:
 > * The **kotlinc-js** compiles the program into a **javascript file**.
 
 ```
-cd src
-kotlinc greeter/greeter.kt
+cd src/main/kotlin
+kotlinc greeter.kt
 ```
 ```
-cd src
-kotlinc greeter/greeter.kt -include-runtime -d greeter/kotlin-greeter.jar
+cd src/main/kotlin
+kotlinc greeter.kt -include-runtime -d kotlin-greeter.jar
 ```
 ```
-cd src
-konanc greeter/greeter.kt -e greeter.main -o greeter/kotlin-greeter
+cd src/main/kotlin
+konanc greeter.kt -e greeter.main -o kotlin-greeter
 ```
-
-<!--
 
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the source directory, run one of the
+following:
+
+```
+mvn compile
+```
+```
+mvn package
+```
+
+<!--
 
 #### Using `ant`
 
@@ -123,11 +138,15 @@ gradle kotlin-greeter
 gradle kotlin:greeter:run
 ```
 
-<!--
-
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the root directory:
+
+```
+mvn exec:java -pl kotlin:greeter
+```
+
+<!--
 
 #### Using `ant`
 
@@ -145,7 +164,7 @@ From the source directory, you can run one of the following:
 gradle run
 ```
 ```
-gradle java-greeter
+gradle kotlin-greeter
 ```
 
 #### Using `kotlin compilers`
@@ -155,25 +174,29 @@ for building the program:
 
 ```
 # using kotlinc
-cd src
+cd src/main/kotlin
 kotlin greeter.GreeterKt
 ```
 ```
 # using kotlinc for building jar
-cd src/greeter
+cd src/main/kotlin
 java -jar kotlin-greeter.jar
 ```
 ```
 # using kotlinc-native or konanc
-cd src/greeter
+cd src/main/kotlin
 ./kotlin-greeter.kexe
 ```
 
-<!--
-
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the source directory:
+
+```
+mvn exec:java
+```
+
+<!--
 
 #### Using `ant`
 

@@ -37,11 +37,18 @@ From the root directory:
 gradle kotlin:fibonacci:build
 ```
 
-<!--
-
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the root directory, run one of the following:
+
+```
+mvn compile -pl kotlin:fibonacci
+```
+```
+mvn package -pl kotlin:fibonacci
+```
+
+<!--
 
 #### Using `ant`
 
@@ -79,23 +86,31 @@ the source directory, run one of the following:
 > * The **kotlinc-js** compiles the program into a **javascript file**.
 
 ```
-cd src
-kotlinc fibonacci/fibonacci.kt
+cd src/main/kotlin
+kotlinc fibonacci.kt
 ```
 ```
-cd src
-kotlinc fibonacci/fibonacci.kt -include-runtime -d fibonacci/kotlin-fibonacci.jar
+cd src/main/kotlin
+kotlinc fibonacci.kt -include-runtime -d kotlin-fibonacci.jar
 ```
 ```
-cd src
-konanc fibonacci/fibonacci.kt -e fibonacci.main -o fibonacci/kotlin-fibonacci
+cd src/main/kotlin
+konanc fibonacci.kt -e fibonacci.main -o kotlin-fibonacci
 ```
-
-<!--
 
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the source directory, run one of the
+following:
+
+```
+mvn compile
+```
+```
+mvn package
+```
+
+<!--
 
 #### Using `ant`
 
@@ -123,11 +138,15 @@ gradle kotlin-fibonacci
 gradle kotlin:fibonacci:run
 ```
 
-<!--
-
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the root directory:
+
+```
+mvn exec:java -pl kotlin:fibonacci
+```
+
+<!--
 
 #### Using `ant`
 
@@ -145,7 +164,7 @@ From the source directory, you can run one of the following:
 gradle run
 ```
 ```
-gradle java-fibonacci
+gradle kotlin-fibonacci
 ```
 
 #### Using `kotlin compilers`
@@ -155,25 +174,29 @@ for building the program:
 
 ```
 # using kotlinc
-cd src
+cd src/main/kotlin
 kotlin fibonacci.FibonacciKt
 ```
 ```
 # using kotlinc for building jar
-cd src/fibonacci
+cd src/main/kotlin
 java -jar kotlin-fibonacci.jar
 ```
 ```
 # using kotlinc-native or konanc
-cd src/fibonacci
+cd src/main/kotlin
 ./kotlin-fibonacci.kexe
 ```
 
-<!--
-
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the source directory:
+
+```
+mvn exec:java
+```
+
+<!--
 
 #### Using `ant`
 
