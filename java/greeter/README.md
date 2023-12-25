@@ -37,11 +37,18 @@ From the root directory:
 gradle java:greeter:build
 ```
 
-<!--
-
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the root directory, run one of the following:
+
+```
+mvn compile -pl java:greeter
+```
+```
+mvn package -pl java:greeter
+```
+
+<!--
 
 #### Using `ant`
 
@@ -88,20 +95,28 @@ source directory, run one of the following:
 >   executable**.
 
 ```
-cd src
-javac -ggreeter/Greeter.java
+cd src/main/java
+javac -g -d . Greeter.java
 ```
 ```
-cd src
-javac -ggreeter/Greeter.java
-native-image greeter.Greeter -o greeter/java-greeter
+cd src/main/java
+javac -g -d . Greeter.java
+native-image greeter.Greeter -o java-greeter
 ```
-
-<!--
 
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the source directory, run one of the
+following:
+
+```
+mvn compile
+```
+```
+mvn package
+```
+
+<!--
 
 #### Using `ant`
 
@@ -145,14 +160,18 @@ gradle java:greeter:run
 To use **`java`** to run it directly from root directory:
 
 ```
-java java/greeter/src/greeter/Greeter.java
+java java/greeter/src/main/java/Greeter.java
 ```
-
-<!--
 
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the root directory:
+
+```
+mvn exec:java -pl java:greeter
+```
+
+<!--
 
 #### Using `ant`
 
@@ -191,12 +210,12 @@ building the program:
 
 ```
 # using javac
-cd src
+cd src/main/java
 java greeter.Greeter
 ```
 ```
 # using native-image
-cd src/greeter
+cd src/main/java
 ./java-greeter
 ```
 
@@ -206,14 +225,18 @@ To use **`java`** to run it directly from source directory, run one of the
 following:
 
 ```
-java src/greeter/Greeter.java
+java src/main/java/Greeter.java
 ```
-
-<!--
 
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the source directory:
+
+```
+mvn exec:java
+```
+
+<!--
 
 #### Using `ant`
 

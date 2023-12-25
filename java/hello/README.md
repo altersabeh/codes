@@ -37,11 +37,18 @@ From the root directory:
 gradle java:hello:build
 ```
 
-<!--
-
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the root directory, run one of the following:
+
+```
+mvn compile -pl java:hello
+```
+```
+mvn package -pl java:hello
+```
+
+<!--
 
 #### Using `ant`
 
@@ -88,20 +95,28 @@ source directory, run one of the following:
 >   executable**.
 
 ```
-cd src
-javac -ghello/Hello.java
+cd src/main/java
+javac -g -d . Hello.java
 ```
 ```
-cd src
-javac -ghello/Hello.java
-native-image hello.Hello -o hello/java-hello
+cd src/main/java
+javac -g -d . Hello.java
+native-image hello.Hello -o java-hello
 ```
-
-<!--
 
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the source directory, run one of the
+following:
+
+```
+mvn compile
+```
+```
+mvn package
+```
+
+<!--
 
 #### Using `ant`
 
@@ -145,14 +160,18 @@ gradle java:hello:run
 To use **`java`** to run it directly from root directory:
 
 ```
-java java/hello/src/hello/Hello.java
+java java/hello/src/main/java/Hello.java
 ```
-
-<!--
 
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the root directory:
+
+```
+mvn exec:java -pl java:hello
+```
+
+<!--
 
 #### Using `ant`
 
@@ -191,12 +210,12 @@ building the program:
 
 ```
 # using javac
-cd src
+cd src/main/java
 java hello.Hello
 ```
 ```
 # using native-image
-cd src/hello
+cd src/main/java
 ./java-hello
 ```
 
@@ -206,14 +225,18 @@ To use **`java`** to run it directly from source directory, run one of the
 following:
 
 ```
-java src/hello/Hello.java
+java src/main/java/Hello.java
 ```
-
-<!--
 
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the source directory:
+
+```
+mvn exec:java
+```
+
+<!--
 
 #### Using `ant`
 

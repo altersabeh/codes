@@ -37,11 +37,18 @@ From the root directory:
 gradle java:fibonacci:build
 ```
 
-<!--
-
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the root directory, run one of the following:
+
+```
+mvn compile -pl java:fibonacci
+```
+```
+mvn package -pl java:fibonacci
+```
+
+<!--
 
 #### Using `ant`
 
@@ -88,20 +95,28 @@ source directory, run one of the following:
 >   executable**.
 
 ```
-cd src
-javac -g fibonacci/Fibonacci.java
+cd src/main/java
+javac -g -d . Fibonacci.java
 ```
 ```
-cd src
-javac -g fibonacci/Fibonacci.java
-native-image fibonacci.Fibonacci -o fibonacci/java-fibonacci
+cd src/main/java
+javac -g -d . Fibonacci.java
+native-image fibonacci.Fibonacci -o java-fibonacci
 ```
-
-<!--
 
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the source directory, run one of the
+following:
+
+```
+mvn compile
+```
+```
+mvn package
+```
+
+<!--
 
 #### Using `ant`
 
@@ -145,14 +160,18 @@ gradle java:fibonacci:run
 To use **`java`** to run it directly from root directory:
 
 ```
-java java/fibonacci/src/fibonacci/Fibonacci.java
+java java/fibonacci/src/main/java/Fibonacci.java
 ```
-
-<!--
 
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the root directory:
+
+```
+mvn exec:java -pl java:fibonacci
+```
+
+<!--
 
 #### Using `ant`
 
@@ -191,12 +210,12 @@ building the program:
 
 ```
 # using javac
-cd src
+cd src/main/java
 java fibonacci.Fibonacci
 ```
 ```
 # using native-image
-cd src/fibonacci
+cd src/main/java
 ./java-fibonacci
 ```
 
@@ -206,14 +225,18 @@ To use **`java`** to run it directly from source directory, run one of the
 following:
 
 ```
-java src/fibonacci/Fibonacci.java
+java src/main/java/Fibonacci.java
 ```
-
-<!--
 
 #### Using `maven`
 
-TODO:
+To use **`maven`** from the source directory:
+
+```
+mvn exec:java
+```
+
+<!--
 
 #### Using `ant`
 
