@@ -5,6 +5,23 @@
 *.log
 **/test
 
+# object files
+*.o
+*.out
+*.cmi
+*.cmo
+*.cmx
+*.class
+*.exe
+*.dll
+*.hi
+*.jar
+*.kexe
+*.ez
+*.beam
+*.plt
+*.dump
+
 # alire
 **/alire
 **/config
@@ -43,6 +60,7 @@ java/**/bin
 kotlin/**/bin
 groovy/**/bin
 !gradlew
+!gradle/**/*.jar
 
 # js and ts
 node_modules
@@ -57,6 +75,7 @@ bun.lockb
 
 # maven
 !mvnw
+!.mvn/**/*.jar
 
 # mix
 **/deps
@@ -91,20 +110,3 @@ output/**
 
 # swift
 **/.build
-
-# object files
-*.o
-*.out
-*.cmi
-*.cmo
-*.cmx
-*.class
-*.exe
-*.dll
-*.hi
-*.jar
-*.kexe
-*.ez
-*.beam
-*.plt
-*.dump
