@@ -13,27 +13,43 @@
   <url>https://github.com/altersabeh/codes</url>
 
   <modules>
+    <!-- java modules -->
     <module>java/hello</module>
     <module>java/greeter</module>
     <module>java/fibonacci</module>
+    <!-- kotlin modules -->
     <module>kotlin/hello</module>
     <module>kotlin/greeter</module>
     <module>kotlin/fibonacci</module>
+    <!-- groovy modules -->
+    <module>groovy/hello</module>
+    <module>groovy/greeter</module>
   </modules>
 
   <properties>
-    <assembly.plugin.version>3.3.0</assembly.plugin.version>
-    <exec.plugin.version>3.1.1</exec.plugin.version>
-    <guava.version>33.0.0-jre</guava.version>
-    <java.version>21</java.version>
-    <jar.plugin.version>3.3.0</jar.plugin.version>
-    <kotlin.version>1.9.21</kotlin.version>
-    <project.version>1.0.0</project.version>
     <utf.version>UTF-8</utf.version>
+    <!-- dependecy verision -->
+    <guava.version>33.0.0-jre</guava.version>
+    <!-- language version-->
+    <groovy.version>4.0.16</groovy.version>
+    <java.version>21</java.version>
+    <kotlin.version>1.9.21</kotlin.version>
+    <!-- plugin version-->
+    <exec-maven-plugin.version>3.1.1</exec-maven-plugin.version>
+    <gmavenplus-plugin.version>3.0.2</gmavenplus-plugin.version>
+    <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
+    <maven-compiler-plugin.version>3.12.0</maven-compiler-plugin.version>
+    <maven-jar-plugin.version>3.3.0</maven-jar-plugin.version>
+    <maven-build-cache-extension.version>1.1.0</maven-build-cache-extension.version>
   </properties>
 
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>org.apache.groovy</groupId>
+        <artifactId>groovy</artifactId>
+        <version>${groovy.version}</version>
+      </dependency>
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
@@ -46,6 +62,18 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <profiles>
+    <profile>
+      <id>hello</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <build>
+        <defaultGoal>validate</defaultGoal>
+      </build>
+    </profile>
+  </profiles>
 
   <build>
     <finalName>${project.groupId}-${project.artifactId}</finalName>
@@ -67,7 +95,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
-          <version>${assembly.plugin.version}</version>
+          <version>${maven-assembly-plugin.version}</version>
           <configuration>
             <descriptorRefs>
               <descriptorRef>jar-with-dependencies</descriptorRef>
@@ -90,8 +118,16 @@
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>${maven-compiler-plugin.version}</version>
+          <configuration>
+            <useIncrementalCompilation>true</useIncrementalCompilation>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>${jar.plugin.version}</version>
+          <version>${maven-jar-plugin.version}</version>
           <configuration>
             <archive>
               <manifest>
@@ -102,9 +138,22 @@
           </configuration>
         </plugin>
         <plugin>
+          <groupId>org.codehaus.gmavenplus</groupId>
+          <artifactId>gmavenplus-plugin</artifactId>
+          <version>${gmavenplus-plugin.version}</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>compile</goal>
+                <goal>compileTests</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>exec-maven-plugin</artifactId>
-          <version>${exec.plugin.version}</version>
+          <version>${exec-maven-plugin.version}</version>
           <configuration>
             <mainClass>${main.class}</mainClass>
           </configuration>
