@@ -55,6 +55,9 @@ bun.lockb
 # makefiles
 !Makefile
 
+# maven
+!mvnw
+
 # mix
 **/deps
 
