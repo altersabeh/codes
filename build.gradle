@@ -85,3 +85,42 @@ project(':kotlin') {
         }
     }
 }
+
+project(':groovy') {
+    subprojects {
+        apply plugin: 'application'
+        apply plugin: 'groovy'
+        dependencies {
+            implementation "org.apache.groovy:groovy:${groovyVersion}"
+        }
+        sourceSets {
+            main {
+                resources {
+                    srcDirs = ['.']
+                    include "README.md"
+                    include "CHANGELOG.md"
+                    include "LICENSE"
+                }
+            }
+        }
+        buildDir = "${project.rootDir}/dist/groovy/gradle/${projectDir.name}"
+        java {
+            toolchain {
+                languageVersion = JavaLanguageVersion.of(javaToolchainVersion)
+            }
+        }
+        run {
+            standardInput = System.in
+        }
+        defaultTasks "groovy-${projectDir.name}"
+    }
+    tasks.register('build') {
+        group = 'Application (Groovy)'
+        description = 'Builds all Groovy targets'
+    }
+    subprojects.each { subproject ->
+        tasks.named("build").configure {
+            dependsOn ":groovy:${subproject.name}:build"
+        }
+    }
+}

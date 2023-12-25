@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>groovy</groupId>
+  <artifactId>greeter</artifactId>
+  <name>${project.groupId}-${project.artifactId}</name>
+  <version>1.0.0</version>
+  <description>Greeter program written in Groovy</description>
+
+  <parent>
+    <groupId>github.altersabeh</groupId>
+    <artifactId>codes</artifactId>
+    <version>1.0.0</version>
+    <relativePath>../..</relativePath>
+  </parent>
+
+  <properties>
+    <project.build.sourceEncoding>${utf.version}</project.build.sourceEncoding>
+    <main.class>greeter.Greeter</main.class>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.groovy</groupId>
+      <artifactId>groovy</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+      </plugin>
+              <plugin>
+                <groupId>org.codehaus.gmavenplus</groupId>
+                <artifactId>gmavenplus-plugin</artifactId>
+                </plugin>
+    </plugins>
+  </build>
+</project>
