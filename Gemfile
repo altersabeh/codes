@@ -4,11 +4,15 @@ source "https://rubygems.org"
 
 gemspec
 
-gem "sorbet", group: :development
-gem "sorbet-runtime"
-gem "tapioca", require: false, group: :development
+group :development, :test do
+  gem "rubocop", require: false
+  gem "sorbet", require: false
+  gem "standard", require: false
+  gem "tapioca", require: false
+end
 
 gem "rake", "~> 13.0"
-gem "ruby-hello", path: "ruby/hello"
-gem "ruby-greeter", path: "ruby/greeter"
 gem "ruby-fibonacci", path: "ruby/fibonacci"
+gem "ruby-greeter", path: "ruby/greeter"
+gem "ruby-hello", path: "ruby/hello"
+gem "sorbet-runtime"
