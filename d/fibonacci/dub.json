@@ -1,0 +1,18 @@
+{
+	"name": "d-fibonacci",
+	"version": "1.0.0",
+	"description": "Fibonacci program written in D",
+	"license": "MIT",
+	"homepage": "https://github.com/altersabeh/codes#README",
+	"authors": [
+		"AlterSabeh"
+	],
+	"copyright": "Copyright © 2023, AlterSabeh",
+	"mainSourceFile": "src/fibonacci.d",
+	"sourcePaths": [
+		"src"
+	],
+	"targetName": "d-fibonacci",
+	"targetPath": "$DUB_PACKAGE_TARGET_PATH",
+	"targetType": "executable"
+}
