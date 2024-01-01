@@ -80,9 +80,7 @@ def fibonacci_series(n)
     sum += temp # Calculate the sum
   end
 
-  if n <= 5000
-    puts series.join(", ")
-  end
+  puts series.join(", ") if n <= 5000
 
   puts "\n"
   puts "Sum of the Fibonacci Series: #{sum}"
@@ -107,13 +105,13 @@ def date_and_time
   layout = "%B %d, %Y - %H:%M:%S"
   formatted_date = current_date.strftime(layout)
 
-  puts "Date and Time: " + formatted_date
+  puts "Date and Time: #{formatted_date}"
 end
 
 # Functions to handle user input and error
 def validate_input(user_input)
   n = user_input.strip.to_i
-  ((n > 0) && (user_input.strip == n.to_s)) ? n : nil
+  (n.positive? && (user_input.strip == n.to_s)) ? n : nil
 end
 
 def eof_handler
