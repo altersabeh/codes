@@ -93,6 +93,11 @@ __pycache__/
 !Rakefile
 !ruby/**
 
+# sbt
+.bloop/
+.metals/
+metals.sbt
+
 # sorbet
 !bin/tapioca
 sorbet/**/*.txt
