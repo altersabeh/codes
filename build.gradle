@@ -124,3 +124,42 @@ project(':groovy') {
         }
     }
 }
+
+project(':scala') {
+    subprojects {
+        apply plugin: 'application'
+        apply plugin: 'scala'
+        dependencies {
+            implementation "org.scala-lang:scala3-library_3:${scalaVersion}"
+        }
+        sourceSets {
+            main {
+                resources {
+                    srcDirs = ['.']
+                    include "README.md"
+                    include "CHANGELOG.md"
+                    include "LICENSE"
+                }
+            }
+        }
+        buildDir = "${project.rootDir}/dist/scala/gradle/${projectDir.name}"
+        java {
+            toolchain {
+                languageVersion = JavaLanguageVersion.of(javaToolchainVersion)
+            }
+        }
+        run {
+            standardInput = System.in
+        }
+        defaultTasks "scala-${projectDir.name}"
+    }
+    tasks.register('build') {
+        group = 'Application (Scala)'
+        description = 'Builds all Scala targets'
+    }
+    subprojects.each { subproject ->
+        tasks.named("build").configure {
+            dependsOn ":scala:${subproject.name}:build"
+        }
+    }
+}

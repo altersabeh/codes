@@ -4,7 +4,7 @@ plugins {
 
 rootProject.name = "codes"
 
-val directories = listOf("java", "kotlin", "groovy")
+val directories = listOf("java", "kotlin", "groovy", "scala")
 directories.forEach { dirName ->
     file(dirName).listFiles()?.filter { it.isDirectory }?.forEach { subdir ->
         include("${dirName}:${subdir.name}")
