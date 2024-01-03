@@ -59,7 +59,7 @@ function fibonacciSeries($n) {
 
   $a = '0'; // Use strings to ensure precision
   $b = '1';
-  $temp;
+  $temp = '0';
   $sum = '0';
 
   echo "Fibonacci Series up to the " . $n . getSuffix($n) . " term:" . PHP_EOL;
