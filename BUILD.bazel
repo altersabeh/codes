@@ -2,10 +2,12 @@ alias(
     name = "c++-hello",
     actual = "//c++/hello:c++-hello",
 )
+
 alias(
     name = "c++-greeter",
     actual = "//c++/greeter:c++-greeter",
 )
+
 alias(
     name = "c++-fibonacci",
     actual = "//c++/fibonacci:c++-fibonacci",
@@ -15,10 +17,12 @@ alias(
     name = "c-hello",
     actual = "//c/hello:c-hello",
 )
+
 alias(
     name = "c-greeter",
     actual = "//c/greeter:c-greeter",
 )
+
 alias(
     name = "c-fibonacci",
     actual = "//c/fibonacci:c-fibonacci",
@@ -28,10 +32,12 @@ alias(
     name = "java-hello",
     actual = "//java/hello:java-hello",
 )
+
 alias(
     name = "java-greeter",
     actual = "//java/greeter:java-greeter",
 )
+
 alias(
     name = "java-fibonacci",
     actual = "//java/fibonacci:java-fibonacci",
@@ -41,10 +47,12 @@ alias(
     name = "python-hello",
     actual = "//python/hello:python-hello",
 )
+
 alias(
     name = "python-greeter",
     actual = "//python/greeter:python-greeter",
 )
+
 alias(
     name = "python-fibonacci",
     actual = "//python/fibonacci:python-fibonacci",
