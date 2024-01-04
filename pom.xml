@@ -98,7 +98,7 @@
         <version>${maven-build-cache-extension.version}</version>
       </extension>
     </extensions>
-    <pluginManagement>
+      <pluginManagement>
       <plugins>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
