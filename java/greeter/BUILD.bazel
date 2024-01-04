@@ -4,7 +4,7 @@ package(
 
 java_binary(
     name = "java-greeter",
-    srcs = ["src/main/java/Greeter.java"],
+    srcs = ["src/main/java/greeter/Greeter.java"],
     main_class = "greeter.Greeter",
 )
 
