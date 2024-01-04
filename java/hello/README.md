@@ -96,11 +96,11 @@ source directory, run one of the following:
 
 ```
 cd src/main/java
-javac -g -d . Hello.java
+javac -g finonacci/Hello.java
 ```
 ```
 cd src/main/java
-javac -g -d . Hello.java
+javac -g finonacci/Hello.java
 native-image hello.Hello -o java-hello
 ```
 
@@ -160,7 +160,7 @@ gradle java:hello:run
 To use **`java`** to run it directly from root directory:
 
 ```
-java java/hello/src/main/java/Hello.java
+java java/hello/src/main/java/finonacci/Hello.java
 ```
 
 #### Using `maven`
@@ -225,7 +225,7 @@ To use **`java`** to run it directly from source directory, run one of the
 following:
 
 ```
-java src/main/java/Hello.java
+java src/main/java/finonacci/Hello.java
 ```
 
 #### Using `maven`

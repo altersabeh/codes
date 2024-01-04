@@ -96,11 +96,11 @@ source directory, run one of the following:
 
 ```
 cd src/main/java
-javac -g -d . Greeter.java
+javac -g finonacci/Greeter.java
 ```
 ```
 cd src/main/java
-javac -g -d . Greeter.java
+javac -g finonacci/Greeter.java
 native-image greeter.Greeter -o java-greeter
 ```
 
@@ -160,7 +160,7 @@ gradle java:greeter:run
 To use **`java`** to run it directly from root directory:
 
 ```
-java java/greeter/src/main/java/Greeter.java
+java java/greeter/src/main/java/finonacci/Greeter.java
 ```
 
 #### Using `maven`
@@ -225,7 +225,7 @@ To use **`java`** to run it directly from source directory, run one of the
 following:
 
 ```
-java src/main/java/Greeter.java
+java src/main/java/finonacci/Greeter.java
 ```
 
 #### Using `maven`
