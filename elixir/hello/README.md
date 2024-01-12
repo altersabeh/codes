@@ -2,6 +2,12 @@
 
 This is a **Hello World** program written in **Elixir**.
 
+``` Elixir
+# Hello World in Elixir !
+
+IO.puts "Hello World from Elixir !"
+```
+
 ## Prerequisite
 
 To run and build this program you need to have the following:
