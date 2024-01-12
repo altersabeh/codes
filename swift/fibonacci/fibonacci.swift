@@ -1,14 +1,14 @@
 /**
-  Fibonacci Series Calculator
-
-  The Fibonacci Series Calculator is a Swift program that calculates
-  and prints the Fibonacci Series up to the nth term with arbitrary
-  precision. It includes features such as error handling for input
-  validation, handling special cases where numbers don't end in "th"
-  (e.g. 1, 2, 3), displaying the sum of the series, and providing the
-  current date and time.
-
-  - License: This program is in the public domain.
+ * Fibonacci Series Calculator
+ *
+ * The Fibonacci Series Calculator is a Swift program that calculates
+ * and prints the Fibonacci Series up to the nth term with arbitrary
+ * precision. It includes features such as error handling for input
+ * validation, handling special cases where numbers don't end in "th"
+* (e.g. 1, 2, 3), displaying the sum of the series, and providing the
+ * current date and time.
+ *
+ * - License: This program is in the public domain.
  */
 
 import BigInt
@@ -37,10 +37,10 @@ func getUserInput() {
         print("Please enter something...")
       } else if trimmedInput == "exit" {
         print("Exiting the program...")
-        break;
+        break
       }
 
-      let  n = validateInput(trimmedInput)
+      let n = validateInput(trimmedInput)
 
       if n > 0 {
         fibonacciSeries(n)
