@@ -2,6 +2,13 @@
 
 This is a **Hello World** program written in **Python**.
 
+``` Python
+# Hello World in Python !
+
+print("Hello World from Python !")
+```
+```
+
 ## Prerequisite
 
 To run and build this program you need to have the following:
