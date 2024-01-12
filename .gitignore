@@ -36,6 +36,9 @@
 # cargo
 **/target
 
+# composer
+**/vendor
+
 # dart
 **/.dart_tool
 melos*.iml
