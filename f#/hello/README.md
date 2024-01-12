@@ -2,6 +2,16 @@
 
 This is a **Hello World** program written in **F#**.
 
+``` F#
+// Hello World in F# !
+
+[<EntryPoint>]
+
+let main argv =
+    printfn "Hello World from F# !"
+    0
+```
+
 ## Prerequisite
 
 To run and build this program you need to have the following:
