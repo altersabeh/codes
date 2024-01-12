@@ -72,7 +72,6 @@ fibonacci n = do
     else do
       -- Print the series without using array
       fib (n + 1) 0 1 0
-
   where
     fibAR :: Integer -> Integer -> Integer -> [Integer]
     fibAR 0 _ _ = []
