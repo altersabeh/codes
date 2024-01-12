@@ -2,6 +2,12 @@
 
 This is a **Hello World** program written in **JavaScript**.
 
+``` JavaScript
+// Hello World in JavaScript !
+
+console.log('Hello World from JavaScript !');
+```
+
 ## Prerequisite
 
 <div align="center">
