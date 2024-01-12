@@ -2,6 +2,12 @@
 
 This is a **Hello World** program written in **TypeScript**.
 
+``` TypeScript
+// Hello World in TypeScript !
+
+console.log('Hello World from TypeScript !');
+```
+
 ## Prerequisite
 
 <div align="center">
