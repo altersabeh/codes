@@ -1,7 +1,3 @@
-import 'dart:io';
-import 'dart:core';
-import 'package:intl/intl.dart';
-
 /// Fibonacci Series Calculator
 ///
 /// The Fibonacci Series Calculator is a Dart program that calculates
@@ -12,6 +8,12 @@ import 'package:intl/intl.dart';
 /// the current date and time.
 ///
 /// License: This program is in the public domain.
+
+library;
+
+import 'dart:io';
+import 'dart:core';
+import 'package:intl/intl.dart';
 
 void main() {
   stdout.writeln("============Fibonacci Series Calculator============");
