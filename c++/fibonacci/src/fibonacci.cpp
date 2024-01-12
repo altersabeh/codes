@@ -1,8 +1,8 @@
 /**
  * Fibonacci Series Calculator
  *
- * The Fibonacci Series Calculator is a C++ program that calculates and
- * prints the Fibonacci Series up to the nth term with arbitrary
+ * The Fibonacci Series Calculator is a C++ program that calculates
+ * and prints the Fibonacci Series up to the nth term with arbitrary
  * precision. It includes features such as error handling for input
  * validation, handling special cases where numbers don't end in "th"
  * (e.g. 1, 2, 3), displaying the sum of the series, and providing the
