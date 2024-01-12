@@ -1,6 +1,6 @@
-# `Java/Fibonacci`
+# `Groovy/Fibonacci`
 
-This is a **Fibonacci** program written in **Java**.
+This is a **Fibonacci** program written in **Groovy**.
 
 ## Prerequisite
 
@@ -167,7 +167,7 @@ program:
 
 ```
 cd src/main/groovy
-java -cp .:$GROOVY_HOME/lib/*.jar fibonacci.Fibonacci
+java -cp .:$GROOVY_HOME/lib/* fibonacci.Fibonacci
 ```
 
 #### Using `groovy interpreter`

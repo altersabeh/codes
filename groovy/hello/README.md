@@ -1,6 +1,6 @@
-# `Java/Hello`
+# `Groovy/Hello`
 
-This is a **Hello World** program written in **Java**.
+This is a **Hello World** program written in **Groovy**.
 
 ## Prerequisite
 
@@ -167,7 +167,7 @@ program:
 
 ```
 cd src/main/groovy
-java -cp .:$GROOVY_HOME/lib/*.jar hello.Hello
+java -cp .:$GROOVY_HOME/lib/* hello.Hello
 ```
 
 #### Using `groovy interpreter`

@@ -1,6 +1,6 @@
-# `Java/Greeter`
+# `Groovy/Greeter`
 
-This is a **Greeter** program written in **Java**.
+This is a **Greeter** program written in **Groovy**.
 
 ## Prerequisite
 
@@ -167,7 +167,7 @@ program:
 
 ```
 cd src/main/groovy
-java -cp .:$GROOVY_HOME/lib/*.jar greeter.Greeter
+java -cp .:$GROOVY_HOME/lib/* greeter.Greeter
 ```
 
 #### Using `groovy interpreter`
