@@ -2,6 +2,19 @@
 
 This is a **Hello World** program written in **C++**.
 
+``` C++
+// Hello World in C++ !
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    cout << "Hello World from C++ !" << endl;
+    return 0;
+}
+```
+
 ## Prerequisite
 
 To run and build this program you need to have the following:
