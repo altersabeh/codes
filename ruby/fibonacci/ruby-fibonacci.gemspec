@@ -14,14 +14,14 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
   spec.required_ruby_version = ">= 2.6.0"
   spec.metadata = {
-    "bug_tracker_uri"   => "https://github.com/altersabeh/codes/issues",
-    "homepage_uri"      => "https://github.com/altersabeh/codes#README",
-    "source_code_uri"   => "https://github.com/altersabeh/codes",
+    "bug_tracker_uri" => "https://github.com/altersabeh/codes/issues",
+    "homepage_uri" => "https://github.com/altersabeh/codes#README",
+    "source_code_uri" => "https://github.com/altersabeh/codes"
   }
   spec.files = Dir["lib/**/*.rb"] + Dir["bin/*"] + Dir["*.gemspec"]
   spec.files += [
     "README.md",
     "CHANGELOG.md",
-    "LICENSE",
+    "LICENSE"
   ]
 end
