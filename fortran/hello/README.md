@@ -2,6 +2,15 @@
 
 This is a **Hello World** program written in **Fortran**.
 
+``` Fortran
+! Hello World in Fortran !
+
+program hello
+    implicit none
+    print '(A)', 'Hello World from Fortran !'
+end program hello
+```
+
 ## Prerequisite
 
 To run and build this program you need to have the following:
