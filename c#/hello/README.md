@@ -2,6 +2,20 @@
 
 This is a **Hello World** program written in **C#**.
 
+``` C#
+// Hello World in C# !
+
+using System;
+
+namespace Hello;
+
+class Hello {
+    static void Main(string[] args) {
+        Console.WriteLine("Hello World from C# !");
+    }
+}
+```
+
 ## Prerequisite
 
 To run and build this program you need to have the following:
