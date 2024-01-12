@@ -27,6 +27,7 @@
     <module>groovy/fibonacci</module>
     <!-- scala modules -->
     <module>scala/hello</module>
+    <module>scala/greeter</module>
   </modules>
 
   <properties>
