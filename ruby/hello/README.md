@@ -2,6 +2,13 @@
 
 This is a **Hello World** program written in **Ruby**.
 
+``` Ruby
+# Hello World in Ruby !
+
+puts "Hello World from Ruby !"
+```
+```
+
 ## Prerequisite
 
 To run and build this program you need to install:
