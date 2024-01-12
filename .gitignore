@@ -118,3 +118,7 @@ output/**
 
 # swift
 **/.build
+
+# vscode
+launch.json
+tasks.json
