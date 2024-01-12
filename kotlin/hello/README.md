@@ -2,6 +2,16 @@
 
 This is a **Hello World** program written in **Kotlin**.
 
+``` Kotlin
+// Hello World in Kotlin !
+
+package hello;
+
+fun main() {
+    println("Hello World from Kotlin !")
+}
+```
+
 ## Prerequisite
 
 To run and build this program you need to have the following:
