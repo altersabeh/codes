@@ -4,8 +4,8 @@ lazy val hello = project
   .withId("scala-hello")
   .in(file("."))
   .settings(
-    name := "scala-hello",
-    version := "1.0.0",
+    name        := "scala-hello",
+    version     := "1.0.0",
     description := "Hello World program written in Scala",
     licenses := List(
       "MIT" -> url("https://github.com/altersabeh/codes/blob/main/LICENSE")
