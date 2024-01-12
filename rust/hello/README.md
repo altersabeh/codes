@@ -2,6 +2,14 @@
 
 This is a **Hello World** program written in **RUST**.
 
+``` Rust
+// Hello World in Rust !
+
+fn main() {
+    println!("Hello World from Rust !");
+}
+```
+
 ## Prerequisite
 
 To run and build this program you need to have the following:
