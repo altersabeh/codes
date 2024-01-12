@@ -15,7 +15,7 @@ using System.Numerics;
 
 namespace Fibonacci;
 
-class Program {
+class Fibonacci {
   static void Main(string[] args) {
     Console.WriteLine("============Fibonacci Series Calculator============");
     Console.WriteLine("This Program was Written Using: C#");

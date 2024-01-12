@@ -2,7 +2,7 @@
 
 namespace Hello;
 
-class Program {
+class Hello {
   static void Main(string[] args) {
     Console.WriteLine("Hello World from C# !");
   }
