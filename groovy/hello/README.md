@@ -2,6 +2,18 @@
 
 This is a **Hello World** program written in **Groovy**.
 
+``` Groovy
+// Hello World in Groovy !
+
+package hello
+
+class Hello {
+    static void main(args) {
+        println 'Hello World from Groovy !'
+    }
+}
+```
+
 ## Prerequisite
 
 To run and build this program you need to have the following:
