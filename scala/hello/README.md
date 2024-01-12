@@ -2,6 +2,15 @@
 
 This is a **Hello World** program written in **Scala**.
 
+``` Scala
+// Hello World in Scala !
+
+package hello
+
+@main def Hello: Unit =
+    println("Hello World from Scala !")
+```
+
 ## Prerequisite
 
 To run and build this program you need to have the following:
