@@ -2,6 +2,14 @@
 
 This is a **Hello World** program written in **Dart**.
 
+``` Dart
+// Hello World in Dart !
+
+void main() {
+    print("Hello World from Dart !");
+}
+```
+
 ## Prerequisite
 
 To run and build this program you need to have the following:
