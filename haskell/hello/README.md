@@ -2,6 +2,15 @@
 
 This is a **Hello World** program written in **Haskell**.
 
+``` Haskell
+-- Hello World in Haskell !
+
+module Main (main) where
+
+main :: IO ()
+main = putStrLn "Hello World from Haskell !"
+```
+
 ## Prerequisite
 
 To run and build this program you need to have the following:
