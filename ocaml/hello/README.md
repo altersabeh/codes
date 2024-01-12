@@ -2,6 +2,13 @@
 
 This is a **Hello World** program written in **OCaml**.
 
+``` Ocaml
+(* Hello World in OCaml ! *)
+
+let () =
+    print_endline "Hello World from OCaml !"
+```
+
 ## Prerequisite
 
 To run and build this program you need to have the following:
