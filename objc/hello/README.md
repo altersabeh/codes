@@ -2,6 +2,20 @@
 
 This is a **Hello World** program written in **Objective-C**.
 
+``` Objective-C
+// Hello World in Objective-C !
+
+#import <Foundation/Foundation.h>
+
+int main(int argc, const char *argv[]) {
+    @autoreleasepool {
+        printf("Hello World from Objective-C !\n");
+    }
+    return 0;
+}
+
+```
+
 ## Prerequisite
 
 To run and build this program you need to have the following:
