@@ -1,0 +1,25 @@
+jar {
+    archiveBaseName = "kotlin-${projectDir.name}"
+    archiveVersion = "${version}"
+    archiveExtension = "jar"
+    manifest {
+        attributes('Main-Class': "${projectDir.name}.${projectDir.name.capitalize()}Kt")
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from {
+        configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+task ("kotlin-${projectDir.name}", type: JavaExec) {
+    description = "${projectDir.name.capitalize()} program written in Kotlin"
+    group = "Application (Kotlin)"
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = "${projectDir.name}.${projectDir.name.capitalize()}Kt"
+    standardInput = System.in
+}
+
+application {
+    applicationName = "kotlin-${projectDir.name}"
+    mainClass = "${projectDir.name}.${projectDir.name.capitalize()}Kt"
+}

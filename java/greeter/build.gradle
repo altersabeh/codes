@@ -1,0 +1,32 @@
+jar {
+    archiveBaseName = "java-${projectDir.name}"
+    archiveVersion = "${version}"
+    archiveExtension = "jar"
+    manifest {
+        attributes('Main-Class': "${projectDir.name}.${projectDir.name.capitalize()}")
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from {
+        configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+task ("java-${projectDir.name}", type: JavaExec) {
+    description = "${projectDir.name.capitalize()} program written in Java"
+    group = "Application (Java)"
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = "${projectDir.name}.${projectDir.name.capitalize()}"
+    standardInput = System.in
+}
+
+application {
+    applicationName = "java-${projectDir.name}"
+    mainClass = "${projectDir.name}.${projectDir.name.capitalize()}"
+}
+
+distributions {
+    main {
+        distributionBaseName = "java-${projectDir.name}"
+    }
+}
+	

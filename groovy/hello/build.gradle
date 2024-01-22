@@ -1,0 +1,25 @@
+jar {
+    archiveBaseName = "groovy-${projectDir.name}"
+    archiveVersion = "${version}"
+    archiveExtension = "jar"
+    manifest {
+        attributes('Main-Class': "${projectDir.name}.${projectDir.name.capitalize()}")
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from {
+        configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+task ("groovy-${projectDir.name}", type: JavaExec) {
+    description = "${projectDir.name.capitalize()} World program written in Groovy"
+    group = "Application (Groovy)"
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = "${projectDir.name}.${projectDir.name.capitalize()}"
+    standardInput = System.in
+}
+
+application {
+    applicationName = "groovy-${projectDir.name}"
+    mainClass = "${projectDir.name}.${projectDir.name.capitalize()}"
+}
