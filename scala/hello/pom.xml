@@ -9,7 +9,7 @@
   <artifactId>hello</artifactId>
   <name>${project.groupId}-${project.artifactId}</name>
   <version>1.0.0</version>
-  <description>Hello World program written in Java</description>
+  <description>Hello World program written in Scala</description>
 
   <parent>
     <groupId>github.altersabeh</groupId>
