@@ -28,6 +28,7 @@
     <!-- scala modules -->
     <module>scala/hello</module>
     <module>scala/greeter</module>
+    <module>scala/fibonacci</module>
   </modules>
 
   <properties>
