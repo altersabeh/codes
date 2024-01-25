@@ -10,7 +10,6 @@
  *
  * License: This program is in the public domain.
  */
-
 package fibonacci
 
 import java.math.BigDecimal
@@ -158,10 +157,13 @@ class Fibonacci {
 
   static void signalHandler() {
     def sigintHandler = new SignalHandler() {
+
       void handle(Signal signal) {
         interruptHandler()
       }
+
     }
     Signal.handle(new Signal('INT'), sigintHandler)
   }
+
 }
