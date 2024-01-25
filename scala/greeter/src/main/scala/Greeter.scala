@@ -1,6 +1,6 @@
 package greeter
 
-import scala.io.StdIn._
+import scala.io.StdIn.readLine
 
 object InputHandler:
   def getUserName(): String =
