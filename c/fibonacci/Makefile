@@ -8,9 +8,9 @@ OBJECTS = $(patsubst $(SRCDIR)/%.c,%.o,$(wildcard $(SRCDIR)/*.c))
 
 .PHONY: $(EXECUTABLE) build run clean help
 
-$(EXECUTABLE): build
-
 build: $(C_BINDIR)/$(EXECUTABLE)
+
+$(EXECUTABLE): build
 
 $(C_BINDIR)/$(EXECUTABLE): $(C_BINDIR)/$(OBJECTS)
 	@mkdir $(C_BINDIR) -p
