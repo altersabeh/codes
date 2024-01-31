@@ -27,7 +27,7 @@ To run and build this program you need to have the following:
 | Name | Commands | Required | Recommended | Optional | Notes |
 |:----:|:--------:|:--------:|:-----------:|:--------:|:-----:|
 | [**GNU Make**](https://www.gnu.org/software/make/) | **`make`** | &#9989; | &#9989; | &#10062; | **`apt install make`** |
-| [**NVIDIA Cuda Compiler**](https://developer.nvidia.com/cuda-downloads) | **`nvcc`** | &#9989; | &#9989; | &#10062; | **`apt install nvidia-cuda-toolkit`**<br>or<br>**`apt instal cuda`** |
+| [**NVIDIA Cuda Compiler**](https://developer.nvidia.com/cuda-downloads) | **`nvcc`** | &#9989; | &#9989; | &#10062; | **`apt install nvidia-cuda-toolkit`**<br>or<br>**`apt install cuda`** |
 | [**GNU C/C++ Compiler**](https://gcc.gnu.org) | **`gcc`**<br>**`g++`** | &#9989; | &#9989; | &#10062; | **`apt install gcc`**<br>**`apt install g++`** |
 | [**LLVM C/C++ Compiler**](https://releases.llvm.org/download.html) | **`clang`**<br>**`clang++`** | &#10062; | &#9989; | &#9989; | **`apt install clang`** |
 | [**Intel C/C++ Compiler**](https://www.intel.com/content/www/us/en/developer/tools/oneapi/dpc-compiler.html) | **`icx`**<br>**`icpx`**<br>**`dpcpp`** | &#10062; | &#10062; | &#9989; | **`apt install intel-basekit`**<br>or<br>**`apt install intel-hpckit`** |
