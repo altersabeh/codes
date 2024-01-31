@@ -1,5 +1,5 @@
 MAKE = make
-LANGUAGES = c c++ objc
+LANGUAGES = c c++ objc cuda
 PROJECTS = hello greeter fibonacci
 OPERATIONS = run clean
 
@@ -49,6 +49,9 @@ help-c++: _help-c++-message
 help-objc: _help-objc-message
 	@echo
 
+help-cuda: _help-cuda-message
+	@echo
+
 define PROJECT_OPERATION
 $1-$2: $(addprefix $1-$2-, $(PROJECTS))
 endef
@@ -64,7 +67,7 @@ help:
 	@echo
 	@echo "To see a list of available targets, \033[1mrun make targets\033[0m"
 	@echo
-	@echo	"Language supported: \033[1mC, C++, Objective-C\033[0m"
+	@echo	"Language supported: \033[1mC, C++, Objective-C, CUDA\033[0m"
 	@echo "Available operations for each targets:"
 	@echo "    \033[1mbuild, run, clean, help\033[0m"
 	@echo
@@ -88,6 +91,10 @@ _help-c++-message:
 _help-objc-message:
 	@echo "\033[1mObjective-C Applications\033[0m"
 	@echo "\033[1m------------------------\033[0m"
+
+_help-cuda-message:
+	@echo "\033[1mCUDA Applications\033[0m"
+	@echo "\033[1m----------------\033[0m"
 
 .DEFAULT_GOAL := help
 
