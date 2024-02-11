@@ -11,11 +11,11 @@
  * License: This program is in the public domain.
  */
 
+#include <NTL/ZZ.h>
 #include <csignal>
 #include <ctime>
 #include <iomanip>
 #include <iostream>
-#include <NTL/ZZ.h>
 #include <sstream>
 #include <string>
 #include <vector>
@@ -85,8 +85,7 @@ void fibonacciSeries(int n) {
   b = 1;
   sum = 0;
 
-  cout << "Fibonacci Series up to the " << n << getSuffix(n)
-       << " term:" << endl;
+  cout << "Fibonacci Series up to the " << n << getSuffix(n) << " term:" << endl;
 
   vector<ZZ> series;
 
@@ -109,7 +108,7 @@ void fibonacciSeries(int n) {
 
   if (n <= 5000) {
     ostringstream fibSeries;
-    for (const ZZ& num : series) {
+    for (const ZZ &num : series) {
       fibSeries << num;
       if (&num != &series.back()) {
         fibSeries << ", ";
