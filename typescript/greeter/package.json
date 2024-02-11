@@ -24,11 +24,11 @@
     "start": "ts-node index.ts"
   },
   "devDependencies": {
-    "@types/node": "^20.10.5",
-    "@types/readline-sync": "^1.4.8",
-    "ts-node": "^10.9.2"
+    "@types/node": "20.11.17",
+    "@types/readline-sync": "1.4.8",
+    "ts-node": "10.9.2"
   },
   "dependencies": {
-    "readline-sync": "^1.4.10"
+    "readline-sync": "1.4.10"
   }
 }

@@ -24,10 +24,10 @@
     "start": "ts-node index.ts"
   },
   "devDependencies": {
-    "@types/node": "^20.10.5",
-    "ts-node": "^10.9.2"
+    "@types/node": "20.11.17",
+    "ts-node": "10.9.2"
   },
   "dependencies": {
-    "moment": "^2.29.4"
+    "moment": "2.30.1"
   }
 }
