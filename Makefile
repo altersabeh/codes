@@ -63,9 +63,9 @@ $(foreach lang,$(LANGUAGES),\
     $(eval $(call PROJECT_OPERATION,$(op),$(lang)))))
 
 help:
-	@echo "To run a task, run \e[33m'make <task>'\033[0m ..."
+	@echo "To run a task, run \e[31m'make <task>'\033[0m ..."
 	@echo
-	@echo "To see a list of available targets, run \e[33m'make targets'\033[0m"
+	@echo "To see a list of available targets, run \e[31m'make targets'\033[0m"
 	@echo
 	@echo	"Language supported:"
 	@echo "  \e[36mC\033[0m, \e[36mC++\033[0m, \e[36mObjective-C\033[0m, \e[36mCUDA\033[0m"
@@ -77,25 +77,25 @@ help:
 	@echo "              \e[32mmake build-c++\033[0m       // builds all c++ targets"
 	@echo "              \e[32mmake build\033[0m           // builds all targets"
 
-targets: help-c help-c++ help-objc
+targets: help-c help-c++ help-objc help-cuda
 	@echo "\033[1mAvailable operations for each targets:\033[0m"
 	@echo "    build, run, clean, help"
 
 _help-c-message:
-	@echo "\033[1mC Applications\033[0m"
-	@echo "\033[1m--------------\033[0m"
+	@echo "\e[33mC Applications\033[0m"
+	@echo "\e[33m--------------\033[0m"
 
 _help-c++-message:
-	@echo "\033[1mC++ Applications\033[0m"
-	@echo "\033[1m----------------\033[0m"
+	@echo "\e[33mC++ Applications\033[0m"
+	@echo "\e[33m----------------\033[0m"
 
 _help-objc-message:
-	@echo "\033[1mObjective-C Applications\033[0m"
-	@echo "\033[1m------------------------\033[0m"
+	@echo "\e[33mObjective-C Applications\033[0m"
+	@echo "\e[33m------------------------\033[0m"
 
 _help-cuda-message:
-	@echo "\033[1mCUDA Applications\033[0m"
-	@echo "\033[1m----------------\033[0m"
+	@echo "\e[33mCUDA Applications\033[0m"
+	@echo "\e[33m----------------\033[0m"
 
 .DEFAULT_GOAL := help
 
