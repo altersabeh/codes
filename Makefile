@@ -63,18 +63,19 @@ $(foreach lang,$(LANGUAGES),\
     $(eval $(call PROJECT_OPERATION,$(op),$(lang)))))
 
 help:
-	@echo "To run a task, \033[1mrun make <task> ...\033[0m"
+	@echo "To run a task, run \e[33m'make <task>'\033[0m ..."
 	@echo
-	@echo "To see a list of available targets, \033[1mrun make targets\033[0m"
+	@echo "To see a list of available targets, run \e[33m'make targets'\033[0m"
 	@echo
-	@echo	"Language supported: \033[1mC, C++, Objective-C, CUDA\033[0m"
+	@echo	"Language supported:"
+	@echo "  \e[36mC\033[0m, \e[36mC++\033[0m, \e[36mObjective-C\033[0m, \e[36mCUDA\033[0m"
 	@echo "Available operations for each targets:"
-	@echo "    \033[1mbuild, run, clean, help\033[0m"
+	@echo "  \e[4;33mbuild\033[0m, \e[4;33mrun\033[0m, \e[4;33mclean\033[0m, \e[4;33mhelp\033[0m"
 	@echo
-	@echo "Example task: \033[1mmake build-c++-hello\033[0m // builds hello in c++"
-	@echo "              \033[1mmake clean-c++-hello\033[0m // cleans build artifacts"
-	@echo "              \033[1mmake build-c++\033[0m       // builds all c++ targets"
-	@echo "              \033[1mmake build\033[0m           // builds all targets"
+	@echo "Example task: \e[32mmake build-c++-hello\033[0m // builds hello in c++"
+	@echo "              \e[32mmake clean-c++-hello\033[0m // cleans build artifacts"
+	@echo "              \e[32mmake build-c++\033[0m       // builds all c++ targets"
+	@echo "              \e[32mmake build\033[0m           // builds all targets"
 
 targets: help-c help-c++ help-objc
 	@echo "\033[1mAvailable operations for each targets:\033[0m"
