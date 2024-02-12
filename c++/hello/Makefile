@@ -22,8 +22,10 @@ $(CPP_BINDIR)/%.o: $(SRCDIR)/%.cpp
 
 run: $(CPP_BINDIR)/$(EXECUTABLE)
 	@echo Running $(EXECUTABLE) program:
+	@echo
 	@cd $(CURDIR)/$(CPP_BINDIR) && \
 	./$(EXECUTABLE)
+	@echo
 
 clean:
 	@cd $(CPP_BINDIR) && \

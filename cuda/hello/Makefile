@@ -22,8 +22,10 @@ $(CUDA_BINDIR)/%.o: $(SRCDIR)/%.cu
 
 run: $(CUDA_BINDIR)/$(EXECUTABLE)
 	@echo Running $(EXECUTABLE) program:
+	@echo
 	@cd $(CURDIR)/$(CUDA_BINDIR) && \
 	./$(EXECUTABLE)
+	@echo
 
 clean:
 	@cd $(CUDA_BINDIR) && \

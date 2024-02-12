@@ -22,8 +22,10 @@ $(C_BINDIR)/%.o: $(SRCDIR)/%.c
 
 run: $(C_BINDIR)/$(EXECUTABLE)
 	@echo Running $(EXECUTABLE) program:
+	@echo
 	@cd $(CURDIR)/$(C_BINDIR) && \
 	./$(EXECUTABLE)
+	@echo
 
 clean:
 	@cd $(C_BINDIR) && \

@@ -23,8 +23,10 @@ $(OBJC_BINDIR)/%.o: $(SRCDIR)/%.m
 
 run: $(OBJC_BINDIR)/$(EXECUTABLE)
 	@echo Running $(EXECUTABLE) program:
+	@echo
 	@cd $(CURDIR)/$(OBJC_BINDIR) && \
 	./$(EXECUTABLE)
+	@echo
 
 clean:
 	@cd $(OBJC_BINDIR) && \
