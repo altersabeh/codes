@@ -47,7 +47,9 @@ fn get_user_input() {
     if trimmed_input.is_empty() {
       println!("Please enter something...");
       continue;
-    } else if trimmed_input == "exit" {
+    }
+
+    if trimmed_input == "exit" {
       println!("Exiting the program...");
       break;
     }
