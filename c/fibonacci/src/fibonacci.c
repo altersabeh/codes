@@ -20,7 +20,6 @@
 #include <string.h>
 #include <time.h>
 
-char* trim(char* str);
 const char *getSuffix(int n);
 int validateInput(const char *input);
 void eofHandler();
