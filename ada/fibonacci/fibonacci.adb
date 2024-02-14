@@ -1,3 +1,16 @@
+--  @summary
+--  Fibonacci Series Calculator
+--
+--  The Fibonacci Series Calculator is an Ada program that calculates
+--  and prints the Fibonacci Series up to the nth term with arbitrary
+--  precision. It includes features such as error handling for input
+--  validation, handling special cases where numbers don't end in
+--  "th" (e.g. 1, 2, 3), displaying the sum of the series, and
+--  providing the current date and time.
+--
+--  License: This program is in the public domain.
+--
+
 with Ada.Calendar;
 with Ada.Calendar.Formatting;
 with Ada.IO_Exceptions;
@@ -16,13 +29,15 @@ procedure FIBONACCI is
   use Ada.Strings.Fixed;
   use Ada.Strings.Unbounded;
   use Ada.Text_IO;
+  use GNAT.OS_Lib;
 
+  --  Functions to handle user input and errors
   procedure EOF_Handler is
   begin
     New_Line;
     Put_Line ("End of File encountered.. Stopping...");
     Put_Line ("===================================================");
-    GNAT.OS_Lib.OS_Exit (0);
+    OS_Exit (0);
   end EOF_Handler;
 
   function Validate_Input (Input : String) return Integer is
@@ -43,6 +58,7 @@ procedure FIBONACCI is
     return Value;
   end Validate_Input;
 
+  --  Display the current date and time
   procedure Date_And_Time is
     Current_Time   : constant Time   := Clock;
     Formatted_Time : constant String := Image (Current_Time);
@@ -51,6 +67,7 @@ procedure FIBONACCI is
     Flush;
   end Date_And_Time;
 
+  --  Handle special cases where numbers don't end in "th"
   function Get_Suffix (N : Integer) return String is
   begin
     if N mod 10 = 1 and then N mod 100 /= 11 then
@@ -64,6 +81,7 @@ procedure FIBONACCI is
     end if;
   end Get_Suffix;
 
+  --  Calculates and prints the Fibonacci Series up to the nth term.
   procedure Fibonacci_Series (N : Integer) is
     A      : Big_Integer := 0;
     B      : Big_Integer := 1;
@@ -105,6 +123,7 @@ procedure FIBONACCI is
     Put_Line ("Sum of the Fibonacci Series:" & Big_Integer'Image (Sum));
   end Fibonacci_Series;
 
+  --  Function to Get the User Input
   procedure Get_User_Input is
     N     : Integer;
     Input : String (1 .. 100);
