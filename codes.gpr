@@ -20,8 +20,7 @@ project Codes is
    package Compiler is
       case Codes_Config.Build_Profile is
          when "development" =>
-            for Switches ("Ada")
-                use ("-gnaty2");
+            for Switches ("Ada") use ("-gnaty2 -gnat2022");
          when "release" =>
          when "validation" =>
       end case;
@@ -34,4 +33,8 @@ project Codes is
    package Install is
       for Artifacts (".") use ("share");
    end Install;
+
+   package Linker is
+      for Switches ("Ada") use ("-lgnatcoll_gmp");
+   end Linker;
 end Codes;
