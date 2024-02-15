@@ -20,7 +20,7 @@ project Codes is
    package Compiler is
       case Codes_Config.Build_Profile is
          when "development" =>
-            for Switches ("Ada") use ("-gnaty2 -gnat2022");
+            for Switches ("Ada") use ("-gnaty2", "-gnat2022");
          when "release" =>
          when "validation" =>
       end case;
