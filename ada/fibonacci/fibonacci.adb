@@ -14,22 +14,22 @@
 with Ada.Calendar;
 with Ada.Calendar.Formatting;
 with Ada.IO_Exceptions;
-with Ada.Numerics.Big_Numbers.Big_Integers;
 with Ada.Strings;
 with Ada.Strings.Fixed;
 with Ada.Strings.Unbounded;
 with Ada.Text_IO;
 with GNAT.OS_Lib;
+with GNATCOLL.GMP.Integers;
 
 procedure FIBONACCI is
   use Ada.Calendar;
   use Ada.Calendar.Formatting;
-  use Ada.Numerics.Big_Numbers.Big_Integers;
   use Ada.Strings;
   use Ada.Strings.Fixed;
   use Ada.Strings.Unbounded;
   use Ada.Text_IO;
   use GNAT.OS_Lib;
+  use GNATCOLL.GMP.Integers;
 
   --  Functions to handle user input and errors
   procedure EOF_Handler is
@@ -83,25 +83,28 @@ procedure FIBONACCI is
 
   --  Calculates and prints the Fibonacci Series up to the nth term.
   procedure Fibonacci_Series (N : Integer) is
-    A      : Big_Integer := 0;
-    B      : Big_Integer := 1;
+    A      : Big_Integer;
+    B      : Big_Integer;
     Temp   : Big_Integer;
-    Sum    : Big_Integer := 0;
+    Sum    : Big_Integer;
     Series : Unbounded_String;
   begin
+    Set (A, 0);
+    Set (B, 1);
+
     Put_Line
      ("Fibonacci Series up to the" & Integer'Image (N) & Get_Suffix (N) &
       " term:");
 
     for I in 0 .. N loop
       if N <= 5_000 then
-        Append (Series, Trim (Big_Integer'Image (A), Both));
+        Append (Series, String'(Image (A)));
         if I < N then
           Append (Series, ", ");
         end if;
       else
         --  Print the series without using array
-        Put (Trim (Big_Integer'Image (A), Both));
+        Put (String'(Image (A)));
         if I < N then
           Put (", ");
         else
@@ -109,10 +112,10 @@ procedure FIBONACCI is
         end if;
       end if;
 
-      Temp := A;
-      A    := B;
-      B    := Temp + B;
-      Sum  := Sum + Temp; -- Calculate the sum
+      SET (Temp, A);
+      SET (A, B);
+      ADD (B, B, Temp);
+      ADD (Sum, Sum, Temp); -- Calculate the sum
     end loop;
 
     if N <= 5_000 then
@@ -120,7 +123,7 @@ procedure FIBONACCI is
     end if;
 
     New_Line;
-    Put_Line ("Sum of the Fibonacci Series:" & Big_Integer'Image (Sum));
+    Put_Line ("Sum of the Fibonacci Series: " & String'(Image (Sum)));
   end Fibonacci_Series;
 
   --  Function to Get the User Input
@@ -131,7 +134,7 @@ procedure FIBONACCI is
   begin
     loop
       Put ("Enter the value of n (an integer): ");
-      Input := [others => ' '];
+      Input := (others => ' ');
       Get_Line (Input, Last);
 
       declare
