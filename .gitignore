@@ -21,6 +21,7 @@
 *.beam
 *.plt
 *.dump
+*.ali
 
 # alire
 **/alire
