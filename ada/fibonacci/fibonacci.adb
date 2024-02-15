@@ -134,7 +134,7 @@ procedure FIBONACCI is
   begin
     loop
       Put ("Enter the value of n (an integer): ");
-      Input := (others => ' ');
+      Input := [others => ' '];
       Get_Line (Input, Last);
 
       declare
