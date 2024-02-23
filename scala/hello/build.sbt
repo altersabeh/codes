@@ -1,4 +1,4 @@
-Global / scalaVersion := "3.3.1"
+Global / scalaVersion := "3.4.0"
 
 lazy val hello = project
   .withId("scala-hello")
