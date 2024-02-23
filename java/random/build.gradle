@@ -1,0 +1,31 @@
+jar {
+    archiveBaseName = "java-${projectDir.name}"
+    archiveVersion = "${version}"
+    archiveExtension = "jar"
+    manifest {
+        attributes('Main-Class': "${projectDir.name}.RandomNumberGame")
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from {
+        configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+task ("java-${projectDir.name}", type: JavaExec) {
+    description = "Random Number Game written in Java"
+    group = "Application (Java)"
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = "${projectDir.name}.RandomNumberGame"
+    standardInput = System.in
+}
+
+application {
+    applicationName = "java-${projectDir.name}"
+    mainClass = "${projectDir.name}.RandomNumberGame"
+}
+
+distributions {
+    main {
+        distributionBaseName = "java-${projectDir.name}"
+    }
+}

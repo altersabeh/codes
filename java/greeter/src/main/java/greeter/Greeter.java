@@ -31,6 +31,7 @@ public class Greeter {
     System.out.println("Hello, " + this.username + "!");
     System.out.println("Greetings from Java!");
   }
+
   public static void main(String[] args) {
     String name = InputHandler.getUserName();
     Greeter greeter = new Greeter(name);

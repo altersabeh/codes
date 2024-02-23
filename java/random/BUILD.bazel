@@ -1,0 +1,14 @@
+package(
+    default_visibility = ["//visibility:public"],
+)
+
+java_binary(
+    name = "java-random",
+    srcs = ["src/main/java/random/RandomNumberGame.java"],
+    main_class = "random.RandomNumberGame",
+)
+
+alias(
+    name = "main",
+    actual = ":java-random",
+)
