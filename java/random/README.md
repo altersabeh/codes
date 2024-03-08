@@ -225,7 +225,7 @@ To use **`java`** to run it directly from source directory, run one of the
 following:
 
 ```
-java src/main/java/random/RandomNumberGmae.java
+java src/main/java/random/RandomNumberGame.java
 ```
 
 #### Using `maven`
