@@ -160,7 +160,7 @@ gradle java:random:run
 To use **`java`** to run it directly from root directory:
 
 ```
-java java/random/src/main/java/finonacci/RandomNumberGame.java
+java java/random/src/main/java/random/RandomNumberGame.java
 ```
 
 #### Using `maven`
@@ -225,7 +225,7 @@ To use **`java`** to run it directly from source directory, run one of the
 following:
 
 ```
-java src/main/java/finonacci/RandomNumberGmae.java
+java src/main/java/random/RandomNumberGmae.java
 ```
 
 #### Using `maven`
