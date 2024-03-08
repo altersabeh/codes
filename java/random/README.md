@@ -96,11 +96,11 @@ source directory, run one of the following:
 
 ```
 cd src/main/java
-javac -g finonacci/RandomNumberGame.java
+javac -g random/RandomNumberGame.java
 ```
 ```
 cd src/main/java
-javac -g finonacci/RandomNumberGame.java
+javac -g random/RandomNumberGame.java
 native-image random.RandomNumberGame -o java-random
 ```
 
