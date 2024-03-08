@@ -1,18 +1,6 @@
-# `Java/Hello`
+# `Java/Message`
 
-This is a **Hello World** program written in **Java**.
-
-``` Java
-// Hello World in Java !
-
-package hello;
-
-public class Hello {
-    public static void main(String[] args) {
-        System.out.println("Hello World from Java !");
-    }
-}
-```
+This is a **Messages** written in **Java**.
 
 ## Prerequisite
 
@@ -46,7 +34,7 @@ the build process either from the root directory or the source directory.
 From the root directory:
 
 ```
-gradle java:hello:build
+gradle java:message:build
 ```
 
 #### Using `maven`
@@ -54,10 +42,10 @@ gradle java:hello:build
 To use **`maven`** from the root directory, run one of the following:
 
 ```
-mvn compile -pl java:hello
+mvn compile -pl java:message
 ```
 ```
-mvn package -pl java:hello
+mvn package -pl java:message
 ```
 
 <!--
@@ -73,10 +61,10 @@ TODO:
 To use **`bazel`** from the root directory, run one of the following:
 
 ```
-bazel build java-hello
+bazel build java-message
 ```
 ```
-bazel build java/hello:main
+bazel build java/message:main
 ```
 
 ### Source Directory _(optional)_
@@ -108,12 +96,12 @@ source directory, run one of the following:
 
 ```
 cd src/main/java
-javac -g hello/Hello.java
+javac -g message/MessageNumberGame.java
 ```
 ```
 cd src/main/java
-javac -g hello/Hello.java
-native-image hello.Hello -o java-hello
+javac -g message/MessageNumberGame.java
+native-image message.MessageNumberGame -o java-message
 ```
 
 #### Using `maven`
@@ -144,7 +132,7 @@ To use **`bazel`** from the source directory, run one of the following:
 bazel build main
 ```
 ```
-bazel build java-hello
+bazel build java-message
 ```
 
 ## Running
@@ -161,10 +149,10 @@ the program from either the root directory or the source directory.
 From the root directory, run one of the following:
 
 ```
-gradle java-hello
+gradle java-message
 ```
 ```
-gradle java:hello:run
+gradle java:message:run
 ```
 
 #### Using `java virtual machine`
@@ -172,7 +160,7 @@ gradle java:hello:run
 To use **`java`** to run it directly from root directory:
 
 ```
-java java/hello/src/main/java/hello/Hello.java
+java java/message/src/main/java/message/MessageNumberGame.java
 ```
 
 #### Using `maven`
@@ -180,7 +168,7 @@ java java/hello/src/main/java/hello/Hello.java
 To use **`maven`** from the root directory:
 
 ```
-mvn exec:java -pl java:hello
+mvn exec:java -pl java:message
 ```
 
 <!--
@@ -196,10 +184,10 @@ TODO:
 To use **`bazel`** from the root directory, run one of the following:
 
 ```
-bazel run java-hello
+bazel run java-message
 ```
 ```
-bazel run java/hello:main
+bazel run java/message:main
 ```
 
 ### Source Directory _(optional)_
@@ -212,7 +200,7 @@ From the source directory, you can run one of the following:
 gradle run
 ```
 ```
-gradle java-hello
+gradle java-message
 ```
 
 #### Using `java compilers`
@@ -223,12 +211,12 @@ building the program:
 ```
 # using javac
 cd src/main/java
-java hello.Hello
+java message.MessageNumberGame
 ```
 ```
 # using native-image
 cd src/main/java
-./java-hello
+./java-message
 ```
 
 #### Using `java virtual machines`
@@ -237,7 +225,7 @@ To use **`java`** to run it directly from source directory, run one of the
 following:
 
 ```
-java src/main/java/hello/Hello.java
+java src/main/java/message/MessageNumberGmae.java
 ```
 
 #### Using `maven`
@@ -264,7 +252,7 @@ To use **`bazel`** from the source directory, run one of the following:
 bazel run main
 ```
 ```
-bazel run java-hello
+bazel run java-message
 ```
 
 ## License

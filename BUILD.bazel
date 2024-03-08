@@ -44,6 +44,16 @@ alias(
 )
 
 alias(
+    name = "java-random",
+    actual = "//java/random:java-random",
+)
+
+alias(
+    name = "java-message",
+    actual = "//java/message:java-message",
+)
+
+alias(
     name = "python-hello",
     actual = "//python/hello:python-hello",
 )

@@ -18,6 +18,7 @@
     <module>java/greeter</module>
     <module>java/fibonacci</module>
     <module>java/random</module>
+    <module>java/message</module>
     <!-- kotlin modules -->
     <module>kotlin/hello</module>
     <module>kotlin/greeter</module>
