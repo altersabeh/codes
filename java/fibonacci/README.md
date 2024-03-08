@@ -96,11 +96,11 @@ source directory, run one of the following:
 
 ```
 cd src/main/java
-javac -g finonacci/Fibonacci.java
+javac -g fibonacci/Fibonacci.java
 ```
 ```
 cd src/main/java
-javac -g finonacci/Fibonacci.java
+javac -g fibonacci/Fibonacci.java
 native-image fibonacci.Fibonacci -o java-fibonacci
 ```
 
@@ -160,7 +160,7 @@ gradle java:fibonacci:run
 To use **`java`** to run it directly from root directory:
 
 ```
-java java/fibonacci/src/main/java/finonacci/Fibonacci.java
+java java/fibonacci/src/main/java/fibonacci/Fibonacci.java
 ```
 
 #### Using `maven`
@@ -225,7 +225,7 @@ To use **`java`** to run it directly from source directory, run one of the
 following:
 
 ```
-java src/main/java/finonacci/Fibonacci.java
+java src/main/java/fibonacci/Fibonacci.java
 ```
 
 #### Using `maven`
