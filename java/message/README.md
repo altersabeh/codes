@@ -96,12 +96,12 @@ source directory, run one of the following:
 
 ```
 cd src/main/java
-javac -g message/MessageNumberGame.java
+javac -g message/*.java
 ```
 ```
 cd src/main/java
-javac -g message/MessageNumberGame.java
-native-image message.MessageNumberGame -o java-message
+javac -g message/*.java
+native-image message.Message -o java-message
 ```
 
 #### Using `maven`
@@ -155,14 +155,6 @@ gradle java-message
 gradle java:message:run
 ```
 
-#### Using `java virtual machine`
-
-To use **`java`** to run it directly from root directory:
-
-```
-java java/message/src/main/java/message/MessageNumberGame.java
-```
-
 #### Using `maven`
 
 To use **`maven`** from the root directory:
@@ -211,7 +203,7 @@ building the program:
 ```
 # using javac
 cd src/main/java
-java message.MessageNumberGame
+java message.Message
 ```
 ```
 # using native-image
@@ -225,9 +217,9 @@ To use **`java`** to run it directly from source directory, run one of the
 following:
 
 ```
-java src/main/java/message/MessageNumberGmae.java
+java src/main/java/message/Message.java
 ```
-
+m
 #### Using `maven`
 
 To use **`maven`** from the source directory:
