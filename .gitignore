@@ -22,6 +22,7 @@
 *.plt
 *.dump
 *.ali
+**/objc/**/*.d
 
 # alire
 **/alire
