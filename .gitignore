@@ -23,6 +23,8 @@
 *.dump
 *.ali
 **/objc/**/*.d
+*.ads
+*.adb
 
 # alire
 **/alire
