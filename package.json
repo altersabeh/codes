@@ -31,8 +31,7 @@
     "format": "npx prettier --write .",
     "lint": "npx eslint .",
     "lint:fix": "npx eslint . --fix",
-    "prepack": "mkdir -p $NPM_CONFIG_PACK_DESTINATION",
-    "pack": "npx nx exec -- npm -ws pack"
+    "pack": "npx nx exec -- npm -ws run build"
   },
   "devDependencies": {
     "@nx/js": "18.1.1",
