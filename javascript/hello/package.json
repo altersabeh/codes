@@ -19,8 +19,9 @@
   },
   "scripts": {
     "js-hello": "node index.js",
-    "prepack": "mkdir -p $NPM_CONFIG_PACK_DESTINATION",
-    "build": "npm pack",
+    "prepack": "mkdir -p ../../dist/javascript/hello",
+    "pack": "npm pack --pack-destination ../../dist/javascript/hello",
+    "build": "npm run pack",
     "start": "node index.js"
   }
 }

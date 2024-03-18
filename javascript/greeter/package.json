@@ -19,8 +19,9 @@
   },
   "scripts": {
     "js-greeter": "node index.js",
-    "prepack": "mkdir -p $NPM_CONFIG_PACK_DESTINATION",
-    "build": "npm pack",
+    "prepack": "mkdir -p ../../dist/javascript/greeter",
+    "pack": "npm pack --pack-destination ../../dist/javascript/greeter",
+    "build": "npm run pack",
     "start": "node index.js"
   },
   "dependencies": {
