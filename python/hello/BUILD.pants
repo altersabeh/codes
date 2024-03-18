@@ -6,7 +6,7 @@ python_sources(
 pex_binary(
     name = "python-hello",
     entry_point = "src/python_hello/hello.py",
-    output_path = "python/bin/python-hello.pex",
+    output_path = "python/hello/bin/python-hello.pex",
 )
 
 resources(
@@ -30,5 +30,5 @@ python_distribution(
         version = "1.0.0",
     ),
     generate_setup = False,
-    output_path = "python/package",
+    output_path = "python/hello/package",
 )

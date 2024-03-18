@@ -6,7 +6,7 @@ python_sources(
 pex_binary(
     name = "python-greeter",
     entry_point = "src/python_greeter/greeter.py",
-    output_path = "python/bin/python-greeter.pex",
+    output_path = "python/greeter/bin/python-greeter.pex",
 )
 
 resources(
@@ -30,5 +30,5 @@ python_distribution(
         version = "1.0.0",
     ),
     generate_setup = False,
-    output_path = "python/package",
+    output_path = "python/greeter/package",
 )
