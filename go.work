@@ -1,6 +1,7 @@
-go 1.21.3
+go 1.22.0
 
 use (
+  // ./
 	./go/hello
   ./go/greeter
   ./go/fibonacci
