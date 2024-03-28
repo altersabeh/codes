@@ -32,6 +32,9 @@ From the root directory, run one of the following:
 dotnet build f#/fibonacci
 ```
 ```
+dotnet build -t:"f#\f#-fibonacci"
+```
+```
 dotnet build f#/fibonacci/f#-fibonacci.csproj
 ```
 ```

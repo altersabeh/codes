@@ -42,6 +42,9 @@ From the root directory, run one of the following:
 dotnet build f#/hello
 ```
 ```
+dotnet build -t:"f#\f#-hello"
+```
+```
 dotnet build f#/hello/f#-hello.csproj
 ```
 ```
