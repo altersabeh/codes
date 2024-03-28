@@ -1,6 +1,6 @@
 MAKE = make
 LANGUAGES = c c++ objc cuda
-PROJECTS = hello greeter fibonacci
+PROJECTS = hello greeter fibonacci random
 OPERATIONS = run clean
 
 define RUN_TARGET
@@ -36,7 +36,7 @@ $1-$2-$3:
 endef
 
 $(foreach lang,$(LANGUAGES),\
-  $(foreach proj,$(PROJECTS),\
+	$(foreach proj,$(PROJECTS),\
     $(foreach op,$(OPERATIONS),\
       $(eval $(call TARGET_OPERATION,$(op),$(lang),$(proj))))))
 

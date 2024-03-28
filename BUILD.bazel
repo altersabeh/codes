@@ -14,6 +14,11 @@ alias(
 )
 
 alias(
+    name = "c++-random",
+    actual = "//c++/random:c++-random",
+)
+
+alias(
     name = "c-hello",
     actual = "//c/hello:c-hello",
 )

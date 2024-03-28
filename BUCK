@@ -23,6 +23,10 @@ alias(
     name = "c++-fibonacci",
     actual = "//c++/fibonacci:c++-fibonacci",
 )
+alias(
+    name = "c++-random",
+    actual = "//c++/random:c++-random",
+)
 
 alias(
     name = "haskell-hello",

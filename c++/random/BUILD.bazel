@@ -1,0 +1,19 @@
+package(
+    default_visibility = ["//visibility:public"],
+)
+
+cc_binary(
+    name = "c++-random",
+    srcs = ["src/randomNumberGame.cpp"],
+    copts = [
+        "-Wall",
+        "-O2",
+        "-g",
+    ],
+    linkopts = [],
+)
+
+alias(
+    name = "main",
+    actual = ":c++-random",
+)
