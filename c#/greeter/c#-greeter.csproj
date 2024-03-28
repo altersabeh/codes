@@ -10,9 +10,6 @@
     <PackageType>DotnetTool</PackageType>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackAsTool>true</PackAsTool>
-  </PropertyGroup>
-
-  <PropertyGroup>
     <OutputType>Exe</OutputType>
     <AssemblyName>c#-greeter</AssemblyName>
     <TargetFramework>net8.0</TargetFramework>
