@@ -1,6 +1,6 @@
-# `RUST/Hello`
+# `Rust/Hello`
 
-This is a **Hello World** program written in **RUST**.
+This is a **Hello World** program written in **Rust**.
 
 ``` Rust
 // Hello World in Rust !

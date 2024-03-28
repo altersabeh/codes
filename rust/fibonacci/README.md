@@ -1,6 +1,6 @@
-# `RUST/Fibonacci`
+# `Rust/Fibonacci`
 
-This is a **Fibonacci** program written in **RUST**.
+This is a **Fibonacci** program written in **Rust**.
 
 ## Prerequisite
 

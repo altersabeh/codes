@@ -1,6 +1,6 @@
-# `RUST/Greeter`
+# `Rust/Greeter`
 
-This is a **Greeter** program written in **RUST**.
+This is a **Greeter** program written in **Rust**.
 
 ## Prerequisite
 
