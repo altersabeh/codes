@@ -1,5 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <PackageId>fs-fibonacci</PackageId>
     <Version>1.0.0</Version>
@@ -11,11 +10,12 @@
     <PackageType>DotnetTool</PackageType>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackAsTool>true</PackAsTool>
-  </PropertyGroup>
-
-  <PropertyGroup>
     <OutputType>Exe</OutputType>
     <AssemblyName>f#-fibonacci</AssemblyName>
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="src/fibonacci.fs" />
+  </ItemGroup>
 </Project>

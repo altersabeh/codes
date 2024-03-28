@@ -11,11 +11,12 @@
     <PackageType>DotnetTool</PackageType>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackAsTool>true</PackAsTool>
-  </PropertyGroup>
-
-  <PropertyGroup>
     <OutputType>Exe</OutputType>
     <AssemblyName>f#-hello</AssemblyName>
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="src/hello.fs" />
+  </ItemGroup>
 </Project>
