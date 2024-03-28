@@ -46,6 +46,9 @@ From the root directory, run one of the following:
 dotnet build c#/hello
 ```
 ```
+dotnet build -t:"c#\c#-hello"
+```
+```
 dotnet build c#/hello/c#-hello.csproj
 ```
 ```

@@ -32,6 +32,9 @@ From the root directory, run one of the following:
 dotnet build c#/greeter
 ```
 ```
+dotnet build -t:"c#\c#-greeter"
+```
+```
 dotnet build c#/greeter/c#-greeter.csproj
 ```
 ```
