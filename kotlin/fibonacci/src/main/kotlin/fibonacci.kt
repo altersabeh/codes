@@ -1,19 +1,20 @@
-/** * Fibonacci Series Calculator * * The Fibonacci Series Calculator
- is a Kotlin program that calculates * and prints the Fibonacci Series
- up to the nth term with arbitrary * precision. It includes features
- such as error handling for input * validation, handling special cases
- where numbers don't end in "th" * (e.g. 1, 2, 3), displaying the sum
- of the series, and providing the * current date and time.  * *
- License: This program is in the public domain.  */
+/**
+ * Fibonacci Series Calculator
+ *
+ * The Fibonacci Series Calculator is a Kotlin program that calculates and prints the Fibonacci
+ * Series up to the nth term with arbitrary precision. It includes features such as error handling
+ * for input validation, handling special cases where numbers don't end in "th" (e.g. 1, 2, 3),
+ * displaying the sum of the series, and providing the current date and time.
+ *
+ * License: This program is in the public domain.
+ */
 
-package fibonacci;
+package fibonacci
 
 import java.math.BigInteger
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-
 import kotlin.system.exitProcess
-
 import sun.misc.Signal
 import sun.misc.SignalHandler
 
@@ -78,7 +79,7 @@ fun fibonacciSeries(n: Int) {
       if (n <= 5000) {
         series.add(a)
       } else {
-        //Print the series without using array
+        // Print the series without using array
         print("$a")
         if (i < n) {
           print(", ")
@@ -155,10 +156,11 @@ fun interruptHandler() {
 var stopOperation = false
 
 fun signalHandler() {
-  val sigintHandler = object : SignalHandler {
-    override fun handle(signal: Signal) {
-      interruptHandler()
-    }
-  }
+  val sigintHandler =
+      object : SignalHandler {
+        override fun handle(signal: Signal) {
+          interruptHandler()
+        }
+      }
   Signal.handle(Signal("INT"), sigintHandler)
 }
