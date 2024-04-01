@@ -87,4 +87,7 @@
   "java.compile.nullAnalysis.mode": "automatic",
   "python.analysis.autoImportCompletions": true,
   "python.analysis.typeCheckingMode": "basic",
+  "swift.buildArguments": [
+    "--build-path=dist/swift"
+  ],
 }
