@@ -104,6 +104,7 @@ __pycache__/
 .bloop/
 .metals/
 metals.sbt
+scala/*/bin
 
 # sorbet
 !bin/tapioca
