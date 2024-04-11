@@ -7,15 +7,16 @@
     "lint": {
       "cache": true
     },
+    "pack": {
+      "cache": true,
+      "dependsOn": ["^build"]
+    },
     "test": {
       "cache": true
     },
     "e2e": {
       "cache": true
     }
-  },
-  "affected": {
-    "defaultBase": "main"
   },
   "cli": {
     "packageManager": "npm"
