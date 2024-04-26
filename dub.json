@@ -1,28 +1,28 @@
 {
-	"name": "codes",
-	"description": "Repository for My Codes",
-	"version": "1.0.0",
-	"license": "MIT",
-	"homepage": "https://github.com/altersabeh/codes#README",
-	"authors": [
-		"AlterSabeh"
-	],
-	"copyright": "Copyright © 2023, AlterSabeh",
-	"dependencies": {
-		"codes:d-fibonacci": ">=0.0.0",
-		"codes:d-greeter": ">=0.0.0",
-		"codes:d-hello": ">=0.0.0"
-	},
-	"subPackages": [
-		"d/hello",
-		"d/greeter",
-		"d/fibonacci"
-	],
-	"mainSourceFile": "d/hello/src/hello.d",
-	"sourcePaths": [
-		"d/hello/src"
-	],
-	"targetName": "d-hello",
-	"targetPath": "$DUB_PACKAGE_TARGET_PATH",
-	"targetType": "executable"
+  "name": "codes",
+  "description": "Repository for My Codes",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "https://github.com/altersabeh/codes#README",
+  "authors": [
+    "AlterSabeh"
+  ],
+  "copyright": "Copyright © 2023, AlterSabeh",
+  "dependencies": {
+    "codes:d-fibonacci": ">=0.0.0",
+    "codes:d-greeter": ">=0.0.0",
+    "codes:d-hello": ">=0.0.0"
+  },
+  "subPackages": [
+    "d/hello",
+    "d/greeter",
+    "d/fibonacci"
+  ],
+  "mainSourceFile": "d/hello/src/hello.d",
+  "sourcePaths": [
+    "d/hello/src"
+  ],
+  "targetName": "d-hello",
+  "targetPath": "$DUB_PACKAGE_TARGET_PATH",
+  "targetType": "executable"
 }
