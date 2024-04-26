@@ -183,10 +183,10 @@ npx lerna run js-fibonacci
 > **require modifying the source code**.
 
 ```
-turbo start --scope js-fibonacci
+turbo start --filter js-fibonacci
 ```
 ```
-npx turbo start --scope js-fibonacci
+npx turbo start --filter js-fibonacci
 ```
 
 ### Source Directory _(optional)_

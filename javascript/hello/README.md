@@ -189,10 +189,10 @@ npx lerna run js-hello
 > **require modifying the source code**.
 
 ```
-turbo start --scope js-hello
+turbo start --filter js-hello
 ```
 ```
-npx turbo start --scope js-hello
+npx turbo start --filter js-hello
 ```
 
 ### Source Directory _(optional)_

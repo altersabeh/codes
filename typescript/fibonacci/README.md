@@ -184,10 +184,10 @@ npx lerna run ts-fibonacci
 > **require modifying the source code**.
 
 ```
-turbo start --scope ts-fibonacci
+turbo start --filter ts-fibonacci
 ```
 ```
-npx turbo start --scope ts-fibonacci
+npx turbo start --filter ts-fibonacci
 ```
 
 ### Source Directory _(optional)_

@@ -184,10 +184,10 @@ npx lerna run ts-greeter
 > **require modifying the source code**.
 
 ```
-turbo start --scope ts-greeter
+turbo start --filter ts-greeter
 ```
 ```
-npx turbo start --scope ts-greeter
+npx turbo start --filter ts-greeter
 ```
 
 ### Source Directory _(optional)_

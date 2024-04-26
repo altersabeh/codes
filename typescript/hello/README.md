@@ -190,10 +190,10 @@ npx lerna run ts-hello
 > **require modifying the source code**.
 
 ```
-turbo start --scope ts-hello
+turbo start --filter ts-hello
 ```
 ```
-npx turbo start --scope ts-hello
+npx turbo start --filter ts-hello
 ```
 
 ### Source Directory _(optional)_

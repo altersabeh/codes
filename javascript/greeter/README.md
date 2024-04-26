@@ -183,10 +183,10 @@ npx lerna run js-greeter
 > **require modifying the source code**.
 
 ```
-turbo start --scope js-greeter
+turbo start --filter js-greeter
 ```
 ```
-npx turbo start --scope js-greeter
+npx turbo start --filter js-greeter
 ```
 
 ### Source Directory _(optional)_
